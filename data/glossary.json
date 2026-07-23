@@ -1,0 +1,30 @@
+{
+  "aliases": {
+    "enrollment":    ["ghi danh", "đăng ký học", "nhập học"],
+    "delay":         ["bảo lưu", "tạm hoãn", "hoãn học"],
+    "placement test":["pt", "thi thử", "kiểm tra đầu vào", "thi xếp lớp"],
+    "lead":          ["khách hàng tiềm năng", "khách hàng mới"],
+    "convert lead":  ["chuyển đổi lead", "chuyển lead thành student", "convert"],
+    "refund":        ["hoàn tiền", "hoàn học phí", "trả tiền"],
+    "invoice":       ["hóa đơn", "hoá đơn điện tử", "xuất hóa đơn"],
+    "cashholder":    ["người giữ tiền", "thu ngân", "quỹ"],
+    "active student":["học viên đang học", "học viên hoạt động", "hv active"],
+    "void":          ["hủy", "vô hiệu hóa", "hủy hóa đơn"],
+    "receipt":       ["phiếu thu", "biên lai"],
+    "payment":       ["thanh toán", "nộp tiền", "thu tiền"],
+    "class":         ["lớp học", "lớp", "nhóm học"],
+    "teacher":       ["giáo viên", "gv", "giảng viên"],
+    "parent":        ["phụ huynh", "ph", "cha mẹ"],
+    "student":       ["học viên", "hv", "học sinh", "hs"],
+    "schedule":      ["lịch học", "thời khóa biểu", "tkb"],
+    "attendance":    ["điểm danh", "chuyên cần"],
+    "bod":           ["ban giám đốc", "ban lãnh đạo"],
+    "ems":           ["hệ thống quản lý đào tạo", "phần mềm dotb"],
+    "sea":           ["sea app", "ứng dụng phụ huynh"],
+    "tea":           ["tea app", "ứng dụng giáo viên"],
+    "metrikal":      ["báo cáo", "thống kê", "analytics"],
+    "transfer":      ["chuyển lớp", "chuyển trung tâm"],
+    "makeup class":  ["học bù", "bù buổi"],
+    "certificate":   ["chứng chỉ", "bằng", "giấy chứng nhận"]
+  }
+}

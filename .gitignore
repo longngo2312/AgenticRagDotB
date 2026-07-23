@@ -1,0 +1,11 @@
+.env
+data/chroma_db/
+data/raw_docs/
+data/bm25_index.pkl
+data/parent_docs.json
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.DS_Store

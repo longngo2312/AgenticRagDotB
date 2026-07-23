@@ -1,0 +1,34 @@
+[
+  {
+    "note": "DAY 4 — Fill in 50 Q&A pairs here. Each entry must have:",
+    "schema": {
+      "id": "unique string",
+      "question": "Vietnamese question as a real user would ask it",
+      "ground_truth_answer": "correct answer in Vietnamese",
+      "relevant_doc_ids": ["URL or chunk heading path of source page(s)"],
+      "section": "top-level section slug",
+      "difficulty": "easy | medium | hard",
+      "type": "single-step | multi-step | conditional | out-of-scope | ambiguous"
+    },
+    "examples": [
+      {
+        "id": "q001",
+        "question": "Làm sao convert Lead thành Student?",
+        "ground_truth_answer": "TODO",
+        "relevant_doc_ids": ["https://help.dotb.vn/tuyen-sinh-ban-hang/lead/convert-lead.md"],
+        "section": "tuyen-sinh-ban-hang",
+        "difficulty": "easy",
+        "type": "single-step"
+      },
+      {
+        "id": "q002",
+        "question": "Cần làm gì trước khi hoàn tiền cho học viên?",
+        "ground_truth_answer": "TODO",
+        "relevant_doc_ids": [],
+        "section": "hoc-phi",
+        "difficulty": "medium",
+        "type": "conditional"
+      }
+    ]
+  }
+]
