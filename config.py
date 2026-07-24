@@ -19,7 +19,9 @@ BM25_INDEX_PATH = DATA_DIR / "bm25_index.pkl"
 
 # ── Google Gemini ─────────────────────────────────────────────────────────────
 GOOGLE_API_KEY  = os.getenv("GOOGLE_API_KEY", "")
-EMBEDDING_MODEL = "models/text-embedding-004"
+# text-embedding-004 was retired from the Gemini Developer API; gemini-embedding-001
+# is Google's current multilingual embedding model (3072-dim, free tier).
+EMBEDDING_MODEL = "models/gemini-embedding-001"
 LLM_MODEL       = "gemini-1.5-flash"
 
 # ── Crawling ──────────────────────────────────────────────────────────────────

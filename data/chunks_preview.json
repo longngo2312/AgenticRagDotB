@@ -1,0 +1,480 @@
+{
+  "summary": {
+    "total_chunks": 526,
+    "children": 279,
+    "parents": 247,
+    "child_tokens_min": 22,
+    "child_tokens_max": 560,
+    "child_tokens_avg": 277
+  },
+  "sample_children": [
+    {
+      "chunk_id": "45b382638f73a6edf32273b1d0f2683b019cae6f3968cee798f50f62516ccf52",
+      "parent_id": "45b382638f73a6edf32273b1d0f2683b019cae6f3968cee798f50f62516ccf52",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-ems/tao-tin-tuc-va-gui-thong-bao-ve-app-hoc-vien.md",
+      "doc_title": "Tạo tin tức và gửi thông báo về app học viên",
+      "breadcrumb": [
+        "tinh-nang-cap-nhat-moi",
+        "cap-nhat-ems",
+        "tao-tin-tuc-va-gui-thong-bao-ve-app-hoc-vien"
+      ],
+      "section": "tinh-nang-cap-nhat-moi",
+      "product": "EMS",
+      "heading_path": "Tạo tin tức và gửi thông báo về app học viên",
+      "content": "[Tinh Nang Cap Nhat Moi > Cap Nhat Ems > Tao Tin Tuc Va Gui Thong Bao Ve App Hoc Vien] Tạo tin tức và gửi thông báo về app học viên\n\n# Tạo tin tức và gửi thông báo về app học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **News**, ta nhấn vào button **Create New** để mở ra màn hình thêm mới **New**.\n\n[IMAGE: data/images/2691c67d7063b0e25d49abca0e810ed1.jpg]\n\n> **Bước 2:** Tại màn hình tạo mới **News**, nhập đầy đủ các thông tin cần thiết, người dùng lưu ý rằng các trường (field) có chữ **Required** bắt buộc phải nhập thông tin vào, những field khác có thể bỏ qua, sau đó nhấn chọn button **Save** để hoàn tất việc tạo ra một **News** mới.\n\n[IMAGE: data/images/325b1743297af5aaba0af22322245486.jpg]\n\n> **Lưu ý:** **Lưu ý:**\n\n1. **Name - Tiêu đề**: sự kiện, hoạt động của trung tâm&#x20;\n2. **Post Url - Đường dẫn URL**: có thể không cần đường dẫn đến trang URL\n3. **Type - Loại**: phần tin tức này gửi cho Giáo viên hoặc học viên\n4. **Content**: soạn nội dung tin tức (cập nhật mới)\n5. **Pin For Student App - Ghim App học viên**: Bài đăng xuất hiện trên màn hình trang chủ của Mobile App\n\n> **Bước 3:** Hệ thống hiển thị thông tin chi tiết của **News** được tạo.\n\n[IMAGE: data/images/0a75aab5bf812eabae38185ad6fc1e01.jpg]\n\n> *Nội dung hiển thị của app khi tin tức được soạn content*.\n\n[IMAGE: data/images/52521cd5f0d25dc34c26d30ab5fa643f.jpg]",
+      "raw_text": "# Tạo tin tức và gửi thông báo về app học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **News**, ta nhấn vào button **Create New** để mở ra màn hình thêm mới **New**.\n\n[IMAGE: data/images/2691c67d7063b0e25d49abca0e810ed1.jpg]\n\n> **Bước 2:** Tại màn hình tạo mới **News**, nhập đầy đủ các thông tin cần thiết, người dùng lưu ý rằng các trường (field) có chữ **Required** bắt buộc phải nhập thông tin vào, những field khác có thể bỏ qua, sau đó nhấn chọn button **Save** để hoàn tất việc tạo ra một **News** mới.\n\n[IMAGE: data/images/325b1743297af5aaba0af22322245486.jpg]\n\n> **Lưu ý:** **Lưu ý:**\n\n1. **Name - Tiêu đề**: sự kiện, hoạt động của trung tâm&#x20;\n2. **Post Url - Đường dẫn URL**: có thể không cần đường dẫn đến trang URL\n3. **Type - Loại**: phần tin tức này gửi cho Giáo viên hoặc học viên\n4. **Content**: soạn nội dung tin tức (cập nhật mới)\n5. **Pin For Student App - Ghim App học viên**: Bài đăng xuất hiện trên màn hình trang chủ của Mobile App\n\n> **Bước 3:** Hệ thống hiển thị thông tin chi tiết của **News** được tạo.\n\n[IMAGE: data/images/0a75aab5bf812eabae38185ad6fc1e01.jpg]\n\n> *Nội dung hiển thị của app khi tin tức được soạn content*.\n\n[IMAGE: data/images/52521cd5f0d25dc34c26d30ab5fa643f.jpg]",
+      "token_count": 338,
+      "content_hash": "45b382638f73a6edf32273b1d0f2683b019cae6f3968cee798f50f62516ccf52"
+    },
+    {
+      "chunk_id": "21e0f9621f639c982f562356bbd9825187cc212ee765b236809009f47aba8480",
+      "parent_id": "21e0f9621f639c982f562356bbd9825187cc212ee765b236809009f47aba8480",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan.md",
+      "doc_title": "Quản lý tài khoản",
+      "breadcrumb": [
+        "dotb-metrikal",
+        "quan-ly-tai-khoan"
+      ],
+      "section": "dotb-metrikal",
+      "product": "Metrikal",
+      "heading_path": "Quản lý tài khoản",
+      "content": "[Dotb Metrikal > Quan Ly Tai Khoan] Quản lý tài khoản\n\n# Quản lý tài khoản\n\n- [Cập nhật thông tin tài khoản](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/cap-nhat-thong-tin-tai-khoan.md)\n- [Quản lý cảnh báo](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/quan-ly-canh-bao.md)\n- [Tài khoản và bảo mật](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/tai-khoan-va-bao-mat.md)\n- [Giao diện và ngôn ngữ](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/giao-dien-va-ngon-ngu.md)",
+      "raw_text": "# Quản lý tài khoản\n\n- [Cập nhật thông tin tài khoản](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/cap-nhat-thong-tin-tai-khoan.md)\n- [Quản lý cảnh báo](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/quan-ly-canh-bao.md)\n- [Tài khoản và bảo mật](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/tai-khoan-va-bao-mat.md)\n- [Giao diện và ngôn ngữ](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/giao-dien-va-ngon-ngu.md)",
+      "token_count": 124,
+      "content_hash": "21e0f9621f639c982f562356bbd9825187cc212ee765b236809009f47aba8480"
+    },
+    {
+      "chunk_id": "dfba9018dd5a48708a89ef35faff63f0dbeec6f79712f0b26c05baf88ab2858f",
+      "parent_id": "dfba9018dd5a48708a89ef35faff63f0dbeec6f79712f0b26c05baf88ab2858f",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-ly-diem-tich-luy-loyalty/su-dung-diem-loyalty.md",
+      "doc_title": "Sử dụng điểm Loyalty",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "quan-li-su-vu",
+        "quan-ly-diem-tich-luy-loyalty",
+        "su-dung-diem-loyalty"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Sử dụng điểm Loyalty",
+      "content": "[Bo Phan Giao Vu > Quan Li Su Vu > Quan Ly Diem Tich Luy Loyalty > Su Dung Diem Loyalty] Sử dụng điểm Loyalty\n\n# Sử dụng điểm Loyalty\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: Mỗi điểm học viên tích được sẽ được đổi thành tiền và trừ ra cho payment học viên thanh toán, **1 Điểm** sẽ tương đương với **1000 VNĐ**\n\n> **Bước 1:** Tại màn hình thanh toán ví dụ với thanh toán Book/Gift, chọn **Loyalty** sau đó nhấn vào button **Use Loyalty**, nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/fdb904935928af57373518ca0081120a.png]\n\n> **Bước 2:** Màn hình nhập số điểm Loyalty học viên hiện lên, user chỉ cần nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/bf1c2f3e849619c606183f014ebaf295.png]\n\n> **Bước 3:** Hệ thống sẽ tự động trừ số tiền học viên sau thanh toán.\n\n[IMAGE: data/images/de9267488d20fa875bc76597f866ad65.png]\n\n> **Bước 4:** Hệ thống hiển thị thông tin chi tiết của Payment sau khi Save thành công.\n\n[IMAGE: data/images/c4ab60f8a622dbbd0a8d1f5b0c8f86fd.png]",
+      "raw_text": "# Sử dụng điểm Loyalty\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: Mỗi điểm học viên tích được sẽ được đổi thành tiền và trừ ra cho payment học viên thanh toán, **1 Điểm** sẽ tương đương với **1000 VNĐ**\n\n> **Bước 1:** Tại màn hình thanh toán ví dụ với thanh toán Book/Gift, chọn **Loyalty** sau đó nhấn vào button **Use Loyalty**, nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/fdb904935928af57373518ca0081120a.png]\n\n> **Bước 2:** Màn hình nhập số điểm Loyalty học viên hiện lên, user chỉ cần nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/bf1c2f3e849619c606183f014ebaf295.png]\n\n> **Bước 3:** Hệ thống sẽ tự động trừ số tiền học viên sau thanh toán.\n\n[IMAGE: data/images/de9267488d20fa875bc76597f866ad65.png]\n\n> **Bước 4:** Hệ thống hiển thị thông tin chi tiết của Payment sau khi Save thành công.\n\n[IMAGE: data/images/c4ab60f8a622dbbd0a8d1f5b0c8f86fd.png]",
+      "token_count": 246,
+      "content_hash": "dfba9018dd5a48708a89ef35faff63f0dbeec6f79712f0b26c05baf88ab2858f"
+    },
+    {
+      "chunk_id": "daed70ef1c5d5fb5ce5d1a4cc179f19dbd0189a7ff04a539659aa1c8485c996f",
+      "parent_id": "daed70ef1c5d5fb5ce5d1a4cc179f19dbd0189a7ff04a539659aa1c8485c996f",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/convert-lead-chuyen-doi-lead.md",
+      "doc_title": "Convert Lead - Chuyển đổi Lead",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "lead",
+        "convert-lead-chuyen-doi-lead"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Convert Lead - Chuyển đổi Lead",
+      "content": "[Tuyen Sinh Ban Hang > Lead > Convert Lead Chuyen Doi Lead] Convert Lead - Chuyển đổi Lead\n\n# Convert Lead - Chuyển đổi Lead\n\n> *Video hướng dẫn Chuyển đổi Lead thành Student - Case by case*",
+      "raw_text": "# Convert Lead - Chuyển đổi Lead\n\n> *Video hướng dẫn Chuyển đổi Lead thành Student - Case by case*",
+      "token_count": 47,
+      "content_hash": "daed70ef1c5d5fb5ce5d1a4cc179f19dbd0189a7ff04a539659aa1c8485c996f"
+    },
+    {
+      "chunk_id": "4a2bb17f76ef45f916f3a5c7e55320a14090bdd46f9693cbfa0895d4f27985ee",
+      "parent_id": "4a2bb17f76ef45f916f3a5c7e55320a14090bdd46f9693cbfa0895d4f27985ee",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/thong-tin-hoc-phi.md",
+      "doc_title": "Thông tin học phí",
+      "breadcrumb": [
+        "tinh-nang-danh-cho-parents-app-tren-crm",
+        "thong-tin-hoc-phi"
+      ],
+      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
+      "product": "EMS",
+      "heading_path": "Thông tin học phí",
+      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Thong Tin Hoc Phi] Thông tin học phí\n\n# Thông tin học phí",
+      "raw_text": "# Thông tin học phí",
+      "token_count": 25,
+      "content_hash": "4a2bb17f76ef45f916f3a5c7e55320a14090bdd46f9693cbfa0895d4f27985ee"
+    },
+    {
+      "chunk_id": "0eed0f94f7737c594b07053a6b2abef08525cf734c7c4699e249651d68e9404d",
+      "parent_id": "d87983c138296694337a094993027e63ba041d26bf8d12a27bdf31485e7139ed",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/mobile/ghi-nhan-phan-hoi.md",
+      "doc_title": "Ghi nhận phản hồi",
+      "breadcrumb": [
+        "mobile",
+        "ghi-nhan-phan-hoi"
+      ],
+      "section": "mobile",
+      "product": "EMS",
+      "heading_path": "Ghi nhận phản hồi",
+      "content": "[Mobile > Ghi Nhan Phan Hoi] Ghi nhận phản hồi\n\n# Ghi nhận phản hồi\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào chức năng **Phản hồi** để phản hồi về trung tâm.\n\n[IMAGE: data/images/1c3b8f4804d3c5f18234692db08c386e.jpg]\n\n> **Bước 2:** Nhấn vào biểu tượng **dấu cộng** góc phải dưới cùng để tạo mới Phản hồi.\n\n[IMAGE: data/images/72123e27e76c4dfabbcb038e7843de4b.jpg]\n\n> **Bước 3:** Chọn 1 trong 2 loại Phản hồi cần thực hiện. Nhấn chọn option Tạo phản hồi.\n\n[IMAGE: data/images/cbef5c77e9d991c74da34ca70c2d5133.jpg]\n\n> **Lưu ý:** Ghi chú:\n\n1. **Liên hệ trực tiếp**: Gọi điện trực tiếp đến hotline trung tâm.\n2. **Tạo phản hồi:** Phản hồi dưới dạng gửi văn bản đến trung tâm\n\n> **Bước 4:** Chọn Loại phản hồi.\n\n[IMAGE: data/images/7fd5913f9279fc8fccaf46735658e839.jpg]\n\n> **Lưu ý:** **Ghi chú:**&#x20;\n\n* **Loại phản hồi:** &#x20;\n\n&#x20;[IMAGE: data/images/9616e6843e0f059548e107be647b92d3.png] **Xin nghỉ phép**: Học viên trao đổi với Trung tâm về việc vắng học.\n\n&#x20;[IMAGE: data/images/1af44209f453e479e675af7627f19b0f.png] **Hỏi lịch học:** Học viên trao đổi với Trung tâm về vấn đề Lịch học.\n\n&#x20;[IMAGE: data/images/2b03e0bb54756a6b326fef37e87d7ece.png] **Trao đổi về học phí:** Học viên trao đổi với Trung tâm về vấn đề Học phí.\n\n[IMAGE: data/images/e2a67d988da73bd6343653fedf5c41ef.png]**Tư vấn khóa học trực tuyến:** Học viên trao đổi với Trung tâm về các lớp học online\n\n[IMAGE: data/images/0f98616043b88c7b609a2519874c9f91.png] **Khác:** Những trao đổi khác với 3 nội dung trên.\n\n> **Bước 5:** Nhập nội dung cần phản hồi, sau đó nhấn **Gửi**.\n\n[IMAGE: data/images/e7225b0a1ec7d9aad0b81ed45e9d0f02.jpg]\n\n> **Bước 6:** Sau khi gửi phản hồi thành công. Màn hình thông báo gửi phản hồi thành công sẽ hiển thị lên, người dùng có thể bấm vào để xem chi tiết phản hồi.\n\n[IMAGE: data/images/9667439d94c14bb3125b61964e467f67.jpg]\n\n> **Bước 7:** Chi tiết nội dung tin nhắn phản hồi của người dùng. Có thể tiếp tục nội dung tin nhắn (Nếu cần).\n\n[IMAGE: data/images/4acb07b14f1d66846a674c15847bb00f.jpg]",
+      "raw_text": "# Ghi nhận phản hồi\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào chức năng **Phản hồi** để phản hồi về trung tâm.\n\n[IMAGE: data/images/1c3b8f4804d3c5f18234692db08c386e.jpg]\n\n> **Bước 2:** Nhấn vào biểu tượng **dấu cộng** góc phải dưới cùng để tạo mới Phản hồi.\n\n[IMAGE: data/images/72123e27e76c4dfabbcb038e7843de4b.jpg]\n\n> **Bước 3:** Chọn 1 trong 2 loại Phản hồi cần thực hiện. Nhấn chọn option Tạo phản hồi.\n\n[IMAGE: data/images/cbef5c77e9d991c74da34ca70c2d5133.jpg]\n\n> **Lưu ý:** Ghi chú:\n\n1. **Liên hệ trực tiếp**: Gọi điện trực tiếp đến hotline trung tâm.\n2. **Tạo phản hồi:** Phản hồi dưới dạng gửi văn bản đến trung tâm\n\n> **Bước 4:** Chọn Loại phản hồi.\n\n[IMAGE: data/images/7fd5913f9279fc8fccaf46735658e839.jpg]\n\n> **Lưu ý:** **Ghi chú:**&#x20;\n\n* **Loại phản hồi:** &#x20;\n\n&#x20;[IMAGE: data/images/9616e6843e0f059548e107be647b92d3.png] **Xin nghỉ phép**: Học viên trao đổi với Trung tâm về việc vắng học.\n\n&#x20;[IMAGE: data/images/1af44209f453e479e675af7627f19b0f.png] **Hỏi lịch học:** Học viên trao đổi với Trung tâm về vấn đề Lịch học.\n\n&#x20;[IMAGE: data/images/2b03e0bb54756a6b326fef37e87d7ece.png] **Trao đổi về học phí:** Học viên trao đổi với Trung tâm về vấn đề Học phí.\n\n[IMAGE: data/images/e2a67d988da73bd6343653fedf5c41ef.png]**Tư vấn khóa học trực tuyến:** Học viên trao đổi với Trung tâm về các lớp học online\n\n[IMAGE: data/images/0f98616043b88c7b609a2519874c9f91.png] **Khác:** Những trao đổi khác với 3 nội dung trên.\n\n> **Bước 5:** Nhập nội dung cần phản hồi, sau đó nhấn **Gửi**.\n\n[IMAGE: data/images/e7225b0a1ec7d9aad0b81ed45e9d0f02.jpg]\n\n> **Bước 6:** Sau khi gửi phản hồi thành công. Màn hình thông báo gửi phản hồi thành công sẽ hiển thị lên, người dùng có thể bấm vào để xem chi tiết phản hồi.\n\n[IMAGE: data/images/9667439d94c14bb3125b61964e467f67.jpg]\n\n> **Bước 7:** Chi tiết nội dung tin nhắn phản hồi của người dùng. Có thể tiếp tục nội dung tin nhắn (Nếu cần).\n\n[IMAGE: data/images/4acb07b14f1d66846a674c15847bb00f.jpg]",
+      "token_count": 503,
+      "content_hash": "0eed0f94f7737c594b07053a6b2abef08525cf734c7c4699e249651d68e9404d"
+    },
+    {
+      "chunk_id": "bd42ab129c36834f5957daababa173b8a0d77f2f0384ef7fbb930a22908ebdbf",
+      "parent_id": "d87983c138296694337a094993027e63ba041d26bf8d12a27bdf31485e7139ed",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/mobile/ghi-nhan-phan-hoi.md",
+      "doc_title": "Ghi nhận phản hồi",
+      "breadcrumb": [
+        "mobile",
+        "ghi-nhan-phan-hoi"
+      ],
+      "section": "mobile",
+      "product": "EMS",
+      "heading_path": "Ghi nhận phản hồi",
+      "content": "[Mobile > Ghi Nhan Phan Hoi] Ghi nhận phản hồi\n\n> **Bước 8:** Khi trung tâm Phản hồi lại, màn hình sẽ hiển thị thông báo. Nhấn vào để đọc chi tiết tin nhắn được phản hồi.\n\n[IMAGE: data/images/97d8ce9ea641d1c180403fdcbbb05d43.jpg]\n\n> **Bước 9:** Chi tiết trả lời phản hồi của trung tâm. Có thể tiếp tục cuộc trò chuyện (nếu cần).\n\n[IMAGE: data/images/c997b4d9c5bc7370ac623d53f350f742.jpg]\n\n> **Lưu ý:** Ngoài ra, sau khi gửi trao đổi và Trung tâm gửi phản hồi, ta sẽ nhận được tại phần thông báo như sau:\n\n* Nhấn vào nút hình chuông:\n\n[IMAGE: data/images/47d93cf52319c57ac0ff756dcd9124a1.jpg]\n\n* Xem thông báo nhanh các phản hồi về các nội dung Trao đổi:&#x20;\n\n[IMAGE: data/images/9d8ae94b7b70d5442492c12c011c5cb2.jpg]&#x20;",
+      "raw_text": "> **Bước 8:** Khi trung tâm Phản hồi lại, màn hình sẽ hiển thị thông báo. Nhấn vào để đọc chi tiết tin nhắn được phản hồi.\n\n[IMAGE: data/images/97d8ce9ea641d1c180403fdcbbb05d43.jpg]\n\n> **Bước 9:** Chi tiết trả lời phản hồi của trung tâm. Có thể tiếp tục cuộc trò chuyện (nếu cần).\n\n[IMAGE: data/images/c997b4d9c5bc7370ac623d53f350f742.jpg]\n\n> **Lưu ý:** Ngoài ra, sau khi gửi trao đổi và Trung tâm gửi phản hồi, ta sẽ nhận được tại phần thông báo như sau:\n\n* Nhấn vào nút hình chuông:\n\n[IMAGE: data/images/47d93cf52319c57ac0ff756dcd9124a1.jpg]\n\n* Xem thông báo nhanh các phản hồi về các nội dung Trao đổi:&#x20;\n\n[IMAGE: data/images/9d8ae94b7b70d5442492c12c011c5cb2.jpg]&#x20;",
+      "token_count": 181,
+      "content_hash": "bd42ab129c36834f5957daababa173b8a0d77f2f0384ef7fbb930a22908ebdbf"
+    },
+    {
+      "chunk_id": "9c327eaa2c2b40a353f166f1803d0c7e3e8de5061674a7ecd7157fc567a3616a",
+      "parent_id": "9c327eaa2c2b40a353f166f1803d0c7e3e8de5061674a7ecd7157fc567a3616a",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/tich-hop-landing-pages-website.md",
+      "doc_title": "Tích hợp Landing Page / Website",
+      "breadcrumb": [
+        "nhom-tinh-nang-tiep-thi",
+        "tich-hop-landing-pages-website"
+      ],
+      "section": "nhom-tinh-nang-tiep-thi",
+      "product": "EMS",
+      "heading_path": "Tích hợp Landing Page / Website > Landing Page > API",
+      "content": "[Nhom Tinh Nang Tiep Thi > Tich Hop Landing Pages Website] Tích hợp Landing Page / Website > Landing Page > API\n\n# Tích hợp Landing Page / Website\n\n## Landing Page\n\n> Landing page còn gọi là trang đích, là một trang web độc lập, được tạo riêng cho chiến dịch tiếp thị hoặc quảng cáo, nhằm mục đích thu thập thông tin khách hàng hoặc bán hàng.\n\n> Landing page có nhiều mục đích, tuỳ vào doanh nghiệp hoặc mục tiêu quảng cáo của bạn mà nó có nhiều chức năng. Tuy nhiên, nhìn chung thì Landing page có những mục đích sau: Thu thập thông tin khách hàng, Giới thiệu sản phẩm, Giới thiệu doanh nghiệp...\n\n### API\n\n> **API** - **Application Programming Interface** (giao diện lập trình ứng dụng) là các phương thức, giao thức kết nối với các thư viện và ứng dụng khác.\n\n> **Web API** là một phương thức dùng để cho phép các ứng dụng khác nhau có thể giao tiếp, trao đổi dữ liệu qua lại. Dữ liệu được Web API trả lại thường ở dạng JSON hoặc XML thông qua giao thức HTTP hoặc HTTPS.\n\n**Video Hướng dẫn tổng quan về Đồng bộ thông tin Học viên tiềm năng từ Form Landing Page / Website về hệ thống EMS:**",
+      "raw_text": "# Tích hợp Landing Page / Website\n\n## Landing Page\n\n> Landing page còn gọi là trang đích, là một trang web độc lập, được tạo riêng cho chiến dịch tiếp thị hoặc quảng cáo, nhằm mục đích thu thập thông tin khách hàng hoặc bán hàng.\n\n> Landing page có nhiều mục đích, tuỳ vào doanh nghiệp hoặc mục tiêu quảng cáo của bạn mà nó có nhiều chức năng. Tuy nhiên, nhìn chung thì Landing page có những mục đích sau: Thu thập thông tin khách hàng, Giới thiệu sản phẩm, Giới thiệu doanh nghiệp...\n\n### API\n\n> **API** - **Application Programming Interface** (giao diện lập trình ứng dụng) là các phương thức, giao thức kết nối với các thư viện và ứng dụng khác.\n\n> **Web API** là một phương thức dùng để cho phép các ứng dụng khác nhau có thể giao tiếp, trao đổi dữ liệu qua lại. Dữ liệu được Web API trả lại thường ở dạng JSON hoặc XML thông qua giao thức HTTP hoặc HTTPS.\n\n**Video Hướng dẫn tổng quan về Đồng bộ thông tin Học viên tiềm năng từ Form Landing Page / Website về hệ thống EMS:**",
+      "token_count": 273,
+      "content_hash": "9c327eaa2c2b40a353f166f1803d0c7e3e8de5061674a7ecd7157fc567a3616a"
+    },
+    {
+      "chunk_id": "ce0cbcf10ad69e2818ffe6b039c9b08e9c03ae936832d7d2ef231e08d6d4d3eb",
+      "parent_id": "be3172f5d4a36066b84254c0c41c70314cf7f4c7853f8fcbd6957f1e50ce1f79",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/quan-li-dang-ki-hoc-va-thu-tien/chinh-sua-clear-outstanding.md",
+      "doc_title": "Chỉnh sửa (Clear Outstanding)",
+      "breadcrumb": [
+        "quan-li-dang-ki-hoc-va-thu-tien",
+        "chinh-sua-clear-outstanding"
+      ],
+      "section": "quan-li-dang-ki-hoc-va-thu-tien",
+      "product": "EMS",
+      "heading_path": "Chỉnh sửa (Clear Outstanding)",
+      "content": "[Quan Li Dang Ki Hoc Va Thu Tien > Chinh Sua Clear Outstanding] Chỉnh sửa (Clear Outstanding)\n\n# Chỉnh sửa (Clear Outstanding)\n\n> **Lưu ý:** Với payment học viên mua, bạn chỉ cần chọn thời gian học viên bắt đầu học (Nếu học viên vào học trễ), sau đó chọn Payment học viên sử dụng để ghi danh trong lớp, hệ thống sẽ tự động tính ngày End học viên trong lớp.&#x20;\n\nNếu Payment học viên mua không đủ so với số giờ học của lớp, Khoảng thời gian còn lại, hệ thống sẽ hiện thị học viên Outstanding. Nếu bạn không muốn thông tin hiển thị Outstanding có thể Remove khoảng thời gian đó của học viên ra khỏi lớp bằng tính năng **Delay.**\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes**, chọn lớp cần **Clear Outstanding** học viên vào lớp.\n\n[IMAGE: data/images/3912f4a3725c80ff3870524baa5d0c4f.png]\n\n> **Bước 2:** Tại màn hình chi tiết **Classes**, nhấn vào tab Subpanel “**Student Situations**”. Sau đó nhấn chọn \"**Enroll Students**\" hoặc \"**Enroll**\".\n\n[IMAGE: data/images/4a37d9f399785c3e47d1b7c3439e866f.png]\n\n> **Lưu ý:** Ghi chú:\n\n1. Thông tin học viên Đang học, Học Demo, Bảo Lưu, Học Nợ trong lớp.\n2. Thông tin học viên trong lớp:&#x20;\n\n**Enrolled****&#x20;(**&#x4D;àu xan&#x68;**)**: Học viên đủ điều kiện add vào lớp (đã đóng đủ hoặc dư học phí).\n\n**Outstanding****&#x20;(**&#x4D;àu Ca&#x6D;**)**: Học viên chưa đủ học phí cho khóa học hoặc add vào lớp cho học nợ.\n\n**Demo** (Màu xanh dương): Học viên học thử trong lớp\n\nHọc viên không đăng kí học trong 1 khoảng thời gian (Màu xám)\n\n> **Bước 3:** Chọn **Load Outstanding****&#x20;(1),** hệ thống sẽ load danh sách học viên đang học nợ trong Lớp, tiếp theo chọn payment (2) mà học viên đã mua để enroll vào lớp (mặc định hệ thống sẽ tự lấy payment nếu cùng KOC), có thể  chọn 1 hoặc nhiều học viên để ghi danh học viên (Clear Outstanding). Cuối cùng nhấn vào **Enroll** (3) để ghi danh học viên.\n\n[IMAGE: data/images/d4a3f0dc8d5f8af7580e0cf9a45bcc1d.png]\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi Chú**:\n\n(\\*):  **Start/Finish** : Có thể lựa chọn khoảng thời gian clear outstanding học viên (Nếu muốn)",
+      "raw_text": "# Chỉnh sửa (Clear Outstanding)\n\n> **Lưu ý:** Với payment học viên mua, bạn chỉ cần chọn thời gian học viên bắt đầu học (Nếu học viên vào học trễ), sau đó chọn Payment học viên sử dụng để ghi danh trong lớp, hệ thống sẽ tự động tính ngày End học viên trong lớp.&#x20;\n\nNếu Payment học viên mua không đủ so với số giờ học của lớp, Khoảng thời gian còn lại, hệ thống sẽ hiện thị học viên Outstanding. Nếu bạn không muốn thông tin hiển thị Outstanding có thể Remove khoảng thời gian đó của học viên ra khỏi lớp bằng tính năng **Delay.**\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes**, chọn lớp cần **Clear Outstanding** học viên vào lớp.\n\n[IMAGE: data/images/3912f4a3725c80ff3870524baa5d0c4f.png]\n\n> **Bước 2:** Tại màn hình chi tiết **Classes**, nhấn vào tab Subpanel “**Student Situations**”. Sau đó nhấn chọn \"**Enroll Students**\" hoặc \"**Enroll**\".\n\n[IMAGE: data/images/4a37d9f399785c3e47d1b7c3439e866f.png]\n\n> **Lưu ý:** Ghi chú:\n\n1. Thông tin học viên Đang học, Học Demo, Bảo Lưu, Học Nợ trong lớp.\n2. Thông tin học viên trong lớp:&#x20;\n\n**Enrolled****&#x20;(**&#x4D;àu xan&#x68;**)**: Học viên đủ điều kiện add vào lớp (đã đóng đủ hoặc dư học phí).\n\n**Outstanding****&#x20;(**&#x4D;àu Ca&#x6D;**)**: Học viên chưa đủ học phí cho khóa học hoặc add vào lớp cho học nợ.\n\n**Demo** (Màu xanh dương): Học viên học thử trong lớp\n\nHọc viên không đăng kí học trong 1 khoảng thời gian (Màu xám)\n\n> **Bước 3:** Chọn **Load Outstanding****&#x20;(1),** hệ thống sẽ load danh sách học viên đang học nợ trong Lớp, tiếp theo chọn payment (2) mà học viên đã mua để enroll vào lớp (mặc định hệ thống sẽ tự lấy payment nếu cùng KOC), có thể  chọn 1 hoặc nhiều học viên để ghi danh học viên (Clear Outstanding). Cuối cùng nhấn vào **Enroll** (3) để ghi danh học viên.\n\n[IMAGE: data/images/d4a3f0dc8d5f8af7580e0cf9a45bcc1d.png]\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi Chú**:\n\n(\\*):  **Start/Finish** : Có thể lựa chọn khoảng thời gian clear outstanding học viên (Nếu muốn)",
+      "token_count": 516,
+      "content_hash": "ce0cbcf10ad69e2818ffe6b039c9b08e9c03ae936832d7d2ef231e08d6d4d3eb"
+    },
+    {
+      "chunk_id": "5aa76cfb2fe61ad008d939faa804af06bd0fd6cf6059c1e0fdc6a0013b2c49e7",
+      "parent_id": "be3172f5d4a36066b84254c0c41c70314cf7f4c7853f8fcbd6957f1e50ce1f79",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/quan-li-dang-ki-hoc-va-thu-tien/chinh-sua-clear-outstanding.md",
+      "doc_title": "Chỉnh sửa (Clear Outstanding)",
+      "breadcrumb": [
+        "quan-li-dang-ki-hoc-va-thu-tien",
+        "chinh-sua-clear-outstanding"
+      ],
+      "section": "quan-li-dang-ki-hoc-va-thu-tien",
+      "product": "EMS",
+      "heading_path": "Chỉnh sửa (Clear Outstanding)",
+      "content": "[Quan Li Dang Ki Hoc Va Thu Tien > Chinh Sua Clear Outstanding] Chỉnh sửa (Clear Outstanding)\n\n(\\*): **Enrollment Date** : Có thể lựa chọn thời gian thực hiện thao tác Clear Outstanding học viên (Lưu  : Khi chọn thời gian này doanh thu phân bổ sẽ phân bổ tính từ thời điểm bạn chọn thời gian Enrollment học viên ).\n\n:stop\\_button: Add thêm học viên hàng loạt, có thể chọn hàng loạt hoặc chọn từng học viên.\n\n3\\. Chọn Payment để Enroll học viên (Mặc định hệ thống sẽ tự chọn Payment nếu như KOC của lớp học và KOC của payment cùng chung 1 Chương trình học )\n\n[IMAGE: data/images/15c283c906c1b4073bb75d25a64511ff.png]\n\n> **Lưu ý:** :point\\_right: Nếu như Payment có KOC khác với KOC của lớp học, hệ thống sẽ hiện thị thông báo như bên dưới. Nếu chúng ta vẫn sử dụng gói học này để tiếp tục enroll cho học viên, chọn \"**Đồng Ý**\".\n\n[IMAGE: data/images/9cf3dff0f89af582306a6c89f659e018.jpg]\n\n> **Bước 4:** Màn hình hiển thị thông tin học viên sau khi chỉnh sửa Enroll thành công.\n\n[IMAGE: data/images/56f2730929387e4eaeb1a2d7ce43b7b4.png]\n\n> *Video hướng dẫn xóa khoản học nợ*",
+      "raw_text": "(\\*): **Enrollment Date** : Có thể lựa chọn thời gian thực hiện thao tác Clear Outstanding học viên (Lưu  : Khi chọn thời gian này doanh thu phân bổ sẽ phân bổ tính từ thời điểm bạn chọn thời gian Enrollment học viên ).\n\n:stop\\_button: Add thêm học viên hàng loạt, có thể chọn hàng loạt hoặc chọn từng học viên.\n\n3\\. Chọn Payment để Enroll học viên (Mặc định hệ thống sẽ tự chọn Payment nếu như KOC của lớp học và KOC của payment cùng chung 1 Chương trình học )\n\n[IMAGE: data/images/15c283c906c1b4073bb75d25a64511ff.png]\n\n> **Lưu ý:** :point\\_right: Nếu như Payment có KOC khác với KOC của lớp học, hệ thống sẽ hiện thị thông báo như bên dưới. Nếu chúng ta vẫn sử dụng gói học này để tiếp tục enroll cho học viên, chọn \"**Đồng Ý**\".\n\n[IMAGE: data/images/9cf3dff0f89af582306a6c89f659e018.jpg]\n\n> **Bước 4:** Màn hình hiển thị thông tin học viên sau khi chỉnh sửa Enroll thành công.\n\n[IMAGE: data/images/56f2730929387e4eaeb1a2d7ce43b7b4.png]\n\n> *Video hướng dẫn xóa khoản học nợ*",
+      "token_count": 268,
+      "content_hash": "5aa76cfb2fe61ad008d939faa804af06bd0fd6cf6059c1e0fdc6a0013b2c49e7"
+    },
+    {
+      "chunk_id": "6578fd804345425d1b6ac759ea999c19840c540621936317e424a9bb0a1b998e",
+      "parent_id": "6578fd804345425d1b6ac759ea999c19840c540621936317e424a9bb0a1b998e",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/admin-guide/cau-hinh-dropdown-editor/cau-hinh-dropdown-channel.md",
+      "doc_title": "Cấu hình Dropdown Channel",
+      "breadcrumb": [
+        "admin-guide",
+        "cau-hinh-dropdown-editor",
+        "cau-hinh-dropdown-channel"
+      ],
+      "section": "admin-guide",
+      "product": "EMS",
+      "heading_path": "Cấu hình Dropdown Channel",
+      "content": "[Admin Guide > Cau Hinh Dropdown Editor > Cau Hinh Dropdown Channel] Cấu hình Dropdown Channel\n\n# Cấu hình Dropdown Channel\n\n> **Bước 1:**  Tại Avatar người dùng, bấm chuột vào **Admin** để mở ra màn hình **Admin.**\n\n[IMAGE: data/images/0276033ce49623d1487c87298227b020.png]\n\n> **Bước 2:** Tại màn hình module Admin, nhấp chuột chọn **Dropdown Editor.**\n\n[IMAGE: data/images/31b40338275a8dcf0b370d9d2b50d702.png]\n\n> **Bước 3**: Tại màn hình Dropdown, lựa chọn mục **utm\\_source\\_list.**\n\n[IMAGE: data/images/29ebd1aa4203850b1643d5af13eec2a1.png]\n\n> **Bước 4:** Nhập thông tin cần thêm cho chương trình cần cài đặt ở mục Item Name và Display Name (**Lưu ý**: 2 thông tin này nhập giống nhau). Sau đó bấm **Add**. Cuối cùng bấm **Save** để hoàn tất.\n\n[IMAGE: data/images/74a29d7d0c6f29853410d620d6c6bb7f.png]\n\n> **Lưu ý:** **Ghi chú:**&#x20;\n\n1. **Edit**: Chỉnh sửa tên hiển thị của Item\n2. **Remove**: Xoá Item\n3. **Item Name**: Tên định danh Item\n4. **Display Label:** Tên hiển thị của Item trong Dropdown (Có thể thay đổi trường thông tin này theo ngôn ngữ của hệ thống đang sử dụng)\n5. **Add**: Thêm giá trị **Item** mới vào **List Items**",
+      "raw_text": "# Cấu hình Dropdown Channel\n\n> **Bước 1:**  Tại Avatar người dùng, bấm chuột vào **Admin** để mở ra màn hình **Admin.**\n\n[IMAGE: data/images/0276033ce49623d1487c87298227b020.png]\n\n> **Bước 2:** Tại màn hình module Admin, nhấp chuột chọn **Dropdown Editor.**\n\n[IMAGE: data/images/31b40338275a8dcf0b370d9d2b50d702.png]\n\n> **Bước 3**: Tại màn hình Dropdown, lựa chọn mục **utm\\_source\\_list.**\n\n[IMAGE: data/images/29ebd1aa4203850b1643d5af13eec2a1.png]\n\n> **Bước 4:** Nhập thông tin cần thêm cho chương trình cần cài đặt ở mục Item Name và Display Name (**Lưu ý**: 2 thông tin này nhập giống nhau). Sau đó bấm **Add**. Cuối cùng bấm **Save** để hoàn tất.\n\n[IMAGE: data/images/74a29d7d0c6f29853410d620d6c6bb7f.png]\n\n> **Lưu ý:** **Ghi chú:**&#x20;\n\n1. **Edit**: Chỉnh sửa tên hiển thị của Item\n2. **Remove**: Xoá Item\n3. **Item Name**: Tên định danh Item\n4. **Display Label:** Tên hiển thị của Item trong Dropdown (Có thể thay đổi trường thông tin này theo ngôn ngữ của hệ thống đang sử dụng)\n5. **Add**: Thêm giá trị **Item** mới vào **List Items**",
+      "token_count": 285,
+      "content_hash": "6578fd804345425d1b6ac759ea999c19840c540621936317e424a9bb0a1b998e"
+    },
+    {
+      "chunk_id": "ee483d1821328e7f89167455fbcaf6aa706273d4470674da75a27677482564d4",
+      "parent_id": "ee483d1821328e7f89167455fbcaf6aa706273d4470674da75a27677482564d4",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/to-chuc-lop-hoc/doi-ngay-khai-giang.md",
+      "doc_title": "Đổi ngày khai giảng",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "to-chuc-lop-hoc",
+        "doi-ngay-khai-giang"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Đổi ngày khai giảng",
+      "content": "[Bo Phan Giao Vu > To Chuc Lop Hoc > Doi Ngay Khai Giang] Đổi ngày khai giảng\n\n# Đổi ngày khai giảng\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes**, nhấn chọn Lớp mà bạn muốn đổi ngày khai giảng.\n\n[IMAGE: data/images/4aa7569633d1cd26c608b9f2c7851649.png]\n\n> **Bước 2:** Tại màn hình Classes, nhấn vào Edit.\n\n[IMAGE: data/images/e7708836dc02b82041cdcc186dbe9684.png]\n\n> **Bước 3:** Tiếp theo chọn vào Change Start Date để thay đổi ngày khai giảng.\n\n[IMAGE: data/images/e3849b22f6a5d9886699c35e878a0cd2.png]\n\n> **Bước 4:** Tại màn hình chỉnh sửa ngày khai giảng, nhập đầy đủ các thông tin cần thiết. Sau đó nhấn Save để hoàn tất.\n\n[IMAGE: data/images/f11c66bf482faebb4faf3c7926a3e758.png]\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Chọn ngày khai giảng muốn thay đổi.\n2. Lý do thay đổi ngày khai giảng và có thể đổi lại lịch học mới (nếu muốn).\n3. Lịch học gần đây của lớp được tạo.\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Khi thay đổi ngày khai giảng (Change Start Date), tất cả các dữ liệu điểm danh của các buổi học đều sẽ bị mất\n\n> *Video hướng dẫn Đổi ngày khai giảng - Đổi lịch lớp*",
+      "raw_text": "# Đổi ngày khai giảng\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes**, nhấn chọn Lớp mà bạn muốn đổi ngày khai giảng.\n\n[IMAGE: data/images/4aa7569633d1cd26c608b9f2c7851649.png]\n\n> **Bước 2:** Tại màn hình Classes, nhấn vào Edit.\n\n[IMAGE: data/images/e7708836dc02b82041cdcc186dbe9684.png]\n\n> **Bước 3:** Tiếp theo chọn vào Change Start Date để thay đổi ngày khai giảng.\n\n[IMAGE: data/images/e3849b22f6a5d9886699c35e878a0cd2.png]\n\n> **Bước 4:** Tại màn hình chỉnh sửa ngày khai giảng, nhập đầy đủ các thông tin cần thiết. Sau đó nhấn Save để hoàn tất.\n\n[IMAGE: data/images/f11c66bf482faebb4faf3c7926a3e758.png]\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Chọn ngày khai giảng muốn thay đổi.\n2. Lý do thay đổi ngày khai giảng và có thể đổi lại lịch học mới (nếu muốn).\n3. Lịch học gần đây của lớp được tạo.\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Khi thay đổi ngày khai giảng (Change Start Date), tất cả các dữ liệu điểm danh của các buổi học đều sẽ bị mất\n\n> *Video hướng dẫn Đổi ngày khai giảng - Đổi lịch lớp*",
+      "token_count": 278,
+      "content_hash": "ee483d1821328e7f89167455fbcaf6aa706273d4470674da75a27677482564d4"
+    },
+    {
+      "chunk_id": "44ad7ae4f496bef085264a3d4bc357c6ffbaf4682d4fbf874ed7e5db7d816309",
+      "parent_id": "44ad7ae4f496bef085264a3d4bc357c6ffbaf4682d4fbf874ed7e5db7d816309",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/cap-nhat-thong-tin-tai-khoan.md",
+      "doc_title": "Cập nhật thông tin tài khoản",
+      "breadcrumb": [
+        "dotb-metrikal",
+        "quan-ly-tai-khoan",
+        "cap-nhat-thong-tin-tai-khoan"
+      ],
+      "section": "dotb-metrikal",
+      "product": "Metrikal",
+      "heading_path": "Cập nhật thông tin tài khoản",
+      "content": "[Dotb Metrikal > Quan Ly Tai Khoan > Cap Nhat Thong Tin Tai Khoan] Cập nhật thông tin tài khoản\n\n# Cập nhật thông tin tài khoản\n\n> Bước 1: Tại màn hình truy cập của App, người dùng click chọn vào biểu tượng **Tài khoản**\n\n[IMAGE: data/images/0c7e177237d3867d580744d55d01eb1a.png]\n\n> **Bước 2**: Chọn **Edit** để cập nhật thông tin tài khoản\n\n[IMAGE: data/images/68388fa1cf37d8782e6a26c4ea7ca7e3.png]\n\n> **Bước  3:** Cập nhật thông tin người dùng, sau đó chọn **Lưu**\n\n[IMAGE: data/images/c83b829995f91a05046c8f116237b5a2.png]",
+      "raw_text": "# Cập nhật thông tin tài khoản\n\n> Bước 1: Tại màn hình truy cập của App, người dùng click chọn vào biểu tượng **Tài khoản**\n\n[IMAGE: data/images/0c7e177237d3867d580744d55d01eb1a.png]\n\n> **Bước 2**: Chọn **Edit** để cập nhật thông tin tài khoản\n\n[IMAGE: data/images/68388fa1cf37d8782e6a26c4ea7ca7e3.png]\n\n> **Bước  3:** Cập nhật thông tin người dùng, sau đó chọn **Lưu**\n\n[IMAGE: data/images/c83b829995f91a05046c8f116237b5a2.png]",
+      "token_count": 131,
+      "content_hash": "44ad7ae4f496bef085264a3d4bc357c6ffbaf4682d4fbf874ed7e5db7d816309"
+    },
+    {
+      "chunk_id": "2c0098bf6e2ea0d8c99a0d43aa6df594949847aa91e53ba6a7c32314c6130e18",
+      "parent_id": "2c0098bf6e2ea0d8c99a0d43aa6df594949847aa91e53ba6a7c32314c6130e18",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/convert-lead-chuyen-doi-lead/chuyen-doi-tu-lead-thanh-student.md",
+      "doc_title": "Chuyển đổi từ Lead thành Student",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "lead",
+        "convert-lead-chuyen-doi-lead",
+        "chuyen-doi-tu-lead-thanh-student"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Chuyển đổi từ Lead thành Student",
+      "content": "[Tuyen Sinh Ban Hang > Lead > Convert Lead Chuyen Doi Lead > Chuyen Doi Tu Lead Thanh Student] Chuyển đổi từ Lead thành Student\n\n# Chuyển đổi từ Lead thành Student\n\n> **Bước 1:** Ở màn hình danh sách của module Leads, chọn Lead muốn chuyển đổi thành HV chính thức.\n\n[IMAGE: data/images/5bb6c728913e68c5bab50af55da85c09.png]\n\n> **Bước 2:**&#x20;\r> Tại màn hình thông tin chi tiết của Lead, chọn **Convert to Student** để chuyển đổi HV chính thức.\n\n[IMAGE: data/images/85a4c2643adaa832a9dc1231a8a27339.png]\n\n> **Bước 3:** Hệ thống chuyển sang màn hình tạo mới Students, nhập thông tin được yêu cầu thêm và chọn “Create Student” hoàn tất chuyển đổi.\n\n[IMAGE: data/images/ce426a828aa1648bc660e26b2613822d.png]\n\n> **Bước 4:** Hệ thống hiển thị thông tin Student mới được tạo. Trạng thái của Student sẽ là **Waiting to class**. Đồng thời, trạng thái của Leads sẽ được cập nhật là **Converted**.\n\n[IMAGE: data/images/55b63ec8e82e4c1703e12986ee571ab7.png]\n\n> *Video hướng dẫn Convert từ Lead thành Student*",
+      "raw_text": "# Chuyển đổi từ Lead thành Student\n\n> **Bước 1:** Ở màn hình danh sách của module Leads, chọn Lead muốn chuyển đổi thành HV chính thức.\n\n[IMAGE: data/images/5bb6c728913e68c5bab50af55da85c09.png]\n\n> **Bước 2:**&#x20;\r> Tại màn hình thông tin chi tiết của Lead, chọn **Convert to Student** để chuyển đổi HV chính thức.\n\n[IMAGE: data/images/85a4c2643adaa832a9dc1231a8a27339.png]\n\n> **Bước 3:** Hệ thống chuyển sang màn hình tạo mới Students, nhập thông tin được yêu cầu thêm và chọn “Create Student” hoàn tất chuyển đổi.\n\n[IMAGE: data/images/ce426a828aa1648bc660e26b2613822d.png]\n\n> **Bước 4:** Hệ thống hiển thị thông tin Student mới được tạo. Trạng thái của Student sẽ là **Waiting to class**. Đồng thời, trạng thái của Leads sẽ được cập nhật là **Converted**.\n\n[IMAGE: data/images/55b63ec8e82e4c1703e12986ee571ab7.png]\n\n> *Video hướng dẫn Convert từ Lead thành Student*",
+      "token_count": 249,
+      "content_hash": "2c0098bf6e2ea0d8c99a0d43aa6df594949847aa91e53ba6a7c32314c6130e18"
+    },
+    {
+      "chunk_id": "5e646ec90045ec1d681ddaf32856ab9a36c89e4d93188b57752315a4e136a6c8",
+      "parent_id": "5e646ec90045ec1d681ddaf32856ab9a36c89e4d93188b57752315a4e136a6c8",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay.md",
+      "doc_title": "Quản lý bảo lưu - Delay",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "quan-li-su-vu",
+        "quan-li-delay"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Quản lý bảo lưu - Delay",
+      "content": "[Bo Phan Giao Vu > Quan Li Su Vu > Quan Li Delay] Quản lý bảo lưu - Delay\n\n# Quản lý bảo lưu - Delay\n\n> *Video hướng dẫn bảo lưu học viên*",
+      "raw_text": "# Quản lý bảo lưu - Delay\n\n> *Video hướng dẫn bảo lưu học viên*",
+      "token_count": 34,
+      "content_hash": "5e646ec90045ec1d681ddaf32856ab9a36c89e4d93188b57752315a4e136a6c8"
+    },
+    {
+      "chunk_id": "37cf45b3c4c0b562452a8e498dd8549d85bbe7cb037314f836e6c5c9653e7a02",
+      "parent_id": "37cf45b3c4c0b562452a8e498dd8549d85bbe7cb037314f836e6c5c9653e7a02",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bao-cao-bao-bieu-bod.md",
+      "doc_title": "Báo cáo - Báo biểu BOD",
+      "breadcrumb": [
+        "bao-cao-bao-bieu-bod"
+      ],
+      "section": "bao-cao-bao-bieu-bod",
+      "product": "EMS",
+      "heading_path": "Báo cáo - Báo biểu BOD",
+      "content": "[Bao Cao Bao Bieu Bod] Báo cáo - Báo biểu BOD\n\n# Báo cáo - Báo biểu BOD\n\n> *Video hướng dẫn xem báo cáo*",
+      "raw_text": "# Báo cáo - Báo biểu BOD\n\n> *Video hướng dẫn xem báo cáo*",
+      "token_count": 26,
+      "content_hash": "37cf45b3c4c0b562452a8e498dd8549d85bbe7cb037314f836e6c5c9653e7a02"
+    },
+    {
+      "chunk_id": "d002698d9e3acad2a056ac150be656d87ec9ddb03beb21780a7c985c261708eb",
+      "parent_id": "d002698d9e3acad2a056ac150be656d87ec9ddb03beb21780a7c985c261708eb",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps.md",
+      "doc_title": "CẬP NHẬT MOBILE APPS",
+      "breadcrumb": [
+        "tinh-nang-cap-nhat-moi",
+        "cap-nhat-mobile-apps"
+      ],
+      "section": "tinh-nang-cap-nhat-moi",
+      "product": "EMS",
+      "heading_path": "CẬP NHẬT MOBILE APPS > [4.Cập nhật thông tin Bảng tin](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/cap-nhat-bang-tin) :&#x20;",
+      "content": "[Tinh Nang Cap Nhat Moi > Cap Nhat Mobile Apps] CẬP NHẬT MOBILE APPS > [4.Cập nhật thông tin Bảng tin](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/cap-nhat-bang-tin) :&#x20;\n\n# CẬP NHẬT MOBILE APPS\n\n## [1.App Giáo viên thêm tính năng upload thư viện ảnh](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/giao-vien-upload-thu-vien-anh)\n\n## [2.App học viên cho phép đăng tải Video, file trong Phản hồi](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/phan-hoi-cho-phep-dang-tai-video)\n\n## [3.Thư viện ảnh cập nhật tương tác Like/Comment](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/thu-vien-anh-cap-nhat-tuong-tac-like-comment)\n\n## [4.Cập nhật thông tin Bảng tin](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/cap-nhat-bang-tin) :&#x20;\n\n* Tại màn hình trang chủ, thay vì hiển thị tất cả tin tức thì chỉ hiện 4 tin gần nhất.\n* Bổ sung nút \"Xem tất cả\", khi bấm sẽ hiển thị tất cả tin tức được đăng.\n* Bổ sung đếm lượt xem tin tức.\n* Bổ sung thao tác khi nhấn vào bài đăng",
+      "raw_text": "# CẬP NHẬT MOBILE APPS\n\n## [1.App Giáo viên thêm tính năng upload thư viện ảnh](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/giao-vien-upload-thu-vien-anh)\n\n## [2.App học viên cho phép đăng tải Video, file trong Phản hồi](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/phan-hoi-cho-phep-dang-tai-video)\n\n## [3.Thư viện ảnh cập nhật tương tác Like/Comment](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/thu-vien-anh-cap-nhat-tuong-tac-like-comment)\n\n## [4.Cập nhật thông tin Bảng tin](https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-mobile-apps/cap-nhat-bang-tin) :&#x20;\n\n* Tại màn hình trang chủ, thay vì hiển thị tất cả tin tức thì chỉ hiện 4 tin gần nhất.\n* Bổ sung nút \"Xem tất cả\", khi bấm sẽ hiển thị tất cả tin tức được đăng.\n* Bổ sung đếm lượt xem tin tức.\n* Bổ sung thao tác khi nhấn vào bài đăng",
+      "token_count": 265,
+      "content_hash": "d002698d9e3acad2a056ac150be656d87ec9ddb03beb21780a7c985c261708eb"
+    },
+    {
+      "chunk_id": "dcc6cdc71386340e917c4ab56d71264b07683af1e3f0aeff7e030b4e0a0b1454",
+      "parent_id": "efb0ee5c5028da750666bcfbabedca1cab9c08c5eb7399356d822ebed3f82b64",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/tich-hop-landing-pages-website/tich-hop-voi-ladipage.vn.md",
+      "doc_title": "Tích hợp với Ladipage.vn",
+      "breadcrumb": [
+        "nhom-tinh-nang-tiep-thi",
+        "tich-hop-landing-pages-website",
+        "tich-hop-voi-ladipage.vn"
+      ],
+      "section": "nhom-tinh-nang-tiep-thi",
+      "product": "EMS",
+      "heading_path": "Tích hợp với Ladipage.vn",
+      "content": "[Nhom Tinh Nang Tiep Thi > Tich Hop Landing Pages Website > Tich Hop Voi Ladipage.Vn] Tích hợp với Ladipage.vn\n\n# Tích hợp với Ladipage.vn\n\n> **Bước 1:** Sau khi tạo xong Form điền thông tin, chọn **Lưu Data** để tiến hành cài đặt\n\n[IMAGE: data/images/cf9d28ff1a18f44102ebf8b5f228be5e.png]\n\n> **Bước 2:** Chọn **Thêm** để tạo Cấu hình Form mới\n\n[IMAGE: data/images/9c2a097b1bd4eb976297df0a488dbda8.png]\n\n> **Bước 3:** Chọn tài khoản liên kết: **Tích hợp lưu data từ form về bên thứ 3 qua cổng API**\n\n[IMAGE: data/images/09961f9103940cbc2c09c432bf32eafd.png]\n\n> **Bước 4:** **Cấu hình tài khoản liên kết:** Điền các thông tin cần thiết và đồng bộ các trường dữ liệu theo hướng dẫn, sau đó **Lưu lại.**\n\n[IMAGE: data/images/dbddbdc06de3f542c19da25d740e0f56.png]\n\n> **Lưu ý:** **Hướng dẫn**:\n\n1. **Tên liên kết**: Là tên gợi nhắc cho cấu hình lưu trữ này.\n2. **API URL:** Là đường dẫn url api mà bạn sẽ ghi nhận dữ liệu từ LadiPage.\n\nĐiền API URL theo mẫu: [**https://api.dotb.cloud/**](https://api.dotb.cloud/) **+&#x20;****tên miền EMS** . Ví dụ: Trung tâm ABC English có tên miền sử dụng EMS là **abc.dotb.cloud** và muốn:\n\n* **Đổ dữ liệu về module Targets (KH Mục tiêu)**  thì API URL là: [**https://api.dotb.cloud/****abc.dotb.cloud/#Prospects**](https://api.dotb.cloud/abc.dotb.cloud)\n   * **Đổ dữ liệu về module Leads (HV Tiềm năng)**  thì API URL là: [**https://api.dotb.cloud/****abc.dotb.cloud/#Leads**](https://api.dotb.cloud/abc.dotb.cloud)\n3. API Content Type -> **application/json**\n4. **Đồng bộ các trường thông tin:** Bên trái là các trường thông tin bạn đã tạo trên form ở Landing Page, bạn cần lấy Tên Lấy Dữ Liệu của các trường của form LadiPage (hình bên dưới). Bên phải là tên Trường dữ liệu tương ứng trên EMS (tham khảo bảng bên dưới)\n\n[IMAGE: data/images/0ac0e7dc937ffcb077d3684d88de457a.png]\n\n[IMAGE: data/images/bd2b7f29d15ff5f6964e9dae920b48fd.png]\n\n> **Lưu ý:** Lưu ý:&#x20;\n\n* Những trường dữ liệu khác, bạn có thể tham khảo thêm > hoặc liên hệ bộ phận CSKH để được tư vấn\n* Trường dữ liệu - EMS cần điền chính xác để có thể ghi nhận vào đúng Trường dữ liệu trên hệ thống.",
+      "raw_text": "# Tích hợp với Ladipage.vn\n\n> **Bước 1:** Sau khi tạo xong Form điền thông tin, chọn **Lưu Data** để tiến hành cài đặt\n\n[IMAGE: data/images/cf9d28ff1a18f44102ebf8b5f228be5e.png]\n\n> **Bước 2:** Chọn **Thêm** để tạo Cấu hình Form mới\n\n[IMAGE: data/images/9c2a097b1bd4eb976297df0a488dbda8.png]\n\n> **Bước 3:** Chọn tài khoản liên kết: **Tích hợp lưu data từ form về bên thứ 3 qua cổng API**\n\n[IMAGE: data/images/09961f9103940cbc2c09c432bf32eafd.png]\n\n> **Bước 4:** **Cấu hình tài khoản liên kết:** Điền các thông tin cần thiết và đồng bộ các trường dữ liệu theo hướng dẫn, sau đó **Lưu lại.**\n\n[IMAGE: data/images/dbddbdc06de3f542c19da25d740e0f56.png]\n\n> **Lưu ý:** **Hướng dẫn**:\n\n1. **Tên liên kết**: Là tên gợi nhắc cho cấu hình lưu trữ này.\n2. **API URL:** Là đường dẫn url api mà bạn sẽ ghi nhận dữ liệu từ LadiPage.\n\nĐiền API URL theo mẫu: [**https://api.dotb.cloud/**](https://api.dotb.cloud/) **+&#x20;****tên miền EMS** . Ví dụ: Trung tâm ABC English có tên miền sử dụng EMS là **abc.dotb.cloud** và muốn:\n\n* **Đổ dữ liệu về module Targets (KH Mục tiêu)**  thì API URL là: [**https://api.dotb.cloud/****abc.dotb.cloud/#Prospects**](https://api.dotb.cloud/abc.dotb.cloud)\n   * **Đổ dữ liệu về module Leads (HV Tiềm năng)**  thì API URL là: [**https://api.dotb.cloud/****abc.dotb.cloud/#Leads**](https://api.dotb.cloud/abc.dotb.cloud)\n3. API Content Type -> **application/json**\n4. **Đồng bộ các trường thông tin:** Bên trái là các trường thông tin bạn đã tạo trên form ở Landing Page, bạn cần lấy Tên Lấy Dữ Liệu của các trường của form LadiPage (hình bên dưới). Bên phải là tên Trường dữ liệu tương ứng trên EMS (tham khảo bảng bên dưới)\n\n[IMAGE: data/images/0ac0e7dc937ffcb077d3684d88de457a.png]\n\n[IMAGE: data/images/bd2b7f29d15ff5f6964e9dae920b48fd.png]\n\n> **Lưu ý:** Lưu ý:&#x20;\n\n* Những trường dữ liệu khác, bạn có thể tham khảo thêm > hoặc liên hệ bộ phận CSKH để được tư vấn\n* Trường dữ liệu - EMS cần điền chính xác để có thể ghi nhận vào đúng Trường dữ liệu trên hệ thống.",
+      "token_count": 524,
+      "content_hash": "dcc6cdc71386340e917c4ab56d71264b07683af1e3f0aeff7e030b4e0a0b1454"
+    },
+    {
+      "chunk_id": "79cd3d40968b0045f61f771913c97130a799a922b4af07a9ec7f2147642656c7",
+      "parent_id": "efb0ee5c5028da750666bcfbabedca1cab9c08c5eb7399356d822ebed3f82b64",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/tich-hop-landing-pages-website/tich-hop-voi-ladipage.vn.md",
+      "doc_title": "Tích hợp với Ladipage.vn",
+      "breadcrumb": [
+        "nhom-tinh-nang-tiep-thi",
+        "tich-hop-landing-pages-website",
+        "tich-hop-voi-ladipage.vn"
+      ],
+      "section": "nhom-tinh-nang-tiep-thi",
+      "product": "EMS",
+      "heading_path": "Tích hợp với Ladipage.vn",
+      "content": "[Nhom Tinh Nang Tiep Thi > Tich Hop Landing Pages Website > Tich Hop Voi Ladipage.Vn] Tích hợp với Ladipage.vn\n\nBạn có thể chọn **thêm tài khoản liên kết** khác cho Cấu hình này. Mỗi cấu hình được chứa tối đa 3 tài khoản liên kết, tương đương với 3 nguồn lưu trữ thông tin khách hàng đồng thời nhận được từ form đăng ký trên Landing Page.\n\n[IMAGE: data/images/79dac8df66daaa8b2c6d8b21d03db144.png]\n\n> **Bước 5:** Quay trở lại form trên trang Landing Page, chọn toàn form bạn đang muốn cài đặt và chọn **\"Lưu data\":**\n\n[IMAGE: data/images/43df3f2bf2ec57a7f5597a3396abd3a4.png]\n\n> **Bước 6:** Chọn cấu hình phù hợp trong danh sách cấu hình form đã được cài đặt ở bước 5, sau đó bấm **Cập nhật** để hoàn thành.\n\nBạn có thể tham khảo thêm Hướng dẫn **Lưu data về API** của Langdipage.vn theo đường dẫn sau:",
+      "raw_text": "Bạn có thể chọn **thêm tài khoản liên kết** khác cho Cấu hình này. Mỗi cấu hình được chứa tối đa 3 tài khoản liên kết, tương đương với 3 nguồn lưu trữ thông tin khách hàng đồng thời nhận được từ form đăng ký trên Landing Page.\n\n[IMAGE: data/images/79dac8df66daaa8b2c6d8b21d03db144.png]\n\n> **Bước 5:** Quay trở lại form trên trang Landing Page, chọn toàn form bạn đang muốn cài đặt và chọn **\"Lưu data\":**\n\n[IMAGE: data/images/43df3f2bf2ec57a7f5597a3396abd3a4.png]\n\n> **Bước 6:** Chọn cấu hình phù hợp trong danh sách cấu hình form đã được cài đặt ở bước 5, sau đó bấm **Cập nhật** để hoàn thành.\n\nBạn có thể tham khảo thêm Hướng dẫn **Lưu data về API** của Langdipage.vn theo đường dẫn sau:",
+      "token_count": 200,
+      "content_hash": "79cd3d40968b0045f61f771913c97130a799a922b4af07a9ec7f2147642656c7"
+    },
+    {
+      "chunk_id": "129e8f3829116af9a43f5590c6214fa4f84f2d74643d5012f9872757982e1cb8",
+      "parent_id": "129e8f3829116af9a43f5590c6214fa4f84f2d74643d5012f9872757982e1cb8",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/to-chuc-lop-hoc/doi-lich-hoc-trong-khoang-thoi-gian-bat-ki.md",
+      "doc_title": "Đổi lịch học trong khoảng thời gian bất kì",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "to-chuc-lop-hoc",
+        "doi-lich-hoc-trong-khoang-thoi-gian-bat-ki"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Đổi lịch học trong khoảng thời gian bất kì",
+      "content": "[Bo Phan Giao Vu > To Chuc Lop Hoc > Doi Lich Hoc Trong Khoang Thoi Gian Bat Ki] Đổi lịch học trong khoảng thời gian bất kì\n\n# Đổi lịch học trong khoảng thời gian bất kì\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes**, sau đó chọn lớp muốn đổi lịch học.\n\n[IMAGE: data/images/4aa7569633d1cd26c608b9f2c7851649.png]\n\n> **Bước 2:** Tại màn hình Lớp, click chọn Edit.\n\n[IMAGE: data/images/e7708836dc02b82041cdcc186dbe9684.png]\n\n> **Bước 3:** Tiếp theo chọn vào Change Schedule để thay đổi lịch học.\n\n[IMAGE: data/images/e17c878fd02f8171255efb024ef3aeef.png]\n\n> **Bước 4:** Nhập đầy đủ thông tin, sau đó chọn **Save** để hoàn tất.\n\n[IMAGE: data/images/f9e7d53d6180c690ead7f56708b38e7a.jpg]\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Chọn khoảng thời gian thay đổi lịch học.\n2. Lý do thay đổi lịch học.\n3. Đổi lại lịch học mới (nếu có).\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Khi thay đổi lịch học trong khoảng thời gian bất kỳ, dữ liệu điểm danh của các buổi học trong khoảng thời gian thay đổi sẽ bị mất.\n\n> *Video hướng dẫn Đổi ngày khai giảng - Đổi lịch lớp*",
+      "raw_text": "# Đổi lịch học trong khoảng thời gian bất kì\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes**, sau đó chọn lớp muốn đổi lịch học.\n\n[IMAGE: data/images/4aa7569633d1cd26c608b9f2c7851649.png]\n\n> **Bước 2:** Tại màn hình Lớp, click chọn Edit.\n\n[IMAGE: data/images/e7708836dc02b82041cdcc186dbe9684.png]\n\n> **Bước 3:** Tiếp theo chọn vào Change Schedule để thay đổi lịch học.\n\n[IMAGE: data/images/e17c878fd02f8171255efb024ef3aeef.png]\n\n> **Bước 4:** Nhập đầy đủ thông tin, sau đó chọn **Save** để hoàn tất.\n\n[IMAGE: data/images/f9e7d53d6180c690ead7f56708b38e7a.jpg]\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Chọn khoảng thời gian thay đổi lịch học.\n2. Lý do thay đổi lịch học.\n3. Đổi lại lịch học mới (nếu có).\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Khi thay đổi lịch học trong khoảng thời gian bất kỳ, dữ liệu điểm danh của các buổi học trong khoảng thời gian thay đổi sẽ bị mất.\n\n> *Video hướng dẫn Đổi ngày khai giảng - Đổi lịch lớp*",
+      "token_count": 271,
+      "content_hash": "129e8f3829116af9a43f5590c6214fa4f84f2d74643d5012f9872757982e1cb8"
+    }
+  ],
+  "sample_parents": [
+    {
+      "chunk_id": "45b382638f73a6edf32273b1d0f2683b019cae6f3968cee798f50f62516ccf52",
+      "parent_id": null,
+      "chunk_type": "parent",
+      "doc_url": "https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-ems/tao-tin-tuc-va-gui-thong-bao-ve-app-hoc-vien.md",
+      "doc_title": "Tạo tin tức và gửi thông báo về app học viên",
+      "breadcrumb": [
+        "tinh-nang-cap-nhat-moi",
+        "cap-nhat-ems",
+        "tao-tin-tuc-va-gui-thong-bao-ve-app-hoc-vien"
+      ],
+      "section": "tinh-nang-cap-nhat-moi",
+      "product": "EMS",
+      "heading_path": "Tạo tin tức và gửi thông báo về app học viên",
+      "content": "[Tinh Nang Cap Nhat Moi > Cap Nhat Ems > Tao Tin Tuc Va Gui Thong Bao Ve App Hoc Vien] Tạo tin tức và gửi thông báo về app học viên\n\n# Tạo tin tức và gửi thông báo về app học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **News**, ta nhấn vào button **Create New** để mở ra màn hình thêm mới **New**.\n\n[IMAGE: data/images/2691c67d7063b0e25d49abca0e810ed1.jpg]\n\n> **Bước 2:** Tại màn hình tạo mới **News**, nhập đầy đủ các thông tin cần thiết, người dùng lưu ý rằng các trường (field) có chữ **Required** bắt buộc phải nhập thông tin vào, những field khác có thể bỏ qua, sau đó nhấn chọn button **Save** để hoàn tất việc tạo ra một **News** mới.\n\n[IMAGE: data/images/325b1743297af5aaba0af22322245486.jpg]\n\n> **Lưu ý:** **Lưu ý:**\n\n1. **Name - Tiêu đề**: sự kiện, hoạt động của trung tâm&#x20;\n2. **Post Url - Đường dẫn URL**: có thể không cần đường dẫn đến trang URL\n3. **Type - Loại**: phần tin tức này gửi cho Giáo viên hoặc học viên\n4. **Content**: soạn nội dung tin tức (cập nhật mới)\n5. **Pin For Student App - Ghim App học viên**: Bài đăng xuất hiện trên màn hình trang chủ của Mobile App\n\n> **Bước 3:** Hệ thống hiển thị thông tin chi tiết của **News** được tạo.\n\n[IMAGE: data/images/0a75aab5bf812eabae38185ad6fc1e01.jpg]\n\n> *Nội dung hiển thị của app khi tin tức được soạn content*.\n\n[IMAGE: data/images/52521cd5f0d25dc34c26d30ab5fa643f.jpg]",
+      "raw_text": "# Tạo tin tức và gửi thông báo về app học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **News**, ta nhấn vào button **Create New** để mở ra màn hình thêm mới **New**.\n\n[IMAGE: data/images/2691c67d7063b0e25d49abca0e810ed1.jpg]\n\n> **Bước 2:** Tại màn hình tạo mới **News**, nhập đầy đủ các thông tin cần thiết, người dùng lưu ý rằng các trường (field) có chữ **Required** bắt buộc phải nhập thông tin vào, những field khác có thể bỏ qua, sau đó nhấn chọn button **Save** để hoàn tất việc tạo ra một **News** mới.\n\n[IMAGE: data/images/325b1743297af5aaba0af22322245486.jpg]\n\n> **Lưu ý:** **Lưu ý:**\n\n1. **Name - Tiêu đề**: sự kiện, hoạt động của trung tâm&#x20;\n2. **Post Url - Đường dẫn URL**: có thể không cần đường dẫn đến trang URL\n3. **Type - Loại**: phần tin tức này gửi cho Giáo viên hoặc học viên\n4. **Content**: soạn nội dung tin tức (cập nhật mới)\n5. **Pin For Student App - Ghim App học viên**: Bài đăng xuất hiện trên màn hình trang chủ của Mobile App\n\n> **Bước 3:** Hệ thống hiển thị thông tin chi tiết của **News** được tạo.\n\n[IMAGE: data/images/0a75aab5bf812eabae38185ad6fc1e01.jpg]\n\n> *Nội dung hiển thị của app khi tin tức được soạn content*.\n\n[IMAGE: data/images/52521cd5f0d25dc34c26d30ab5fa643f.jpg]",
+      "token_count": 338,
+      "content_hash": "45b382638f73a6edf32273b1d0f2683b019cae6f3968cee798f50f62516ccf52"
+    },
+    {
+      "chunk_id": "21e0f9621f639c982f562356bbd9825187cc212ee765b236809009f47aba8480",
+      "parent_id": null,
+      "chunk_type": "parent",
+      "doc_url": "https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan.md",
+      "doc_title": "Quản lý tài khoản",
+      "breadcrumb": [
+        "dotb-metrikal",
+        "quan-ly-tai-khoan"
+      ],
+      "section": "dotb-metrikal",
+      "product": "Metrikal",
+      "heading_path": "Quản lý tài khoản",
+      "content": "[Dotb Metrikal > Quan Ly Tai Khoan] Quản lý tài khoản\n\n# Quản lý tài khoản\n\n- [Cập nhật thông tin tài khoản](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/cap-nhat-thong-tin-tai-khoan.md)\n- [Quản lý cảnh báo](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/quan-ly-canh-bao.md)\n- [Tài khoản và bảo mật](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/tai-khoan-va-bao-mat.md)\n- [Giao diện và ngôn ngữ](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/giao-dien-va-ngon-ngu.md)",
+      "raw_text": "# Quản lý tài khoản\n\n- [Cập nhật thông tin tài khoản](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/cap-nhat-thong-tin-tai-khoan.md)\n- [Quản lý cảnh báo](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/quan-ly-canh-bao.md)\n- [Tài khoản và bảo mật](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/tai-khoan-va-bao-mat.md)\n- [Giao diện và ngôn ngữ](https://help.dotb.vn/dotb-metrikal/quan-ly-tai-khoan/giao-dien-va-ngon-ngu.md)",
+      "token_count": 124,
+      "content_hash": "21e0f9621f639c982f562356bbd9825187cc212ee765b236809009f47aba8480"
+    },
+    {
+      "chunk_id": "dfba9018dd5a48708a89ef35faff63f0dbeec6f79712f0b26c05baf88ab2858f",
+      "parent_id": null,
+      "chunk_type": "parent",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-ly-diem-tich-luy-loyalty/su-dung-diem-loyalty.md",
+      "doc_title": "Sử dụng điểm Loyalty",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "quan-li-su-vu",
+        "quan-ly-diem-tich-luy-loyalty",
+        "su-dung-diem-loyalty"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Sử dụng điểm Loyalty",
+      "content": "[Bo Phan Giao Vu > Quan Li Su Vu > Quan Ly Diem Tich Luy Loyalty > Su Dung Diem Loyalty] Sử dụng điểm Loyalty\n\n# Sử dụng điểm Loyalty\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: Mỗi điểm học viên tích được sẽ được đổi thành tiền và trừ ra cho payment học viên thanh toán, **1 Điểm** sẽ tương đương với **1000 VNĐ**\n\n> **Bước 1:** Tại màn hình thanh toán ví dụ với thanh toán Book/Gift, chọn **Loyalty** sau đó nhấn vào button **Use Loyalty**, nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/fdb904935928af57373518ca0081120a.png]\n\n> **Bước 2:** Màn hình nhập số điểm Loyalty học viên hiện lên, user chỉ cần nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/bf1c2f3e849619c606183f014ebaf295.png]\n\n> **Bước 3:** Hệ thống sẽ tự động trừ số tiền học viên sau thanh toán.\n\n[IMAGE: data/images/de9267488d20fa875bc76597f866ad65.png]\n\n> **Bước 4:** Hệ thống hiển thị thông tin chi tiết của Payment sau khi Save thành công.\n\n[IMAGE: data/images/c4ab60f8a622dbbd0a8d1f5b0c8f86fd.png]",
+      "raw_text": "# Sử dụng điểm Loyalty\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: Mỗi điểm học viên tích được sẽ được đổi thành tiền và trừ ra cho payment học viên thanh toán, **1 Điểm** sẽ tương đương với **1000 VNĐ**\n\n> **Bước 1:** Tại màn hình thanh toán ví dụ với thanh toán Book/Gift, chọn **Loyalty** sau đó nhấn vào button **Use Loyalty**, nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/fdb904935928af57373518ca0081120a.png]\n\n> **Bước 2:** Màn hình nhập số điểm Loyalty học viên hiện lên, user chỉ cần nhập số điểm mà học viên muốn sử dụng.\n\n[IMAGE: data/images/bf1c2f3e849619c606183f014ebaf295.png]\n\n> **Bước 3:** Hệ thống sẽ tự động trừ số tiền học viên sau thanh toán.\n\n[IMAGE: data/images/de9267488d20fa875bc76597f866ad65.png]\n\n> **Bước 4:** Hệ thống hiển thị thông tin chi tiết của Payment sau khi Save thành công.\n\n[IMAGE: data/images/c4ab60f8a622dbbd0a8d1f5b0c8f86fd.png]",
+      "token_count": 246,
+      "content_hash": "dfba9018dd5a48708a89ef35faff63f0dbeec6f79712f0b26c05baf88ab2858f"
+    },
+    {
+      "chunk_id": "daed70ef1c5d5fb5ce5d1a4cc179f19dbd0189a7ff04a539659aa1c8485c996f",
+      "parent_id": null,
+      "chunk_type": "parent",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/convert-lead-chuyen-doi-lead.md",
+      "doc_title": "Convert Lead - Chuyển đổi Lead",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "lead",
+        "convert-lead-chuyen-doi-lead"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Convert Lead - Chuyển đổi Lead",
+      "content": "[Tuyen Sinh Ban Hang > Lead > Convert Lead Chuyen Doi Lead] Convert Lead - Chuyển đổi Lead\n\n# Convert Lead - Chuyển đổi Lead\n\n> *Video hướng dẫn Chuyển đổi Lead thành Student - Case by case*",
+      "raw_text": "# Convert Lead - Chuyển đổi Lead\n\n> *Video hướng dẫn Chuyển đổi Lead thành Student - Case by case*",
+      "token_count": 47,
+      "content_hash": "daed70ef1c5d5fb5ce5d1a4cc179f19dbd0189a7ff04a539659aa1c8485c996f"
+    },
+    {
+      "chunk_id": "4a2bb17f76ef45f916f3a5c7e55320a14090bdd46f9693cbfa0895d4f27985ee",
+      "parent_id": null,
+      "chunk_type": "parent",
+      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/thong-tin-hoc-phi.md",
+      "doc_title": "Thông tin học phí",
+      "breadcrumb": [
+        "tinh-nang-danh-cho-parents-app-tren-crm",
+        "thong-tin-hoc-phi"
+      ],
+      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
+      "product": "EMS",
+      "heading_path": "Thông tin học phí",
+      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Thong Tin Hoc Phi] Thông tin học phí\n\n# Thông tin học phí",
+      "raw_text": "# Thông tin học phí",
+      "token_count": 25,
+      "content_hash": "4a2bb17f76ef45f916f3a5c7e55320a14090bdd46f9693cbfa0895d4f27985ee"
+    }
+  ]
+}

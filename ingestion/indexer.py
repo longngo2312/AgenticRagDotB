@@ -11,32 +11,93 @@ Idempotency: chunks are upserted by chunk_id.
   - The run_ingestion script compares content_hash before calling this to skip
     unchanged documents entirely.
 """
-# TODO D2-22: import json, chromadb, tqdm
-#             import Chunk from ingestion.chunker
-#             import embed_texts from ingestion.embedder
-#             import CHROMA_DIR, CHROMA_CHILD_COLLECTION, PARENTS_PATH from config
+import json
+import sys
+from pathlib import Path
 
-# TODO D2-23: def get_chroma_client() -> chromadb.PersistentClient
-#   - CHROMA_DIR.mkdir(parents=True, exist_ok=True)
-#   - return chromadb.PersistentClient(path=str(CHROMA_DIR))
+import chromadb
+from tqdm import tqdm
 
-# TODO D2-24: def _chunk_to_metadata(chunk: Chunk) -> dict
-#   - ChromaDB metadata must be flat (str/int/float only)
-#   - serialize breadcrumb list as json.dumps(chunk.breadcrumb)
-#   - include: parent_id, chunk_type, doc_url, doc_title, breadcrumb (json str),
-#              section, product, heading_path, raw_text, token_count, content_hash
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from config import CHROMA_DIR, CHROMA_CHILD_COLLECTION, PARENTS_PATH
+from ingestion.chunker import Chunk
+from ingestion.embedder import embed_texts
 
-# TODO D2-25: def load_parents() -> dict  /  def save_parents(parents: dict)
-#   - load/save PARENTS_PATH as JSON (dict keyed by parent_id → {content, metadata})
-#   - return empty dict if file doesn't exist
 
-# TODO D2-26: def index_chunks(chunks: list[Chunk], batch_size=50) -> dict
-#   - split into children and parents
-#   - CHILDREN → ChromaDB:
-#       * get_or_create_collection(CHROMA_CHILD_COLLECTION, metadata={'hnsw:space':'cosine'})
-#       * batch loop with tqdm: embed texts → col.upsert(ids, embeddings, documents, metadatas)
-#   - PARENTS → JSON file:
-#       * load existing parents dict
-#       * upsert by chunk_id: {content: chunk.content, metadata: _chunk_to_metadata(chunk)}
-#       * save_parents()
-#   - return {'children_indexed': N, 'parents_indexed': M, 'total_chunks': T}
+def get_chroma_client() -> chromadb.PersistentClient:
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+    return chromadb.PersistentClient(path=str(CHROMA_DIR))
+
+
+def _chunk_to_metadata(chunk: Chunk) -> dict:
+    return {
+        "parent_id": chunk.parent_id or "",
+        "chunk_type": chunk.chunk_type,
+        "doc_url": chunk.doc_url,
+        "doc_title": chunk.doc_title,
+        "breadcrumb": json.dumps(chunk.breadcrumb, ensure_ascii=False),
+        "section": chunk.section,
+        "product": chunk.product,
+        "heading_path": chunk.heading_path,
+        "raw_text": chunk.raw_text,
+        "token_count": chunk.token_count,
+        "content_hash": chunk.content_hash,
+    }
+
+
+def load_parents() -> dict:
+    if PARENTS_PATH.exists():
+        return json.loads(PARENTS_PATH.read_text(encoding="utf-8"))
+    return {}
+
+
+def save_parents(parents: dict) -> None:
+    PARENTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    PARENTS_PATH.write_text(json.dumps(parents, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def index_chunks(chunks: list[Chunk], batch_size: int = 20) -> dict:
+    children = [c for c in chunks if c.chunk_type == "child"]
+    parents = [c for c in chunks if c.chunk_type == "parent"]
+
+    # ── Children → ChromaDB ────────────────────────────────────────────────────
+    client = get_chroma_client()
+    col = client.get_or_create_collection(
+        CHROMA_CHILD_COLLECTION,
+        metadata={"hnsw:space": "cosine"},
+    )
+
+    # Resumable: chunk_id is a content hash, so anything already in the
+    # collection is unchanged and can be skipped (saves scarce embedding quota).
+    existing_ids = set(col.get(include=[])["ids"])
+    todo = [c for c in children if c.chunk_id not in existing_ids]
+    skipped = len(children) - len(todo)
+    if skipped:
+        print(f"  Skipping {skipped} children already indexed (unchanged)")
+
+    for i in tqdm(range(0, len(todo), batch_size), desc="  Embedding+indexing children"):
+        batch = todo[i : i + batch_size]
+        texts = [c.content for c in batch]
+        embeddings = embed_texts(texts, task_type="RETRIEVAL_DOCUMENT")
+        col.upsert(
+            ids=[c.chunk_id for c in batch],
+            embeddings=embeddings,
+            documents=texts,
+            metadatas=[_chunk_to_metadata(c) for c in batch],
+        )
+
+    # ── Parents → JSON file ─────────────────────────────────────────────────────
+    parents_store = load_parents()
+    for p in parents:
+        parents_store[p.chunk_id] = {
+            "content": p.content,
+            "metadata": _chunk_to_metadata(p),
+        }
+    save_parents(parents_store)
+
+    return {
+        "children_indexed": len(todo),
+        "children_skipped": skipped,
+        "parents_indexed": len(parents),
+        "total_chunks": len(chunks),
+    }

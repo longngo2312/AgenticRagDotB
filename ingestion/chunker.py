@@ -15,7 +15,6 @@ Token estimate: 1 token ≈ 4 chars (mixed Viet/English, no tiktoken needed)
 import hashlib
 import re
 import sys
-import uuid
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
@@ -75,23 +74,53 @@ def _build_heading_path(stack: list[tuple[int, str]]) -> str:
     return " > ".join(h for _, h in stack if h)
 
 
-def _split_into_children(text: str, max_tokens: int) -> list[str]:
-    paragraphs = re.split(r"\n{2,}", text)
-    children: list[str] = []
-    current_parts: list[str] = []
-    current_tokens = 0
+_IMAGE_RE = re.compile(r"^\[IMAGE:", re.IGNORECASE)
+_HINT_RE  = re.compile(r"^>\s*\*\*Lưu ý:\*\*")
 
+
+def _is_bond_backward(para: str) -> bool:
+    """
+    A paragraph that must stay glued to the step/text that precedes it:
+      - [IMAGE: ...] lines   (the screenshot illustrating the step above)
+      - > **Lưu ý:** ...     (a hint/note qualifying the step above)
+    Step markers (> Bước N / > Step N) are NOT bonded — they open a new block.
+    """
+    return bool(_IMAGE_RE.match(para) or _HINT_RE.match(para))
+
+
+def _merge_atomic_blocks(paragraphs: list[str]) -> list[str]:
+    """
+    Group paragraphs into atomic blocks: an image or hint attaches backward to
+    the preceding paragraph so `step text + image + hint` never gets split
+    across two child chunks. A block may exceed the child token budget — atomicity
+    wins over the size cap (the greedy splitter below emits it as a lone child).
+    """
+    blocks: list[list[str]] = []
     for para in paragraphs:
         para = para.strip()
         if not para:
             continue
-        t = estimate_tokens(para)
+        if _is_bond_backward(para) and blocks:
+            blocks[-1].append(para)
+        else:
+            blocks.append([para])
+    return ["\n\n".join(b) for b in blocks]
+
+
+def _split_into_children(text: str, max_tokens: int) -> list[str]:
+    blocks = _merge_atomic_blocks(re.split(r"\n{2,}", text))
+    children: list[str] = []
+    current_parts: list[str] = []
+    current_tokens = 0
+
+    for block in blocks:
+        t = estimate_tokens(block)
         if current_tokens + t > max_tokens and current_parts:
             children.append("\n\n".join(current_parts))
-            current_parts = [para]
+            current_parts = [block]
             current_tokens = t
         else:
-            current_parts.append(para)
+            current_parts.append(block)
             current_tokens += t
 
     if current_parts:
@@ -145,9 +174,11 @@ def chunk_document(doc: ParsedDocument) -> list[Chunk]:
         if not parent_raw:
             continue
 
-        parent_id = str(uuid.uuid4())
         parent_content = f"[{doc.breadcrumb_str}] {group_heading_path}\n\n{parent_raw}".strip()
         parent_hash = hashlib.sha256(parent_content.encode()).hexdigest()
+        # Deterministic ID = content hash → re-runs are idempotent (upsert is a
+        # true no-op for unchanged content) and embedding is resumable.
+        parent_id = parent_hash
 
         parent_chunk = Chunk(
             chunk_id=parent_id,
@@ -173,7 +204,7 @@ def chunk_document(doc: ParsedDocument) -> list[Chunk]:
             child_content = (prefix + child_raw).strip()
             child_hash = hashlib.sha256(child_content.encode()).hexdigest()
             chunks.append(Chunk(
-                chunk_id=str(uuid.uuid4()),
+                chunk_id=child_hash,
                 parent_id=parent_id,
                 chunk_type="child",
                 doc_url=doc.url,
