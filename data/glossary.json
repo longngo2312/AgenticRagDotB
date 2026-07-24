@@ -9,7 +9,7 @@
     "invoice":       ["hóa đơn", "hoá đơn điện tử", "xuất hóa đơn"],
     "cashholder":    ["người giữ tiền", "thu ngân", "quỹ"],
     "active student":["học viên đang học", "học viên hoạt động", "hv active"],
-    "void":          ["hủy", "vô hiệu hóa", "hủy hóa đơn"],
+    "void":          ["vô hiệu hóa", "hủy hóa đơn"],
     "receipt":       ["phiếu thu", "biên lai"],
     "payment":       ["thanh toán", "nộp tiền", "thu tiền"],
     "class":         ["lớp học", "lớp", "nhóm học"],

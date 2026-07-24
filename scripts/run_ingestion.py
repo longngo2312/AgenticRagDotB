@@ -33,6 +33,7 @@ from ingestion.parser import parse_document
 from ingestion.image_captioner import caption_document
 from ingestion.chunker import chunk_document
 from ingestion.indexer import index_chunks
+from retrieval.bm25_index import build_bm25_index
 from config import DATA_DIR
 
 
@@ -134,6 +135,10 @@ async def main(full: bool = False, caption: bool = False) -> None:
               f"({result['children_skipped']} already up to date), "
               f"{result['parents_indexed']} parents "
               f"({result['total_chunks']} total chunks)")
+
+        print("  Rebuilding BM25 index from ChromaDB...")
+        bm25_index = build_bm25_index()
+        print(f"  BM25 corpus: {len(bm25_index['chunk_ids'])} children")
         print("\n=== Ingestion complete ===")
     else:
         print("\n=== Stopped after chunking — review chunks_preview.json ===")

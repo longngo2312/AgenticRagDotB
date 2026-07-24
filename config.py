@@ -22,7 +22,8 @@ GOOGLE_API_KEY  = os.getenv("GOOGLE_API_KEY", "")
 # text-embedding-004 was retired from the Gemini Developer API; gemini-embedding-001
 # is Google's current multilingual embedding model (3072-dim, free tier).
 EMBEDDING_MODEL = "models/gemini-embedding-001"
-LLM_MODEL       = "gemini-1.5-flash"
+# gemini-1.5-flash was also retired; gemini-flash-latest is the current free-tier alias.
+LLM_MODEL       = "models/gemini-flash-latest"
 
 # ── Crawling ──────────────────────────────────────────────────────────────────
 LLMS_TXT_URL        = "https://help.dotb.vn/llms.txt"
@@ -43,6 +44,9 @@ RERANK_TOP_K            = 5
 RRF_K                   = 60    # RRF constant — 60 is standard
 RERANKER_MODEL          = "BAAI/bge-reranker-v2-m3"
 RERANK_SCORE_THRESHOLD  = 0.1   # below this → abstain
+
+# ── Query rewrite (Day 4) ──────────────────────────────────────────────────────
+REWRITE_HISTORY_TURNS = 3   # prior user/assistant turns fed to the condenser
 
 # ── Embedding API ─────────────────────────────────────────────────────────────
 EMBED_BATCH_SIZE      = 100
