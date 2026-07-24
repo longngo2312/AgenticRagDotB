@@ -1,0 +1,114 @@
+=== DotB RAG Ingestion Pipeline ===
+
+[1/4] Crawling help.dotb.vn...
+  Fetching index: https://help.dotb.vn/llms.txt
+  Found 247 pages in llms.txt
+  Downloading:   0%|          | 0/247 [00:00<?, ?page/s]  Downloading:   0%|          | 1/247 [00:00<02:21,  1.73page/s]  Downloading:   2%|2         | 5/247 [00:00<00:29,  8.29page/s]  Downloading:   3%|2         | 7/247 [00:01<00:30,  7.82page/s]  Downloading:   4%|4         | 11/247 [00:01<00:26,  9.03page/s]  Downloading:   6%|6         | 16/247 [00:01<00:22, 10.32page/s]  Downloading:   9%|8         | 21/247 [00:02<00:20, 10.89page/s]  Downloading:  11%|#         | 26/247 [00:02<00:19, 11.46page/s]  Downloading:  13%|#2        | 31/247 [00:03<00:18, 11.56page/s]  Downloading:  15%|#4        | 36/247 [00:03<00:17, 11.92page/s]  Downloading:  17%|#6        | 41/247 [00:03<00:17, 11.70page/s]  Downloading:  18%|#8        | 45/247 [00:04<00:15, 13.03page/s]  Downloading:  19%|#9        | 47/247 [00:04<00:15, 12.81page/s]  Downloading:  20%|##        | 50/247 [00:04<00:13, 14.27page/s]  Downloading:  21%|##1       | 52/247 [00:04<00:16, 12.09page/s]  Downloading:  23%|##2       | 56/247 [00:05<00:15, 12.03page/s]  Downloading:  24%|##4       | 60/247 [00:05<00:11, 15.60page/s]  Downloading:  26%|##5       | 63/247 [00:05<00:15, 12.15page/s]  Downloading:  27%|##6       | 66/247 [00:05<00:16, 10.94page/s]  Downloading:  29%|##8       | 71/247 [00:06<00:15, 11.58page/s]  Downloading:  31%|###       | 76/247 [00:06<00:14, 11.85page/s]  Downloading:  33%|###2      | 81/247 [00:07<00:13, 12.00page/s]  Downloading:  34%|###4      | 85/247 [00:07<00:12, 13.50page/s]  Downloading:  35%|###5      | 87/247 [00:07<00:13, 12.25page/s]  Downloading:  37%|###6      | 91/247 [00:07<00:13, 11.76page/s]  Downloading:  38%|###8      | 95/247 [00:07<00:10, 14.98page/s]  Downloading:  39%|###9      | 97/247 [00:08<00:13, 11.50page/s]  Downloading:  41%|####      | 101/247 [00:08<00:12, 11.80page/s]  Downloading:  42%|####1     | 103/247 [00:08<00:11, 12.30page/s]  Downloading:  43%|####2     | 106/247 [00:09<00:13, 10.49page/s]  Downloading:  45%|####4     | 111/247 [00:09<00:11, 11.45page/s]  Downloading:  47%|####6     | 116/247 [00:09<00:11, 11.83page/s]  Downloading:  49%|####8     | 120/247 [00:10<00:09, 13.97page/s]  Downloading:  49%|####9     | 122/247 [00:10<00:10, 12.05page/s]  Downloading:  51%|#####     | 125/247 [00:10<00:08, 14.10page/s]  Downloading:  51%|#####1    | 127/247 [00:10<00:10, 11.49page/s]  Downloading:  53%|#####3    | 131/247 [00:11<00:10, 11.49page/s]  Downloading:  55%|#####5    | 136/247 [00:11<00:09, 11.95page/s]  Downloading:  56%|#####6    | 139/247 [00:11<00:07, 13.71page/s]  Downloading:  57%|#####7    | 141/247 [00:11<00:09, 11.53page/s]  Downloading:  59%|#####8    | 145/247 [00:12<00:06, 15.44page/s]  Downloading:  60%|#####9    | 148/247 [00:12<00:08, 11.85page/s]  Downloading:  61%|######1   | 151/247 [00:12<00:08, 11.15page/s]  Downloading:  62%|######2   | 154/247 [00:12<00:06, 13.53page/s]  Downloading:  63%|######3   | 156/247 [00:13<00:08, 11.30page/s]  Downloading:  64%|######4   | 159/247 [00:13<00:06, 13.57page/s]  Downloading:  65%|######5   | 161/247 [00:13<00:07, 10.77page/s]  Downloading:  67%|######6   | 165/247 [00:13<00:05, 14.78page/s]  Downloading:  68%|######8   | 168/247 [00:14<00:06, 11.96page/s]  Downloading:  69%|######9   | 171/247 [00:14<00:06, 10.88page/s]  Downloading:  71%|#######   | 175/247 [00:14<00:04, 14.51page/s]  Downloading:  72%|#######2  | 178/247 [00:14<00:05, 12.13page/s]  Downloading:  73%|#######3  | 181/247 [00:15<00:06, 10.91page/s]  Downloading:  75%|#######4  | 185/247 [00:15<00:04, 14.53page/s]  Downloading:  76%|#######6  | 188/247 [00:15<00:05, 11.78page/s]  Downloading:  77%|#######7  | 191/247 [00:16<00:04, 11.26page/s]  Downloading:  78%|#######8  | 193/247 [00:16<00:04, 12.28page/s]  Downloading:  79%|#######9  | 196/247 [00:16<00:04, 11.71page/s]  Downloading:  80%|########  | 198/247 [00:16<00:03, 12.82page/s]  Downloading:  81%|########  | 200/247 [00:16<00:03, 13.22page/s]  Downloading:  82%|########1 | 202/247 [00:16<00:03, 11.36page/s]  Downloading:  83%|########3 | 206/247 [00:17<00:03, 11.53page/s]  Downloading:  84%|########4 | 208/247 [00:17<00:03, 12.60page/s]  Downloading:  85%|########5 | 211/247 [00:17<00:02, 12.21page/s]  Downloading:  86%|########6 | 213/247 [00:17<00:02, 12.43page/s]  Downloading:  87%|########7 | 216/247 [00:18<00:02, 11.46page/s]  Downloading:  89%|########8 | 219/247 [00:18<00:01, 14.21page/s]  Downloading:  89%|########9 | 221/247 [00:18<00:02, 11.85page/s]  Downloading:  90%|######### | 223/247 [00:18<00:01, 12.27page/s]  Downloading:  91%|#########1| 226/247 [00:18<00:01, 12.86page/s]  Downloading:  92%|#########2| 228/247 [00:18<00:01, 12.36page/s]  Downloading:  94%|#########3| 231/247 [00:19<00:01, 12.49page/s]  Downloading:  94%|#########4| 233/247 [00:19<00:01, 12.27page/s]  Downloading:  96%|#########5| 236/247 [00:19<00:00, 12.79page/s]  Downloading:  96%|#########6| 238/247 [00:19<00:00, 12.13page/s]  Downloading:  98%|#########7| 241/247 [00:20<00:00, 12.17page/s]  Downloading:  98%|#########8| 243/247 [00:20<00:00, 12.65page/s]  Downloading: 100%|#########9| 246/247 [00:20<00:00, 11.22page/s]  Downloading: 100%|##########| 247/247 [00:20<00:00, 11.89page/s]
+  Crawled 247/247 pages successfully
+
+[1b/4] Caching images (GitBook proxy → local)...
+  Cached 953 unique images
+
+[2/4] Parsing documents...
+  Parsed 247 documents
+  Found 1009 images
+
+[2b/4] Captioning images (generating new + applying cached)...
+  Captioning:   0%|          | 0/247 [00:00<?, ?it/s]  Captioning:   0%|          | 1/247 [00:03<15:58,  3.90s/it]  Captioning:   1%|          | 2/247 [00:13<30:40,  7.51s/it]  Captioning:   1%|1         | 3/247 [00:18<24:36,  6.05s/it]  Captioning:   2%|1         | 4/247 [00:23<22:27,  5.55s/it]  Captioning:   2%|2         | 5/247 [00:26<18:39,  4.62s/it]  Captioning:   2%|2         | 6/247 [00:30<17:50,  4.44s/it]  Captioning:   3%|2         | 7/247 [00:34<17:34,  4.39s/it]  Captioning:   4%|3         | 9/247 [01:41<1:13:45, 18.60s/it]  Captioning:   4%|4         | 10/247 [01:46<58:51, 14.90s/it]   Captioning:   4%|4         | 11/247 [01:57<54:18, 13.81s/it]  Captioning:   5%|4         | 12/247 [03:03<1:50:51, 28.30s/it]  Captioning:   5%|5         | 13/247 [03:07<1:24:25, 21.65s/it]  Captioning:   6%|6         | 15/247 [03:22<58:33, 15.14s/it]    Captioning:   7%|7         | 18/247 [03:27<32:45,  8.58s/it]  Captioning:   8%|7         | 19/247 [03:31<29:08,  7.67s/it]  Captioning:   8%|8         | 20/247 [03:34<25:37,  6.78s/it]  Captioning:   9%|8         | 21/247 [04:37<1:15:06, 19.94s/it]  Captioning:   9%|8         | 22/247 [04:44<1:02:23, 16.64s/it]  Captioning:  10%|9         | 24/247 [05:56<1:31:43, 24.68s/it]  Captioning:  10%|#         | 25/247 [06:03<1:16:30, 20.68s/it]  Captioning:  11%|#         | 27/247 [06:09<50:10, 13.68s/it]    Captioning:  11%|#1        | 28/247 [06:16<44:13, 12.12s/it]  Captioning:  12%|#1        | 29/247 [06:18<35:14,  9.70s/it]  Captioning:  12%|#2        | 30/247 [06:23<31:17,  8.65s/it]  Captioning:  13%|#2        | 31/247 [06:27<26:35,  7.39s/it]  Captioning:  13%|#2        | 32/247 [06:31<22:25,  6.26s/it]  Captioning:  14%|#3        | 34/247 [07:42<1:08:33, 19.31s/it]  Captioning:  14%|#4        | 35/247 [07:48<56:58, 16.13s/it]    Captioning:  15%|#4        | 36/247 [07:57<50:22, 14.32s/it]  Captioning:  15%|#4        | 37/247 [09:02<1:36:39, 27.62s/it]  Captioning:  16%|#5        | 39/247 [09:10<1:00:29, 17.45s/it]  Captioning:  17%|#6        | 41/247 [09:13<39:19, 11.45s/it]    Captioning:  17%|#7        | 42/247 [09:20<35:54, 10.51s/it]  Captioning:  18%|#7        | 44/247 [09:24<24:41,  7.30s/it]  Captioning:  18%|#8        | 45/247 [09:27<21:24,  6.36s/it]  Captioning:  19%|#8        | 46/247 [09:34<21:35,  6.45s/it]  Captioning:  19%|#9        | 47/247 [10:38<1:09:15, 20.78s/it]  Captioning:  19%|#9        | 48/247 [10:43<55:21, 16.69s/it]    Captioning:  20%|##        | 50/247 [10:47<34:00, 10.36s/it]  Captioning:  21%|##        | 51/247 [10:51<28:51,  8.83s/it]  Captioning:  21%|##1       | 53/247 [11:57<59:49, 18.50s/it]  Captioning:  22%|##1       | 54/247 [11:59<48:14, 15.00s/it]  Captioning:  22%|##2       | 55/247 [12:09<43:24, 13.56s/it]  Captioning:  24%|##3       | 59/247 [12:20<23:17,  7.44s/it]  Captioning:  24%|##4       | 60/247 [12:29<23:45,  7.62s/it]  Captioning:  25%|##4       | 61/247 [12:36<22:59,  7.42s/it]  Captioning:  26%|##5       | 63/247 [13:37<48:27, 15.80s/it]  Captioning:  26%|##5       | 64/247 [13:42<41:31, 13.61s/it]  Captioning:  26%|##6       | 65/247 [13:56<41:37, 13.72s/it]  Captioning:  27%|##6       | 66/247 [15:18<1:31:36, 30.37s/it]  Captioning:  27%|##7       | 67/247 [15:23<1:11:29, 23.83s/it]  Captioning:  28%|##7       | 68/247 [15:29<56:47, 19.04s/it]    Captioning:  28%|##7       | 69/247 [15:34<44:57, 15.15s/it]  Captioning:  29%|##9       | 72/247 [15:38<22:14,  7.62s/it]  Captioning:  30%|##9       | 73/247 [16:40<54:10, 18.68s/it]  Captioning:  30%|##9       | 74/247 [16:44<44:33, 15.45s/it]  Captioning:  30%|###       | 75/247 [16:49<36:39, 12.79s/it]  Captioning:  31%|###1      | 77/247 [16:52<23:10,  8.18s/it]  Captioning:  32%|###1      | 78/247 [16:57<21:23,  7.60s/it]  Captioning:  32%|###2      | 80/247 [18:08<51:19, 18.44s/it]  Captioning:  33%|###2      | 81/247 [18:20<47:14, 17.08s/it]  Captioning:  33%|###3      | 82/247 [18:24<38:07, 13.87s/it]  Captioning:  34%|###3      | 83/247 [18:30<32:46, 11.99s/it]  Captioning:  34%|###4      | 84/247 [19:36<1:11:31, 26.33s/it]  Captioning:  34%|###4      | 85/247 [19:39<53:35, 19.85s/it]    Captioning:  35%|###4      | 86/247 [19:44<41:58, 15.65s/it]  Captioning:  35%|###5      | 87/247 [19:47<32:03, 12.02s/it]  Captioning:  35%|###5      | 87/247 [25:48<47:27, 17.79s/it]
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 2...
+
+  [rate-limit] waiting 120s before retry 3...
+
+  [rate-limit] waiting 120s before retry 4...
+Traceback (most recent call last):
+  File "C:\Users\Crack\OneDrive\Documents\CodeDev\GitHub\AgenticRagDotB\scripts\run_ingestion.py", line 145, in <module>
+    asyncio.run(main(full=full_mode, caption=caption_mode))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Crack\OneDrive\Documents\CodeDev\GitHub\AgenticRagDotB\scripts\run_ingestion.py", line 89, in main
+    new_content = caption_document(doc.content, fallback_context=doc.title, allow_generate=caption)
+  File "C:\Users\Crack\OneDrive\Documents\CodeDev\GitHub\AgenticRagDotB\ingestion\image_captioner.py", line 163, in caption_document
+    caption = caption_image(image_path, last_context, allow_generate=allow_generate)
+  File "C:\Users\Crack\OneDrive\Documents\CodeDev\GitHub\AgenticRagDotB\ingestion\image_captioner.py", line 140, in caption_image
+    caption = _generate_with_backoff(image_bytes, mime, prompt)
+  File "C:\Users\Crack\OneDrive\Documents\CodeDev\GitHub\AgenticRagDotB\ingestion\image_captioner.py", line 72, in _generate_with_backoff
+    resp = _client.models.generate_content(
+        model=CAPTION_MODEL,
+        contents=[types.Part.from_bytes(data=image_bytes, mime_type=mime), prompt],
+    )
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\models.py", line 6641, in generate_content
+    response = self._generate_content(
+        model=model, contents=contents, config=parsed_config_to_call
+    )
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\models.py", line 5067, in _generate_content
+    response = self._api_client.request(
+        'post', path, request_dict, http_options
+    )
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\_api_client.py", line 1700, in request
+    response = self._request(http_request, http_options, stream=False)
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\_api_client.py", line 1487, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\_api_client.py", line 1464, in _request_once
+    errors.APIError.raise_for_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Crack\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\genai\errors.py", line 184, in raise_error
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite\nPlease retry in 12.618566449s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}

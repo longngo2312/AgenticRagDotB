@@ -42,6 +42,7 @@ def _chunk_to_metadata(chunk: Chunk) -> dict:
         "raw_text": chunk.raw_text,
         "token_count": chunk.token_count,
         "content_hash": chunk.content_hash,
+        "image_paths": json.dumps(chunk.image_paths, ensure_ascii=False),
     }
 
 

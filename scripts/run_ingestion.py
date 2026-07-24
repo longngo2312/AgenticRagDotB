@@ -1,17 +1,20 @@
 """
-DAY 2 — Entry point: run the ingestion pipeline.
+Entry point: run the ingestion pipeline.
 
 Usage:
   python scripts/run_ingestion.py              # crawl + parse + chunk, save preview
-  python scripts/run_ingestion.py --full       # also embed + index (Day 2 end)
+  python scripts/run_ingestion.py --caption    # also generate new image captions (slow, rate-limited)
+  python scripts/run_ingestion.py --full       # also embed + index
 
-Steps today (--preview mode, default):
-  1. crawl_all()       → download all .md pages from help.dotb.vn/llms.txt
-  2. parse_document()  → extract metadata + GitBook preprocessing
-  3. chunk_document()  → split into parent + child chunks
-  → saves data/chunks_preview.json for manual review
+Pipeline: crawl -> cache images -> parse -> [caption] -> chunk -> [embed + index]
 
-Idempotent: safe to re-run. Only changed pages re-embedded (when --full).
+Captioning (Day 3): every run applies already-cached captions (data/images/captions.json)
+so a plain preview never regresses to bare [IMAGE: path] placeholders once captioning has
+run once. Only --caption allows *new* vision-LLM calls for cache misses — the free-tier
+model is rate-limited to 15 req/min, so captioning ~950 images takes ~70-90 minutes.
+
+Idempotent: safe to re-run. Chunk IDs are content hashes, so --full only re-embeds
+children whose content actually changed.
 """
 import asyncio
 import json
@@ -19,12 +22,15 @@ import sys
 from dataclasses import asdict
 from pathlib import Path
 
+from tqdm import tqdm
+
 sys.stdout.reconfigure(encoding="utf-8")
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from ingestion.crawler import crawl_all
 from ingestion.image_cache import cache_images
 from ingestion.parser import parse_document
+from ingestion.image_captioner import caption_document
 from ingestion.chunker import chunk_document
 from ingestion.indexer import index_chunks
 from config import DATA_DIR
@@ -47,24 +53,24 @@ def _chunk_summary(chunks: list) -> dict:
     }
 
 
-async def main(full: bool = False) -> None:
+async def main(full: bool = False, caption: bool = False) -> None:
     print("=== DotB RAG Ingestion Pipeline ===")
 
     # ── Step 1: Crawl ──────────────────────────────────────────────────────────
-    print("\n[1/3] Crawling help.dotb.vn...")
+    print("\n[1/4] Crawling help.dotb.vn...")
     pages = await crawl_all(save_raw=True)
     if not pages:
         print("  ERROR: no pages crawled. Check LLMS_TXT_URL and network.")
         sys.exit(1)
 
     # ── Step 1b: Cache images ──────────────────────────────────────────────────
-    print("\n[1b/3] Caching images (GitBook proxy → local)...")
+    print("\n[1b/4] Caching images (GitBook proxy → local)...")
     all_gitbook_urls = [url for p in pages for url in p.image_urls]
     image_map = await cache_images(all_gitbook_urls) if all_gitbook_urls else {}
     print(f"  Cached {len(image_map)} unique images")
 
     # ── Step 2: Parse ──────────────────────────────────────────────────────────
-    print("\n[2/3] Parsing documents...")
+    print("\n[2/4] Parsing documents...")
     documents = []
     total_images = 0
     for p in pages:
@@ -73,10 +79,23 @@ async def main(full: bool = False) -> None:
         documents.append(doc)
         total_images += len(doc.image_urls)
     print(f"  Parsed {len(documents)} documents")
-    print(f"  Found {total_images} images (will caption on Day 3)")
+    print(f"  Found {total_images} images")
+
+    # ── Step 2b: Caption images ─────────────────────────────────────────────────
+    label = "generating new + applying cached" if caption else "applying cached only"
+    print(f"\n[2b/4] Captioning images ({label})...")
+    captioned = 0
+    for doc in tqdm(documents, desc="  Captioning"):
+        new_content = caption_document(doc.content, fallback_context=doc.title, allow_generate=caption)
+        if new_content != doc.content:
+            captioned += 1
+        doc.content = new_content
+    print(f"  {captioned} documents had a caption applied")
+    if not caption:
+        print("  (pass --caption to generate captions for cache misses — rate-limited, ~70-90 min for all images)")
 
     # ── Step 3: Chunk ──────────────────────────────────────────────────────────
-    print("\n[3/3] Chunking...")
+    print("\n[3/4] Chunking...")
     all_chunks = []
     for doc in documents:
         all_chunks.extend(chunk_document(doc))
@@ -109,9 +128,10 @@ async def main(full: bool = False) -> None:
     print("  Open data/chunks_preview.json to review chunk quality before embedding.")
 
     if full:
-        print("\n[--full] Embedding & indexing...")
+        print("\n[4/4] Embedding & indexing...")
         result = index_chunks(all_chunks)
-        print(f"  Indexed {result['children_indexed']} children, "
+        print(f"  Indexed {result['children_indexed']} children "
+              f"({result['children_skipped']} already up to date), "
               f"{result['parents_indexed']} parents "
               f"({result['total_chunks']} total chunks)")
         print("\n=== Ingestion complete ===")
@@ -121,4 +141,5 @@ async def main(full: bool = False) -> None:
 
 if __name__ == "__main__":
     full_mode = "--full" in sys.argv
-    asyncio.run(main(full=full_mode))
+    caption_mode = "--caption" in sys.argv
+    asyncio.run(main(full=full_mode, caption=caption_mode))

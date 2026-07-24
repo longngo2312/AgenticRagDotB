@@ -9,9 +9,9 @@ Flow:
     → return list[CrawledPage]
     → optionally save raw .md files to data/raw_docs/
 """
-import asyncio
-import hashlib
-import re
+import asyncio 
+import hashlib 
+import re 
 import sys
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
@@ -58,13 +58,13 @@ class _ZoomImgParser(HTMLParser):
         if d.get("data-testid") == "zoom-image":
             src = d.get("src", "")
             if src:
-                self.srcs.append(src)
+                self.srcs.append(src) #this gets the src link to the image in html 
 
 
 def _extract_content_images(html: str) -> list[str]:
     p = _ZoomImgParser()
     try:
-        p.feed(html)
+        p.feed(html) #this function parse the html content and return the src arrays of the images correspond to the html page
     except Exception:
         pass
     return p.srcs
@@ -79,6 +79,7 @@ def parse_llms_txt(text: str, base_url: str) -> list[dict]:
         line = line.strip()
         if not line or line.startswith("#"):
             continue
+        #following this format: - [Course Management](https://example.com/course): How to manage courses in the llms.txt 
         m = re.match(r"^-?\s*\[([^\]]+)\]\(([^)]+)\)(?::\s*(.*))?$", line)
         if m:
             title, url, desc = m.group(1), m.group(2), m.group(3) or ""
@@ -92,7 +93,7 @@ def parse_llms_txt(text: str, base_url: str) -> list[dict]:
             entries.append({"title": title, "url": line, "description": ""})
     return entries
 
-
+#fetching md files as well as the images in the HTML 
 async def _fetch_one(
     client: httpx.AsyncClient,
     page: dict,
@@ -110,7 +111,7 @@ async def _fetch_one(
         finally:
             await asyncio.sleep(CRAWLER_DELAY_SEC)
 
-    content_hash = hashlib.sha256(content.encode()).hexdigest()
+    content_hash = hashlib.sha256(content.encode()).hexdigest() #hash to detect whether document content change or no in later scheduled ingesting step 
 
     # Co-fetch HTML to extract real image URLs (GitBook proxy URLs)
     image_urls: list[str] = []
@@ -121,7 +122,7 @@ async def _fetch_one(
             if r_html.status_code == 200:
                 image_urls = _extract_content_images(r_html.text)
         except Exception:
-            pass  # image URLs are best-effort
+            pass  
 
     return CrawledPage(
         url=page["url"],
@@ -132,7 +133,7 @@ async def _fetch_one(
         image_urls=image_urls,
     )
 
-
+#async function to crawl everything 
 async def crawl_all(save_raw: bool = True) -> list[CrawledPage]:
     RAW_DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -144,7 +145,10 @@ async def crawl_all(save_raw: bool = True) -> list[CrawledPage]:
         pages = parse_llms_txt(r.text, base_url)
         print(f"  Found {len(pages)} pages in llms.txt")
 
+        #limit the number of concurrent HTTP requests to avoid overwhelming the server and our own system 
         semaphore = asyncio.Semaphore(CRAWLER_CONCURRENCY)
+
+        #create a fetching task for each pages 
         tasks = [_fetch_one(client, p, semaphore) for p in pages]
 
         results: list[CrawledPage] = []
@@ -153,6 +157,7 @@ async def crawl_all(save_raw: bool = True) -> list[CrawledPage]:
                 page = await coro
                 if page:
                     results.append(page)
+                    #save the raw markdown content
                     if save_raw:
                         safe_name = hashlib.md5(page.url.encode()).hexdigest() + ".md"
                         (RAW_DOCS_DIR / safe_name).write_text(page.content, encoding="utf-8")

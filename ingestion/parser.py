@@ -99,44 +99,31 @@ def _preprocess_gitbook(
         flags=re.DOTALL | re.IGNORECASE,
     )
 
-    # 2. <figure><img src="...">...</figure>  →  [IMAGE: resolved_local_path]
-    def replace_figure(m: re.Match) -> str:
-        resolved = _next_image(m.group(1))
-        return f"[IMAGE: {resolved}]"
-
-    content = re.sub(
-        r'<figure[^>]*>.*?<img[^>]+src=["\']([^"\']+)["\'][^>]*>.*?</figure>',
-        replace_figure,
-        content,
+    # 2. Any image markup — <figure><img>, bare <img>, or markdown ![]() —
+    #    → [IMAGE: resolved_local_path], in ONE unified left-to-right pass.
+    #
+    #    GitBook docs mix all three styles in the same page (confirmed: a real
+    #    doc had figure, figure, markdown, figure, bare-img, in that order).
+    #    Resolving each style with its own separate re.sub() call is a bug:
+    #    each pass rescans the whole document independently, so the shared
+    #    `_next_image` position counter advances in *pass order*, not
+    #    *document order* — a markdown image appearing 3rd in the doc would
+    #    get resolved last, stealing the local path that belongs to whatever
+    #    image is actually 5th. A single combined regex, one pass, keeps the
+    #    counter advancing in true reading order.
+    _any_image_re = re.compile(
+        r'<figure[^>]*>.*?<img[^>]+src=["\']([^"\']+)["\'][^>]*>.*?</figure>'
+        r'|<img[^>]+src=["\']([^"\']+)["\'][^>]*>'
+        r'|!\[[^\]]*\]\(([^)]+)\)',
         flags=re.DOTALL | re.IGNORECASE,
     )
 
-    # also catch bare <img> outside figures
-    def replace_img(m: re.Match) -> str:
-        resolved = _next_image(m.group(1))
+    def replace_any_image(m: re.Match) -> str:
+        src = m.group(1) or m.group(2) or m.group(3)
+        resolved = _next_image(src)
         return f"[IMAGE: {resolved}]"
 
-    content = re.sub(
-        r'<img[^>]+src=["\']([^"\']+)["\'][^>]*>',
-        replace_img,
-        content,
-        flags=re.IGNORECASE,
-    )
-
-    # 2b. Markdown images: ![alt](/files/short-id)  →  [IMAGE: resolved_local_path]
-    #     The path inside the .md is a GitBook internal short-id that never
-    #     resolves on its own — it only marks position. The real asset was
-    #     already downloaded (via the rendered HTML page) and passed in as
-    #     `resolved_images`, matched positionally.
-    def replace_md_image(m: re.Match) -> str:
-        resolved = _next_image(m.group(2))
-        return f"[IMAGE: {resolved}]"
-
-    content = re.sub(
-        r'!\[([^\]]*)\]\(([^)]+)\)',
-        replace_md_image,
-        content,
-    )
+    content = _any_image_re.sub(replace_any_image, content)
 
     # 3. > Step N: text  (GitBook blockquote used as step indicator)
     #    → **Step N:** text

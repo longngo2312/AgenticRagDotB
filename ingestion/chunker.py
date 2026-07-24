@@ -15,7 +15,7 @@ Token estimate: 1 token ≈ 4 chars (mixed Viet/English, no tiktoken needed)
 import hashlib
 import re
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
 
@@ -43,6 +43,7 @@ class Chunk:
     raw_text: str      # body only — stored for BM25 / display
     token_count: int
     content_hash: str
+    image_paths: list[str] = field(default_factory=list)  # local paths of screenshots in this chunk
 
 
 def _split_by_headings(markdown: str) -> list[tuple[int, str, str]]:
@@ -76,6 +77,11 @@ def _build_heading_path(stack: list[tuple[int, str]]) -> str:
 
 _IMAGE_RE = re.compile(r"^\[IMAGE:", re.IGNORECASE)
 _HINT_RE  = re.compile(r"^>\s*\*\*Lưu ý:\*\*")
+_IMAGE_PATH_RE = re.compile(r"\[IMAGE:\s*([^\]]+)\]")
+
+
+def _extract_image_paths(content: str) -> list[str]:
+    return _IMAGE_PATH_RE.findall(content)
 
 
 def _is_bond_backward(para: str) -> bool:
@@ -194,6 +200,7 @@ def chunk_document(doc: ParsedDocument) -> list[Chunk]:
             raw_text=parent_raw,
             token_count=estimate_tokens(parent_content),
             content_hash=parent_hash,
+            image_paths=_extract_image_paths(parent_content),
         )
         chunks.append(parent_chunk)
 
@@ -217,6 +224,7 @@ def chunk_document(doc: ParsedDocument) -> list[Chunk]:
                 raw_text=child_raw,
                 token_count=estimate_tokens(child_content),
                 content_hash=child_hash,
+                image_paths=_extract_image_paths(child_content),
             ))
 
     return chunks

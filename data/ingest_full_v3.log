@@ -1,0 +1,95 @@
+=== DotB RAG Ingestion Pipeline ===
+
+[1/4] Crawling help.dotb.vn...
+  Fetching index: https://help.dotb.vn/llms.txt
+  Found 247 pages in llms.txt
+  Downloading:   0%|          | 0/247 [00:00<?, ?page/s]  Downloading:   0%|          | 1/247 [00:00<02:16,  1.80page/s]  Downloading:   2%|2         | 6/247 [00:00<00:33,  7.30page/s]  Downloading:   3%|3         | 8/247 [00:01<00:26,  9.19page/s]  Downloading:   4%|4         | 11/247 [00:01<00:27,  8.50page/s]  Downloading:   6%|6         | 16/247 [00:01<00:20, 11.04page/s]  Downloading:   7%|7         | 18/247 [00:01<00:19, 11.89page/s]  Downloading:   9%|8         | 21/247 [00:02<00:19, 11.36page/s]  Downloading:   9%|9         | 23/247 [00:02<00:17, 12.60page/s]  Downloading:  11%|#         | 26/247 [00:02<00:19, 11.62page/s]  Downloading:  11%|#1        | 28/247 [00:02<00:18, 11.76page/s]  Downloading:  13%|#2        | 31/247 [00:02<00:17, 12.03page/s]  Downloading:  13%|#3        | 33/247 [00:03<00:16, 12.64page/s]  Downloading:  15%|#4        | 36/247 [00:03<00:17, 12.24page/s]  Downloading:  15%|#5        | 38/247 [00:03<00:16, 12.61page/s]  Downloading:  17%|#6        | 41/247 [00:03<00:17, 11.92page/s]  Downloading:  17%|#7        | 43/247 [00:03<00:15, 12.83page/s]  Downloading:  18%|#8        | 45/247 [00:04<00:14, 13.60page/s]  Downloading:  19%|#9        | 47/247 [00:04<00:17, 11.69page/s]  Downloading:  20%|##        | 50/247 [00:04<00:14, 13.40page/s]  Downloading:  21%|##1       | 52/247 [00:04<00:16, 12.01page/s]  Downloading:  22%|##2       | 55/247 [00:04<00:15, 12.76page/s]  Downloading:  23%|##3       | 57/247 [00:05<00:15, 12.27page/s]  Downloading:  24%|##3       | 59/247 [00:05<00:13, 13.63page/s]  Downloading:  25%|##4       | 61/247 [00:05<00:17, 10.87page/s]  Downloading:  26%|##5       | 63/247 [00:05<00:15, 12.21page/s]  Downloading:  26%|##6       | 65/247 [00:05<00:13, 13.73page/s]  Downloading:  27%|##7       | 67/247 [00:05<00:15, 11.45page/s]  Downloading:  28%|##7       | 69/247 [00:05<00:13, 13.09page/s]  Downloading:  29%|##8       | 71/247 [00:06<00:16, 10.40page/s]  Downloading:  30%|##9       | 74/247 [00:06<00:12, 13.54page/s]  Downloading:  31%|###       | 76/247 [00:06<00:15, 10.79page/s]  Downloading:  32%|###1      | 79/247 [00:06<00:12, 13.78page/s]  Downloading:  33%|###2      | 81/247 [00:07<00:15, 10.56page/s]  Downloading:  34%|###4      | 84/247 [00:07<00:12, 12.92page/s]  Downloading:  35%|###4      | 86/247 [00:07<00:14, 11.17page/s]  Downloading:  36%|###6      | 89/247 [00:07<00:11, 13.74page/s]  Downloading:  37%|###6      | 91/247 [00:07<00:13, 11.50page/s]  Downloading:  38%|###7      | 93/247 [00:08<00:12, 11.95page/s]  Downloading:  38%|###8      | 95/247 [00:08<00:12, 12.60page/s]  Downloading:  39%|###9      | 97/247 [00:08<00:12, 12.14page/s]  Downloading:  40%|####      | 100/247 [00:08<00:10, 14.19page/s]  Downloading:  41%|####1     | 102/247 [00:08<00:12, 11.44page/s]  Downloading:  43%|####2     | 105/247 [00:08<00:09, 14.31page/s]  Downloading:  43%|####3     | 107/247 [00:09<00:12, 10.95page/s]  Downloading:  45%|####4     | 111/247 [00:09<00:12, 11.32page/s]  Downloading:  46%|####6     | 114/247 [00:09<00:09, 13.83page/s]  Downloading:  47%|####6     | 116/247 [00:09<00:11, 11.10page/s]  Downloading:  49%|####8     | 120/247 [00:10<00:10, 12.30page/s]  Downloading:  49%|####9     | 122/247 [00:10<00:10, 12.25page/s]  Downloading:  51%|#####     | 125/247 [00:10<00:09, 12.84page/s]  Downloading:  51%|#####1    | 127/247 [00:10<00:10, 11.08page/s]  Downloading:  53%|#####2    | 130/247 [00:11<00:11, 10.58page/s]  Downloading:  54%|#####3    | 133/247 [00:11<00:08, 13.23page/s]  Downloading:  55%|#####4    | 135/247 [00:11<00:09, 11.38page/s]  Downloading:  56%|#####5    | 138/247 [00:11<00:07, 13.83page/s]  Downloading:  57%|#####6    | 140/247 [00:11<00:09, 11.09page/s]  Downloading:  58%|#####7    | 143/247 [00:12<00:07, 13.96page/s]  Downloading:  59%|#####8    | 145/247 [00:12<00:09, 11.05page/s]  Downloading:  60%|#####9    | 147/247 [00:12<00:08, 12.36page/s]  Downloading:  60%|######    | 149/247 [00:12<00:07, 13.18page/s]  Downloading:  61%|######1   | 151/247 [00:12<00:08, 11.53page/s]  Downloading:  62%|######1   | 153/247 [00:12<00:07, 13.08page/s]  Downloading:  63%|######2   | 155/247 [00:13<00:08, 10.82page/s]  Downloading:  64%|######3   | 157/247 [00:13<00:07, 12.27page/s]  Downloading:  64%|######4   | 159/247 [00:13<00:08,  9.86page/s]  Downloading:  65%|######5   | 161/247 [00:13<00:07, 11.36page/s]  Downloading:  66%|######6   | 164/247 [00:13<00:06, 12.06page/s]  Downloading:  67%|######7   | 166/247 [00:14<00:06, 13.35page/s]  Downloading:  68%|######8   | 169/247 [00:14<00:06, 11.90page/s]  Downloading:  69%|######9   | 171/247 [00:14<00:05, 13.00page/s]  Downloading:  70%|#######   | 174/247 [00:14<00:06, 11.86page/s]  Downloading:  71%|#######1  | 176/247 [00:14<00:05, 11.92page/s]  Downloading:  72%|#######2  | 179/247 [00:15<00:05, 12.11page/s]  Downloading:  73%|#######3  | 181/247 [00:15<00:05, 13.11page/s]  Downloading:  74%|#######4  | 184/247 [00:15<00:05, 11.95page/s]  Downloading:  75%|#######5  | 186/247 [00:15<00:04, 13.19page/s]  Downloading:  76%|#######6  | 188/247 [00:15<00:04, 12.22page/s]  Downloading:  77%|#######6  | 190/247 [00:15<00:04, 13.16page/s]  Downloading:  78%|#######7  | 192/247 [00:16<00:04, 13.05page/s]  Downloading:  79%|#######8  | 194/247 [00:16<00:04, 10.98page/s]  Downloading:  79%|#######9  | 196/247 [00:16<00:04, 12.24page/s]  Downloading:  81%|########  | 199/247 [00:16<00:04, 11.97page/s]  Downloading:  81%|########1 | 201/247 [00:16<00:03, 12.93page/s]  Downloading:  83%|########2 | 204/247 [00:17<00:03, 12.09page/s]  Downloading:  83%|########3 | 206/247 [00:17<00:03, 12.60page/s]  Downloading:  84%|########4 | 208/247 [00:17<00:02, 13.62page/s]  Downloading:  85%|########5 | 210/247 [00:17<00:03, 10.92page/s]  Downloading:  87%|########6 | 214/247 [00:17<00:02, 12.12page/s]  Downloading:  88%|########7 | 217/247 [00:18<00:02, 13.92page/s]  Downloading:  89%|########8 | 219/247 [00:18<00:02, 11.88page/s]  Downloading:  89%|########9 | 221/247 [00:18<00:02, 12.97page/s]  Downloading:  90%|######### | 223/247 [00:18<00:01, 14.24page/s]  Downloading:  91%|#########1| 225/247 [00:18<00:01, 11.92page/s]  Downloading:  92%|#########1| 227/247 [00:18<00:01, 11.99page/s]  Downloading:  93%|#########2| 229/247 [00:19<00:01, 11.53page/s]  Downloading:  94%|#########3| 231/247 [00:19<00:01, 13.09page/s]  Downloading:  94%|#########4| 233/247 [00:19<00:01, 13.82page/s]  Downloading:  95%|#########5| 235/247 [00:19<00:01, 11.44page/s]  Downloading:  96%|#########5| 237/247 [00:19<00:00, 12.79page/s]  Downloading:  97%|#########6| 239/247 [00:19<00:00, 11.52page/s]  Downloading:  98%|#########7| 241/247 [00:20<00:00, 12.89page/s]  Downloading:  98%|#########8| 243/247 [00:20<00:00, 12.46page/s]  Downloading:  99%|#########9| 245/247 [00:20<00:00, 12.33page/s]  Downloading: 100%|##########| 247/247 [00:20<00:00, 10.11page/s]  Downloading: 100%|##########| 247/247 [00:20<00:00, 11.94page/s]
+  Crawled 247/247 pages successfully
+
+[1b/4] Caching images (GitBook proxy → local)...
+  Cached 953 unique images
+
+[2/4] Parsing documents...
+  Parsed 247 documents
+  Found 1009 images
+
+[2b/4] Captioning images (generating new + applying cached)...
+  Captioning:   0%|          | 0/247 [00:00<?, ?it/s]  Captioning:   0%|          | 1/247 [00:08<35:57,  8.77s/it]  Captioning:   1%|          | 2/247 [00:12<24:45,  6.06s/it]  Captioning:   1%|1         | 3/247 [01:31<2:40:09, 39.38s/it]  Captioning:   2%|1         | 4/247 [01:35<1:42:28, 25.30s/it]  Captioning:   2%|2         | 5/247 [01:40<1:12:00, 17.85s/it]  Captioning:   2%|2         | 6/247 [01:46<55:52, 13.91s/it]    Captioning:   3%|2         | 7/247 [02:55<2:07:36, 31.90s/it]  Captioning:   3%|3         | 8/247 [02:59<1:31:37, 23.00s/it]  Captioning:   4%|3         | 9/247 [03:05<1:09:46, 17.59s/it]  Captioning:   4%|4         | 10/247 [03:16<1:02:00, 15.70s/it]  Captioning:   4%|4         | 11/247 [03:22<49:38, 12.62s/it]    Captioning:   5%|4         | 12/247 [04:35<2:01:51, 31.11s/it]  Captioning:   6%|5         | 14/247 [04:41<1:09:42, 17.95s/it]  Captioning:   6%|6         | 15/247 [05:50<1:59:11, 30.83s/it]  Captioning:   7%|6         | 17/247 [05:52<1:10:03, 18.28s/it]  Captioning:   7%|7         | 18/247 [06:01<1:01:45, 16.18s/it]  Captioning:   8%|7         | 19/247 [06:07<51:41, 13.60s/it]    Captioning:   8%|8         | 20/247 [06:10<41:55, 11.08s/it]  Captioning:   9%|8         | 21/247 [06:15<35:30,  9.43s/it]  Captioning:   9%|8         | 22/247 [06:20<30:13,  8.06s/it]  Captioning:  10%|9         | 24/247 [06:25<20:29,  5.52s/it]  Captioning:  12%|#1        | 29/247 [07:28<35:51,  9.87s/it]  Captioning:  13%|#2        | 31/247 [07:30<27:30,  7.64s/it]  Captioning:  13%|#2        | 32/247 [07:35<25:50,  7.21s/it]  Captioning:  14%|#3        | 34/247 [07:39<19:45,  5.57s/it]  Captioning:  14%|#4        | 35/247 [07:42<17:57,  5.08s/it]  Captioning:  15%|#4        | 36/247 [07:47<18:04,  5.14s/it]  Captioning:  16%|#5        | 39/247 [08:50<43:34, 12.57s/it]  Captioning:  16%|#6        | 40/247 [08:57<40:00, 11.59s/it]  Captioning:  17%|#6        | 41/247 [08:59<32:49,  9.56s/it]  Captioning:  17%|#7        | 42/247 [09:03<28:01,  8.20s/it]  Captioning:  17%|#7        | 43/247 [09:08<25:13,  7.42s/it]  Captioning:  18%|#8        | 45/247 [09:18<21:29,  6.38s/it]  Captioning:  19%|#8        | 46/247 [10:27<1:09:14, 20.67s/it]  Captioning:  19%|#9        | 47/247 [10:33<57:23, 17.22s/it]    Captioning:  19%|#9        | 48/247 [10:38<45:49, 13.82s/it]  Captioning:  21%|##        | 51/247 [10:41<23:27,  7.18s/it]  Captioning:  21%|##1       | 52/247 [11:46<1:00:50, 18.72s/it]  Captioning:  21%|##1       | 53/247 [11:51<50:50, 15.73s/it]    Captioning:  22%|##1       | 54/247 [11:57<42:31, 13.22s/it]  Captioning:  22%|##2       | 55/247 [12:04<37:18, 11.66s/it]  Captioning:  23%|##2       | 56/247 [12:09<31:59, 10.05s/it]  Captioning:  23%|##3       | 57/247 [12:16<28:35,  9.03s/it]  Captioning:  23%|##3       | 58/247 [12:21<24:55,  7.91s/it]  Captioning:  24%|##3       | 59/247 [12:22<19:01,  6.07s/it]  Captioning:  24%|##4       | 60/247 [13:30<1:15:08, 24.11s/it]  Captioning:  25%|##4       | 61/247 [13:35<56:40, 18.28s/it]    Captioning:  25%|##5       | 62/247 [13:40<44:50, 14.54s/it]  Captioning:  26%|##5       | 63/247 [13:56<45:27, 14.82s/it]  Captioning:  26%|##5       | 64/247 [15:04<1:33:56, 30.80s/it]  Captioning:  26%|##6       | 65/247 [15:09<1:09:58, 23.07s/it]  Captioning:  27%|##6       | 66/247 [15:11<50:54, 16.88s/it]    Captioning:  27%|##7       | 67/247 [15:23<45:34, 15.19s/it]  Captioning:  28%|##7       | 69/247 [16:30<1:10:33, 23.78s/it]  Captioning:  28%|##8       | 70/247 [16:36<57:02, 19.33s/it]    Captioning:  29%|##8       | 71/247 [17:52<1:39:44, 34.00s/it]  Captioning:  30%|##9       | 73/247 [17:56<59:15, 20.43s/it]    Captioning:  31%|###       | 76/247 [17:58<31:03, 10.90s/it]  Captioning:  31%|###1      | 77/247 [18:04<28:39, 10.11s/it]  Captioning:  32%|###1      | 79/247 [18:17<24:56,  8.91s/it]  Captioning:  32%|###2      | 80/247 [18:25<23:54,  8.59s/it]  Captioning:  33%|###3      | 82/247 [19:38<51:28, 18.72s/it]  Captioning:  34%|###3      | 83/247 [19:43<43:45, 16.01s/it]  Captioning:  34%|###4      | 84/247 [20:50<1:14:36, 27.46s/it]  Captioning:  35%|###4      | 86/247 [20:52<45:42, 17.03s/it]    Captioning:  35%|###5      | 87/247 [20:57<38:18, 14.37s/it]  Captioning:  36%|###5      | 88/247 [21:03<32:54, 12.42s/it]  Captioning:  36%|###6      | 89/247 [21:18<34:24, 13.07s/it]  Captioning:  36%|###6      | 90/247 [21:21<27:13, 10.40s/it]  Captioning:  37%|###6      | 91/247 [21:23<21:23,  8.23s/it]  Captioning:  37%|###7      | 92/247 [22:31<1:04:39, 25.03s/it]  Captioning:  38%|###8      | 94/247 [22:38<39:01, 15.30s/it]    Captioning:  38%|###8      | 95/247 [22:50<37:03, 14.63s/it]  Captioning:  39%|###8      | 96/247 [23:57<1:10:51, 28.16s/it]  Captioning:  39%|###9      | 97/247 [24:02<54:24, 21.77s/it]    Captioning:  40%|###9      | 98/247 [25:05<1:22:35, 33.26s/it]  Captioning:  40%|####      | 99/247 [25:11<1:02:56, 25.52s/it]  Captioning:  40%|####      | 100/247 [25:15<47:34, 19.42s/it]   Captioning:  41%|####      | 101/247 [25:18<35:15, 14.49s/it]  Captioning:  41%|####1     | 102/247 [26:27<1:14:06, 30.66s/it]  Captioning:  42%|####1     | 103/247 [26:29<53:06, 22.13s/it]    Captioning:  43%|####2     | 105/247 [26:33<30:29, 12.88s/it]  Captioning:  43%|####2     | 106/247 [26:36<24:45, 10.54s/it]  Captioning:  43%|####3     | 107/247 [27:39<56:11, 24.08s/it]  Captioning:  44%|####4     | 109/247 [27:45<34:48, 15.14s/it]  Captioning:  45%|####4     | 111/247 [27:50<23:31, 10.38s/it]  Captioning:  45%|####5     | 112/247 [29:01<52:13, 23.21s/it]  Captioning:  46%|####5     | 113/247 [29:05<41:53, 18.76s/it]  Captioning:  47%|####6     | 115/247 [29:10<27:00, 12.27s/it]  Captioning:  47%|####7     | 117/247 [29:14<18:30,  8.54s/it]  Captioning:  48%|####7     | 118/247 [29:18<16:16,  7.57s/it]  Captioning:  48%|####8     | 119/247 [30:29<46:46, 21.93s/it]  Captioning:  49%|####8     | 120/247 [30:33<37:26, 17.69s/it]  Captioning:  49%|####8     | 121/247 [30:37<29:39, 14.12s/it]  Captioning:  50%|#####     | 124/247 [30:40<14:36,  7.12s/it]  Captioning:  51%|#####     | 125/247 [31:44<37:42, 18.55s/it]  Captioning:  51%|#####1    | 126/247 [31:51<32:17, 16.01s/it]  Captioning:  51%|#####1    | 127/247 [32:13<34:56, 17.47s/it]  Captioning:  52%|#####1    | 128/247 [32:20<29:28, 14.86s/it]  Captioning:  52%|#####2    | 129/247 [33:24<54:47, 27.86s/it]  Captioning:  53%|#####2    | 130/247 [33:30<42:32, 21.81s/it]  Captioning:  53%|#####3    | 131/247 [33:33<31:44, 16.42s/it]  Captioning:  53%|#####3    | 132/247 [33:41<26:51, 14.02s/it]  Captioning:  54%|#####3    | 133/247 [34:47<55:19, 29.12s/it]  Captioning:  55%|#####5    | 137/247 [34:52<21:40, 11.82s/it]  Captioning:  56%|#####5    | 138/247 [34:58<19:20, 10.65s/it]  Captioning:  56%|#####6    | 139/247 [35:11<20:19, 11.30s/it]  Captioning:  57%|#####7    | 141/247 [35:16<14:00,  7.93s/it]  Captioning:  57%|#####7    | 142/247 [36:24<35:48, 20.46s/it]  Captioning:  58%|#####7    | 143/247 [36:29<29:14, 16.87s/it]  Captioning:  58%|#####8    | 144/247 [36:32<23:06, 13.47s/it]  Captioning:  72%|#######2  | 179/247 [36:38<01:19,  1.17s/it]  Captioning:  86%|########5 | 212/247 [36:38<00:18,  1.91it/s]  Captioning:  86%|########5 | 212/247 [36:51<00:18,  1.91it/s]  Captioning:  94%|#########3| 231/247 [37:41<00:22,  1.40s/it]  Captioning:  94%|#########3| 232/247 [37:43<00:21,  1.41s/it]  Captioning: 100%|##########| 247/247 [37:43<00:00,  9.16s/it]
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [daily-quota] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite
+Please retry in 27.926328269s. — falling back to cache-only for the rest of this run.
+  192 documents had a caption applied
+
+[3/4] Chunking...
+  602 total chunks (353 children, 249 parents)
+  Child token range: 22–553 (avg 336)
+
+  Preview saved → C:\Users\Crack\OneDrive\Documents\CodeDev\GitHub\AgenticRagDotB\data\chunks_preview.json
+  Open data/chunks_preview.json to review chunk quality before embedding.
+
+[4/4] Embedding & indexing...
+  Embedding+indexing children:   0%|          | 0/18 [00:00<?, ?it/s]  Embedding+indexing children:   6%|5         | 1/18 [00:00<00:09,  1.75it/s]  Embedding+indexing children:  11%|#1        | 2/18 [00:01<00:08,  2.00it/s]  Embedding+indexing children:  17%|#6        | 3/18 [00:01<00:07,  2.08it/s]  Embedding+indexing children:  22%|##2       | 4/18 [01:02<05:39, 24.26s/it]  Embedding+indexing children:  28%|##7       | 5/18 [01:02<03:23, 15.68s/it]  Embedding+indexing children:  33%|###3      | 6/18 [01:03<02:06, 10.50s/it]  Embedding+indexing children:  39%|###8      | 7/18 [02:03<04:56, 26.94s/it]  Embedding+indexing children:  44%|####4     | 8/18 [02:04<03:05, 18.51s/it]  Embedding+indexing children:  50%|#####     | 9/18 [02:04<01:55, 12.87s/it]  Embedding+indexing children:  56%|#####5    | 10/18 [03:05<03:41, 27.66s/it]  Embedding+indexing children:  61%|######1   | 11/18 [03:06<02:15, 19.35s/it]  Embedding+indexing children:  67%|######6   | 12/18 [03:06<01:21, 13.63s/it]  Embedding+indexing children:  72%|#######2  | 13/18 [04:07<02:19, 27.93s/it]  Embedding+indexing children:  78%|#######7  | 14/18 [04:08<01:18, 19.66s/it]  Embedding+indexing children:  83%|########3 | 15/18 [04:08<00:41, 13.89s/it]  Embedding+indexing children:  89%|########8 | 16/18 [05:09<00:56, 28.02s/it]  Embedding+indexing children:  94%|#########4| 17/18 [05:09<00:19, 19.78s/it]  Embedding+indexing children: 100%|##########| 18/18 [05:10<00:00, 13.98s/it]  Embedding+indexing children: 100%|##########| 18/18 [05:10<00:00, 17.25s/it]
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+
+  [rate-limit] waiting 60s before retry 1...
+  Indexed 353 children (0 already up to date), 249 parents (602 total chunks)
+
+=== Ingestion complete ===
