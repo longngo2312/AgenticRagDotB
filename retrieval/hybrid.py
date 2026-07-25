@@ -30,12 +30,18 @@ def rrf_fuse(dense_results: list[dict], bm25_results: list[dict], k: int = RRF_K
 
 def hybrid_search(
     query: str,
+    bm25_query: str | None = None,
     dense_top_k: int = DENSE_TOP_K,
     bm25_top_k: int = BM25_TOP_K,
 ) -> list[dict]:
     """Run dense + BM25 in parallel search spaces and fuse via RRF. This is
     the hybrid retrieval deliverable itself — reranking and parent-fetch are
-    the full retriever.py pipeline's job, not this function's."""
+    the full retriever.py pipeline's job, not this function's.
+
+    `bm25_query` lets the caller pass a glossary-expanded variant to BM25
+    while dense search gets the clean, un-expanded `query` — see
+    rewrite.RewrittenQuery for why they're kept separate. Defaults to `query`
+    for direct/standalone callers that don't need the distinction."""
     dense_results = dense_search(query, top_k=dense_top_k)
-    bm25_results = bm25_search(query, top_k=bm25_top_k)
+    bm25_results = bm25_search(bm25_query if bm25_query is not None else query, top_k=bm25_top_k)
     return rrf_fuse(dense_results, bm25_results)

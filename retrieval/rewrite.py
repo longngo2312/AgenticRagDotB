@@ -27,6 +27,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from typing import NamedTuple
 
 from google import genai
 
@@ -100,15 +101,17 @@ def condense_query(question: str, chat_history: list[dict] | None = None) -> str
     if not chat_history:
         return question
 
-    prompt = _CONDENSE_PROMPT.format(
-        history=_format_history(chat_history),
-        question=question,
-    )
     try:
+        prompt = _CONDENSE_PROMPT.format(
+            history=_format_history(chat_history),
+            question=question,
+        )
         resp = _client.models.generate_content(model=LLM_MODEL, contents=[prompt])
         rewritten = resp.text.strip()
     except Exception:
-        # Interactive path: never block the user on a rewrite failure —
+        # Interactive path: never block the user on a rewrite failure — this
+        # also covers malformed history entries (e.g. a turn dict missing
+        # 'role'/'content'), not just LLM/network failures.
         # fall back to the original question rather than retrying/sleeping.
         return question
 
@@ -117,6 +120,20 @@ def condense_query(question: str, chat_history: list[dict] | None = None) -> str
     return rewritten or question
 
 
-def rewrite_query(question: str, chat_history: list[dict] | None = None) -> str:
+class RewrittenQuery(NamedTuple):
+    """Two variants of the same rewritten question, deliberately kept apart.
+
+    Glossary expansion appends extra Vietnamese/English terms so the lexical
+    BM25 matcher can find whichever vocabulary the docs use — but a
+    cross-encoder or an embedding model reads the *phrasing*, and feeding it
+    a query padded with a dozen synonyms ("keyword-salad") degrades its
+    judgment instead of helping it. So: `standalone` (condensed, no
+    expansion) goes to dense search and the reranker; `bm25` (condensed +
+    expanded) goes to BM25 only."""
+    standalone: str
+    bm25: str
+
+
+def rewrite_query(question: str, chat_history: list[dict] | None = None) -> RewrittenQuery:
     standalone = condense_query(question, chat_history)
-    return expand_glossary(standalone)
+    return RewrittenQuery(standalone=standalone, bm25=expand_glossary(standalone))

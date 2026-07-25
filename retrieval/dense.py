@@ -4,6 +4,8 @@ import sys
 from pathlib import Path
 
 import chromadb
+import httpx
+from google.genai.errors import APIError
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config import CHROMA_DIR, CHROMA_CHILD_COLLECTION, DENSE_TOP_K
@@ -24,9 +26,18 @@ def _get_collection():
 def dense_search(query: str, top_k: int = DENSE_TOP_K) -> list[dict]:
     """Embed `query` and return the top-k nearest children by cosine distance,
     ranked closest first. Each result carries chunk_id/content/metadata/score
-    so it's directly fusable with bm25_search results in hybrid.rrf_fuse."""
+    so it's directly fusable with bm25_search results in hybrid.rrf_fuse.
+
+    Interactive path: embed_query already fails fast (no multi-minute
+    ingestion-style backoff). If the embedding call still fails — rate limit
+    or network — degrade to an empty list rather than raising, so hybrid
+    search falls back to BM25-only instead of blocking or crashing the turn."""
     col = _get_collection()
-    vector = embed_query(query)
+    try:
+        vector = embed_query(query)
+    except (APIError, httpx.TransportError, httpx.TimeoutException) as e:
+        print(f"\n  [dense-search] embedding failed ({type(e).__name__}), falling back to BM25-only.")
+        return []
     result = col.query(
         query_embeddings=[vector],
         n_results=top_k,

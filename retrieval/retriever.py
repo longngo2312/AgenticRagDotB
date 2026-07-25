@@ -20,6 +20,20 @@ def _apply_filters(candidates: list[dict], filters: dict | None) -> list[dict]:
     ]
 
 
+_parents_cache: dict | None = None
+
+
+def _get_parents() -> dict:
+    # Cached for the process lifetime — re-reading and JSON-parsing the full
+    # parent store from disk on every chat turn is avoidable latency on the
+    # interactive path. A long-running server (Day 6) that re-ingests while
+    # live will need an explicit reload hook; out of scope for the CLI.
+    global _parents_cache
+    if _parents_cache is None:
+        _parents_cache = load_parents()
+    return _parents_cache
+
+
 def retrieve(
     query: str,
     chat_history: list[dict] | None = None,
@@ -40,11 +54,11 @@ def retrieve(
     "no good match" — not force-fed as an answer.
     """
     rewritten = rewrite_query(query, chat_history)
-    fused = hybrid_search(rewritten)
+    fused = hybrid_search(rewritten.standalone, bm25_query=rewritten.bm25)
     fused = _apply_filters(fused, filters)
-    reranked = rerank(rewritten, fused, top_k=top_k)
+    reranked = rerank(rewritten.standalone, fused, top_k=top_k)
 
-    parents_store = load_parents()
+    parents_store = _get_parents()
     seen_parent_ids: set[str] = set()
     results = []
 

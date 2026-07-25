@@ -17,6 +17,14 @@ def _get_model() -> CrossEncoder:
     return _model
 
 
+def warmup() -> None:
+    """Load the ~1.1GB cross-encoder now, so the cost lands at startup instead
+    of on the user's first query. Call this once when a long-lived process
+    (chat CLI, API server) boots — otherwise the first chat turn eats the
+    multi-second model load and blows the <4s latency target on cold start."""
+    _get_model()
+
+
 def rerank(query: str, candidates: list[dict], top_k: int = RERANK_TOP_K) -> list[dict]:
     """Score each (query, chunk.content) pair with the cross-encoder, sort
     descending, and drop anything below RERANK_SCORE_THRESHOLD — a low score

@@ -42,7 +42,13 @@ def build_bm25_index() -> dict:
     documents = data["documents"]
     metadatas = data["metadatas"]
 
-    corpus_tokens = [_tokenize(m["raw_text"]) for m in metadatas]
+    # Tokenize `documents` (the full child content, which carries the
+    # "[breadcrumb] heading_path" prefix), NOT the body-only raw_text. This is
+    # the same text dense search embeds — keeping the two symmetric so a query
+    # matching a section/product/heading term (present only in the prefix)
+    # can score in BM25 too, per CLAUDE.md's "prefixed with full heading path"
+    # rule. raw_text stays in metadata for clean display/citation.
+    corpus_tokens = [_tokenize(doc) for doc in documents]
     bm25 = BM25Okapi(corpus_tokens)
 
     index = {
