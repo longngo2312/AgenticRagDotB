@@ -22,8 +22,11 @@ GOOGLE_API_KEY  = os.getenv("GOOGLE_API_KEY", "")
 # text-embedding-004 was retired from the Gemini Developer API; gemini-embedding-001
 # is Google's current multilingual embedding model (3072-dim, free tier).
 EMBEDDING_MODEL = "models/gemini-embedding-001"
-# gemini-1.5-flash was also retired; gemini-flash-latest is the current free-tier alias.
-LLM_MODEL       = "models/gemini-flash-latest"
+# gemini-1.5-flash was retired. gemini-flash-latest resolves to gemini-3.6-flash,
+# which caps the free tier at 20 requests/day — unusable for a multi-turn demo
+# (2 LLM calls/turn). gemini-flash-lite-latest gives 500/day + 15/min for free;
+# quality on grounded RAG (reading supplied context) is effectively identical.
+LLM_MODEL       = "models/gemini-flash-lite-latest"
 
 # ── Crawling ──────────────────────────────────────────────────────────────────
 LLMS_TXT_URL        = "https://help.dotb.vn/llms.txt"
@@ -44,6 +47,11 @@ RERANK_TOP_K            = 5
 RRF_K                   = 60    # RRF constant — 60 is standard
 RERANKER_MODEL          = "BAAI/bge-reranker-v2-m3"
 RERANK_SCORE_THRESHOLD  = 0.1   # below this → abstain
+# Perf: the model defaults to max_seq_length=8192 in fp32, which makes reranking
+# ~9s on a 6GB laptop GPU. Capping to 512 (child chunks are ~500 tok) + fp16
+# cuts that to ~1.8s for a full fused shortlist — a 5x speedup, no quality loss.
+RERANK_MAX_SEQ_LEN      = 512
+RERANK_BATCH_SIZE       = 32
 
 # ── Query rewrite (Day 4) ──────────────────────────────────────────────────────
 REWRITE_HISTORY_TURNS = 3   # prior user/assistant turns fed to the condenser

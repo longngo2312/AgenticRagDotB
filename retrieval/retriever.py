@@ -57,7 +57,14 @@ def retrieve(
     fused = hybrid_search(rewritten.standalone, bm25_query=rewritten.bm25)
     fused = _apply_filters(fused, filters)
     reranked = rerank(rewritten.standalone, fused, top_k=top_k)
+    return fetch_parents(reranked)
 
+
+def fetch_parents(reranked: list[dict]) -> list[dict]:
+    """Swap reranked child chunks for their parent docs — deduped by
+    parent_id, preserving rerank order, carrying the matched-child citation
+    trail. Split out so the tracing REPL (scripts/chat_trace.py) can time this
+    stage against the same implementation retrieve() uses, no duplication."""
     parents_store = _get_parents()
     seen_parent_ids: set[str] = set()
     results = []
