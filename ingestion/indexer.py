@@ -57,6 +57,64 @@ def save_parents(parents: dict) -> None:
     PARENTS_PATH.write_text(json.dumps(parents, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def _purge_stale(
+    col,
+    parents_store: dict,
+    children: list[Chunk],
+    parents: list[Chunk],
+) -> tuple[list[str], list[str]]:
+    """
+    A chunk_id is a content hash, so editing a chunk's content (e.g. splicing
+    in a newly generated image caption) doesn't update its row — it mints a
+    brand-new ID and leaves the old one behind. Nothing else ever removes
+    that old row, so re-running ingestion after any content edit accumulates
+    ghosts: stale chunks that no longer match anything the chunker currently
+    produces, sitting in the index and competing for retrieval real estate
+    against the up-to-date version of the same content.
+
+    Fix is a set difference, scoped per doc_url — never global:
+      stale = (ids currently stored for this doc_url) - (ids this run produced for it)
+    Only doc_urls this run actually reprocessed are touched. A doc_url this
+    run didn't see at all (e.g. a transient crawl failure) is left alone
+    entirely, so a partial run can never wipe out chunks for pages it simply
+    didn't get to.
+    """
+    current_child_ids_by_url: dict[str, set[str]] = {}
+    for c in children:
+        current_child_ids_by_url.setdefault(c.doc_url, set()).add(c.chunk_id)
+
+    current_parent_ids_by_url: dict[str, set[str]] = {}
+    for p in parents:
+        current_parent_ids_by_url.setdefault(p.doc_url, set()).add(p.chunk_id)
+
+    # ── Children (Chroma) ──────────────────────────────────────────────────────
+    existing = col.get(include=["metadatas"])
+    stale_child_ids: list[str] = []
+    for cid, meta in zip(existing["ids"], existing["metadatas"]):
+        doc_url = meta.get("doc_url", "")
+        if doc_url not in current_child_ids_by_url:
+            continue  # this run never touched this doc_url — leave it alone
+        if cid not in current_child_ids_by_url[doc_url]:
+            stale_child_ids.append(cid)
+
+    if stale_child_ids:
+        col.delete(ids=stale_child_ids)
+
+    # ── Parents (parent_docs.json) ──────────────────────────────────────────────
+    stale_parent_ids: list[str] = []
+    for pid, entry in parents_store.items():
+        doc_url = entry["metadata"].get("doc_url", "")
+        if doc_url not in current_parent_ids_by_url:
+            continue
+        if pid not in current_parent_ids_by_url[doc_url]:
+            stale_parent_ids.append(pid)
+
+    for pid in stale_parent_ids:
+        del parents_store[pid]
+
+    return stale_child_ids, stale_parent_ids
+
+
 def index_chunks(chunks: list[Chunk], batch_size: int = 20) -> dict:
     children = [c for c in chunks if c.chunk_type == "child"]
     parents = [c for c in chunks if c.chunk_type == "parent"]
@@ -67,6 +125,14 @@ def index_chunks(chunks: list[Chunk], batch_size: int = 20) -> dict:
         CHROMA_CHILD_COLLECTION,
         metadata={"hnsw:space": "cosine"},
     )
+
+    # ── Purge stale rows before adding new ones — see _purge_stale docstring ───
+    parents_store = load_parents()
+    stale_child_ids, stale_parent_ids = _purge_stale(col, parents_store, children, parents)
+    if stale_child_ids:
+        print(f"  Purged {len(stale_child_ids)} stale children (superseded by edited content)")
+    if stale_parent_ids:
+        print(f"  Purged {len(stale_parent_ids)} stale parents (superseded by edited content)")
 
     # Resumable: chunk_id is a content hash, so anything already in the
     # collection is unchanged and can be skipped (saves scarce embedding quota).
@@ -88,7 +154,6 @@ def index_chunks(chunks: list[Chunk], batch_size: int = 20) -> dict:
         )
 
     # ── Parents → JSON file ─────────────────────────────────────────────────────
-    parents_store = load_parents()
     for p in parents:
         parents_store[p.chunk_id] = {
             "content": p.content,
@@ -99,6 +164,8 @@ def index_chunks(chunks: list[Chunk], batch_size: int = 20) -> dict:
     return {
         "children_indexed": len(todo),
         "children_skipped": skipped,
+        "children_purged": len(stale_child_ids),
         "parents_indexed": len(parents),
+        "parents_purged": len(stale_parent_ids),
         "total_chunks": len(chunks),
     }

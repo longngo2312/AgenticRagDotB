@@ -132,8 +132,10 @@ async def main(full: bool = False, caption: bool = False) -> None:
         print("\n[4/4] Embedding & indexing...")
         result = index_chunks(all_chunks)
         print(f"  Indexed {result['children_indexed']} children "
-              f"({result['children_skipped']} already up to date), "
+              f"({result['children_skipped']} already up to date, "
+              f"{result['children_purged']} stale purged), "
               f"{result['parents_indexed']} parents "
+              f"({result['parents_purged']} stale purged) "
               f"({result['total_chunks']} total chunks)")
 
         print("  Rebuilding BM25 index from ChromaDB...")

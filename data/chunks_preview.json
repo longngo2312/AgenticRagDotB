@@ -1,13 +1,307 @@
 {
   "summary": {
-    "total_chunks": 602,
-    "children": 353,
+    "total_chunks": 608,
+    "children": 359,
     "parents": 249,
     "child_tokens_min": 22,
     "child_tokens_max": 553,
-    "child_tokens_avg": 337
+    "child_tokens_avg": 339
   },
   "sample_children": [
+    {
+      "chunk_id": "0c215e44615114707abbbf2384b27a0281595213eee247add39c8a1060bd90a2",
+      "parent_id": "0c215e44615114707abbbf2384b27a0281595213eee247add39c8a1060bd90a2",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/mobile-1/ghi-nhan-phan-hoi.md",
+      "doc_title": "Gửi thông báo điểm danh",
+      "breadcrumb": [
+        "mobile-1",
+        "ghi-nhan-phan-hoi"
+      ],
+      "section": "mobile-1",
+      "product": "EMS",
+      "heading_path": "Gửi thông báo điểm danh",
+      "content": "[Mobile 1 > Ghi Nhan Phan Hoi] Gửi thông báo điểm danh\n\n# Gửi thông báo điểm danh\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào chức năng **Gửi thông báo** để thông báo điểm danh đến học viên.\n\n[IMAGE: data/images/2a28841cef87c55901c25e6a0c44b071.png] Nhấn vào biểu tượng **Gửi thông báo** ở thanh điều hướng phía dưới màn hình để chuyển đến chức năng thông báo điểm danh cho học viên.\n\n> **Bước 2:** Chọn học viên cần gửi thông báo và nhấn nút **\"Gửi\"**.\n\n[IMAGE: data/images/d19bdc7d1160f08aebca07cfd734b693.png] Chọn các học viên cần gửi thông báo trong danh sách lớp hoặc nhấn vào ô **\"Chọn tất cả\"** để chọn toàn bộ học viên, sau đó nhấn nút **\"Gửi\"** ở góc dưới bên phải màn hình để hoàn tất.\n\n> **Lưu ý:** **Ghi chú:**\n\nĐiểm danh từng học viên bằng cách check vào ô&#x20;\n\n[IMAGE: data/images/0d13daed34979f882b3f67aed91efedd.png] Điểm danh từng học viên bằng cách check vào ô vuông tương ứng với tên của học viên đó trong danh sách lớp.\n\nĐiểm danh hàng loạt học viên bằng cách check vào\n\n&#x20;[IMAGE: data/images/e269ae5d868362a6bca35a7939be23d4.png]",
+      "raw_text": "# Gửi thông báo điểm danh\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào chức năng **Gửi thông báo** để thông báo điểm danh đến học viên.\n\n[IMAGE: data/images/2a28841cef87c55901c25e6a0c44b071.png] Nhấn vào biểu tượng **Gửi thông báo** ở thanh điều hướng phía dưới màn hình để chuyển đến chức năng thông báo điểm danh cho học viên.\n\n> **Bước 2:** Chọn học viên cần gửi thông báo và nhấn nút **\"Gửi\"**.\n\n[IMAGE: data/images/d19bdc7d1160f08aebca07cfd734b693.png] Chọn các học viên cần gửi thông báo trong danh sách lớp hoặc nhấn vào ô **\"Chọn tất cả\"** để chọn toàn bộ học viên, sau đó nhấn nút **\"Gửi\"** ở góc dưới bên phải màn hình để hoàn tất.\n\n> **Lưu ý:** **Ghi chú:**\n\nĐiểm danh từng học viên bằng cách check vào ô&#x20;\n\n[IMAGE: data/images/0d13daed34979f882b3f67aed91efedd.png] Điểm danh từng học viên bằng cách check vào ô vuông tương ứng với tên của học viên đó trong danh sách lớp.\n\nĐiểm danh hàng loạt học viên bằng cách check vào\n\n&#x20;[IMAGE: data/images/e269ae5d868362a6bca35a7939be23d4.png]",
+      "token_count": 266,
+      "content_hash": "0c215e44615114707abbbf2384b27a0281595213eee247add39c8a1060bd90a2",
+      "image_paths": [
+        "data/images/2a28841cef87c55901c25e6a0c44b071.png",
+        "data/images/d19bdc7d1160f08aebca07cfd734b693.png",
+        "data/images/0d13daed34979f882b3f67aed91efedd.png",
+        "data/images/e269ae5d868362a6bca35a7939be23d4.png"
+      ]
+    },
+    {
+      "chunk_id": "3ec0dbf7b3bf56d58e0f66f93b4a396f18f0c018347e667e80f951d3af656503",
+      "parent_id": "3ec0dbf7b3bf56d58e0f66f93b4a396f18f0c018347e667e80f951d3af656503",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu.md",
+      "doc_title": "Quản lý sự vụ",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "quan-li-su-vu"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Quản lý sự vụ > [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)",
+      "content": "[Bo Phan Giao Vu > Quan Li Su Vu] Quản lý sự vụ > [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)\n\n# Quản lý sự vụ\n\n#### [IMAGE: data/images/ca3110f0d7f4cc22414c17fb04489887.png][Quản lý phiếu thu](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-phieu-thu.md)\n\n#### [IMAGE: data/images/9fb0bc894ba72a1f7b3c2e1a6040675b.png][Quản lý chiết khẩu (Discount)](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-chiet-khau-discount.md)\n\n#### [IMAGE: data/images/3b1f7ffed317ec21bdad2e999a11c4cb.png][Quản lý Voucher](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-ma-giam-gia-sponsor.md)\n\n#### [IMAGE: data/images/1f198c0f44964641f63c40d36d99a0ef.png][Quản lý Loyalty](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-diem-tich-luy-loyalty.md)\n\n#### [IMAGE: data/images/037fe0707498df0531d928b2bc69603d.png][Quản lý bảo lưu (Delay)](/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay.md)\n\n#### [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)",
+      "raw_text": "# Quản lý sự vụ\n\n#### [IMAGE: data/images/ca3110f0d7f4cc22414c17fb04489887.png][Quản lý phiếu thu](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-phieu-thu.md)\n\n#### [IMAGE: data/images/9fb0bc894ba72a1f7b3c2e1a6040675b.png][Quản lý chiết khẩu (Discount)](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-chiet-khau-discount.md)\n\n#### [IMAGE: data/images/3b1f7ffed317ec21bdad2e999a11c4cb.png][Quản lý Voucher](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-ma-giam-gia-sponsor.md)\n\n#### [IMAGE: data/images/1f198c0f44964641f63c40d36d99a0ef.png][Quản lý Loyalty](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-diem-tich-luy-loyalty.md)\n\n#### [IMAGE: data/images/037fe0707498df0531d928b2bc69603d.png][Quản lý bảo lưu (Delay)](/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay.md)\n\n#### [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)",
+      "token_count": 289,
+      "content_hash": "3ec0dbf7b3bf56d58e0f66f93b4a396f18f0c018347e667e80f951d3af656503",
+      "image_paths": [
+        "data/images/c5be113d1cfe8a8d8bbd28bf26481334.png",
+        "data/images/ca3110f0d7f4cc22414c17fb04489887.png",
+        "data/images/9fb0bc894ba72a1f7b3c2e1a6040675b.png",
+        "data/images/3b1f7ffed317ec21bdad2e999a11c4cb.png",
+        "data/images/1f198c0f44964641f63c40d36d99a0ef.png",
+        "data/images/037fe0707498df0531d928b2bc69603d.png",
+        "data/images/c5be113d1cfe8a8d8bbd28bf26481334.png"
+      ]
+    },
+    {
+      "chunk_id": "a262d63d4532272dc3e5a6fbc39bb58e5e1221770f657b984b12afe964e92d09",
+      "parent_id": "a262d63d4532272dc3e5a6fbc39bb58e5e1221770f657b984b12afe964e92d09",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/teacher-guide/lich-day-trong-tuan.md",
+      "doc_title": "Lịch dạy trong tuần",
+      "breadcrumb": [
+        "teacher-guide",
+        "lich-day-trong-tuan"
+      ],
+      "section": "teacher-guide",
+      "product": "TEA",
+      "heading_path": "Lịch dạy trong tuần",
+      "content": "[Teacher Guide > Lich Day Trong Tuan] Lịch dạy trong tuần\n\n# Lịch dạy trong tuần\n\n> Tại màn hình **Home** ở bên góc trái, khi nhấn vào, hệ thống sẽ show ra lịch giảng dạy trong 7 ngày trong tuần, và sẽ có kèm link google meeting trong các buổi.\n\n[IMAGE: data/images/ab7ad2248cd6916fc5e8078d72e93e71.png] Màn hình hiển thị lịch giảng dạy trong 7 ngày trong tuần với các khung giờ và thông tin chi tiết của từng buổi học, trong đó có tích hợp sẵn link Google Meet để tham gia.",
+      "raw_text": "# Lịch dạy trong tuần\n\n> Tại màn hình **Home** ở bên góc trái, khi nhấn vào, hệ thống sẽ show ra lịch giảng dạy trong 7 ngày trong tuần, và sẽ có kèm link google meeting trong các buổi.\n\n[IMAGE: data/images/ab7ad2248cd6916fc5e8078d72e93e71.png] Màn hình hiển thị lịch giảng dạy trong 7 ngày trong tuần với các khung giờ và thông tin chi tiết của từng buổi học, trong đó có tích hợp sẵn link Google Meet để tham gia.",
+      "token_count": 118,
+      "content_hash": "a262d63d4532272dc3e5a6fbc39bb58e5e1221770f657b984b12afe964e92d09",
+      "image_paths": [
+        "data/images/ab7ad2248cd6916fc5e8078d72e93e71.png"
+      ]
+    },
+    {
+      "chunk_id": "18d4dde6da58eccc477a62b7d0ed0212384cead4b68700c7a033c21c38e4c74a",
+      "parent_id": "18d4dde6da58eccc477a62b7d0ed0212384cead4b68700c7a033c21c38e4c74a",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/canh-bao-trung-du-lieu.md",
+      "doc_title": "Cảnh báo trùng dữ liệu",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "lead",
+        "canh-bao-trung-du-lieu"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Cảnh báo trùng dữ liệu",
+      "content": "[Tuyen Sinh Ban Hang > Lead > Canh Bao Trung Du Lieu] Cảnh báo trùng dữ liệu\n\n# Cảnh báo trùng dữ liệu\n\n> Khi nhập dữ liệu vào bị trùng thông tin về **số điện thoại và họ tên**, hệ thống sẽ cảnh báo người dùng bị trùng dữ liệu, bạn có thể bỏ qua thì nhấn **Cancel** hoặc nhập lại thông tin thì nhấn **Go Back**.\n\n[IMAGE: data/images/99fdf1b44f077b63d5f526d2e67706d6.png] When entering duplicate information for both phone number and full name, the system displays a warning stating \"1 duplicates found.\" Users can click **Cancel** to ignore the warning or click **Go back** (indicated by the red arrow and box) to re-enter the information.\n\n> *Video hướng dẫn chức năng cảnh báo trùng dữ liệu*",
+      "raw_text": "# Cảnh báo trùng dữ liệu\n\n> Khi nhập dữ liệu vào bị trùng thông tin về **số điện thoại và họ tên**, hệ thống sẽ cảnh báo người dùng bị trùng dữ liệu, bạn có thể bỏ qua thì nhấn **Cancel** hoặc nhập lại thông tin thì nhấn **Go Back**.\n\n[IMAGE: data/images/99fdf1b44f077b63d5f526d2e67706d6.png] When entering duplicate information for both phone number and full name, the system displays a warning stating \"1 duplicates found.\" Users can click **Cancel** to ignore the warning or click **Go back** (indicated by the red arrow and box) to re-enter the information.\n\n> *Video hướng dẫn chức năng cảnh báo trùng dữ liệu*",
+      "token_count": 173,
+      "content_hash": "18d4dde6da58eccc477a62b7d0ed0212384cead4b68700c7a033c21c38e4c74a",
+      "image_paths": [
+        "data/images/99fdf1b44f077b63d5f526d2e67706d6.png"
+      ]
+    },
+    {
+      "chunk_id": "9a09bc20aaf399e097e79bed3fd10cda5e46a4dde79e434f8fccd5e5af01927f",
+      "parent_id": "9a09bc20aaf399e097e79bed3fd10cda5e46a4dde79e434f8fccd5e5af01927f",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-thong-bao-nghi-hoc-hoc-bu-send-app-message/gui-tin-nhan-qua-mobile-app-cho-phu-huynh.md",
+      "doc_title": "Gửi tin nhắn qua Mobile App cho phụ huynh",
+      "breadcrumb": [
+        "tinh-nang-danh-cho-parents-app-tren-crm",
+        "gui-thong-bao-nghi-hoc-hoc-bu-send-app-message",
+        "gui-tin-nhan-qua-mobile-app-cho-phu-huynh"
+      ],
+      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
+      "product": "EMS",
+      "heading_path": "Gửi tin nhắn qua Mobile App cho phụ huynh",
+      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Thong Bao Nghi Hoc Hoc Bu Send App Message > Gui Tin Nhan Qua Mobile App Cho Phu Huynh] Gửi tin nhắn qua Mobile App cho phụ huynh\n\n# Gửi tin nhắn qua Mobile App cho phụ huynh\n\n> **Bước 1:** Ở màn hình danh sách của module Classes sau đó click chọn lớp cần gửi thông báo đến App như lịch học bù lịch khai giảng,... đến cho học viên.\n\n[IMAGE: data/images/6d64440ae973cfb32b060cac2d8d6ff2.png] Ở màn hình danh sách lớp học (Classes), bạn nhấp chọn tên của lớp học cụ thể (ví dụ: lớp \"KET 1C\" có mã GV-KET119-0003) để tiến hành gửi thông báo đến ứng dụng của học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/23b2d75fee23a64021b38c774ffd8c53.png] Nhấn vào nút **Attendance & Homework** trên thanh công cụ phía trên để quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình điểm danh, nhấn chọn **Send App Message** nhập tin nhắn muốn gửi thông báo đến học viên qua app. Sau đó nhấn **Send.**\n\n[IMAGE: data/images/36eeca73d22a2b3a2f152bf8c45ab105.png] Nhấn chọn nút **Send Apps Messages** được khoanh đỏ để gửi tin nhắn thông báo đến học viên qua ứng dụng, sau đó nhấn **Send** ở từng hàng tương ứng.\n\n> Sau khi gửi thành công, mobile app sẽ nhận được thông báo như hình mẫu bên dưới.\n\n[IMAGE: data/images/e89960e87a91036ef32fa0711a8e6edf.png] Sau khi gửi thành công, mobile app hiển thị màn hình chính với thông báo \"Bạn có thông báo mới!!\" cùng các mục quản lý học tập như thời khóa biểu, sổ liên lạc, kết quả học tập và học phí. Phía dưới hiển thị thông tin chi tiết về buổi học trong tuần và danh sách lớp học gần đây.\n\n[IMAGE: data/images/90c309d74ab759e2246f9999da358d41.png] Mobile app hiển thị thông báo với nội dung \"Bạn có thông báo mới!!\" kèm theo thời gian và chi tiết thông báo \"Học viên chăm học, làm bài tập đầy đủ\".",
+      "raw_text": "# Gửi tin nhắn qua Mobile App cho phụ huynh\n\n> **Bước 1:** Ở màn hình danh sách của module Classes sau đó click chọn lớp cần gửi thông báo đến App như lịch học bù lịch khai giảng,... đến cho học viên.\n\n[IMAGE: data/images/6d64440ae973cfb32b060cac2d8d6ff2.png] Ở màn hình danh sách lớp học (Classes), bạn nhấp chọn tên của lớp học cụ thể (ví dụ: lớp \"KET 1C\" có mã GV-KET119-0003) để tiến hành gửi thông báo đến ứng dụng của học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/23b2d75fee23a64021b38c774ffd8c53.png] Nhấn vào nút **Attendance & Homework** trên thanh công cụ phía trên để quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình điểm danh, nhấn chọn **Send App Message** nhập tin nhắn muốn gửi thông báo đến học viên qua app. Sau đó nhấn **Send.**\n\n[IMAGE: data/images/36eeca73d22a2b3a2f152bf8c45ab105.png] Nhấn chọn nút **Send Apps Messages** được khoanh đỏ để gửi tin nhắn thông báo đến học viên qua ứng dụng, sau đó nhấn **Send** ở từng hàng tương ứng.\n\n> Sau khi gửi thành công, mobile app sẽ nhận được thông báo như hình mẫu bên dưới.\n\n[IMAGE: data/images/e89960e87a91036ef32fa0711a8e6edf.png] Sau khi gửi thành công, mobile app hiển thị màn hình chính với thông báo \"Bạn có thông báo mới!!\" cùng các mục quản lý học tập như thời khóa biểu, sổ liên lạc, kết quả học tập và học phí. Phía dưới hiển thị thông tin chi tiết về buổi học trong tuần và danh sách lớp học gần đây.\n\n[IMAGE: data/images/90c309d74ab759e2246f9999da358d41.png] Mobile app hiển thị thông báo với nội dung \"Bạn có thông báo mới!!\" kèm theo thời gian và chi tiết thông báo \"Học viên chăm học, làm bài tập đầy đủ\".",
+      "token_count": 465,
+      "content_hash": "9a09bc20aaf399e097e79bed3fd10cda5e46a4dde79e434f8fccd5e5af01927f",
+      "image_paths": [
+        "data/images/6d64440ae973cfb32b060cac2d8d6ff2.png",
+        "data/images/23b2d75fee23a64021b38c774ffd8c53.png",
+        "data/images/36eeca73d22a2b3a2f152bf8c45ab105.png",
+        "data/images/e89960e87a91036ef32fa0711a8e6edf.png",
+        "data/images/90c309d74ab759e2246f9999da358d41.png"
+      ]
+    },
+    {
+      "chunk_id": "d41d37d06af7c115c2d919006f1f697ab52946d4de817aab8180924c5f31dd5b",
+      "parent_id": "a8d513f98f0eeebae4dbbd5e2fc97884e2881966daa781fb30cf958e9ac87174",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/email-marketing.md",
+      "doc_title": "Email Marketing",
+      "breadcrumb": [
+        "nhom-tinh-nang-tiep-thi",
+        "email-marketing"
+      ],
+      "section": "nhom-tinh-nang-tiep-thi",
+      "product": "EMS",
+      "heading_path": "Email Marketing > Hướng dẫn chèn hình ảnh vào Email Template&#x20;",
+      "content": "[Nhom Tinh Nang Tiep Thi > Email Marketing] Email Marketing > Hướng dẫn chèn hình ảnh vào Email Template&#x20;\n\n# Email Marketing\n\n> **Bước 1:** Ở màn hình danh sách của module **Emails**, ta nhấn vào button **Tạo mẫu email** (**Create Email Template)** để mở ra màn hình thêm mới **Email Templates**.\n\n[IMAGE: data/images/a8f2b49a85adeeb97950f81054ed8af2.png] Trên giao diện quản lý Email, người dùng nhấn vào nút **Tạo mẫu email** để bắt đầu thêm mới các mẫu email. Mục này được đánh dấu bằng một hộp màu hồng và có mũi tên minh họa hướng dẫn thao tác.\n\n> **Bước 2:** Tại màn hình tạo mới mẫu **Email Template, chọn loại là \"Chiến dich\"**, soạn nội dung email, sau đó nhấn vào nút Lưu (Save).\n\n[IMAGE: data/images/7905dd86b0f926ce2e122a1e61dc5dd9.jpg] Trong màn hình tạo mới mẫu Email, trường **Loại** (được đánh dấu số 2) cho phép chọn tùy chọn **chiến dịch** từ danh sách thả xuống. Khu vực **Nội dung** (số 7) đi kèm với thanh công cụ định dạng văn bản (số 5) và các tính năng chèn đối tượng để người dùng soạn thảo nội dung email.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Tên Email Template MKT\n2. Loại Template (Email, Campaign, SMS) : Chọn là Chiến dịch (Campaigns)\n3. Tiêu đề của Email Template MKT\n4. HTML : chèn nội dung email định dạng HTML (Nếu có)\n5. Format nội dung kiểu chữ, màu chữ...&#x20;\n6. Đính kèm hình ảnh (Nếu có). Trường hợp muốn đình kèm ảnh vào email, vui lòng xem thêm hướng dẫn [**>>tại đây **Bước 3:** Hệ thống hiển thị thông tin mẫu **Email Template** vừa được tạo.\n\n[IMAGE: data/images/6aab787cf35c11cb5049a8b5569e8777.jpg] The system displays the details of the \"Email MKT Noen\" campaign, including its name, creation and modification dates, branch, and full HTML content along with the email preview.\n\n## Hướng dẫn chèn hình ảnh vào Email Template&#x20;\n\n> Bước 1 : Truy cập vào website :  và tiến hình upload hình ảnh bạn cần\n\n[IMAGE: data/images/33eaa122e345a886176f9695c3801c42.png] Nhấp vào nút **\"START UPLOADING\"** để bắt đầu quá trình tải lên hình ảnh của bạn lên website.",
+      "raw_text": "# Email Marketing\n\n> **Bước 1:** Ở màn hình danh sách của module **Emails**, ta nhấn vào button **Tạo mẫu email** (**Create Email Template)** để mở ra màn hình thêm mới **Email Templates**.\n\n[IMAGE: data/images/a8f2b49a85adeeb97950f81054ed8af2.png] Trên giao diện quản lý Email, người dùng nhấn vào nút **Tạo mẫu email** để bắt đầu thêm mới các mẫu email. Mục này được đánh dấu bằng một hộp màu hồng và có mũi tên minh họa hướng dẫn thao tác.\n\n> **Bước 2:** Tại màn hình tạo mới mẫu **Email Template, chọn loại là \"Chiến dich\"**, soạn nội dung email, sau đó nhấn vào nút Lưu (Save).\n\n[IMAGE: data/images/7905dd86b0f926ce2e122a1e61dc5dd9.jpg] Trong màn hình tạo mới mẫu Email, trường **Loại** (được đánh dấu số 2) cho phép chọn tùy chọn **chiến dịch** từ danh sách thả xuống. Khu vực **Nội dung** (số 7) đi kèm với thanh công cụ định dạng văn bản (số 5) và các tính năng chèn đối tượng để người dùng soạn thảo nội dung email.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Tên Email Template MKT\n2. Loại Template (Email, Campaign, SMS) : Chọn là Chiến dịch (Campaigns)\n3. Tiêu đề của Email Template MKT\n4. HTML : chèn nội dung email định dạng HTML (Nếu có)\n5. Format nội dung kiểu chữ, màu chữ...&#x20;\n6. Đính kèm hình ảnh (Nếu có). Trường hợp muốn đình kèm ảnh vào email, vui lòng xem thêm hướng dẫn [**>>tại đây **Bước 3:** Hệ thống hiển thị thông tin mẫu **Email Template** vừa được tạo.\n\n[IMAGE: data/images/6aab787cf35c11cb5049a8b5569e8777.jpg] The system displays the details of the \"Email MKT Noen\" campaign, including its name, creation and modification dates, branch, and full HTML content along with the email preview.\n\n## Hướng dẫn chèn hình ảnh vào Email Template&#x20;\n\n> Bước 1 : Truy cập vào website :  và tiến hình upload hình ảnh bạn cần\n\n[IMAGE: data/images/33eaa122e345a886176f9695c3801c42.png] Nhấp vào nút **\"START UPLOADING\"** để bắt đầu quá trình tải lên hình ảnh của bạn lên website.",
+      "token_count": 506,
+      "content_hash": "d41d37d06af7c115c2d919006f1f697ab52946d4de817aab8180924c5f31dd5b",
+      "image_paths": [
+        "data/images/a8f2b49a85adeeb97950f81054ed8af2.png",
+        "data/images/7905dd86b0f926ce2e122a1e61dc5dd9.jpg",
+        "data/images/6aab787cf35c11cb5049a8b5569e8777.jpg",
+        "data/images/33eaa122e345a886176f9695c3801c42.png"
+      ]
+    },
+    {
+      "chunk_id": "2bc2ec821dda9bb946b68eaa0742690dd3e2a931f104e13173f542625528b373",
+      "parent_id": "a8d513f98f0eeebae4dbbd5e2fc97884e2881966daa781fb30cf958e9ac87174",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/email-marketing.md",
+      "doc_title": "Email Marketing",
+      "breadcrumb": [
+        "nhom-tinh-nang-tiep-thi",
+        "email-marketing"
+      ],
+      "section": "nhom-tinh-nang-tiep-thi",
+      "product": "EMS",
+      "heading_path": "Email Marketing > Hướng dẫn chèn hình ảnh vào Email Template&#x20;",
+      "content": "[Nhom Tinh Nang Tiep Thi > Email Marketing] Email Marketing > Hướng dẫn chèn hình ảnh vào Email Template&#x20;\n\n> Bước 2 : Sau khi upload hình ảnh thành công chọn thông tin như hình bên dưới và copy đường link của ảnh.\n\n[IMAGE: data/images/ce861bc97d663ef00371a5e691854125.png] Sau khi upload thành công, tại mục \"Embed codes\", người dùng chọn \"HTML full linked\" (1) và sao chép đoạn mã HTML chứa đường link của hình ảnh (2).\n\n> Bước 3 : Sau khi có link của hình ảnh, vào lại Email MKT, chọn thẻ hình ảnh (6) và tiến hành dán vừa link vừa copy vào (1) , sau đó bấm nút Insert là hoàn tất việc chèn ảnh vào email MKT.\n\n[IMAGE: data/images/2e33924abbc5d396c723ce0ca316abb0.png] Trong khung soạn thảo nội dung (7), nhấp vào biểu tượng hình ảnh (6) trên thanh công cụ (5) để mở cửa sổ chèn hình ảnh vào email MKT.\n\n[IMAGE: data/images/1d2cd697fae1035d39fc9b213fa53d01.png] The \"Insert/Edit Image\" dialog box is displayed, allowing configuration of the image properties. The image URL is entered in the designated field (1), the alignment is set to \"Middle\" (2), and the dimensions are specified as 640 by 341 pixels (3). Finally, click the \"Insert\" button at the bottom left to add the image to the email.\n\n> **Lưu ý:** **Ghi chú** :&#x20;\n\n1. Link hình ảnh được copy dán vào\n2. Xác định vị trí của ảnh được chèn\n3. Kích thước ảnh được chèn",
+      "raw_text": "> Bước 2 : Sau khi upload hình ảnh thành công chọn thông tin như hình bên dưới và copy đường link của ảnh.\n\n[IMAGE: data/images/ce861bc97d663ef00371a5e691854125.png] Sau khi upload thành công, tại mục \"Embed codes\", người dùng chọn \"HTML full linked\" (1) và sao chép đoạn mã HTML chứa đường link của hình ảnh (2).\n\n> Bước 3 : Sau khi có link của hình ảnh, vào lại Email MKT, chọn thẻ hình ảnh (6) và tiến hành dán vừa link vừa copy vào (1) , sau đó bấm nút Insert là hoàn tất việc chèn ảnh vào email MKT.\n\n[IMAGE: data/images/2e33924abbc5d396c723ce0ca316abb0.png] Trong khung soạn thảo nội dung (7), nhấp vào biểu tượng hình ảnh (6) trên thanh công cụ (5) để mở cửa sổ chèn hình ảnh vào email MKT.\n\n[IMAGE: data/images/1d2cd697fae1035d39fc9b213fa53d01.png] The \"Insert/Edit Image\" dialog box is displayed, allowing configuration of the image properties. The image URL is entered in the designated field (1), the alignment is set to \"Middle\" (2), and the dimensions are specified as 640 by 341 pixels (3). Finally, click the \"Insert\" button at the bottom left to add the image to the email.\n\n> **Lưu ý:** **Ghi chú** :&#x20;\n\n1. Link hình ảnh được copy dán vào\n2. Xác định vị trí của ảnh được chèn\n3. Kích thước ảnh được chèn",
+      "token_count": 334,
+      "content_hash": "2bc2ec821dda9bb946b68eaa0742690dd3e2a931f104e13173f542625528b373",
+      "image_paths": [
+        "data/images/ce861bc97d663ef00371a5e691854125.png",
+        "data/images/2e33924abbc5d396c723ce0ca316abb0.png",
+        "data/images/1d2cd697fae1035d39fc9b213fa53d01.png"
+      ]
+    },
+    {
+      "chunk_id": "ae87d54d4a64b162b72c4b2ba5f90dcbef61d7fd2f0f88529cae87f8f6573782",
+      "parent_id": "4a1f1998953668b3fb5532dc405803cc622c7c2bc3212f85b86c02ea2163d46b",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/chuyen-doi-hoc-vien-chinh-thuc-convert-student/import-danh-sach-hoc-vien-chinh-thuc.md",
+      "doc_title": "Import danh sách học viên chính thức",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "chuyen-doi-hoc-vien-chinh-thuc-convert-student",
+        "import-danh-sach-hoc-vien-chinh-thuc"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Import danh sách học viên chính thức",
+      "content": "[Tuyen Sinh Ban Hang > Chuyen Doi Hoc Vien Chinh Thuc Convert Student > Import Danh Sach Hoc Vien Chinh Thuc] Import danh sách học viên chính thức\n\n# Import danh sách học viên chính thức\n\n> **Bước 1:** Ở màn hình danh sách của module **Students,** ta nhấn vào button **Import Student** để cho phép người dùng Import data từ local.\n\n[IMAGE: data/images/87afd3041a0ec29794ff1a8f9f1d56a2.png] Nhấn vào nút **Import Students** ở góc trên bên phải màn hình để thực hiện nhập dữ liệu học sinh từ tệp tin cục bộ.\n\n> **Bước 2:** Chọn **Next.**\n\n​\n\n[IMAGE: data/images/94f62f00e884c34b2b4ae1ba6caba48a.png] Click the \"Next >\" button to proceed to the next step of the data import process.\n\n> **Bước 3:** Tải mẫu File Import (nếu chưa có), sau đó đưa file lên hệ thống click vào Choose File. Sau đó chọn **Next**.\n\n[IMAGE: data/images/8303510bc729d5d3872be5f9b48545ac.png] Người dùng tải mẫu file import (nếu chưa có) bằng cách nhấp vào liên kết **Download Import File Template** (1), sau đó nhấn **Choose File** (2) để chọn file từ máy tính. Cuối cùng, nhấp vào nút **Next >** ở góc dưới bên trái để chuyển sang bước tiếp theo.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Chú thích** :\n\n1. Download file Import mẫu (nếu chưa có)\n2. Lựa chọn file để Import dữ liệu\n3. Click chọn tạo leads mới từ dữ liệu được import\n4. Click chọn tạo và cập nhật leads.\n5. Chọn template import dữ liệu vào hệ thống (bắt buộc chọn theo template đã cho)\n\n:man\\_raising\\_hand: **Lưu ý** :\n\n* File Template dùng để Import dữ liệu Leads vào hệ thống đã được đính kèm trên hệ hống.\n* Các cột có tô màu là những cột bắt buộc phải nhập dữ liệu ( các cột còn lại có thể có hoặc không ) Dữ liệu phải chính xác thì hệ thống mới Import học viên vào đúng).\n\n> **Bước 4:** Xác nhận các thuộc tính, Pre-set Import Setting. Click Next\n\n[IMAGE: data/images/f223c2f3b1916cefa5e8aa21639a56e6.png] Click the **Next >** button to proceed to the next step of the import process.\n\n> **Bước 5:** Xác nhận việc ánh xạ các thuộc tính. Sau đó chọn **Next**.\n\n[IMAGE: data/images/2661953ffb4705e5936843eb4c4e1aaa.png] Xác nhận việc ánh xạ các thuộc tính. Sau đó chọn **Next**.",
+      "raw_text": "# Import danh sách học viên chính thức\n\n> **Bước 1:** Ở màn hình danh sách của module **Students,** ta nhấn vào button **Import Student** để cho phép người dùng Import data từ local.\n\n[IMAGE: data/images/87afd3041a0ec29794ff1a8f9f1d56a2.png] Nhấn vào nút **Import Students** ở góc trên bên phải màn hình để thực hiện nhập dữ liệu học sinh từ tệp tin cục bộ.\n\n> **Bước 2:** Chọn **Next.**\n\n​\n\n[IMAGE: data/images/94f62f00e884c34b2b4ae1ba6caba48a.png] Click the \"Next >\" button to proceed to the next step of the data import process.\n\n> **Bước 3:** Tải mẫu File Import (nếu chưa có), sau đó đưa file lên hệ thống click vào Choose File. Sau đó chọn **Next**.\n\n[IMAGE: data/images/8303510bc729d5d3872be5f9b48545ac.png] Người dùng tải mẫu file import (nếu chưa có) bằng cách nhấp vào liên kết **Download Import File Template** (1), sau đó nhấn **Choose File** (2) để chọn file từ máy tính. Cuối cùng, nhấp vào nút **Next >** ở góc dưới bên trái để chuyển sang bước tiếp theo.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Chú thích** :\n\n1. Download file Import mẫu (nếu chưa có)\n2. Lựa chọn file để Import dữ liệu\n3. Click chọn tạo leads mới từ dữ liệu được import\n4. Click chọn tạo và cập nhật leads.\n5. Chọn template import dữ liệu vào hệ thống (bắt buộc chọn theo template đã cho)\n\n:man\\_raising\\_hand: **Lưu ý** :\n\n* File Template dùng để Import dữ liệu Leads vào hệ thống đã được đính kèm trên hệ hống.\n* Các cột có tô màu là những cột bắt buộc phải nhập dữ liệu ( các cột còn lại có thể có hoặc không ) Dữ liệu phải chính xác thì hệ thống mới Import học viên vào đúng).\n\n> **Bước 4:** Xác nhận các thuộc tính, Pre-set Import Setting. Click Next\n\n[IMAGE: data/images/f223c2f3b1916cefa5e8aa21639a56e6.png] Click the **Next >** button to proceed to the next step of the import process.\n\n> **Bước 5:** Xác nhận việc ánh xạ các thuộc tính. Sau đó chọn **Next**.\n\n[IMAGE: data/images/2661953ffb4705e5936843eb4c4e1aaa.png] Xác nhận việc ánh xạ các thuộc tính. Sau đó chọn **Next**.",
+      "token_count": 529,
+      "content_hash": "ae87d54d4a64b162b72c4b2ba5f90dcbef61d7fd2f0f88529cae87f8f6573782",
+      "image_paths": [
+        "data/images/87afd3041a0ec29794ff1a8f9f1d56a2.png",
+        "data/images/94f62f00e884c34b2b4ae1ba6caba48a.png",
+        "data/images/8303510bc729d5d3872be5f9b48545ac.png",
+        "data/images/f223c2f3b1916cefa5e8aa21639a56e6.png",
+        "data/images/2661953ffb4705e5936843eb4c4e1aaa.png"
+      ]
+    },
+    {
+      "chunk_id": "f5b5cc7149088fd48173e5de2b5d6df7e12ce71accbb0d8b8ad0c77739765848",
+      "parent_id": "4a1f1998953668b3fb5532dc405803cc622c7c2bc3212f85b86c02ea2163d46b",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/chuyen-doi-hoc-vien-chinh-thuc-convert-student/import-danh-sach-hoc-vien-chinh-thuc.md",
+      "doc_title": "Import danh sách học viên chính thức",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "chuyen-doi-hoc-vien-chinh-thuc-convert-student",
+        "import-danh-sach-hoc-vien-chinh-thuc"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Import danh sách học viên chính thức",
+      "content": "[Tuyen Sinh Ban Hang > Chuyen Doi Hoc Vien Chinh Thuc Convert Student > Import Danh Sach Hoc Vien Chinh Thuc] Import danh sách học viên chính thức\n\n> **Bước 6:** Xác nhận việc kiểm tra trùng. Sau đó tiến hành nhập dữ liệu để bắt đầu Import dữ liệu vào hệ thống.\n\n[IMAGE: data/images/5f683faa3bd695e1c6217487eccf4761.png] Nhấn vào nút **Import Now** để bắt đầu quá trình nhập dữ liệu vào hệ thống.\n\n> **Bước 7:** Kết quả sau khi Import.\n\n[IMAGE: data/images/2df29c5e9b8100da07f28d2bbf9807f5.png] Giao diện hiển thị kết quả sau khi import với các mục tổng kết về số lượng lỗi (6), số bản ghi trùng lặp (5), cùng các nút chức năng như Import Again, Exit, và Add To Target List. Danh sách các bản ghi được chia thành các tab \"Created Records\", \"Duplicates\", và \"Errors\" cho Schools và Campaigns.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Chọn vào để quay lại bước nhập trước đó.\n2. Chọn vào để tiến hành Import thêm dữ liệu .\n3. Chọn vào để hoàn tất việc Import hệ thống sẽ tự động chuyển về màn hình danh sách Student",
+      "raw_text": "> **Bước 6:** Xác nhận việc kiểm tra trùng. Sau đó tiến hành nhập dữ liệu để bắt đầu Import dữ liệu vào hệ thống.\n\n[IMAGE: data/images/5f683faa3bd695e1c6217487eccf4761.png] Nhấn vào nút **Import Now** để bắt đầu quá trình nhập dữ liệu vào hệ thống.\n\n> **Bước 7:** Kết quả sau khi Import.\n\n[IMAGE: data/images/2df29c5e9b8100da07f28d2bbf9807f5.png] Giao diện hiển thị kết quả sau khi import với các mục tổng kết về số lượng lỗi (6), số bản ghi trùng lặp (5), cùng các nút chức năng như Import Again, Exit, và Add To Target List. Danh sách các bản ghi được chia thành các tab \"Created Records\", \"Duplicates\", và \"Errors\" cho Schools và Campaigns.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Chọn vào để quay lại bước nhập trước đó.\n2. Chọn vào để tiến hành Import thêm dữ liệu .\n3. Chọn vào để hoàn tất việc Import hệ thống sẽ tự động chuyển về màn hình danh sách Student",
+      "token_count": 256,
+      "content_hash": "f5b5cc7149088fd48173e5de2b5d6df7e12ce71accbb0d8b8ad0c77739765848",
+      "image_paths": [
+        "data/images/5f683faa3bd695e1c6217487eccf4761.png",
+        "data/images/2df29c5e9b8100da07f28d2bbf9807f5.png"
+      ]
+    },
+    {
+      "chunk_id": "1097ffd71a6160bdf0e5d54e5ab8b166ad31c4f314eb93f8b94c0a528a71e412",
+      "parent_id": "1097ffd71a6160bdf0e5d54e5ab8b166ad31c4f314eb93f8b94c0a528a71e412",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/to-chuc-lop-hoc.md",
+      "doc_title": "Tổ chức lớp học",
+      "breadcrumb": [
+        "bo-phan-giao-vu",
+        "to-chuc-lop-hoc"
+      ],
+      "section": "bo-phan-giao-vu",
+      "product": "EMS",
+      "heading_path": "Tổ chức lớp học > [IMAGE: data/images/17f63b7999b3704a23d997a82b996abd.png][Quản lý lịch nghỉ lễ trong năm](/bo-phan-giao-vu/to-chuc-lop-hoc/quan-li-lich-nghi-le-trong-nam.md)",
+      "content": "[Bo Phan Giao Vu > To Chuc Lop Hoc] Tổ chức lớp học > [IMAGE: data/images/17f63b7999b3704a23d997a82b996abd.png][Quản lý lịch nghỉ lễ trong năm](/bo-phan-giao-vu/to-chuc-lop-hoc/quan-li-lich-nghi-le-trong-nam.md)\n\n# Tổ chức lớp học\n\n#### [IMAGE: data/images/88205f3dd0b2d664fc324d415a050c40.png][Tạo lớp học, lớp chờ](/bo-phan-giao-vu/to-chuc-lop-hoc/tao-lop-hoc-lop-cho.md)\n\n#### [IMAGE: data/images/8c294fb34e5e8d3e4ae5a391f05b1c20.png][Tạo Room (Class In: Teacher)](broken://pages/OCuoLCJs9iqakA8fS3FU)\n\n#### [IMAGE: data/images/236d8a82a6c39217741f3bfd35a4346e.png][Xếp Room](broken://pages/1lMi5YR4C4lLOhuD7E2G)\n\n#### [IMAGE: data/images/f1f7e48ad97cd27e35423ee7f80953d7.png][Hủy buổi học / chọn ngày học bù](/bo-phan-giao-vu/to-chuc-lop-hoc/huy-buoi-hoc-chon-ngay-hoc-bu.md)\n\n#### [IMAGE: data/images/a29154db6935c9f27fdc5e8182cd8484.png][Đổi ngày khai giảng](/bo-phan-giao-vu/to-chuc-lop-hoc/doi-ngay-khai-giang.md)\n\n#### [IMAGE: data/images/194fe19e57286e8c06c97483637b87d0.png][Đổi lịch học trong khoảng thời gian bất kì](/bo-phan-giao-vu/to-chuc-lop-hoc/doi-lich-hoc-trong-khoang-thoi-gian-bat-ki.md)\n\n#### [IMAGE: data/images/17f63b7999b3704a23d997a82b996abd.png][Quản lý lịch nghỉ lễ trong năm](/bo-phan-giao-vu/to-chuc-lop-hoc/quan-li-lich-nghi-le-trong-nam.md)",
+      "raw_text": "# Tổ chức lớp học\n\n#### [IMAGE: data/images/88205f3dd0b2d664fc324d415a050c40.png][Tạo lớp học, lớp chờ](/bo-phan-giao-vu/to-chuc-lop-hoc/tao-lop-hoc-lop-cho.md)\n\n#### [IMAGE: data/images/8c294fb34e5e8d3e4ae5a391f05b1c20.png][Tạo Room (Class In: Teacher)](broken://pages/OCuoLCJs9iqakA8fS3FU)\n\n#### [IMAGE: data/images/236d8a82a6c39217741f3bfd35a4346e.png][Xếp Room](broken://pages/1lMi5YR4C4lLOhuD7E2G)\n\n#### [IMAGE: data/images/f1f7e48ad97cd27e35423ee7f80953d7.png][Hủy buổi học / chọn ngày học bù](/bo-phan-giao-vu/to-chuc-lop-hoc/huy-buoi-hoc-chon-ngay-hoc-bu.md)\n\n#### [IMAGE: data/images/a29154db6935c9f27fdc5e8182cd8484.png][Đổi ngày khai giảng](/bo-phan-giao-vu/to-chuc-lop-hoc/doi-ngay-khai-giang.md)\n\n#### [IMAGE: data/images/194fe19e57286e8c06c97483637b87d0.png][Đổi lịch học trong khoảng thời gian bất kì](/bo-phan-giao-vu/to-chuc-lop-hoc/doi-lich-hoc-trong-khoang-thoi-gian-bat-ki.md)\n\n#### [IMAGE: data/images/17f63b7999b3704a23d997a82b996abd.png][Quản lý lịch nghỉ lễ trong năm](/bo-phan-giao-vu/to-chuc-lop-hoc/quan-li-lich-nghi-le-trong-nam.md)",
+      "token_count": 318,
+      "content_hash": "1097ffd71a6160bdf0e5d54e5ab8b166ad31c4f314eb93f8b94c0a528a71e412",
+      "image_paths": [
+        "data/images/17f63b7999b3704a23d997a82b996abd.png",
+        "data/images/88205f3dd0b2d664fc324d415a050c40.png",
+        "data/images/8c294fb34e5e8d3e4ae5a391f05b1c20.png",
+        "data/images/236d8a82a6c39217741f3bfd35a4346e.png",
+        "data/images/f1f7e48ad97cd27e35423ee7f80953d7.png",
+        "data/images/a29154db6935c9f27fdc5e8182cd8484.png",
+        "data/images/194fe19e57286e8c06c97483637b87d0.png",
+        "data/images/17f63b7999b3704a23d997a82b996abd.png"
+      ]
+    },
+    {
+      "chunk_id": "6c9350790eb1330d4eff53f5b7cc965f8a48e2b7b9dc5414afb3dd1acbf069a6",
+      "parent_id": "68e53cecdcf2fe70c5e30b05777954f858ca32d54aad4f025a4057cebd15e52c",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/admin-guide/drop-payment/drop-payment/drop-to-payment-delay.md",
+      "doc_title": "Drop to Payment Delay",
+      "breadcrumb": [
+        "admin-guide",
+        "drop-payment",
+        "drop-payment",
+        "drop-to-payment-delay"
+      ],
+      "section": "admin-guide",
+      "product": "EMS",
+      "heading_path": "Drop to Payment Delay",
+      "content": "[Admin Guide > Drop Payment > Drop Payment > Drop To Payment Delay] Drop to Payment Delay\n\n# Drop to Payment Delay\n\n> **Lưu ý:** Tính năng này được sử dụng khi học viên ***đã mua và đã sử dụng được một khoản*** với KOC là A nhưng lại muốn sử dụng phần remain của gói đã mua này để học KOC B, thì người dùng sẽ phải convert qua số tiền ,sau đó tạo lại payment sử dụng số tiền đó để mua gói KOC B.\n\nNếu như gói học A mà học viên ***đã mua mà chưa sử dụng*** số giờ nào cho lớp học , và muốn sử dụng gói học A này để học gói học B thì lúc này chỉ cần thao tác các ***bước 4,5*** bên dưới.\n\n> **Bước 1:** Chọn payment mà học viên đã mua trước đó. Trong thông tin payment chọn \"**Admin Action**\", lưu ý lúc nào use type à Hour, sau đó chọn **Drop Payment**.\n\n[IMAGE: data/images/bc0010ccbd4457231d970ebe98f75041.jpg] Trong thông tin payment, nhấn vào nút **Admin Action** và chọn **Drop Payment**, đồng thời kiểm tra để đảm bảo mục **Use Type** đang ở trạng thái **Hour**.\n\n> **Bước 2:** Tại màn hình Drop Payment, chọn button **\"Drop to Payment Delay\"** và nhập lí do Drop.\n\n[IMAGE: data/images/029f9eb3b8e4dbbb862e1f3441f2dc54.jpg] Tại màn hình Drop Payment, chọn button **\"Drop to Payment Delay\"** được chỉ định bằng mũi tên màu đỏ và nhập lí do Drop vào ô tương ứng. Hệ thống sẽ tiến hành chuyển khoảng tiền drop vào mục Payment Delay của học viên.\n\n> **Bước 3:** Sau khi drop payment thành công, trong profile của học viên sẽ sinh ra một payment delay như hình bên dưới, lúc này người dùng sẽ nhấn vào ID của payment delay này.\n\n[IMAGE: data/images/b6fdbdb337c2825a9161202fbe7fa926.jpg] Trong profile của học viên xuất hiện một payment delay mới có mã `REFDB20-00068` được đánh dấu trong khung màu đỏ, với trạng thái \"Delay\", ngày 19/11/2020 và số tiền 3,600,000. Người dùng nhấn vào mã ID này để xem chi tiết thông tin payment.",
+      "raw_text": "# Drop to Payment Delay\n\n> **Lưu ý:** Tính năng này được sử dụng khi học viên ***đã mua và đã sử dụng được một khoản*** với KOC là A nhưng lại muốn sử dụng phần remain của gói đã mua này để học KOC B, thì người dùng sẽ phải convert qua số tiền ,sau đó tạo lại payment sử dụng số tiền đó để mua gói KOC B.\n\nNếu như gói học A mà học viên ***đã mua mà chưa sử dụng*** số giờ nào cho lớp học , và muốn sử dụng gói học A này để học gói học B thì lúc này chỉ cần thao tác các ***bước 4,5*** bên dưới.\n\n> **Bước 1:** Chọn payment mà học viên đã mua trước đó. Trong thông tin payment chọn \"**Admin Action**\", lưu ý lúc nào use type à Hour, sau đó chọn **Drop Payment**.\n\n[IMAGE: data/images/bc0010ccbd4457231d970ebe98f75041.jpg] Trong thông tin payment, nhấn vào nút **Admin Action** và chọn **Drop Payment**, đồng thời kiểm tra để đảm bảo mục **Use Type** đang ở trạng thái **Hour**.\n\n> **Bước 2:** Tại màn hình Drop Payment, chọn button **\"Drop to Payment Delay\"** và nhập lí do Drop.\n\n[IMAGE: data/images/029f9eb3b8e4dbbb862e1f3441f2dc54.jpg] Tại màn hình Drop Payment, chọn button **\"Drop to Payment Delay\"** được chỉ định bằng mũi tên màu đỏ và nhập lí do Drop vào ô tương ứng. Hệ thống sẽ tiến hành chuyển khoảng tiền drop vào mục Payment Delay của học viên.\n\n> **Bước 3:** Sau khi drop payment thành công, trong profile của học viên sẽ sinh ra một payment delay như hình bên dưới, lúc này người dùng sẽ nhấn vào ID của payment delay này.\n\n[IMAGE: data/images/b6fdbdb337c2825a9161202fbe7fa926.jpg] Trong profile của học viên xuất hiện một payment delay mới có mã `REFDB20-00068` được đánh dấu trong khung màu đỏ, với trạng thái \"Delay\", ngày 19/11/2020 và số tiền 3,600,000. Người dùng nhấn vào mã ID này để xem chi tiết thông tin payment.",
+      "token_count": 457,
+      "content_hash": "6c9350790eb1330d4eff53f5b7cc965f8a48e2b7b9dc5414afb3dd1acbf069a6",
+      "image_paths": [
+        "data/images/bc0010ccbd4457231d970ebe98f75041.jpg",
+        "data/images/029f9eb3b8e4dbbb862e1f3441f2dc54.jpg",
+        "data/images/b6fdbdb337c2825a9161202fbe7fa926.jpg"
+      ]
+    },
+    {
+      "chunk_id": "d86ef6ff6c4e3e401519e8ea15384eb27e2ccad159b9a5297aaf914823d4b80c",
+      "parent_id": "68e53cecdcf2fe70c5e30b05777954f858ca32d54aad4f025a4057cebd15e52c",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/admin-guide/drop-payment/drop-payment/drop-to-payment-delay.md",
+      "doc_title": "Drop to Payment Delay",
+      "breadcrumb": [
+        "admin-guide",
+        "drop-payment",
+        "drop-payment",
+        "drop-to-payment-delay"
+      ],
+      "section": "admin-guide",
+      "product": "EMS",
+      "heading_path": "Drop to Payment Delay",
+      "content": "[Admin Guide > Drop Payment > Drop Payment > Drop To Payment Delay] Drop to Payment Delay\n\n> **Bước 4:** Tại màn hình Payment Delay, chọn action \"**Convert Payment**\". Lúc này use type vẫn là Hour.\n\n[IMAGE: data/images/a50dda0c66f4bd41a1b63937fcd9fbed.jpg] Tại màn hình thanh toán chậm (Delay), chọn **Convert Payment** trong menu thả xuống **Admin Action**. Lúc này, loại sử dụng (Use Type) của khoản thanh toán vẫn được hiển thị là **Hour**.\n\n> **Bước 5:** Sau đó chọn use type là \"**To Amount**\", và cuối cùng nhấn chọn **Submit**.\n\n[IMAGE: data/images/ec750d77ffd0c5e44859e03bfe214189.jpg] Chọn loại sử dụng (Use Type) là \"To Amount\", sau đó nhấn nút **Submit** ở góc dưới bên trái để hoàn tất giao dịch.\n\n> **Bước 6:** Màn hình hiển thị thông tin covert payment thành công khi đã chuyển sang **Amount**. Lưu ý use type khi chuyển thành công sẽ là **Amount**.\n\n[IMAGE: data/images/069a2f0ef4bbeb8644485484a2f8ced3.jpg] Màn hình hiển thị thông tin chuyển đổi thanh toán thành công với \"Use Type\" là \"Amount\", tổng số tiền \"Grand Total\" là 3,600,000 và \"Remain Amount\" là 3,600,000. Phần ghi chú \"Note\" hiển thị thông tin chi tiết về việc chuyển đổi từ Delay sang Delay.",
+      "raw_text": "> **Bước 4:** Tại màn hình Payment Delay, chọn action \"**Convert Payment**\". Lúc này use type vẫn là Hour.\n\n[IMAGE: data/images/a50dda0c66f4bd41a1b63937fcd9fbed.jpg] Tại màn hình thanh toán chậm (Delay), chọn **Convert Payment** trong menu thả xuống **Admin Action**. Lúc này, loại sử dụng (Use Type) của khoản thanh toán vẫn được hiển thị là **Hour**.\n\n> **Bước 5:** Sau đó chọn use type là \"**To Amount**\", và cuối cùng nhấn chọn **Submit**.\n\n[IMAGE: data/images/ec750d77ffd0c5e44859e03bfe214189.jpg] Chọn loại sử dụng (Use Type) là \"To Amount\", sau đó nhấn nút **Submit** ở góc dưới bên trái để hoàn tất giao dịch.\n\n> **Bước 6:** Màn hình hiển thị thông tin covert payment thành công khi đã chuyển sang **Amount**. Lưu ý use type khi chuyển thành công sẽ là **Amount**.\n\n[IMAGE: data/images/069a2f0ef4bbeb8644485484a2f8ced3.jpg] Màn hình hiển thị thông tin chuyển đổi thanh toán thành công với \"Use Type\" là \"Amount\", tổng số tiền \"Grand Total\" là 3,600,000 và \"Remain Amount\" là 3,600,000. Phần ghi chú \"Note\" hiển thị thông tin chi tiết về việc chuyển đổi từ Delay sang Delay.",
+      "token_count": 293,
+      "content_hash": "d86ef6ff6c4e3e401519e8ea15384eb27e2ccad159b9a5297aaf914823d4b80c",
+      "image_paths": [
+        "data/images/a50dda0c66f4bd41a1b63937fcd9fbed.jpg",
+        "data/images/ec750d77ffd0c5e44859e03bfe214189.jpg",
+        "data/images/069a2f0ef4bbeb8644485484a2f8ced3.jpg"
+      ]
+    },
     {
       "chunk_id": "1fe0e9ae287b103e2a7e27d250b13cc76c358aad7b48596a115fa33dc32850ad",
       "parent_id": "1fe0e9ae287b103e2a7e27d250b13cc76c358aad7b48596a115fa33dc32850ad",
@@ -30,6 +324,32 @@
         "data/images/ccebb5af19cdee7c0910d4c355646014.png",
         "data/images/8b635edc3cd07884f49e0f0ab39fb715.jpg",
         "data/images/57853da52e32bb7441cd63a3fa00cfa2.jpg"
+      ]
+    },
+    {
+      "chunk_id": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "parent_id": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/merge-duplicate-hop-nhat-du-lieu.md",
+      "doc_title": "Merge Duplicate - Hợp nhất dữ liệu",
+      "breadcrumb": [
+        "tuyen-sinh-ban-hang",
+        "lead",
+        "merge-duplicate-hop-nhat-du-lieu"
+      ],
+      "section": "tuyen-sinh-ban-hang",
+      "product": "EMS",
+      "heading_path": "Merge Duplicate - Hợp nhất dữ liệu",
+      "content": "[Tuyen Sinh Ban Hang > Lead > Merge Duplicate Hop Nhat Du Lieu] Merge Duplicate - Hợp nhất dữ liệu\n\n# Merge Duplicate - Hợp nhất dữ liệu\n\n> **Bước 1:** Chọn hồ sơ bị **duplicate**, ở module bị trùng (tối đa 2 hồ sơ).\n\n[IMAGE: data/images/f630d448a3b70bc88c2e826c25b35e6b.png] Chọn tối đa hai hồ sơ bị trùng lặp (duplicate) trong danh sách Targets bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ.\n\n> **Bước 2:** Nhấn chuột vào mũi tên, sau đó chọn **Merge.**\n\n[IMAGE: data/images/41d7c5d36728572fdf2c19c7313734ee.png] Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn **Merge** từ menu thả xuống để tiến hành gộp các mục tiêu.\n\n> **Bước 3:** Hệ thống sẽ xuất hiện hồ sơ bị duplicate được chọn, sau đó chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính). Sau đó nhấn **Save**.\n\n[IMAGE: data/images/767a262fb429476afd5d4930bf570a31.png] Nhấn nút **Save** ở góc trên bên phải màn hình để hoàn tất quá trình gộp hồ sơ trùng lặp.\n\n> **Bước 4:** Tiếp tục nhấn **Confirm.**\n\n[IMAGE: data/images/5f53b649baa3b1e04c5d780c8115aa28.png] Tiếp tục nhấn nút **Confirm** trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n\n> **Bước 5:** Hệ thống thông báo Merge dữ liệu thành công giữa các hồ sơ bị duplicate được chọn\n\n[IMAGE: data/images/4e996abf518184fcd83d3335adb452ec.png] Hệ thống hiển thị thông báo \"Success 2 records were merged successfully. 0 related records were added\" ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.\n\n> *Video hướng dẫn Merge dữ liệu trùng trên hệ thống*",
+      "raw_text": "# Merge Duplicate - Hợp nhất dữ liệu\n\n> **Bước 1:** Chọn hồ sơ bị **duplicate**, ở module bị trùng (tối đa 2 hồ sơ).\n\n[IMAGE: data/images/f630d448a3b70bc88c2e826c25b35e6b.png] Chọn tối đa hai hồ sơ bị trùng lặp (duplicate) trong danh sách Targets bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ.\n\n> **Bước 2:** Nhấn chuột vào mũi tên, sau đó chọn **Merge.**\n\n[IMAGE: data/images/41d7c5d36728572fdf2c19c7313734ee.png] Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn **Merge** từ menu thả xuống để tiến hành gộp các mục tiêu.\n\n> **Bước 3:** Hệ thống sẽ xuất hiện hồ sơ bị duplicate được chọn, sau đó chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính). Sau đó nhấn **Save**.\n\n[IMAGE: data/images/767a262fb429476afd5d4930bf570a31.png] Nhấn nút **Save** ở góc trên bên phải màn hình để hoàn tất quá trình gộp hồ sơ trùng lặp.\n\n> **Bước 4:** Tiếp tục nhấn **Confirm.**\n\n[IMAGE: data/images/5f53b649baa3b1e04c5d780c8115aa28.png] Tiếp tục nhấn nút **Confirm** trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n\n> **Bước 5:** Hệ thống thông báo Merge dữ liệu thành công giữa các hồ sơ bị duplicate được chọn\n\n[IMAGE: data/images/4e996abf518184fcd83d3335adb452ec.png] Hệ thống hiển thị thông báo \"Success 2 records were merged successfully. 0 related records were added\" ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.\n\n> *Video hướng dẫn Merge dữ liệu trùng trên hệ thống*",
+      "token_count": 395,
+      "content_hash": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "image_paths": [
+        "data/images/f630d448a3b70bc88c2e826c25b35e6b.png",
+        "data/images/41d7c5d36728572fdf2c19c7313734ee.png",
+        "data/images/767a262fb429476afd5d4930bf570a31.png",
+        "data/images/5f53b649baa3b1e04c5d780c8115aa28.png",
+        "data/images/4e996abf518184fcd83d3335adb452ec.png"
       ]
     },
     {
@@ -57,29 +377,68 @@
       ]
     },
     {
-      "chunk_id": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
-      "parent_id": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "chunk_id": "716e729a973d6f388ea1f7a5985ac0f3a1d7e1710eb6f7282d7160300a87a83e",
+      "parent_id": "d6f84a2af7f3c436c86aef9a80f2d49eb82e1df6cfcb3b6b338471417ba1a3f7",
       "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/merge-duplicate-hop-nhat-du-lieu.md",
-      "doc_title": "Merge Duplicate - Hợp nhất dữ liệu",
+      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc.md",
+      "doc_title": "Gửi kết quả điểm danh, nội dung bài học",
       "breadcrumb": [
-        "tuyen-sinh-ban-hang",
-        "lead",
-        "merge-duplicate-hop-nhat-du-lieu"
+        "tinh-nang-danh-cho-parents-app-tren-crm",
+        "gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc"
       ],
-      "section": "tuyen-sinh-ban-hang",
+      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
       "product": "EMS",
-      "heading_path": "Merge Duplicate - Hợp nhất dữ liệu",
-      "content": "[Tuyen Sinh Ban Hang > Lead > Merge Duplicate Hop Nhat Du Lieu] Merge Duplicate - Hợp nhất dữ liệu\n\n# Merge Duplicate - Hợp nhất dữ liệu\n\n> **Bước 1:** Chọn hồ sơ bị **duplicate**, ở module bị trùng (tối đa 2 hồ sơ).\n\n[IMAGE: data/images/f630d448a3b70bc88c2e826c25b35e6b.png] Chọn tối đa hai hồ sơ bị trùng lặp (duplicate) trong danh sách Targets bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ.\n\n> **Bước 2:** Nhấn chuột vào mũi tên, sau đó chọn **Merge.**\n\n[IMAGE: data/images/41d7c5d36728572fdf2c19c7313734ee.png] Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn **Merge** từ menu thả xuống để tiến hành gộp các mục tiêu.\n\n> **Bước 3:** Hệ thống sẽ xuất hiện hồ sơ bị duplicate được chọn, sau đó chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính). Sau đó nhấn **Save**.\n\n[IMAGE: data/images/767a262fb429476afd5d4930bf570a31.png] Nhấn nút **Save** ở góc trên bên phải màn hình để hoàn tất quá trình gộp hồ sơ trùng lặp.\n\n> **Bước 4:** Tiếp tục nhấn **Confirm.**\n\n[IMAGE: data/images/5f53b649baa3b1e04c5d780c8115aa28.png] Tiếp tục nhấn nút **Confirm** trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n\n> **Bước 5:** Hệ thống thông báo Merge dữ liệu thành công giữa các hồ sơ bị duplicate được chọn\n\n[IMAGE: data/images/4e996abf518184fcd83d3335adb452ec.png] Hệ thống hiển thị thông báo \"Success 2 records were merged successfully. 0 related records were added\" ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.\n\n> *Video hướng dẫn Merge dữ liệu trùng trên hệ thống*",
-      "raw_text": "# Merge Duplicate - Hợp nhất dữ liệu\n\n> **Bước 1:** Chọn hồ sơ bị **duplicate**, ở module bị trùng (tối đa 2 hồ sơ).\n\n[IMAGE: data/images/f630d448a3b70bc88c2e826c25b35e6b.png] Chọn tối đa hai hồ sơ bị trùng lặp (duplicate) trong danh sách Targets bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ.\n\n> **Bước 2:** Nhấn chuột vào mũi tên, sau đó chọn **Merge.**\n\n[IMAGE: data/images/41d7c5d36728572fdf2c19c7313734ee.png] Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn **Merge** từ menu thả xuống để tiến hành gộp các mục tiêu.\n\n> **Bước 3:** Hệ thống sẽ xuất hiện hồ sơ bị duplicate được chọn, sau đó chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính). Sau đó nhấn **Save**.\n\n[IMAGE: data/images/767a262fb429476afd5d4930bf570a31.png] Nhấn nút **Save** ở góc trên bên phải màn hình để hoàn tất quá trình gộp hồ sơ trùng lặp.\n\n> **Bước 4:** Tiếp tục nhấn **Confirm.**\n\n[IMAGE: data/images/5f53b649baa3b1e04c5d780c8115aa28.png] Tiếp tục nhấn nút **Confirm** trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n\n> **Bước 5:** Hệ thống thông báo Merge dữ liệu thành công giữa các hồ sơ bị duplicate được chọn\n\n[IMAGE: data/images/4e996abf518184fcd83d3335adb452ec.png] Hệ thống hiển thị thông báo \"Success 2 records were merged successfully. 0 related records were added\" ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.\n\n> *Video hướng dẫn Merge dữ liệu trùng trên hệ thống*",
-      "token_count": 395,
-      "content_hash": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "heading_path": "Gửi kết quả điểm danh, nội dung bài học",
+      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Ket Qua Diem Danh Ve Phu Huynh Noi Dung Bai Hoc] Gửi kết quả điểm danh, nội dung bài học\n\n# Gửi kết quả điểm danh, nội dung bài học\n\n> **Bước 1:** Ở màn hình danh sách của module Classes, sau đó nhấn chọn lớp cần gửi SMS, nội dung bài học, điểm danh đến cho học viên.\n\n[IMAGE: data/images/c3144e1cc15d6a328f3f55b0b5bfb39f.png] Tại màn hình danh sách lớp học, click chọn vào tên lớp học (ví dụ: lớp \"PET 1A\") để xem chi tiết thông tin lớp hoặc thực hiện các thao tác gửi SMS, nội dung bài học và điểm danh cho học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/8e295b4709a38134e681e91ebe605807.png] Nhấn vào nút **Attendance & Homework** được đánh dấu bằng mũi tên đỏ để chuyển đến phần quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học, và cuối cùng nhấn chọn **Send Attendance Report** để gửi thông báo đến phụ huynh về buổi học của bé.\n\n[IMAGE: data/images/cd200f062e33f663bba168cb91b6627e.jpg] Tại màn hình điểm danh, nhập thông tin bài học tùy chỉnh vào các ô Theme/Topic Custom (②) và Syllabus Custom (③), cập nhật tình trạng điểm danh, làm bài tập và nhận xét cho học viên (④, ⑤, ⑥, ⑦, ⑧). Cuối cùng, nhấn chọn nút **Send Attendance Report** (⑨) để gửi báo cáo buổi học đến phụ huynh.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:",
+      "raw_text": "# Gửi kết quả điểm danh, nội dung bài học\n\n> **Bước 1:** Ở màn hình danh sách của module Classes, sau đó nhấn chọn lớp cần gửi SMS, nội dung bài học, điểm danh đến cho học viên.\n\n[IMAGE: data/images/c3144e1cc15d6a328f3f55b0b5bfb39f.png] Tại màn hình danh sách lớp học, click chọn vào tên lớp học (ví dụ: lớp \"PET 1A\") để xem chi tiết thông tin lớp hoặc thực hiện các thao tác gửi SMS, nội dung bài học và điểm danh cho học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/8e295b4709a38134e681e91ebe605807.png] Nhấn vào nút **Attendance & Homework** được đánh dấu bằng mũi tên đỏ để chuyển đến phần quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học, và cuối cùng nhấn chọn **Send Attendance Report** để gửi thông báo đến phụ huynh về buổi học của bé.\n\n[IMAGE: data/images/cd200f062e33f663bba168cb91b6627e.jpg] Tại màn hình điểm danh, nhập thông tin bài học tùy chỉnh vào các ô Theme/Topic Custom (②) và Syllabus Custom (③), cập nhật tình trạng điểm danh, làm bài tập và nhận xét cho học viên (④, ⑤, ⑥, ⑦, ⑧). Cuối cùng, nhấn chọn nút **Send Attendance Report** (⑨) để gửi báo cáo buổi học đến phụ huynh.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:",
+      "token_count": 365,
+      "content_hash": "716e729a973d6f388ea1f7a5985ac0f3a1d7e1710eb6f7282d7160300a87a83e",
       "image_paths": [
-        "data/images/f630d448a3b70bc88c2e826c25b35e6b.png",
-        "data/images/41d7c5d36728572fdf2c19c7313734ee.png",
-        "data/images/767a262fb429476afd5d4930bf570a31.png",
-        "data/images/5f53b649baa3b1e04c5d780c8115aa28.png",
-        "data/images/4e996abf518184fcd83d3335adb452ec.png"
+        "data/images/c3144e1cc15d6a328f3f55b0b5bfb39f.png",
+        "data/images/8e295b4709a38134e681e91ebe605807.png",
+        "data/images/cd200f062e33f663bba168cb91b6627e.jpg"
+      ]
+    },
+    {
+      "chunk_id": "884ff3d1da83425551502eeba07a0ff1fe7d53c81f87fb389877f024faacc770",
+      "parent_id": "d6f84a2af7f3c436c86aef9a80f2d49eb82e1df6cfcb3b6b338471417ba1a3f7",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc.md",
+      "doc_title": "Gửi kết quả điểm danh, nội dung bài học",
+      "breadcrumb": [
+        "tinh-nang-danh-cho-parents-app-tren-crm",
+        "gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc"
+      ],
+      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
+      "product": "EMS",
+      "heading_path": "Gửi kết quả điểm danh, nội dung bài học",
+      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Ket Qua Diem Danh Ve Phu Huynh Noi Dung Bai Hoc] Gửi kết quả điểm danh, nội dung bài học\n\n1. Ngày thực hiện việc check homework\n2. Tên nội dung bài học (Nhập thông tin khi buổi học khác với chương trình học trong giáo án)\n3. Nội dung bài học\n4. Check Attendance cho học viên hàng loạt\n5. Check Homework cho học viên hàng loạt.\n6. Nhập nội dung bài tập về nhà hàng loạt (Nếu bài tập về nhà so với giáo án có thay đổi).\n7. Nhập nhận xét giáo viên cho các bé hàng loạt.\n8. Đánh giá điểm chuyên cần cho Học viên.\n9. Gửi thông báo đến App **(Send Attendance Report**) về việc đi học, trể, làm bài tập về nhà, comment, điểm daily score của học viên\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Học viên có màu hồng trong danh sách: Đây là Học viên ko nằm trong buổi của ngày đó Mục đích đưa nó lên để gửi SMS.\n\n> *Video hướng dẫn Điểm danh học viên sau mỗi buổi học*",
+      "raw_text": "1. Ngày thực hiện việc check homework\n2. Tên nội dung bài học (Nhập thông tin khi buổi học khác với chương trình học trong giáo án)\n3. Nội dung bài học\n4. Check Attendance cho học viên hàng loạt\n5. Check Homework cho học viên hàng loạt.\n6. Nhập nội dung bài tập về nhà hàng loạt (Nếu bài tập về nhà so với giáo án có thay đổi).\n7. Nhập nhận xét giáo viên cho các bé hàng loạt.\n8. Đánh giá điểm chuyên cần cho Học viên.\n9. Gửi thông báo đến App **(Send Attendance Report**) về việc đi học, trể, làm bài tập về nhà, comment, điểm daily score của học viên\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Học viên có màu hồng trong danh sách: Đây là Học viên ko nằm trong buổi của ngày đó Mục đích đưa nó lên để gửi SMS.\n\n> *Video hướng dẫn Điểm danh học viên sau mỗi buổi học*",
+      "token_count": 227,
+      "content_hash": "884ff3d1da83425551502eeba07a0ff1fe7d53c81f87fb389877f024faacc770",
+      "image_paths": []
+    },
+    {
+      "chunk_id": "237909a76e324dcb9845f7de365b3c2896d5f1db3de0daea55b10d4245344936",
+      "parent_id": "237909a76e324dcb9845f7de365b3c2896d5f1db3de0daea55b10d4245344936",
+      "chunk_type": "child",
+      "doc_url": "https://help.dotb.vn/teacher-guide/diem-danh-hoc-vien.md",
+      "doc_title": "Điểm danh học viên",
+      "breadcrumb": [
+        "teacher-guide",
+        "diem-danh-hoc-vien"
+      ],
+      "section": "teacher-guide",
+      "product": "TEA",
+      "heading_path": "Điểm danh học viên",
+      "content": "[Teacher Guide > Diem Danh Hoc Vien] Điểm danh học viên\n\n# Điểm danh học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes,** sau đó nhấn chọn lớp cần gửi điểm danh.\n\n[IMAGE: data/images/5e39666147076d6336acbf73347f3c3e.png] Tại màn hình danh sách của module **Classes**, hệ thống hiển thị danh sách các lớp học cùng các thông tin chi tiết như mã lớp, tên lớp, giáo viên, lịch học, loại khóa học, trạng thái và sĩ số. Trong đó, lớp có mã `-A222-0182` (tên **Toeic 900+**) được đánh dấu nổi bật bằng khung màu đỏ để người dùng dễ dàng nhận biết và thực hiện thao tác gửi điểm danh.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button \"**Check Attendance/Homework\".**\n\n[IMAGE: data/images/c2c567dec65ec75ac4b20f2e10170551.png] Nhấn vào nút **Check Attendance/Homework** để kiểm tra điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học.\n\n[IMAGE: data/images/a54946b2cc0b2e796f33fb86353cbab1.jpg] Tại màn hình điểm danh lớp học, bạn có thể điền thông tin chi tiết về chủ đề, giáo án và ghi chú cho giáo viên. Ngoài ra, giao diện cũng liệt kê danh sách học viên bao gồm tên, tình trạng điểm danh, tình trạng làm bài tập về nhà và các ô nhận xét tương ứng.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Lớp thực hiện việc Điểm danh\n2. Ngày thực hiện Điểm danh\n3. Danh sách Học viên\n4. Điểm danh cho Học viên\n5. Kiểm tra bài tập về nhà của học viên(nếu có)\n6. Đánh giá điểm chuyên cần cho học viên\n\n> *Video hướng dẫn điểm danh học viên sau mỗi buổi học*",
+      "raw_text": "# Điểm danh học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes,** sau đó nhấn chọn lớp cần gửi điểm danh.\n\n[IMAGE: data/images/5e39666147076d6336acbf73347f3c3e.png] Tại màn hình danh sách của module **Classes**, hệ thống hiển thị danh sách các lớp học cùng các thông tin chi tiết như mã lớp, tên lớp, giáo viên, lịch học, loại khóa học, trạng thái và sĩ số. Trong đó, lớp có mã `-A222-0182` (tên **Toeic 900+**) được đánh dấu nổi bật bằng khung màu đỏ để người dùng dễ dàng nhận biết và thực hiện thao tác gửi điểm danh.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button \"**Check Attendance/Homework\".**\n\n[IMAGE: data/images/c2c567dec65ec75ac4b20f2e10170551.png] Nhấn vào nút **Check Attendance/Homework** để kiểm tra điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học.\n\n[IMAGE: data/images/a54946b2cc0b2e796f33fb86353cbab1.jpg] Tại màn hình điểm danh lớp học, bạn có thể điền thông tin chi tiết về chủ đề, giáo án và ghi chú cho giáo viên. Ngoài ra, giao diện cũng liệt kê danh sách học viên bao gồm tên, tình trạng điểm danh, tình trạng làm bài tập về nhà và các ô nhận xét tương ứng.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Lớp thực hiện việc Điểm danh\n2. Ngày thực hiện Điểm danh\n3. Danh sách Học viên\n4. Điểm danh cho Học viên\n5. Kiểm tra bài tập về nhà của học viên(nếu có)\n6. Đánh giá điểm chuyên cần cho học viên\n\n> *Video hướng dẫn điểm danh học viên sau mỗi buổi học*",
+      "token_count": 392,
+      "content_hash": "237909a76e324dcb9845f7de365b3c2896d5f1db3de0daea55b10d4245344936",
+      "image_paths": [
+        "data/images/5e39666147076d6336acbf73347f3c3e.png",
+        "data/images/c2c567dec65ec75ac4b20f2e10170551.png",
+        "data/images/a54946b2cc0b2e796f33fb86353cbab1.jpg"
       ]
     },
     {
@@ -129,480 +488,127 @@
         "data/images/3f35a5b4c9aa9f53ca47b1cd6faa0445.png",
         "data/images/0d6522b334f4efdfd75e7274ebcb2ab2.jpg"
       ]
-    },
-    {
-      "chunk_id": "aad2ca5531276c8948525209890689061066b4651ec137dc1a39b10215e77353",
-      "parent_id": "64ef201f34ac170b03a2bcfdcce3eb1a01c233f320ad63ed4f6d7d9a08d95993",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/lap-lich-gui-email.md",
-      "doc_title": "Lập lịch gửi Email",
-      "breadcrumb": [
-        "nhom-tinh-nang-tiep-thi",
-        "lap-lich-gui-email"
-      ],
-      "section": "nhom-tinh-nang-tiep-thi",
-      "product": "EMS",
-      "heading_path": "Lập lịch gửi Email",
-      "content": "[Nhom Tinh Nang Tiep Thi > Lap Lich Gui Email] Lập lịch gửi Email\n\n> Bước 2: Chọn tất cả để gửi email chiến dịch, trường hợp muốn gửi tất cả chọn vào mũi tên (1) như hình bên dưới. Cuối cùng chọn Xoá bỏ (2) là hoàn tất\n\n[IMAGE: data/images/a7541c83cc914defd36e09491f5caed6.png] Click on the **Email Queue** icon, highlighted in a red box with an arrow pointing to it, located under the Email section.",
-      "raw_text": "> Bước 2: Chọn tất cả để gửi email chiến dịch, trường hợp muốn gửi tất cả chọn vào mũi tên (1) như hình bên dưới. Cuối cùng chọn Xoá bỏ (2) là hoàn tất\n\n[IMAGE: data/images/a7541c83cc914defd36e09491f5caed6.png] Click on the **Email Queue** icon, highlighted in a red box with an arrow pointing to it, located under the Email section.",
-      "token_count": 100,
-      "content_hash": "aad2ca5531276c8948525209890689061066b4651ec137dc1a39b10215e77353",
-      "image_paths": [
-        "data/images/a7541c83cc914defd36e09491f5caed6.png"
-      ]
-    },
-    {
-      "chunk_id": "ba12493501d4fcdfee46ec6ac450e87a336f94f8a64ac034411cab1ac1636de9",
-      "parent_id": "ba12493501d4fcdfee46ec6ac450e87a336f94f8a64ac034411cab1ac1636de9",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/chuyen-doi-hoc-vien-chinh-thuc-convert-student/quan-ly-ho-so-hoc-vien-lich-su-thanh-toan.md",
-      "doc_title": "Quản lý hồ sơ học viên, lịch sử thanh toán",
-      "breadcrumb": [
-        "tuyen-sinh-ban-hang",
-        "chuyen-doi-hoc-vien-chinh-thuc-convert-student",
-        "quan-ly-ho-so-hoc-vien-lich-su-thanh-toan"
-      ],
-      "section": "tuyen-sinh-ban-hang",
-      "product": "EMS",
-      "heading_path": "Quản lý hồ sơ học viên, lịch sử thanh toán",
-      "content": "[Tuyen Sinh Ban Hang > Chuyen Doi Hoc Vien Chinh Thuc Convert Student > Quan Ly Ho So Hoc Vien Lich Su Thanh Toan] Quản lý hồ sơ học viên, lịch sử thanh toán\n\n# Quản lý hồ sơ học viên, lịch sử thanh toán\n\n> **Bước 1:** Ở màn hình danh sách của module **Students**, hệ thống sẽ hiển thị thông tin sơ lược hồ sơ học viên cho User.\n\n[IMAGE: data/images/fc2484c8d6f7ea1a9c9e321e2f6c6f89.png] Ở màn hình danh sách của module Students, hệ thống hiển thị thông tin sơ lược và chi tiết của các hồ sơ học viên, bao gồm mã học viên, tên, số điện thoại, ngày sinh, email, trạng thái và nguồn tiếp cận.\n\n> **Bước 2:** Bạn có thể chọn vào từng học viên để theo dõi thông tin học viên, lịch sử thanh toán, học nợ, học demo, lịch sử cuộc gọi,..\n\n[IMAGE: data/images/14528050b2702aabfe8073231c2146bb.png] Giao diện hiển thị chi tiết thông tin của học viên Bùi Như Thảo, bao gồm mô tả, địa chỉ, nguồn liên hệ, lịch sử thanh toán học phí, số giờ học, cũng như các tab quản lý bên dưới như Cuộc gọi, Công việc, Email, Lịch sử chiến dịch, Đăng ký và Điểm danh.",
-      "raw_text": "# Quản lý hồ sơ học viên, lịch sử thanh toán\n\n> **Bước 1:** Ở màn hình danh sách của module **Students**, hệ thống sẽ hiển thị thông tin sơ lược hồ sơ học viên cho User.\n\n[IMAGE: data/images/fc2484c8d6f7ea1a9c9e321e2f6c6f89.png] Ở màn hình danh sách của module Students, hệ thống hiển thị thông tin sơ lược và chi tiết của các hồ sơ học viên, bao gồm mã học viên, tên, số điện thoại, ngày sinh, email, trạng thái và nguồn tiếp cận.\n\n> **Bước 2:** Bạn có thể chọn vào từng học viên để theo dõi thông tin học viên, lịch sử thanh toán, học nợ, học demo, lịch sử cuộc gọi,..\n\n[IMAGE: data/images/14528050b2702aabfe8073231c2146bb.png] Giao diện hiển thị chi tiết thông tin của học viên Bùi Như Thảo, bao gồm mô tả, địa chỉ, nguồn liên hệ, lịch sử thanh toán học phí, số giờ học, cũng như các tab quản lý bên dưới như Cuộc gọi, Công việc, Email, Lịch sử chiến dịch, Đăng ký và Điểm danh.",
-      "token_count": 260,
-      "content_hash": "ba12493501d4fcdfee46ec6ac450e87a336f94f8a64ac034411cab1ac1636de9",
-      "image_paths": [
-        "data/images/fc2484c8d6f7ea1a9c9e321e2f6c6f89.png",
-        "data/images/14528050b2702aabfe8073231c2146bb.png"
-      ]
-    },
-    {
-      "chunk_id": "a078262b359b33ae57a0ef5e53cd066b3aef354d3016625fdb8ff4a5851ccf7c",
-      "parent_id": "71ed2a6ad5299d8ac1b36eec6c4cd1b0c7728e60c36a000fd10e52f949c0fcb8",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/mobile-1/cai-dat-ngon-ngu.md",
-      "doc_title": "Cài đặt ngôn ngữ",
-      "breadcrumb": [
-        "mobile-1",
-        "cai-dat-ngon-ngu"
-      ],
-      "section": "mobile-1",
-      "product": "EMS",
-      "heading_path": "Cài đặt ngôn ngữ > &#x20;Có 2 cách để thay đổi ngôn ngữ ứng dụng:",
-      "content": "[Mobile 1 > Cai Dat Ngon Ngu] Cài đặt ngôn ngữ > &#x20;Có 2 cách để thay đổi ngôn ngữ ứng dụng:\n\n# Cài đặt ngôn ngữ\n\n### &#x20;Có 2 cách để thay đổi ngôn ngữ ứng dụng:\n\n> **CÁCH 1:  TRƯỚC KHI ĐĂNG NHẬP**\n>\n> **Bước 1:** Tại màn hình chọn **Vai trò**, người dùng nhấp vào **ô hình chữ nhật** như hình bên dưới để thay đổi ngôn ngữ.\n\n[IMAGE: data/images/e91665bf974ccf5f4feffe630d014228.jpg] Người dùng nhấp vào biểu tượng ngôn ngữ với lá cờ Việt Nam ở góc trên bên phải màn hình để mở tùy chọn thay đổi ngôn ngữ.\n\n> **Bước 2:** Tại đây, người dùng có thể lựa chọn ngôn ngữ mà mình muốn thay đổi.\n\n[IMAGE: data/images/e5c6cf1f5649ec0677716be870a302c1.jpg] Tại đây, người dùng có thể bấm vào biểu tượng ngôn ngữ ở góc trên bên phải màn hình để mở hộp thoại thả xuống và lựa chọn giữa tiếng Anh (English) hoặc tiếng Việt (Tiếng Việt).\n\n> **Bước 3:** Sau khi đổi ngôn ngữ xong, ứng dụng sẽ có giao diện như sau.\n\n[IMAGE: data/images/ce29fe59cf7c3b371f50e7918299a783.jpg] Giao diện ứng dụng hiển thị màn hình chọn vai trò với hai lựa chọn \"Student/Parent\" và \"Teacher/TA\", cùng nút \"Next\" ở phía dưới. Ở góc trên bên phải có biểu tượng cờ Vương quốc Anh để lựa chọn ngôn ngữ.\n\n> **CÁCH 2: SAU KHI ĐĂNG NHẬP**\n>\n> **Bước 1:** Tại màn hình **Trang chủ**, click vào biểu tượng **\"Cá nhân\"** để hiển thị danh sách chức năng của ứng dụng.\n\n[IMAGE: data/images/9a8a0df16e3385f3bf6ccb463e17456e.png] Tại màn hình Trang chủ, nhấp vào biểu tượng \"Cá nhân\" ở góc dưới bên phải được khoanh viền đỏ để chuyển sang giao diện cá nhân.\n\n> **Bước 2:** Chọn chức năng **Ngôn ngữ** trên ứng dụng.\n\n[IMAGE: data/images/35a132e2fab3638b9fbd009dc060d186.png] Giao diện ứng dụng hiển thị biểu tượng cờ Việt Nam ở góc trên bên phải màn hình.\n\n> **Bước 4:** Người dùng lựa chọn ngôn ngữ muốn thay đổi.\n\n[IMAGE: data/images/696255c41f7a1fa8dbf02bd7b67e289a.png] Người dùng lựa chọn ngôn ngữ muốn thay đổi từ danh sách tùy chọn được hiển thị trên giao diện.",
-      "raw_text": "# Cài đặt ngôn ngữ\n\n### &#x20;Có 2 cách để thay đổi ngôn ngữ ứng dụng:\n\n> **CÁCH 1:  TRƯỚC KHI ĐĂNG NHẬP**\n>\n> **Bước 1:** Tại màn hình chọn **Vai trò**, người dùng nhấp vào **ô hình chữ nhật** như hình bên dưới để thay đổi ngôn ngữ.\n\n[IMAGE: data/images/e91665bf974ccf5f4feffe630d014228.jpg] Người dùng nhấp vào biểu tượng ngôn ngữ với lá cờ Việt Nam ở góc trên bên phải màn hình để mở tùy chọn thay đổi ngôn ngữ.\n\n> **Bước 2:** Tại đây, người dùng có thể lựa chọn ngôn ngữ mà mình muốn thay đổi.\n\n[IMAGE: data/images/e5c6cf1f5649ec0677716be870a302c1.jpg] Tại đây, người dùng có thể bấm vào biểu tượng ngôn ngữ ở góc trên bên phải màn hình để mở hộp thoại thả xuống và lựa chọn giữa tiếng Anh (English) hoặc tiếng Việt (Tiếng Việt).\n\n> **Bước 3:** Sau khi đổi ngôn ngữ xong, ứng dụng sẽ có giao diện như sau.\n\n[IMAGE: data/images/ce29fe59cf7c3b371f50e7918299a783.jpg] Giao diện ứng dụng hiển thị màn hình chọn vai trò với hai lựa chọn \"Student/Parent\" và \"Teacher/TA\", cùng nút \"Next\" ở phía dưới. Ở góc trên bên phải có biểu tượng cờ Vương quốc Anh để lựa chọn ngôn ngữ.\n\n> **CÁCH 2: SAU KHI ĐĂNG NHẬP**\n>\n> **Bước 1:** Tại màn hình **Trang chủ**, click vào biểu tượng **\"Cá nhân\"** để hiển thị danh sách chức năng của ứng dụng.\n\n[IMAGE: data/images/9a8a0df16e3385f3bf6ccb463e17456e.png] Tại màn hình Trang chủ, nhấp vào biểu tượng \"Cá nhân\" ở góc dưới bên phải được khoanh viền đỏ để chuyển sang giao diện cá nhân.\n\n> **Bước 2:** Chọn chức năng **Ngôn ngữ** trên ứng dụng.\n\n[IMAGE: data/images/35a132e2fab3638b9fbd009dc060d186.png] Giao diện ứng dụng hiển thị biểu tượng cờ Việt Nam ở góc trên bên phải màn hình.\n\n> **Bước 4:** Người dùng lựa chọn ngôn ngữ muốn thay đổi.\n\n[IMAGE: data/images/696255c41f7a1fa8dbf02bd7b67e289a.png] Người dùng lựa chọn ngôn ngữ muốn thay đổi từ danh sách tùy chọn được hiển thị trên giao diện.",
-      "token_count": 481,
-      "content_hash": "a078262b359b33ae57a0ef5e53cd066b3aef354d3016625fdb8ff4a5851ccf7c",
-      "image_paths": [
-        "data/images/e91665bf974ccf5f4feffe630d014228.jpg",
-        "data/images/e5c6cf1f5649ec0677716be870a302c1.jpg",
-        "data/images/ce29fe59cf7c3b371f50e7918299a783.jpg",
-        "data/images/9a8a0df16e3385f3bf6ccb463e17456e.png",
-        "data/images/35a132e2fab3638b9fbd009dc060d186.png",
-        "data/images/696255c41f7a1fa8dbf02bd7b67e289a.png"
-      ]
-    },
-    {
-      "chunk_id": "52e268344866251effe6c2657829dbb2ecbf9d39de2723c171376010ead99c0a",
-      "parent_id": "71ed2a6ad5299d8ac1b36eec6c4cd1b0c7728e60c36a000fd10e52f949c0fcb8",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/mobile-1/cai-dat-ngon-ngu.md",
-      "doc_title": "Cài đặt ngôn ngữ",
-      "breadcrumb": [
-        "mobile-1",
-        "cai-dat-ngon-ngu"
-      ],
-      "section": "mobile-1",
-      "product": "EMS",
-      "heading_path": "Cài đặt ngôn ngữ > &#x20;Có 2 cách để thay đổi ngôn ngữ ứng dụng:",
-      "content": "[Mobile 1 > Cai Dat Ngon Ngu] Cài đặt ngôn ngữ > &#x20;Có 2 cách để thay đổi ngôn ngữ ứng dụng:\n\n> **Bước 5:** Ứng dụng sau khi cập nhật ngôn ngữ sẽ có giao diện như sau.\n\n[IMAGE: data/images/73c1a5de815d761b78404f8c5cd7b4ea.png] Giao diện ứng dụng sau khi cập nhật ngôn ngữ hiển thị các thông tin cá nhân của tài khoản Le Quyen (mã DB-00006), bao gồm email, số điện thoại, tên trung tâm cùng các tùy chọn \"Change Password\" và \"Logout\". Phía trên góc phải có biểu tượng quốc kỳ Anh để xác nhận cài đặt ngôn ngữ hiện tại.",
-      "raw_text": "> **Bước 5:** Ứng dụng sau khi cập nhật ngôn ngữ sẽ có giao diện như sau.\n\n[IMAGE: data/images/73c1a5de815d761b78404f8c5cd7b4ea.png] Giao diện ứng dụng sau khi cập nhật ngôn ngữ hiển thị các thông tin cá nhân của tài khoản Le Quyen (mã DB-00006), bao gồm email, số điện thoại, tên trung tâm cùng các tùy chọn \"Change Password\" và \"Logout\". Phía trên góc phải có biểu tượng quốc kỳ Anh để xác nhận cài đặt ngôn ngữ hiện tại.",
-      "token_count": 130,
-      "content_hash": "52e268344866251effe6c2657829dbb2ecbf9d39de2723c171376010ead99c0a",
-      "image_paths": [
-        "data/images/73c1a5de815d761b78404f8c5cd7b4ea.png"
-      ]
-    },
-    {
-      "chunk_id": "237909a76e324dcb9845f7de365b3c2896d5f1db3de0daea55b10d4245344936",
-      "parent_id": "237909a76e324dcb9845f7de365b3c2896d5f1db3de0daea55b10d4245344936",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/teacher-guide/diem-danh-hoc-vien.md",
-      "doc_title": "Điểm danh học viên",
-      "breadcrumb": [
-        "teacher-guide",
-        "diem-danh-hoc-vien"
-      ],
-      "section": "teacher-guide",
-      "product": "TEA",
-      "heading_path": "Điểm danh học viên",
-      "content": "[Teacher Guide > Diem Danh Hoc Vien] Điểm danh học viên\n\n# Điểm danh học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes,** sau đó nhấn chọn lớp cần gửi điểm danh.\n\n[IMAGE: data/images/5e39666147076d6336acbf73347f3c3e.png] Tại màn hình danh sách của module **Classes**, hệ thống hiển thị danh sách các lớp học cùng các thông tin chi tiết như mã lớp, tên lớp, giáo viên, lịch học, loại khóa học, trạng thái và sĩ số. Trong đó, lớp có mã `-A222-0182` (tên **Toeic 900+**) được đánh dấu nổi bật bằng khung màu đỏ để người dùng dễ dàng nhận biết và thực hiện thao tác gửi điểm danh.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button \"**Check Attendance/Homework\".**\n\n[IMAGE: data/images/c2c567dec65ec75ac4b20f2e10170551.png] Nhấn vào nút **Check Attendance/Homework** để kiểm tra điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học.\n\n[IMAGE: data/images/a54946b2cc0b2e796f33fb86353cbab1.jpg] Tại màn hình điểm danh lớp học, bạn có thể điền thông tin chi tiết về chủ đề, giáo án và ghi chú cho giáo viên. Ngoài ra, giao diện cũng liệt kê danh sách học viên bao gồm tên, tình trạng điểm danh, tình trạng làm bài tập về nhà và các ô nhận xét tương ứng.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Lớp thực hiện việc Điểm danh\n2. Ngày thực hiện Điểm danh\n3. Danh sách Học viên\n4. Điểm danh cho Học viên\n5. Kiểm tra bài tập về nhà của học viên(nếu có)\n6. Đánh giá điểm chuyên cần cho học viên\n\n> *Video hướng dẫn điểm danh học viên sau mỗi buổi học*",
-      "raw_text": "# Điểm danh học viên\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes,** sau đó nhấn chọn lớp cần gửi điểm danh.\n\n[IMAGE: data/images/5e39666147076d6336acbf73347f3c3e.png] Tại màn hình danh sách của module **Classes**, hệ thống hiển thị danh sách các lớp học cùng các thông tin chi tiết như mã lớp, tên lớp, giáo viên, lịch học, loại khóa học, trạng thái và sĩ số. Trong đó, lớp có mã `-A222-0182` (tên **Toeic 900+**) được đánh dấu nổi bật bằng khung màu đỏ để người dùng dễ dàng nhận biết và thực hiện thao tác gửi điểm danh.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button \"**Check Attendance/Homework\".**\n\n[IMAGE: data/images/c2c567dec65ec75ac4b20f2e10170551.png] Nhấn vào nút **Check Attendance/Homework** để kiểm tra điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học.\n\n[IMAGE: data/images/a54946b2cc0b2e796f33fb86353cbab1.jpg] Tại màn hình điểm danh lớp học, bạn có thể điền thông tin chi tiết về chủ đề, giáo án và ghi chú cho giáo viên. Ngoài ra, giao diện cũng liệt kê danh sách học viên bao gồm tên, tình trạng điểm danh, tình trạng làm bài tập về nhà và các ô nhận xét tương ứng.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Lớp thực hiện việc Điểm danh\n2. Ngày thực hiện Điểm danh\n3. Danh sách Học viên\n4. Điểm danh cho Học viên\n5. Kiểm tra bài tập về nhà của học viên(nếu có)\n6. Đánh giá điểm chuyên cần cho học viên\n\n> *Video hướng dẫn điểm danh học viên sau mỗi buổi học*",
-      "token_count": 392,
-      "content_hash": "237909a76e324dcb9845f7de365b3c2896d5f1db3de0daea55b10d4245344936",
-      "image_paths": [
-        "data/images/5e39666147076d6336acbf73347f3c3e.png",
-        "data/images/c2c567dec65ec75ac4b20f2e10170551.png",
-        "data/images/a54946b2cc0b2e796f33fb86353cbab1.jpg"
-      ]
-    },
-    {
-      "chunk_id": "716e729a973d6f388ea1f7a5985ac0f3a1d7e1710eb6f7282d7160300a87a83e",
-      "parent_id": "d6f84a2af7f3c436c86aef9a80f2d49eb82e1df6cfcb3b6b338471417ba1a3f7",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc.md",
-      "doc_title": "Gửi kết quả điểm danh, nội dung bài học",
-      "breadcrumb": [
-        "tinh-nang-danh-cho-parents-app-tren-crm",
-        "gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc"
-      ],
-      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
-      "product": "EMS",
-      "heading_path": "Gửi kết quả điểm danh, nội dung bài học",
-      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Ket Qua Diem Danh Ve Phu Huynh Noi Dung Bai Hoc] Gửi kết quả điểm danh, nội dung bài học\n\n# Gửi kết quả điểm danh, nội dung bài học\n\n> **Bước 1:** Ở màn hình danh sách của module Classes, sau đó nhấn chọn lớp cần gửi SMS, nội dung bài học, điểm danh đến cho học viên.\n\n[IMAGE: data/images/c3144e1cc15d6a328f3f55b0b5bfb39f.png] Tại màn hình danh sách lớp học, click chọn vào tên lớp học (ví dụ: lớp \"PET 1A\") để xem chi tiết thông tin lớp hoặc thực hiện các thao tác gửi SMS, nội dung bài học và điểm danh cho học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/8e295b4709a38134e681e91ebe605807.png] Nhấn vào nút **Attendance & Homework** được đánh dấu bằng mũi tên đỏ để chuyển đến phần quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học, và cuối cùng nhấn chọn **Send Attendance Report** để gửi thông báo đến phụ huynh về buổi học của bé.\n\n[IMAGE: data/images/cd200f062e33f663bba168cb91b6627e.jpg] Tại màn hình điểm danh, nhập thông tin bài học tùy chỉnh vào các ô Theme/Topic Custom (②) và Syllabus Custom (③), cập nhật tình trạng điểm danh, làm bài tập và nhận xét cho học viên (④, ⑤, ⑥, ⑦, ⑧). Cuối cùng, nhấn chọn nút **Send Attendance Report** (⑨) để gửi báo cáo buổi học đến phụ huynh.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:",
-      "raw_text": "# Gửi kết quả điểm danh, nội dung bài học\n\n> **Bước 1:** Ở màn hình danh sách của module Classes, sau đó nhấn chọn lớp cần gửi SMS, nội dung bài học, điểm danh đến cho học viên.\n\n[IMAGE: data/images/c3144e1cc15d6a328f3f55b0b5bfb39f.png] Tại màn hình danh sách lớp học, click chọn vào tên lớp học (ví dụ: lớp \"PET 1A\") để xem chi tiết thông tin lớp hoặc thực hiện các thao tác gửi SMS, nội dung bài học và điểm danh cho học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/8e295b4709a38134e681e91ebe605807.png] Nhấn vào nút **Attendance & Homework** được đánh dấu bằng mũi tên đỏ để chuyển đến phần quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình Điểm danh, nhập thông tin bài học, điểm danh học viên, nhận xét sau mỗi buổi học, và cuối cùng nhấn chọn **Send Attendance Report** để gửi thông báo đến phụ huynh về buổi học của bé.\n\n[IMAGE: data/images/cd200f062e33f663bba168cb91b6627e.jpg] Tại màn hình điểm danh, nhập thông tin bài học tùy chỉnh vào các ô Theme/Topic Custom (②) và Syllabus Custom (③), cập nhật tình trạng điểm danh, làm bài tập và nhận xét cho học viên (④, ⑤, ⑥, ⑦, ⑧). Cuối cùng, nhấn chọn nút **Send Attendance Report** (⑨) để gửi báo cáo buổi học đến phụ huynh.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:",
-      "token_count": 365,
-      "content_hash": "716e729a973d6f388ea1f7a5985ac0f3a1d7e1710eb6f7282d7160300a87a83e",
-      "image_paths": [
-        "data/images/c3144e1cc15d6a328f3f55b0b5bfb39f.png",
-        "data/images/8e295b4709a38134e681e91ebe605807.png",
-        "data/images/cd200f062e33f663bba168cb91b6627e.jpg"
-      ]
-    },
-    {
-      "chunk_id": "884ff3d1da83425551502eeba07a0ff1fe7d53c81f87fb389877f024faacc770",
-      "parent_id": "d6f84a2af7f3c436c86aef9a80f2d49eb82e1df6cfcb3b6b338471417ba1a3f7",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc.md",
-      "doc_title": "Gửi kết quả điểm danh, nội dung bài học",
-      "breadcrumb": [
-        "tinh-nang-danh-cho-parents-app-tren-crm",
-        "gui-ket-qua-diem-danh-ve-phu-huynh-noi-dung-bai-hoc"
-      ],
-      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
-      "product": "EMS",
-      "heading_path": "Gửi kết quả điểm danh, nội dung bài học",
-      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Ket Qua Diem Danh Ve Phu Huynh Noi Dung Bai Hoc] Gửi kết quả điểm danh, nội dung bài học\n\n1. Ngày thực hiện việc check homework\n2. Tên nội dung bài học (Nhập thông tin khi buổi học khác với chương trình học trong giáo án)\n3. Nội dung bài học\n4. Check Attendance cho học viên hàng loạt\n5. Check Homework cho học viên hàng loạt.\n6. Nhập nội dung bài tập về nhà hàng loạt (Nếu bài tập về nhà so với giáo án có thay đổi).\n7. Nhập nhận xét giáo viên cho các bé hàng loạt.\n8. Đánh giá điểm chuyên cần cho Học viên.\n9. Gửi thông báo đến App **(Send Attendance Report**) về việc đi học, trể, làm bài tập về nhà, comment, điểm daily score của học viên\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Học viên có màu hồng trong danh sách: Đây là Học viên ko nằm trong buổi của ngày đó Mục đích đưa nó lên để gửi SMS.\n\n> *Video hướng dẫn Điểm danh học viên sau mỗi buổi học*",
-      "raw_text": "1. Ngày thực hiện việc check homework\n2. Tên nội dung bài học (Nhập thông tin khi buổi học khác với chương trình học trong giáo án)\n3. Nội dung bài học\n4. Check Attendance cho học viên hàng loạt\n5. Check Homework cho học viên hàng loạt.\n6. Nhập nội dung bài tập về nhà hàng loạt (Nếu bài tập về nhà so với giáo án có thay đổi).\n7. Nhập nhận xét giáo viên cho các bé hàng loạt.\n8. Đánh giá điểm chuyên cần cho Học viên.\n9. Gửi thông báo đến App **(Send Attendance Report**) về việc đi học, trể, làm bài tập về nhà, comment, điểm daily score của học viên\n\n> **Lưu ý:** :man\\_raising\\_hand: **Lưu ý:** Học viên có màu hồng trong danh sách: Đây là Học viên ko nằm trong buổi của ngày đó Mục đích đưa nó lên để gửi SMS.\n\n> *Video hướng dẫn Điểm danh học viên sau mỗi buổi học*",
-      "token_count": 227,
-      "content_hash": "884ff3d1da83425551502eeba07a0ff1fe7d53c81f87fb389877f024faacc770",
-      "image_paths": []
-    },
-    {
-      "chunk_id": "d7cd718bcd3243fc89f879d1f1265276c2c1fbc437082ccb186a4c283f2e7fe3",
-      "parent_id": "aa243c646956f08afb321686adcee7359453f3ec6db5afdf300101118a1af1da",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/to-chuc-lop-hoc/tao-lop-hoc-lop-cho.md",
-      "doc_title": "Tạo lớp học, lớp chờ",
-      "breadcrumb": [
-        "bo-phan-giao-vu",
-        "to-chuc-lop-hoc",
-        "tao-lop-hoc-lop-cho"
-      ],
-      "section": "bo-phan-giao-vu",
-      "product": "EMS",
-      "heading_path": "Tạo lớp học, lớp chờ",
-      "content": "[Bo Phan Giao Vu > To Chuc Lop Hoc > Tao Lop Hoc Lop Cho] Tạo lớp học, lớp chờ\n\n# Tạo lớp học, lớp chờ\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes,** chọn **Create Class** để mở ra màn hình tạo mới lớp.\n\n[IMAGE: data/images/3cdafce367b6e610e29744d320add41f.png] Ở màn hình quản lý lớp học (Classes), người dùng nhấn vào nút **Create Class** màu xanh lá ở góc trên bên phải để bắt đầu tạo mới một lớp học. Hệ thống cũng có một mũi tên đỏ minh họa trỏ trực tiếp đến vị trí của nút này.\n\n> **Bước 2:** Tại màn hình tạo mới Lớp học, nhập đầy đủ các thông tin cần thiết, Sau đó chọn Save để hoàn tất việc tạo ra 1 lớp học mới.\n\n[IMAGE: data/images/f54d63f13053669e8e36cf9defbea2ff.png] Tại giao diện tạo mới lớp học, người dùng nhập đầy đủ các thông tin cần thiết vào các trường như Tên lớp (1), Cấp độ (4), Ngày bắt đầu (3) và thiết lập lịch học hằng tuần (7, 9). Sau khi điền xong thông tin, người dùng chọn nút Save ở góc trên bên trái để hoàn tất việc tạo mới lớp học.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Tên của Lớp học, có thể để rỗng hệ thống sẽ tự động sinh ra tên lớp.\n2. Lựa chọn Lớp học muốn Upgrade lên lớp mới.\n3. Thời gian bắt đầu và kết thúc của Lớp học.\n4. Lựa chọn Khóa học cho Lớp học.\n5. Tổng số học sinh trong Lớp học.\n6. Tổng thời gian của Lớp học.\n7. Ngày học của Lớp học trong tuần.\n8. Syllabus By: By Session: chạy theo buổi, By Date: chạy theo ngày.\n9. Thời gian học tương ứng với ngày học của Lớp học.\n10. Schedule By: Even weeks: tuần chẵn/Odd weeks: tuần lẻ\n\n> **Bước 3:** Nhập thông tin cấu hình Class In (Nếu có tích hợp với bên thứ 3).\n\n[IMAGE: data/images/fff673609f7e001156e0537280cbbb56.png] Nhập thông tin cấu hình ClassIn cho lớp học tại các trường tương ứng như trạng thái trực tuyến, giáo viên quản lý, trợ giảng, người kiểm toán (Auditors), và các cài đặt ghi hình.\n\n> **Lưu ý:** Với trường hợp có tích hợp với Class In &#x20;\n\n1. Online Learning Status: Active\n2. Class In Settings:&#x20;\n\nClass In: Teacher -> Chọn từ Room (Loại: Teacher User, Head Teacher)",
-      "raw_text": "# Tạo lớp học, lớp chờ\n\n> **Bước 1:** Ở màn hình danh sách của module **Classes,** chọn **Create Class** để mở ra màn hình tạo mới lớp.\n\n[IMAGE: data/images/3cdafce367b6e610e29744d320add41f.png] Ở màn hình quản lý lớp học (Classes), người dùng nhấn vào nút **Create Class** màu xanh lá ở góc trên bên phải để bắt đầu tạo mới một lớp học. Hệ thống cũng có một mũi tên đỏ minh họa trỏ trực tiếp đến vị trí của nút này.\n\n> **Bước 2:** Tại màn hình tạo mới Lớp học, nhập đầy đủ các thông tin cần thiết, Sau đó chọn Save để hoàn tất việc tạo ra 1 lớp học mới.\n\n[IMAGE: data/images/f54d63f13053669e8e36cf9defbea2ff.png] Tại giao diện tạo mới lớp học, người dùng nhập đầy đủ các thông tin cần thiết vào các trường như Tên lớp (1), Cấp độ (4), Ngày bắt đầu (3) và thiết lập lịch học hằng tuần (7, 9). Sau khi điền xong thông tin, người dùng chọn nút Save ở góc trên bên trái để hoàn tất việc tạo mới lớp học.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Tên của Lớp học, có thể để rỗng hệ thống sẽ tự động sinh ra tên lớp.\n2. Lựa chọn Lớp học muốn Upgrade lên lớp mới.\n3. Thời gian bắt đầu và kết thúc của Lớp học.\n4. Lựa chọn Khóa học cho Lớp học.\n5. Tổng số học sinh trong Lớp học.\n6. Tổng thời gian của Lớp học.\n7. Ngày học của Lớp học trong tuần.\n8. Syllabus By: By Session: chạy theo buổi, By Date: chạy theo ngày.\n9. Thời gian học tương ứng với ngày học của Lớp học.\n10. Schedule By: Even weeks: tuần chẵn/Odd weeks: tuần lẻ\n\n> **Bước 3:** Nhập thông tin cấu hình Class In (Nếu có tích hợp với bên thứ 3).\n\n[IMAGE: data/images/fff673609f7e001156e0537280cbbb56.png] Nhập thông tin cấu hình ClassIn cho lớp học tại các trường tương ứng như trạng thái trực tuyến, giáo viên quản lý, trợ giảng, người kiểm toán (Auditors), và các cài đặt ghi hình.\n\n> **Lưu ý:** Với trường hợp có tích hợp với Class In &#x20;\n\n1. Online Learning Status: Active\n2. Class In Settings:&#x20;\n\nClass In: Teacher -> Chọn từ Room (Loại: Teacher User, Head Teacher)",
-      "token_count": 506,
-      "content_hash": "d7cd718bcd3243fc89f879d1f1265276c2c1fbc437082ccb186a4c283f2e7fe3",
-      "image_paths": [
-        "data/images/3cdafce367b6e610e29744d320add41f.png",
-        "data/images/f54d63f13053669e8e36cf9defbea2ff.png",
-        "data/images/fff673609f7e001156e0537280cbbb56.png"
-      ]
-    },
-    {
-      "chunk_id": "e2aae0fa67eb7e8da7d38569be5aad0f274688e79924e3cb5b9d5a1b62ae154b",
-      "parent_id": "aa243c646956f08afb321686adcee7359453f3ec6db5afdf300101118a1af1da",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/to-chuc-lop-hoc/tao-lop-hoc-lop-cho.md",
-      "doc_title": "Tạo lớp học, lớp chờ",
-      "breadcrumb": [
-        "bo-phan-giao-vu",
-        "to-chuc-lop-hoc",
-        "tao-lop-hoc-lop-cho"
-      ],
-      "section": "bo-phan-giao-vu",
-      "product": "EMS",
-      "heading_path": "Tạo lớp học, lớp chờ",
-      "content": "[Bo Phan Giao Vu > To Chuc Lop Hoc > Tao Lop Hoc Lop Cho] Tạo lớp học, lớp chờ\n\nClass In: Head Teacher -> Mặc định từ Room (Loại: Head Teacher) Lớp tạo ra trên hệ thống sẽ set mặc định 1 Head Teacher\n\nClass In: Assistant -> Chọn từ Room (Loại: Teacher User, Head Teacher)\n\nClass In: Auditors -> Chọn từ Room (Loại: Regular User)\n\nClass In: Recording: có record hay không (Yes/No)\n\nClass In: Number of students on stage: Số lượng học viên\n\nClass In: Folder Name: Tên Folder Name\n\n> **Bước 4:** Hệ thống hiển thị thông tin chi tiết của Lớp học sau khi tạo thành công.\n\n[IMAGE: data/images/f5df097b917a9fda404c9c6b520cd04d.png] Hệ thống hiển thị thông tin chi tiết của lớp học S221 bao gồm mã lớp, trạng thái hoàn thành, lịch học, giảng viên phụ trách cùng các nút chức năng để chỉnh sửa, xóa hoặc quản lý điểm danh và bài tập.\n\n> **Lưu ý:** Lưu ý : Để bật đồng bộ Lớp qua Class In, chọn trạng thái Online là Active.\n\n> *Video hướng dẫn Tạo mới lớp học*",
-      "raw_text": "Class In: Head Teacher -> Mặc định từ Room (Loại: Head Teacher) Lớp tạo ra trên hệ thống sẽ set mặc định 1 Head Teacher\n\nClass In: Assistant -> Chọn từ Room (Loại: Teacher User, Head Teacher)\n\nClass In: Auditors -> Chọn từ Room (Loại: Regular User)\n\nClass In: Recording: có record hay không (Yes/No)\n\nClass In: Number of students on stage: Số lượng học viên\n\nClass In: Folder Name: Tên Folder Name\n\n> **Bước 4:** Hệ thống hiển thị thông tin chi tiết của Lớp học sau khi tạo thành công.\n\n[IMAGE: data/images/f5df097b917a9fda404c9c6b520cd04d.png] Hệ thống hiển thị thông tin chi tiết của lớp học S221 bao gồm mã lớp, trạng thái hoàn thành, lịch học, giảng viên phụ trách cùng các nút chức năng để chỉnh sửa, xóa hoặc quản lý điểm danh và bài tập.\n\n> **Lưu ý:** Lưu ý : Để bật đồng bộ Lớp qua Class In, chọn trạng thái Online là Active.\n\n> *Video hướng dẫn Tạo mới lớp học*",
-      "token_count": 237,
-      "content_hash": "e2aae0fa67eb7e8da7d38569be5aad0f274688e79924e3cb5b9d5a1b62ae154b",
-      "image_paths": [
-        "data/images/f5df097b917a9fda404c9c6b520cd04d.png"
-      ]
-    },
-    {
-      "chunk_id": "3a17a1c579836f271969684cae2a91bf7bbf9d7c1392cc9db2f94d402eb86f36",
-      "parent_id": "3a17a1c579836f271969684cae2a91bf7bbf9d7c1392cc9db2f94d402eb86f36",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/teacher-guide/nhap-diem-hoc-tap.md",
-      "doc_title": "Nhập điểm học tập",
-      "breadcrumb": [
-        "teacher-guide",
-        "nhap-diem-hoc-tap"
-      ],
-      "section": "teacher-guide",
-      "product": "TEA",
-      "heading_path": "Nhập điểm học tập",
-      "content": "[Teacher Guide > Nhap Diem Hoc Tap] Nhập điểm học tập\n\n# Nhập điểm học tập\n\n> **Bước 1:** Ở màn hình danh sách module **Classes**, sau đó chọn lớp muốn xem bảng điểm/chấm điểm học viên.\n\n[IMAGE: data/images/6f0537833c199bff2f66d9bd1e5a84f0.jpg] Ở màn hình danh sách các lớp học (Classes), hệ thống hiển thị danh sách các lớp hiện có bao gồm thông tin về mã lớp, tên lớp, giáo viên phụ trách, lịch học, loại khóa học, trình độ, trạng thái và tiến độ. Người dùng có thể nhấn vào tên của một lớp cụ thể, chẳng hạn như lớp **Wales P5**, để xem chi tiết thông tin và bảng điểm của lớp học đó.\n\n> **Bước 2:** Tại màn hình Lớp học, ở Subpanel phía bên dưới, nhấn vào Tab “**Gradebooks**” sau đó chọn bảng điểm mà bạn cần xem/chấm điểm hoặc thay đổi cấu trúc bảng điểm.\n\n[IMAGE: data/images/9b0aac1a80e825cabd2b30f262886c51.png] Click vào tab \"Gradebooks\" trong danh sách các tab điều hướng và chọn tên bảng điểm \"GV-KET-Overall\" trong bảng danh sách bên dưới để xem, chấm điểm hoặc chỉnh sửa cấu trúc bảng điểm.\n\n> **Bước 3:** Tại màn hình quản lý bảng điểm, chọn “**Input Mark**”.\n\n[IMAGE: data/images/3aa55457b85ef7b2b17b82f1d0cb157a.jpg] Click the blue **Input Mark** button, which has a red arrow pointing directly to it, to open the grade entry interface.\n\n> **Bước 4:** Tiếp theo nhập thông tin điểm số, comment học viên. Cuối cùng chọn **Save Gradebook**.\n\n[IMAGE: data/images/098ee81d54412fb69e614ac963be10de.jpg] Nhập thông tin điểm số vào các ô điểm của học viên (ví dụ như cột **PARTICIPATION** có giá trị `0.00`) và chọn nút **Save Gradebook** để lưu lại bảng điểm.\n\n> **Lưu ý:** 🙆♀ **Ghi chú:**\n\nNhập điểm học viên (Màu trắng bạn nhập, màu đậm hơn bạn không được nhập)\n\nLưu ý nếu có Comment: Nhấn vào comment, giáo viên nhập comment cho học viên sau đó nhấn chọn Post để lưu lên hệ thống.​\n\n> *Video hướng dẫn Nhập điểm học tập trên hệ thống*",
-      "raw_text": "# Nhập điểm học tập\n\n> **Bước 1:** Ở màn hình danh sách module **Classes**, sau đó chọn lớp muốn xem bảng điểm/chấm điểm học viên.\n\n[IMAGE: data/images/6f0537833c199bff2f66d9bd1e5a84f0.jpg] Ở màn hình danh sách các lớp học (Classes), hệ thống hiển thị danh sách các lớp hiện có bao gồm thông tin về mã lớp, tên lớp, giáo viên phụ trách, lịch học, loại khóa học, trình độ, trạng thái và tiến độ. Người dùng có thể nhấn vào tên của một lớp cụ thể, chẳng hạn như lớp **Wales P5**, để xem chi tiết thông tin và bảng điểm của lớp học đó.\n\n> **Bước 2:** Tại màn hình Lớp học, ở Subpanel phía bên dưới, nhấn vào Tab “**Gradebooks**” sau đó chọn bảng điểm mà bạn cần xem/chấm điểm hoặc thay đổi cấu trúc bảng điểm.\n\n[IMAGE: data/images/9b0aac1a80e825cabd2b30f262886c51.png] Click vào tab \"Gradebooks\" trong danh sách các tab điều hướng và chọn tên bảng điểm \"GV-KET-Overall\" trong bảng danh sách bên dưới để xem, chấm điểm hoặc chỉnh sửa cấu trúc bảng điểm.\n\n> **Bước 3:** Tại màn hình quản lý bảng điểm, chọn “**Input Mark**”.\n\n[IMAGE: data/images/3aa55457b85ef7b2b17b82f1d0cb157a.jpg] Click the blue **Input Mark** button, which has a red arrow pointing directly to it, to open the grade entry interface.\n\n> **Bước 4:** Tiếp theo nhập thông tin điểm số, comment học viên. Cuối cùng chọn **Save Gradebook**.\n\n[IMAGE: data/images/098ee81d54412fb69e614ac963be10de.jpg] Nhập thông tin điểm số vào các ô điểm của học viên (ví dụ như cột **PARTICIPATION** có giá trị `0.00`) và chọn nút **Save Gradebook** để lưu lại bảng điểm.\n\n> **Lưu ý:** 🙆♀ **Ghi chú:**\n\nNhập điểm học viên (Màu trắng bạn nhập, màu đậm hơn bạn không được nhập)\n\nLưu ý nếu có Comment: Nhấn vào comment, giáo viên nhập comment cho học viên sau đó nhấn chọn Post để lưu lên hệ thống.​\n\n> *Video hướng dẫn Nhập điểm học tập trên hệ thống*",
-      "token_count": 462,
-      "content_hash": "3a17a1c579836f271969684cae2a91bf7bbf9d7c1392cc9db2f94d402eb86f36",
-      "image_paths": [
-        "data/images/6f0537833c199bff2f66d9bd1e5a84f0.jpg",
-        "data/images/9b0aac1a80e825cabd2b30f262886c51.png",
-        "data/images/3aa55457b85ef7b2b17b82f1d0cb157a.jpg",
-        "data/images/098ee81d54412fb69e614ac963be10de.jpg"
-      ]
-    },
-    {
-      "chunk_id": "99239ae5b0459e5f007d09f7e1f36349a01aaa2d3fcdeca9c4af30ba21bae019",
-      "parent_id": "99239ae5b0459e5f007d09f7e1f36349a01aaa2d3fcdeca9c4af30ba21bae019",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/mobile/dang-nhap-ung-dung.md",
-      "doc_title": "Đăng nhập ứng dụng",
-      "breadcrumb": [
-        "mobile",
-        "dang-nhap-ung-dung"
-      ],
-      "section": "mobile",
-      "product": "EMS",
-      "heading_path": "Đăng nhập ứng dụng",
-      "content": "[Mobile > Dang Nhap Ung Dung] Đăng nhập ứng dụng\n\n# Đăng nhập ứng dụng\n\n> **Bước 1:** Tải ứng dụng **Mobile DOTB SEA** tại đây:\n\n:point\\_right: Đối với người dùng Android:  [[IMAGE: data/images/66fd29609904b61805ede7c786d3bc64.jpg] ](https://play.google.com/store/apps/details?id=vn.dotb.sea)\n\n:point\\_right: Đối với người dùng IOS:  [[IMAGE: data/images/f2c42678e115b7e582febc345df93691.png]](https://apps.apple.com/vn/app/dotb-crm/id1475488445)&#x20;\n\n> **Bước 2:** Mở ứng dụng **DOTB SEA** trên Mobile và nhấn vào ô Bắt đầu trên màn hình.\n\n[IMAGE: data/images/dc76cfd2012bb792f90d851f7152475c.jpg] Màn hình hiển thị bước chọn vai trò người dùng, với tùy chọn \"Học viên/Phụ huynh\" và \"Giáo viên/Trợ giảng\". Nhấn chọn \"Học viên/Phụ huynh\" rồi bấm nút \"Tiếp theo\" để tiếp tục.\n\n> **Bước 3:** Tìm kiếm **Trung tâm** học viên theo học\n\n[IMAGE: data/images/54eaae9eec18ff16127841e437ae4a3c.jpg] Nhấn vào nút **ĐĂNG NHẬP** màu xám được đóng khung đỏ trên màn hình để tiến hành đăng nhập vào hệ thống.\n\n> **Bước 4:** Lựa chọn vai trò là **\"Học viên/Phụ huynh\"** sau đó nhấn vào ô **Tiếp theo** trên màn hình\n\n[IMAGE: data/images/6213415e520a210a85ccbe9cb2235ba3.jpg] Màn hình chính của ứng dụng hiển thị lời chào \"Chào mừng, An\", các thông tin tổng quan về khóa học, thời khóa biểu, sổ liên lạc, kết quả học tập và thư viện ảnh. Phía dưới là danh sách các buổi học trong tuần và lớp học gần đây.\n\n> **Bước 5**: Nhập Số điện thoại/Mật khẩu đã được cung cấp sẵn. (Đối với người dùng dùng thử, có thể đăng nhập với Số điện thoại/Mật khẩu là: demo/demo). Và tiến hành đăng nhập.\n\n[IMAGE: /files/i9N0JaRJNpdgL6EsTYCv]\n\n> **Bước 6**: Đăng nhập thành công, ứng dụng sẽ hiển thị màn hình **Trang chủ** như hình bên dưới:\n\n[IMAGE: /files/vTi6Br3il4fPflw8SuZU]",
-      "raw_text": "# Đăng nhập ứng dụng\n\n> **Bước 1:** Tải ứng dụng **Mobile DOTB SEA** tại đây:\n\n:point\\_right: Đối với người dùng Android:  [[IMAGE: data/images/66fd29609904b61805ede7c786d3bc64.jpg] ](https://play.google.com/store/apps/details?id=vn.dotb.sea)\n\n:point\\_right: Đối với người dùng IOS:  [[IMAGE: data/images/f2c42678e115b7e582febc345df93691.png]](https://apps.apple.com/vn/app/dotb-crm/id1475488445)&#x20;\n\n> **Bước 2:** Mở ứng dụng **DOTB SEA** trên Mobile và nhấn vào ô Bắt đầu trên màn hình.\n\n[IMAGE: data/images/dc76cfd2012bb792f90d851f7152475c.jpg] Màn hình hiển thị bước chọn vai trò người dùng, với tùy chọn \"Học viên/Phụ huynh\" và \"Giáo viên/Trợ giảng\". Nhấn chọn \"Học viên/Phụ huynh\" rồi bấm nút \"Tiếp theo\" để tiếp tục.\n\n> **Bước 3:** Tìm kiếm **Trung tâm** học viên theo học\n\n[IMAGE: data/images/54eaae9eec18ff16127841e437ae4a3c.jpg] Nhấn vào nút **ĐĂNG NHẬP** màu xám được đóng khung đỏ trên màn hình để tiến hành đăng nhập vào hệ thống.\n\n> **Bước 4:** Lựa chọn vai trò là **\"Học viên/Phụ huynh\"** sau đó nhấn vào ô **Tiếp theo** trên màn hình\n\n[IMAGE: data/images/6213415e520a210a85ccbe9cb2235ba3.jpg] Màn hình chính của ứng dụng hiển thị lời chào \"Chào mừng, An\", các thông tin tổng quan về khóa học, thời khóa biểu, sổ liên lạc, kết quả học tập và thư viện ảnh. Phía dưới là danh sách các buổi học trong tuần và lớp học gần đây.\n\n> **Bước 5**: Nhập Số điện thoại/Mật khẩu đã được cung cấp sẵn. (Đối với người dùng dùng thử, có thể đăng nhập với Số điện thoại/Mật khẩu là: demo/demo). Và tiến hành đăng nhập.\n\n[IMAGE: /files/i9N0JaRJNpdgL6EsTYCv]\n\n> **Bước 6**: Đăng nhập thành công, ứng dụng sẽ hiển thị màn hình **Trang chủ** như hình bên dưới:\n\n[IMAGE: /files/vTi6Br3il4fPflw8SuZU]",
-      "token_count": 436,
-      "content_hash": "99239ae5b0459e5f007d09f7e1f36349a01aaa2d3fcdeca9c4af30ba21bae019",
-      "image_paths": [
-        "data/images/66fd29609904b61805ede7c786d3bc64.jpg",
-        "data/images/f2c42678e115b7e582febc345df93691.png",
-        "data/images/dc76cfd2012bb792f90d851f7152475c.jpg",
-        "data/images/54eaae9eec18ff16127841e437ae4a3c.jpg",
-        "data/images/6213415e520a210a85ccbe9cb2235ba3.jpg",
-        "/files/i9N0JaRJNpdgL6EsTYCv",
-        "/files/vTi6Br3il4fPflw8SuZU"
-      ]
-    },
-    {
-      "chunk_id": "e28b03c8f6ee7deda1399d78ebefd2d4cb94eacec30c969f841a34e9ee978f36",
-      "parent_id": "e28b03c8f6ee7deda1399d78ebefd2d4cb94eacec30c969f841a34e9ee978f36",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/cham-soc-leads.md",
-      "doc_title": "Chăm sóc Leads",
-      "breadcrumb": [
-        "tuyen-sinh-ban-hang",
-        "lead",
-        "cham-soc-leads"
-      ],
-      "section": "tuyen-sinh-ban-hang",
-      "product": "EMS",
-      "heading_path": "Chăm sóc Leads",
-      "content": "[Tuyen Sinh Ban Hang > Lead > Cham Soc Leads] Chăm sóc Leads\n\n# Chăm sóc Leads\n\n> Video hướng dẫn Tạo log call cơ bản",
-      "raw_text": "# Chăm sóc Leads\n\n> Video hướng dẫn Tạo log call cơ bản",
-      "token_count": 29,
-      "content_hash": "e28b03c8f6ee7deda1399d78ebefd2d4cb94eacec30c969f841a34e9ee978f36",
-      "image_paths": []
-    },
-    {
-      "chunk_id": "7f23f355dcf4c0b9e87fe5a5f81444e4e95fa5862cccf7c6e845c1c62e37b3f1",
-      "parent_id": "7f23f355dcf4c0b9e87fe5a5f81444e4e95fa5862cccf7c6e845c1c62e37b3f1",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-ly-chiet-khau-discount.md",
-      "doc_title": "Quản lý chiết khấu - Discount",
-      "breadcrumb": [
-        "bo-phan-giao-vu",
-        "quan-li-su-vu",
-        "quan-ly-chiet-khau-discount"
-      ],
-      "section": "bo-phan-giao-vu",
-      "product": "EMS",
-      "heading_path": "Quản lý chiết khấu - Discount",
-      "content": "[Bo Phan Giao Vu > Quan Li Su Vu > Quan Ly Chiet Khau Discount] Quản lý chiết khấu - Discount\n\n# Quản lý chiết khấu - Discount\n\n> **Bước 1:** Ở màn hình danh sách của module **Discount,** chọn **Create Discount** để mở ra màn hình tạo mới Discoun&#x74;**.**\n\n[IMAGE: data/images/ee35adab2af0da55fef5f7c4565b8e26.png] Chọn nút **Create Discount** ở góc trên bên phải màn hình để bắt đầu thiết lập mã giảm giá mới.\n\n> **Bước 2:** Tại màn hình tạo mới chiết khấu, nhập đầy đủ các trường thông tin cần thiết, sau đó chọn **Save** để hoàn tất.\n\n[IMAGE: data/images/ec58fd85bf66201825e83b42f9350080.png] Nhập đầy đủ thông tin chi tiết cho chương trình chiết khấu mới, bao gồm tên, số tiền hoặc phần trăm chiết khấu, loại thanh toán áp dụng, và ngày bắt đầu. Sau đó, nhấn vào nút **Save** để lưu lại thiết lập.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Thông tin Discount\n2. Số tiền/ Phần Trăm Discount.\n3. Discount áp dụng với hình thức Payment Cashholder/Book/Gift/All.\n4. Ngày bắt đầu, ngày kết thúc discount.\n\n:man\\_raising\\_hand: **Lưu ý**: Có thể chỉ nhập số tiền hoặc phần trăm Discount\n\n> **Bước 3:** Hệ thống hiển thị thông tin chi tiết của chiết khấu sau khi đã tạo thành công.\n\n[IMAGE: data/images/4dac89df15a1edf115fe018402e3f892.png] Hệ thống hiển thị thông tin chi tiết của chiết khấu bao gồm các thông tin như Tên, Trạng thái, Số tiền chiết khấu, Tỷ lệ phần trăm và các thông tin cấu hình khác.\n\n> **Bước 4:** Sau khi tạo Discount thành công, kéo xuống supanel, chọn tab **\"Do not Apply with Discounts\"**, để add Discount không được áp dụng đi kèm với Discount bạn tạo.\n\n[IMAGE: data/images/24d1ac5f70c242541a23f8d6a1f50a5f.png] Trên giao diện chi tiết của Discount, người dùng nhấp chọn tab **\"Do not Apply with Discounts\"** (được đánh dấu bằng khung màu đỏ và mũi tên) ở khu vực supanel phía dưới.\n\n> **Bước 5:** Bấm chọn **Select** để link đến Discount bạn cần không được áp dụng đi kèm.\n\n[IMAGE: data/images/4f6633673d62bf8e651dc0954817ca1d.png] Bấm chọn nút **Select** được khoanh đỏ để liên kết với loại giảm giá (Discount) cần thiết không áp dụng đi kèm.\n\n> *Video hướng dẫn Quản lý chiết khấu*",
-      "raw_text": "# Quản lý chiết khấu - Discount\n\n> **Bước 1:** Ở màn hình danh sách của module **Discount,** chọn **Create Discount** để mở ra màn hình tạo mới Discoun&#x74;**.**\n\n[IMAGE: data/images/ee35adab2af0da55fef5f7c4565b8e26.png] Chọn nút **Create Discount** ở góc trên bên phải màn hình để bắt đầu thiết lập mã giảm giá mới.\n\n> **Bước 2:** Tại màn hình tạo mới chiết khấu, nhập đầy đủ các trường thông tin cần thiết, sau đó chọn **Save** để hoàn tất.\n\n[IMAGE: data/images/ec58fd85bf66201825e83b42f9350080.png] Nhập đầy đủ thông tin chi tiết cho chương trình chiết khấu mới, bao gồm tên, số tiền hoặc phần trăm chiết khấu, loại thanh toán áp dụng, và ngày bắt đầu. Sau đó, nhấn vào nút **Save** để lưu lại thiết lập.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Thông tin Discount\n2. Số tiền/ Phần Trăm Discount.\n3. Discount áp dụng với hình thức Payment Cashholder/Book/Gift/All.\n4. Ngày bắt đầu, ngày kết thúc discount.\n\n:man\\_raising\\_hand: **Lưu ý**: Có thể chỉ nhập số tiền hoặc phần trăm Discount\n\n> **Bước 3:** Hệ thống hiển thị thông tin chi tiết của chiết khấu sau khi đã tạo thành công.\n\n[IMAGE: data/images/4dac89df15a1edf115fe018402e3f892.png] Hệ thống hiển thị thông tin chi tiết của chiết khấu bao gồm các thông tin như Tên, Trạng thái, Số tiền chiết khấu, Tỷ lệ phần trăm và các thông tin cấu hình khác.\n\n> **Bước 4:** Sau khi tạo Discount thành công, kéo xuống supanel, chọn tab **\"Do not Apply with Discounts\"**, để add Discount không được áp dụng đi kèm với Discount bạn tạo.\n\n[IMAGE: data/images/24d1ac5f70c242541a23f8d6a1f50a5f.png] Trên giao diện chi tiết của Discount, người dùng nhấp chọn tab **\"Do not Apply with Discounts\"** (được đánh dấu bằng khung màu đỏ và mũi tên) ở khu vực supanel phía dưới.\n\n> **Bước 5:** Bấm chọn **Select** để link đến Discount bạn cần không được áp dụng đi kèm.\n\n[IMAGE: data/images/4f6633673d62bf8e651dc0954817ca1d.png] Bấm chọn nút **Select** được khoanh đỏ để liên kết với loại giảm giá (Discount) cần thiết không áp dụng đi kèm.\n\n> *Video hướng dẫn Quản lý chiết khấu*",
-      "token_count": 530,
-      "content_hash": "7f23f355dcf4c0b9e87fe5a5f81444e4e95fa5862cccf7c6e845c1c62e37b3f1",
-      "image_paths": [
-        "data/images/ee35adab2af0da55fef5f7c4565b8e26.png",
-        "data/images/ec58fd85bf66201825e83b42f9350080.png",
-        "data/images/4dac89df15a1edf115fe018402e3f892.png",
-        "data/images/24d1ac5f70c242541a23f8d6a1f50a5f.png",
-        "data/images/4f6633673d62bf8e651dc0954817ca1d.png"
-      ]
-    },
-    {
-      "chunk_id": "8a53003ebb3770e2400071a426bd2f9764a3efd1ff968d6128fb271d07ba2aec",
-      "parent_id": "8a53003ebb3770e2400071a426bd2f9764a3efd1ff968d6128fb271d07ba2aec",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-ket-qua-hoc-tap.md",
-      "doc_title": "Gửi kết quả học tập",
-      "breadcrumb": [
-        "tinh-nang-danh-cho-parents-app-tren-crm",
-        "gui-ket-qua-hoc-tap"
-      ],
-      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
-      "product": "EMS",
-      "heading_path": "Gửi kết quả học tập",
-      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Ket Qua Hoc Tap] Gửi kết quả học tập\n\n# Gửi kết quả học tập\n\n> **Bước 1:** Ở màn hình danh sách của module Class chọn View Classes, sau đó chọn lớp muốn xem bảng điểm/chấm điểm học viên.\n\n[IMAGE: data/images/e16debad6946d7f32f07c4865ef23946.png] Chọn lớp **PET 1A** từ danh sách lớp học hiển thị trên màn hình để tiếp tục xem thông tin chi tiết hoặc bảng điểm của lớp.\n\n> **Bước 2:** Tại màn hình Lớp học, nhấn vào Tab “Gradebook” sau đó chọn bảng điểm mà bạn cần xem/chấm điểm hoặc thay đổi cấu trúc bảng điểm.\n\n[IMAGE: data/images/d0b19c27c918c338453b57e995cfa628.png] Click the \"Gradebooks\" tab, then click on the gradebook named \"GV-KET-Overall\" to view, grade, or modify its structure.\n\n> **Bước 3:** Tại màn hình quản lý bảng điểm,click “Edit”.\n\n[IMAGE: data/images/1638a38ad0f128be4ef121f60063405a.png] Click the \"Edit\" button at the top-left of the page to modify the progress test details.\n\n> **Bước 4:** Nhấn chọn status \"Approved\", sau đó chọn Save để gửi kết quả học tập về cho học viên.\n\n[IMAGE: data/images/00e1e4323d4b4778860ae1cbba402cdb.png] Nhấn vào menu thả xuống \"Status\" và chọn \"Approved\", sau đó nhấn nút \"Save\" ở góc trên bên trái để lưu thay đổi.\n\n> **Lưu ý:** Lưu ý:\n\nTrường hợp muốn gửi thông báo điểm cho học viên nhiều lần click **Send Notification**.\n\n[IMAGE: data/images/645da486a91ce1f22ed436faca649257.jpg] Click the **Send Notification** button located at the top of the interface to send the score notification to students.",
-      "raw_text": "# Gửi kết quả học tập\n\n> **Bước 1:** Ở màn hình danh sách của module Class chọn View Classes, sau đó chọn lớp muốn xem bảng điểm/chấm điểm học viên.\n\n[IMAGE: data/images/e16debad6946d7f32f07c4865ef23946.png] Chọn lớp **PET 1A** từ danh sách lớp học hiển thị trên màn hình để tiếp tục xem thông tin chi tiết hoặc bảng điểm của lớp.\n\n> **Bước 2:** Tại màn hình Lớp học, nhấn vào Tab “Gradebook” sau đó chọn bảng điểm mà bạn cần xem/chấm điểm hoặc thay đổi cấu trúc bảng điểm.\n\n[IMAGE: data/images/d0b19c27c918c338453b57e995cfa628.png] Click the \"Gradebooks\" tab, then click on the gradebook named \"GV-KET-Overall\" to view, grade, or modify its structure.\n\n> **Bước 3:** Tại màn hình quản lý bảng điểm,click “Edit”.\n\n[IMAGE: data/images/1638a38ad0f128be4ef121f60063405a.png] Click the \"Edit\" button at the top-left of the page to modify the progress test details.\n\n> **Bước 4:** Nhấn chọn status \"Approved\", sau đó chọn Save để gửi kết quả học tập về cho học viên.\n\n[IMAGE: data/images/00e1e4323d4b4778860ae1cbba402cdb.png] Nhấn vào menu thả xuống \"Status\" và chọn \"Approved\", sau đó nhấn nút \"Save\" ở góc trên bên trái để lưu thay đổi.\n\n> **Lưu ý:** Lưu ý:\n\nTrường hợp muốn gửi thông báo điểm cho học viên nhiều lần click **Send Notification**.\n\n[IMAGE: data/images/645da486a91ce1f22ed436faca649257.jpg] Click the **Send Notification** button located at the top of the interface to send the score notification to students.",
-      "token_count": 376,
-      "content_hash": "8a53003ebb3770e2400071a426bd2f9764a3efd1ff968d6128fb271d07ba2aec",
-      "image_paths": [
-        "data/images/e16debad6946d7f32f07c4865ef23946.png",
-        "data/images/d0b19c27c918c338453b57e995cfa628.png",
-        "data/images/1638a38ad0f128be4ef121f60063405a.png",
-        "data/images/00e1e4323d4b4778860ae1cbba402cdb.png",
-        "data/images/645da486a91ce1f22ed436faca649257.jpg"
-      ]
-    },
-    {
-      "chunk_id": "b1ccad0348894cfcdfcf430a0d0c8caea18ead4fa6682be7ef3d738f242fa234",
-      "parent_id": "b1ccad0348894cfcdfcf430a0d0c8caea18ead4fa6682be7ef3d738f242fa234",
-      "chunk_type": "child",
-      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/xem-bao-cao-campaigns-hieu-qua.md",
-      "doc_title": "Xem báo cáo Campaigns hiệu quả",
-      "breadcrumb": [
-        "nhom-tinh-nang-tiep-thi",
-        "xem-bao-cao-campaigns-hieu-qua"
-      ],
-      "section": "nhom-tinh-nang-tiep-thi",
-      "product": "EMS",
-      "heading_path": "Xem báo cáo Campaigns hiệu quả",
-      "content": "[Nhom Tinh Nang Tiep Thi > Xem Bao Cao Campaigns Hieu Qua] Xem báo cáo Campaigns hiệu quả\n\n# Xem báo cáo Campaigns hiệu quả\n\n> **Bước 1:** Ở màn hình danh sách của module **Campaigns**  chọn chiến dịch muốn xem hiệu quả Email Marketing.\n\n[IMAGE: data/images/02db56f5e32ebc0febb46def80fe536d.png] Chọn chiến dịch \"Giảm giá cuối kì\" trong danh sách để xem chi tiết và hiệu quả của chiến dịch Email Marketing tương ứng.\n\n> **Bước 2:** Nhấn chọn **Xem trạng thái (View Status)**.\n\n[IMAGE: data/images/714a7d513bda5da955aff786036eeb39.png] Nhấn chọn nút **View Status** ở góc trên cùng bên phải màn hình chi tiết chiến dịch để xem thông tin trạng thái của chiến dịch \"Giảm giá cuối kì\".\n\n> **Bước 3:** Hệ thống sẽ hiển thị chi tiết số người đã đọc email, mở liên kết, số người nhận, email bị trả về,…\n\n[IMAGE: data/images/f1fc845dfee6871bffbd02748781110a.png] Hệ thống hiển thị chi tiết số liệu của chiến dịch email, bao gồm danh sách các trạng thái hoạt động của người nhận như Message Sent/Attempted, Viewed Message, Bounced Messages, và Opted Out (được đánh dấu từ số 2 đến số 10), cùng biểu đồ thống kê chi tiết phản hồi của người nhận ở phía trên.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Filter biểu đồ danh sách chiến dịch email\n2. Danh sách người gửi tin nhắn trong hàng đợi (đang chờ lập lịch gửi,hoặc chờ gửi)\n3. Danh sách người gửi tin nhắn đã được gửi đi\n4. Danh sách người xem tin nhắn\n5. Danh sách người click-thru link. Nhấn để qua bước tiếp theo\n6. Danh sách Leads được tạo\n7. Danh sách Khách hàng được tạo\n8. Danh sách Email không có giá trị\n9. Danh sách Email bị trả lại&#x20;\n10. Danh sách Email Opted out",
-      "raw_text": "# Xem báo cáo Campaigns hiệu quả\n\n> **Bước 1:** Ở màn hình danh sách của module **Campaigns**  chọn chiến dịch muốn xem hiệu quả Email Marketing.\n\n[IMAGE: data/images/02db56f5e32ebc0febb46def80fe536d.png] Chọn chiến dịch \"Giảm giá cuối kì\" trong danh sách để xem chi tiết và hiệu quả của chiến dịch Email Marketing tương ứng.\n\n> **Bước 2:** Nhấn chọn **Xem trạng thái (View Status)**.\n\n[IMAGE: data/images/714a7d513bda5da955aff786036eeb39.png] Nhấn chọn nút **View Status** ở góc trên cùng bên phải màn hình chi tiết chiến dịch để xem thông tin trạng thái của chiến dịch \"Giảm giá cuối kì\".\n\n> **Bước 3:** Hệ thống sẽ hiển thị chi tiết số người đã đọc email, mở liên kết, số người nhận, email bị trả về,…\n\n[IMAGE: data/images/f1fc845dfee6871bffbd02748781110a.png] Hệ thống hiển thị chi tiết số liệu của chiến dịch email, bao gồm danh sách các trạng thái hoạt động của người nhận như Message Sent/Attempted, Viewed Message, Bounced Messages, và Opted Out (được đánh dấu từ số 2 đến số 10), cùng biểu đồ thống kê chi tiết phản hồi của người nhận ở phía trên.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú**:\n\n1. Filter biểu đồ danh sách chiến dịch email\n2. Danh sách người gửi tin nhắn trong hàng đợi (đang chờ lập lịch gửi,hoặc chờ gửi)\n3. Danh sách người gửi tin nhắn đã được gửi đi\n4. Danh sách người xem tin nhắn\n5. Danh sách người click-thru link. Nhấn để qua bước tiếp theo\n6. Danh sách Leads được tạo\n7. Danh sách Khách hàng được tạo\n8. Danh sách Email không có giá trị\n9. Danh sách Email bị trả lại&#x20;\n10. Danh sách Email Opted out",
-      "token_count": 408,
-      "content_hash": "b1ccad0348894cfcdfcf430a0d0c8caea18ead4fa6682be7ef3d738f242fa234",
-      "image_paths": [
-        "data/images/02db56f5e32ebc0febb46def80fe536d.png",
-        "data/images/714a7d513bda5da955aff786036eeb39.png",
-        "data/images/f1fc845dfee6871bffbd02748781110a.png"
-      ]
     }
   ],
   "sample_parents": [
     {
-      "chunk_id": "1fe0e9ae287b103e2a7e27d250b13cc76c358aad7b48596a115fa33dc32850ad",
+      "chunk_id": "0c215e44615114707abbbf2384b27a0281595213eee247add39c8a1060bd90a2",
       "parent_id": null,
       "chunk_type": "parent",
-      "doc_url": "https://help.dotb.vn/mobile-1/doi-mat-khau-ung-dung.md",
-      "doc_title": "Đổi mật khẩu ứng dụng",
+      "doc_url": "https://help.dotb.vn/mobile-1/ghi-nhan-phan-hoi.md",
+      "doc_title": "Gửi thông báo điểm danh",
       "breadcrumb": [
         "mobile-1",
-        "doi-mat-khau-ung-dung"
+        "ghi-nhan-phan-hoi"
       ],
       "section": "mobile-1",
       "product": "EMS",
-      "heading_path": "Đổi mật khẩu ứng dụng",
-      "content": "[Mobile 1 > Doi Mat Khau Ung Dung] Đổi mật khẩu ứng dụng\n\n# Đổi mật khẩu ứng dụng\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào biểu tượng **\"Cá nhân\"** để hiển thị danh sách chức năng của ứng dụng.\n\n[IMAGE: data/images/7e0593d6ba6a4dc96ab11a9202ba20ef.png] Nhấn vào biểu tượng **\"Cá nhân\"** ở góc dưới bên phải màn hình **Trang chủ** để truy cập vào các chức năng quản lý tài khoản cá nhân.\n\n> **Bước 2:** Chọn chức năng **Đổi mật khẩu** trên ứng dụng.\n\n[IMAGE: data/images/ccebb5af19cdee7c0910d4c355646014.png] Trên màn hình thông tin cá nhân, người dùng nhấn vào nút **Đổi mật khẩu** (được khoanh đỏ) để tiến hành thay đổi mật khẩu tài khoản.\n\n> **Bước 3:** Ứng dụng sẽ hiển thị giao diện như trên màn hình. Người dùng phải nhập đầy đủ thông tin để tiến hành đổi mật khẩu.\n\n[IMAGE: data/images/8b635edc3cd07884f49e0f0ab39fb715.jpg] Giao diện \"Đổi mật khẩu\" hiển thị các trường thông tin để người dùng nhập \"Mật khẩu cũ\", \"Mật khẩu mới\" và \"Mật khẩu xác nhận\". Sau khi điền đầy đủ các thông tin này, người dùng nhấn nút \"Lưu\" để hoàn tất quá trình thay đổi mật khẩu.\n\n> **Lưu ý:** **Ghi chú:**\n\n* **Mật khẩu mới** phải từ 6 ký tự trở lên.\n* **Mật khẩu mới** và **Xác nhận mật khẩu** phải khớp với nhau.\n\n> **Bước 5:** Sau khi điền đầy đủ thông tin, người dùng bấm vào nút **Lưu** để hệ thống cập nhật mật khẩu mới\n\n[IMAGE: data/images/57853da52e32bb7441cd63a3fa00cfa2.jpg] Người dùng bấm vào nút **Lưu** được khoanh đỏ để hệ thống cập nhật mật khẩu mới.",
-      "raw_text": "# Đổi mật khẩu ứng dụng\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào biểu tượng **\"Cá nhân\"** để hiển thị danh sách chức năng của ứng dụng.\n\n[IMAGE: data/images/7e0593d6ba6a4dc96ab11a9202ba20ef.png] Nhấn vào biểu tượng **\"Cá nhân\"** ở góc dưới bên phải màn hình **Trang chủ** để truy cập vào các chức năng quản lý tài khoản cá nhân.\n\n> **Bước 2:** Chọn chức năng **Đổi mật khẩu** trên ứng dụng.\n\n[IMAGE: data/images/ccebb5af19cdee7c0910d4c355646014.png] Trên màn hình thông tin cá nhân, người dùng nhấn vào nút **Đổi mật khẩu** (được khoanh đỏ) để tiến hành thay đổi mật khẩu tài khoản.\n\n> **Bước 3:** Ứng dụng sẽ hiển thị giao diện như trên màn hình. Người dùng phải nhập đầy đủ thông tin để tiến hành đổi mật khẩu.\n\n[IMAGE: data/images/8b635edc3cd07884f49e0f0ab39fb715.jpg] Giao diện \"Đổi mật khẩu\" hiển thị các trường thông tin để người dùng nhập \"Mật khẩu cũ\", \"Mật khẩu mới\" và \"Mật khẩu xác nhận\". Sau khi điền đầy đủ các thông tin này, người dùng nhấn nút \"Lưu\" để hoàn tất quá trình thay đổi mật khẩu.\n\n> **Lưu ý:** **Ghi chú:**\n\n* **Mật khẩu mới** phải từ 6 ký tự trở lên.\n* **Mật khẩu mới** và **Xác nhận mật khẩu** phải khớp với nhau.\n\n> **Bước 5:** Sau khi điền đầy đủ thông tin, người dùng bấm vào nút **Lưu** để hệ thống cập nhật mật khẩu mới\n\n[IMAGE: data/images/57853da52e32bb7441cd63a3fa00cfa2.jpg] Người dùng bấm vào nút **Lưu** được khoanh đỏ để hệ thống cập nhật mật khẩu mới.",
-      "token_count": 365,
-      "content_hash": "1fe0e9ae287b103e2a7e27d250b13cc76c358aad7b48596a115fa33dc32850ad",
+      "heading_path": "Gửi thông báo điểm danh",
+      "content": "[Mobile 1 > Ghi Nhan Phan Hoi] Gửi thông báo điểm danh\n\n# Gửi thông báo điểm danh\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào chức năng **Gửi thông báo** để thông báo điểm danh đến học viên.\n\n[IMAGE: data/images/2a28841cef87c55901c25e6a0c44b071.png] Nhấn vào biểu tượng **Gửi thông báo** ở thanh điều hướng phía dưới màn hình để chuyển đến chức năng thông báo điểm danh cho học viên.\n\n> **Bước 2:** Chọn học viên cần gửi thông báo và nhấn nút **\"Gửi\"**.\n\n[IMAGE: data/images/d19bdc7d1160f08aebca07cfd734b693.png] Chọn các học viên cần gửi thông báo trong danh sách lớp hoặc nhấn vào ô **\"Chọn tất cả\"** để chọn toàn bộ học viên, sau đó nhấn nút **\"Gửi\"** ở góc dưới bên phải màn hình để hoàn tất.\n\n> **Lưu ý:** **Ghi chú:**\n\nĐiểm danh từng học viên bằng cách check vào ô&#x20;\n\n[IMAGE: data/images/0d13daed34979f882b3f67aed91efedd.png] Điểm danh từng học viên bằng cách check vào ô vuông tương ứng với tên của học viên đó trong danh sách lớp.\n\nĐiểm danh hàng loạt học viên bằng cách check vào\n\n&#x20;[IMAGE: data/images/e269ae5d868362a6bca35a7939be23d4.png]",
+      "raw_text": "# Gửi thông báo điểm danh\n\n> **Bước 1:** Tại màn hình **Trang chủ**, nhấn vào chức năng **Gửi thông báo** để thông báo điểm danh đến học viên.\n\n[IMAGE: data/images/2a28841cef87c55901c25e6a0c44b071.png] Nhấn vào biểu tượng **Gửi thông báo** ở thanh điều hướng phía dưới màn hình để chuyển đến chức năng thông báo điểm danh cho học viên.\n\n> **Bước 2:** Chọn học viên cần gửi thông báo và nhấn nút **\"Gửi\"**.\n\n[IMAGE: data/images/d19bdc7d1160f08aebca07cfd734b693.png] Chọn các học viên cần gửi thông báo trong danh sách lớp hoặc nhấn vào ô **\"Chọn tất cả\"** để chọn toàn bộ học viên, sau đó nhấn nút **\"Gửi\"** ở góc dưới bên phải màn hình để hoàn tất.\n\n> **Lưu ý:** **Ghi chú:**\n\nĐiểm danh từng học viên bằng cách check vào ô&#x20;\n\n[IMAGE: data/images/0d13daed34979f882b3f67aed91efedd.png] Điểm danh từng học viên bằng cách check vào ô vuông tương ứng với tên của học viên đó trong danh sách lớp.\n\nĐiểm danh hàng loạt học viên bằng cách check vào\n\n&#x20;[IMAGE: data/images/e269ae5d868362a6bca35a7939be23d4.png]",
+      "token_count": 266,
+      "content_hash": "0c215e44615114707abbbf2384b27a0281595213eee247add39c8a1060bd90a2",
       "image_paths": [
-        "data/images/7e0593d6ba6a4dc96ab11a9202ba20ef.png",
-        "data/images/ccebb5af19cdee7c0910d4c355646014.png",
-        "data/images/8b635edc3cd07884f49e0f0ab39fb715.jpg",
-        "data/images/57853da52e32bb7441cd63a3fa00cfa2.jpg"
+        "data/images/2a28841cef87c55901c25e6a0c44b071.png",
+        "data/images/d19bdc7d1160f08aebca07cfd734b693.png",
+        "data/images/0d13daed34979f882b3f67aed91efedd.png",
+        "data/images/e269ae5d868362a6bca35a7939be23d4.png"
       ]
     },
     {
-      "chunk_id": "9b53a1758b9c9c5145aeb2f64bb173dfeacf0918c08fe47161585465c8587c3e",
+      "chunk_id": "3ec0dbf7b3bf56d58e0f66f93b4a396f18f0c018347e667e80f951d3af656503",
       "parent_id": null,
       "chunk_type": "parent",
-      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-ly-phieu-thu.md",
-      "doc_title": "Quản lý phiếu thu",
+      "doc_url": "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu.md",
+      "doc_title": "Quản lý sự vụ",
       "breadcrumb": [
         "bo-phan-giao-vu",
-        "quan-li-su-vu",
-        "quan-ly-phieu-thu"
+        "quan-li-su-vu"
       ],
       "section": "bo-phan-giao-vu",
       "product": "EMS",
-      "heading_path": "Quản lý phiếu thu",
-      "content": "[Bo Phan Giao Vu > Quan Li Su Vu > Quan Ly Phieu Thu] Quản lý phiếu thu\n\n# Quản lý phiếu thu\n\n> **Bước 1:** Ở màn hình danh sách của module **Payment**, chọn Payment muốn thực hiện việc xuất phiếu thu.\n\n[IMAGE: data/images/3d76c121118c4da7e18eaaa1f02b106a.png] Tại màn hình danh sách của module **Payments**, chọn payment có mã `PAY22-00029` của học sinh Ngoc An để thực hiện các thao tác tiếp theo.\n\n> **Bước 2:** Tại màn hình chi tiết của Payment, chọn tab subpanel “Receipts”, sau đó chọn Export để tiến hành xuất phiếu thu cho học viên.\n\n[IMAGE: data/images/57f959b9ca97a911202b536e41f9c315.png] Tại màn hình chi tiết của thanh toán, chọn tab **Receipts** và nhấn nút **Export** để xuất phiếu thu. Cột bảng hiển thị chi tiết mã phiếu thu `22100024`, phương thức thanh toán là **CASH**, số tiền `10,000,000`, trạng thái **Paid**, và diễn giải **Thu tiền khóa học IELTS**.\n\n> **Bước 3:** Kết quả sau khi thực hiện việc xuất phiếu thu cho học viên.\n\n[IMAGE: data/images/a55e5782d46aea3fe3995521bd5f11be.png] Phiếu thu được hệ thống tự động tạo ra và hiển thị đầy đủ thông tin của học viên, bao gồm họ tên, mã học viên, nội dung thu tiền, tổng số tiền, số tiền thanh toán, hình thức thanh toán, cùng các thông tin chi tiết về chiết khấu và thời gian tạo phiếu.",
-      "raw_text": "# Quản lý phiếu thu\n\n> **Bước 1:** Ở màn hình danh sách của module **Payment**, chọn Payment muốn thực hiện việc xuất phiếu thu.\n\n[IMAGE: data/images/3d76c121118c4da7e18eaaa1f02b106a.png] Tại màn hình danh sách của module **Payments**, chọn payment có mã `PAY22-00029` của học sinh Ngoc An để thực hiện các thao tác tiếp theo.\n\n> **Bước 2:** Tại màn hình chi tiết của Payment, chọn tab subpanel “Receipts”, sau đó chọn Export để tiến hành xuất phiếu thu cho học viên.\n\n[IMAGE: data/images/57f959b9ca97a911202b536e41f9c315.png] Tại màn hình chi tiết của thanh toán, chọn tab **Receipts** và nhấn nút **Export** để xuất phiếu thu. Cột bảng hiển thị chi tiết mã phiếu thu `22100024`, phương thức thanh toán là **CASH**, số tiền `10,000,000`, trạng thái **Paid**, và diễn giải **Thu tiền khóa học IELTS**.\n\n> **Bước 3:** Kết quả sau khi thực hiện việc xuất phiếu thu cho học viên.\n\n[IMAGE: data/images/a55e5782d46aea3fe3995521bd5f11be.png] Phiếu thu được hệ thống tự động tạo ra và hiển thị đầy đủ thông tin của học viên, bao gồm họ tên, mã học viên, nội dung thu tiền, tổng số tiền, số tiền thanh toán, hình thức thanh toán, cùng các thông tin chi tiết về chiết khấu và thời gian tạo phiếu.",
-      "token_count": 315,
-      "content_hash": "9b53a1758b9c9c5145aeb2f64bb173dfeacf0918c08fe47161585465c8587c3e",
+      "heading_path": "Quản lý sự vụ > [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)",
+      "content": "[Bo Phan Giao Vu > Quan Li Su Vu] Quản lý sự vụ > [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)\n\n# Quản lý sự vụ\n\n#### [IMAGE: data/images/ca3110f0d7f4cc22414c17fb04489887.png][Quản lý phiếu thu](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-phieu-thu.md)\n\n#### [IMAGE: data/images/9fb0bc894ba72a1f7b3c2e1a6040675b.png][Quản lý chiết khẩu (Discount)](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-chiet-khau-discount.md)\n\n#### [IMAGE: data/images/3b1f7ffed317ec21bdad2e999a11c4cb.png][Quản lý Voucher](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-ma-giam-gia-sponsor.md)\n\n#### [IMAGE: data/images/1f198c0f44964641f63c40d36d99a0ef.png][Quản lý Loyalty](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-diem-tich-luy-loyalty.md)\n\n#### [IMAGE: data/images/037fe0707498df0531d928b2bc69603d.png][Quản lý bảo lưu (Delay)](/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay.md)\n\n#### [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)",
+      "raw_text": "# Quản lý sự vụ\n\n#### [IMAGE: data/images/ca3110f0d7f4cc22414c17fb04489887.png][Quản lý phiếu thu](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-phieu-thu.md)\n\n#### [IMAGE: data/images/9fb0bc894ba72a1f7b3c2e1a6040675b.png][Quản lý chiết khẩu (Discount)](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-chiet-khau-discount.md)\n\n#### [IMAGE: data/images/3b1f7ffed317ec21bdad2e999a11c4cb.png][Quản lý Voucher](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-ma-giam-gia-sponsor.md)\n\n#### [IMAGE: data/images/1f198c0f44964641f63c40d36d99a0ef.png][Quản lý Loyalty](/bo-phan-giao-vu/quan-li-su-vu/quan-ly-diem-tich-luy-loyalty.md)\n\n#### [IMAGE: data/images/037fe0707498df0531d928b2bc69603d.png][Quản lý bảo lưu (Delay)](/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay.md)\n\n#### [IMAGE: data/images/c5be113d1cfe8a8d8bbd28bf26481334.png][Quản lý chuyển trung tâm, học phí, hoàn tiền](/bo-phan-giao-vu/quan-li-su-vu/quan-li-chuyen-trung-tam-hoc-phi-hoan-tien.md)",
+      "token_count": 289,
+      "content_hash": "3ec0dbf7b3bf56d58e0f66f93b4a396f18f0c018347e667e80f951d3af656503",
       "image_paths": [
-        "data/images/3d76c121118c4da7e18eaaa1f02b106a.png",
-        "data/images/57f959b9ca97a911202b536e41f9c315.png",
-        "data/images/a55e5782d46aea3fe3995521bd5f11be.png"
+        "data/images/c5be113d1cfe8a8d8bbd28bf26481334.png",
+        "data/images/ca3110f0d7f4cc22414c17fb04489887.png",
+        "data/images/9fb0bc894ba72a1f7b3c2e1a6040675b.png",
+        "data/images/3b1f7ffed317ec21bdad2e999a11c4cb.png",
+        "data/images/1f198c0f44964641f63c40d36d99a0ef.png",
+        "data/images/037fe0707498df0531d928b2bc69603d.png",
+        "data/images/c5be113d1cfe8a8d8bbd28bf26481334.png"
       ]
     },
     {
-      "chunk_id": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "chunk_id": "a262d63d4532272dc3e5a6fbc39bb58e5e1221770f657b984b12afe964e92d09",
       "parent_id": null,
       "chunk_type": "parent",
-      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/merge-duplicate-hop-nhat-du-lieu.md",
-      "doc_title": "Merge Duplicate - Hợp nhất dữ liệu",
+      "doc_url": "https://help.dotb.vn/teacher-guide/lich-day-trong-tuan.md",
+      "doc_title": "Lịch dạy trong tuần",
+      "breadcrumb": [
+        "teacher-guide",
+        "lich-day-trong-tuan"
+      ],
+      "section": "teacher-guide",
+      "product": "TEA",
+      "heading_path": "Lịch dạy trong tuần",
+      "content": "[Teacher Guide > Lich Day Trong Tuan] Lịch dạy trong tuần\n\n# Lịch dạy trong tuần\n\n> Tại màn hình **Home** ở bên góc trái, khi nhấn vào, hệ thống sẽ show ra lịch giảng dạy trong 7 ngày trong tuần, và sẽ có kèm link google meeting trong các buổi.\n\n[IMAGE: data/images/ab7ad2248cd6916fc5e8078d72e93e71.png] Màn hình hiển thị lịch giảng dạy trong 7 ngày trong tuần với các khung giờ và thông tin chi tiết của từng buổi học, trong đó có tích hợp sẵn link Google Meet để tham gia.",
+      "raw_text": "# Lịch dạy trong tuần\n\n> Tại màn hình **Home** ở bên góc trái, khi nhấn vào, hệ thống sẽ show ra lịch giảng dạy trong 7 ngày trong tuần, và sẽ có kèm link google meeting trong các buổi.\n\n[IMAGE: data/images/ab7ad2248cd6916fc5e8078d72e93e71.png] Màn hình hiển thị lịch giảng dạy trong 7 ngày trong tuần với các khung giờ và thông tin chi tiết của từng buổi học, trong đó có tích hợp sẵn link Google Meet để tham gia.",
+      "token_count": 118,
+      "content_hash": "a262d63d4532272dc3e5a6fbc39bb58e5e1221770f657b984b12afe964e92d09",
+      "image_paths": [
+        "data/images/ab7ad2248cd6916fc5e8078d72e93e71.png"
+      ]
+    },
+    {
+      "chunk_id": "18d4dde6da58eccc477a62b7d0ed0212384cead4b68700c7a033c21c38e4c74a",
+      "parent_id": null,
+      "chunk_type": "parent",
+      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/canh-bao-trung-du-lieu.md",
+      "doc_title": "Cảnh báo trùng dữ liệu",
       "breadcrumb": [
         "tuyen-sinh-ban-hang",
         "lead",
-        "merge-duplicate-hop-nhat-du-lieu"
+        "canh-bao-trung-du-lieu"
       ],
       "section": "tuyen-sinh-ban-hang",
       "product": "EMS",
-      "heading_path": "Merge Duplicate - Hợp nhất dữ liệu",
-      "content": "[Tuyen Sinh Ban Hang > Lead > Merge Duplicate Hop Nhat Du Lieu] Merge Duplicate - Hợp nhất dữ liệu\n\n# Merge Duplicate - Hợp nhất dữ liệu\n\n> **Bước 1:** Chọn hồ sơ bị **duplicate**, ở module bị trùng (tối đa 2 hồ sơ).\n\n[IMAGE: data/images/f630d448a3b70bc88c2e826c25b35e6b.png] Chọn tối đa hai hồ sơ bị trùng lặp (duplicate) trong danh sách Targets bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ.\n\n> **Bước 2:** Nhấn chuột vào mũi tên, sau đó chọn **Merge.**\n\n[IMAGE: data/images/41d7c5d36728572fdf2c19c7313734ee.png] Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn **Merge** từ menu thả xuống để tiến hành gộp các mục tiêu.\n\n> **Bước 3:** Hệ thống sẽ xuất hiện hồ sơ bị duplicate được chọn, sau đó chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính). Sau đó nhấn **Save**.\n\n[IMAGE: data/images/767a262fb429476afd5d4930bf570a31.png] Nhấn nút **Save** ở góc trên bên phải màn hình để hoàn tất quá trình gộp hồ sơ trùng lặp.\n\n> **Bước 4:** Tiếp tục nhấn **Confirm.**\n\n[IMAGE: data/images/5f53b649baa3b1e04c5d780c8115aa28.png] Tiếp tục nhấn nút **Confirm** trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n\n> **Bước 5:** Hệ thống thông báo Merge dữ liệu thành công giữa các hồ sơ bị duplicate được chọn\n\n[IMAGE: data/images/4e996abf518184fcd83d3335adb452ec.png] Hệ thống hiển thị thông báo \"Success 2 records were merged successfully. 0 related records were added\" ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.\n\n> *Video hướng dẫn Merge dữ liệu trùng trên hệ thống*",
-      "raw_text": "# Merge Duplicate - Hợp nhất dữ liệu\n\n> **Bước 1:** Chọn hồ sơ bị **duplicate**, ở module bị trùng (tối đa 2 hồ sơ).\n\n[IMAGE: data/images/f630d448a3b70bc88c2e826c25b35e6b.png] Chọn tối đa hai hồ sơ bị trùng lặp (duplicate) trong danh sách Targets bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ.\n\n> **Bước 2:** Nhấn chuột vào mũi tên, sau đó chọn **Merge.**\n\n[IMAGE: data/images/41d7c5d36728572fdf2c19c7313734ee.png] Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn **Merge** từ menu thả xuống để tiến hành gộp các mục tiêu.\n\n> **Bước 3:** Hệ thống sẽ xuất hiện hồ sơ bị duplicate được chọn, sau đó chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính). Sau đó nhấn **Save**.\n\n[IMAGE: data/images/767a262fb429476afd5d4930bf570a31.png] Nhấn nút **Save** ở góc trên bên phải màn hình để hoàn tất quá trình gộp hồ sơ trùng lặp.\n\n> **Bước 4:** Tiếp tục nhấn **Confirm.**\n\n[IMAGE: data/images/5f53b649baa3b1e04c5d780c8115aa28.png] Tiếp tục nhấn nút **Confirm** trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n\n> **Bước 5:** Hệ thống thông báo Merge dữ liệu thành công giữa các hồ sơ bị duplicate được chọn\n\n[IMAGE: data/images/4e996abf518184fcd83d3335adb452ec.png] Hệ thống hiển thị thông báo \"Success 2 records were merged successfully. 0 related records were added\" ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.\n\n> *Video hướng dẫn Merge dữ liệu trùng trên hệ thống*",
-      "token_count": 395,
-      "content_hash": "d9dad3169100adefd26d7fe09dba21c54d430e96e3cca91c733c2dda7604196e",
+      "heading_path": "Cảnh báo trùng dữ liệu",
+      "content": "[Tuyen Sinh Ban Hang > Lead > Canh Bao Trung Du Lieu] Cảnh báo trùng dữ liệu\n\n# Cảnh báo trùng dữ liệu\n\n> Khi nhập dữ liệu vào bị trùng thông tin về **số điện thoại và họ tên**, hệ thống sẽ cảnh báo người dùng bị trùng dữ liệu, bạn có thể bỏ qua thì nhấn **Cancel** hoặc nhập lại thông tin thì nhấn **Go Back**.\n\n[IMAGE: data/images/99fdf1b44f077b63d5f526d2e67706d6.png] When entering duplicate information for both phone number and full name, the system displays a warning stating \"1 duplicates found.\" Users can click **Cancel** to ignore the warning or click **Go back** (indicated by the red arrow and box) to re-enter the information.\n\n> *Video hướng dẫn chức năng cảnh báo trùng dữ liệu*",
+      "raw_text": "# Cảnh báo trùng dữ liệu\n\n> Khi nhập dữ liệu vào bị trùng thông tin về **số điện thoại và họ tên**, hệ thống sẽ cảnh báo người dùng bị trùng dữ liệu, bạn có thể bỏ qua thì nhấn **Cancel** hoặc nhập lại thông tin thì nhấn **Go Back**.\n\n[IMAGE: data/images/99fdf1b44f077b63d5f526d2e67706d6.png] When entering duplicate information for both phone number and full name, the system displays a warning stating \"1 duplicates found.\" Users can click **Cancel** to ignore the warning or click **Go back** (indicated by the red arrow and box) to re-enter the information.\n\n> *Video hướng dẫn chức năng cảnh báo trùng dữ liệu*",
+      "token_count": 173,
+      "content_hash": "18d4dde6da58eccc477a62b7d0ed0212384cead4b68700c7a033c21c38e4c74a",
       "image_paths": [
-        "data/images/f630d448a3b70bc88c2e826c25b35e6b.png",
-        "data/images/41d7c5d36728572fdf2c19c7313734ee.png",
-        "data/images/767a262fb429476afd5d4930bf570a31.png",
-        "data/images/5f53b649baa3b1e04c5d780c8115aa28.png",
-        "data/images/4e996abf518184fcd83d3335adb452ec.png"
+        "data/images/99fdf1b44f077b63d5f526d2e67706d6.png"
       ]
     },
     {
-      "chunk_id": "64ef201f34ac170b03a2bcfdcce3eb1a01c233f320ad63ed4f6d7d9a08d95993",
+      "chunk_id": "9a09bc20aaf399e097e79bed3fd10cda5e46a4dde79e434f8fccd5e5af01927f",
       "parent_id": null,
       "chunk_type": "parent",
-      "doc_url": "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/lap-lich-gui-email.md",
-      "doc_title": "Lập lịch gửi Email",
+      "doc_url": "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-thong-bao-nghi-hoc-hoc-bu-send-app-message/gui-tin-nhan-qua-mobile-app-cho-phu-huynh.md",
+      "doc_title": "Gửi tin nhắn qua Mobile App cho phụ huynh",
       "breadcrumb": [
-        "nhom-tinh-nang-tiep-thi",
-        "lap-lich-gui-email"
+        "tinh-nang-danh-cho-parents-app-tren-crm",
+        "gui-thong-bao-nghi-hoc-hoc-bu-send-app-message",
+        "gui-tin-nhan-qua-mobile-app-cho-phu-huynh"
       ],
-      "section": "nhom-tinh-nang-tiep-thi",
+      "section": "tinh-nang-danh-cho-parents-app-tren-crm",
       "product": "EMS",
-      "heading_path": "Lập lịch gửi Email",
-      "content": "[Nhom Tinh Nang Tiep Thi > Lap Lich Gui Email] Lập lịch gửi Email\n\n# Lập lịch gửi Email\n\n> **Bước 1:** Ở màn hình danh sách của module **Chiến dịch** (**Campaigns)** chọn chiến dịch muốn lập lịch gửi Email.\n\n[IMAGE: data/images/55bb24b470e8d610cf322556dbf582c6.png] Người dùng chọn chiến dịch \"Giảm giá cuối kì\" trong danh sách chiến dịch của module Campaigns để tiến hành thiết lập hoặc quản lý tiếp theo.\n\n> Bước 2 : Tại thanh Supanel Email Markerting, bấm chọn \"Tạo mới\".\n\n[IMAGE: data/images/1c18c176abafa2ae0bd918ba4fa72ddf.jpg] Bấm chọn nút \"Tạo mới\" (được chỉ định bởi mũi tên màu hồng) tại thanh subpanel Email Marketing.\n\n> Bước 3 : Chọn đầy đủ thông tin tại màn hình cài đặt lịch gửi và chọn mẫu email template. Sau đó nhấn Lưu.\n\n:warning:***Lưu ý :*** Ngày và thời gian bắt đầu gửi sẽ **trừ 7 tiếng** vì hệ thống đang được cài đặt theo giờ HCM.\n\n**Vi dụ muốn gửi email vào 08:00 AM thì phần giờ sẽ trừ 7 tiếng, sẽ nhập vào 01:00AM**\n\n[IMAGE: data/images/444ce4702edffd9abed61e87cf6e90db.jpg] Nhập thời gian bắt đầu gửi email vào ô nhập liệu **Ngày và thời gian bắt đầu**, với phần giờ được điều chỉnh (ví dụ: nhập `01:00 AM` để tương ứng với mốc mong muốn). Thông tin này được đánh dấu với số hiệu **2** kèm theo biểu tượng ngôi sao để lưu ý.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok:**Ghi chú** :\n\n1. Nhập tên email MKT\n2. Lên lịch hệ thống gửi tự động với thời gian và ngày tháng\n3. Tích chọn và ô để hệ thống gửi ra tệp DSKH đã chọn (Target Lists)\n4. Chọn email gửi đi từ hệ thống\n5. Đặt tên hiện thị email\n6. Chọn trạng thái kích hoạt email\n7. Chọn mẫu email template đã soạn, có thể xem thêm hướng dẫn tạo Email MKT&#x20;\n8. Email reply to trường hợp KH muốn phản hồi về email gửi ra\n\n> **Bước 4:** Nhấn vào Launch Wizard.\n\n[IMAGE: data/images/8ca1b9f3a442676c7e4b2f8c3bb32ae0.png] Nhấn vào nút **Launch Wizard** ở góc trên bên phải để bắt đầu thiết lập chiến dịch.\n\n> **Bước 5:** Chọn (1) Lập lịch gửi Email (Schedule Email). Hệ thống thông báo Lịch gửi email đã được bật.\n\n[IMAGE: data/images/917b22ee0fed6e14620ef8add68aaf71.png] Chọn **Lập lịch Email** để cài đặt thời gian gửi email. Hệ thống sẽ lưu trạng thái lịch trình của email marketing.\n\n**Lưu ý** : Trường hợp muốn test gửi email ngay có thể bấm chọn Gửi bài kiểm tra (Send Test), hệ thống sẽ gửi email vào tệp DSKH đã chọn trong Target list với type là \"Test\".&#x20;\n\n**Trường hợp muốn gửi email ngay lập tức, xem tiếp hướng dẫn phía dưới** :point\\_down:\n\n> **Bước 6:** Vào Admin -> **Hàng đợi Email** (**Email Queue)**.\n\n[IMAGE: data/images/684e2fe5a3f2264789de749261c10763.png] Truy cập vào trang quản trị (Admin) và nhấn chọn **Hàng đợi Email** (Email Queue) trong phần Email để xem trạng thái các email đang chờ gửi.\n\n> **Bước 7:** Hệ thống hiển thị danh sách người được lập lịch gửi Email (bạn cũng có thể gửi mà không cần lên lịch), bạn có thể chọn tất cả hoặc chọn một số người có trong danh sách, sau đó nhấn nút **Gửi email chiến dịch xếp hàng** (Send Queued Campaign Emails) để gửi.\n\n[IMAGE: data/images/3f35a5b4c9aa9f53ca47b1cd6faa0445.png] Nhấn nút **Gửi email chiến dịch xếp hàng** ở góc dưới cùng bên trái màn hình để hoàn tất quá trình thiết lập và gửi chiến dịch email theo lịch.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Chọn tất cả để gửi email chiến dịch, trường hợp muốn gửi tất cả chọn vào mũi tên như hình bên dưới.\n\n2. Nhấn vào Send Queued Campaign Emails để gửi chiến dịch\n\n**Trường hợp muốn xoá DSKH khỏi chiến dịch Email MKT cần gửi thì làm các bước sau:**\n\n> Bước 1: Vào Admin -> **Hàng đợi Email** (**Email Queue)**.\n\n[IMAGE: data/images/0d6522b334f4efdfd75e7274ebcb2ab2.jpg] Giao diện \"Hàng đợi email\" (Email Queue) hiển thị danh sách các email đang chờ gửi, đi kèm các bộ lọc tìm kiếm và menu tùy chọn chọn tất cả các bản ghi. Hộp thoại xổ xuống minh họa các tùy chọn thao tác hàng loạt như \"Chọn trang này\" và \"Chọn tất cả (20+)\".\n\n> Bước 2: Chọn tất cả để gửi email chiến dịch, trường hợp muốn gửi tất cả chọn vào mũi tên (1) như hình bên dưới. Cuối cùng chọn Xoá bỏ (2) là hoàn tất\n\n[IMAGE: data/images/a7541c83cc914defd36e09491f5caed6.png] Click on the **Email Queue** icon, highlighted in a red box with an arrow pointing to it, located under the Email section.",
-      "raw_text": "# Lập lịch gửi Email\n\n> **Bước 1:** Ở màn hình danh sách của module **Chiến dịch** (**Campaigns)** chọn chiến dịch muốn lập lịch gửi Email.\n\n[IMAGE: data/images/55bb24b470e8d610cf322556dbf582c6.png] Người dùng chọn chiến dịch \"Giảm giá cuối kì\" trong danh sách chiến dịch của module Campaigns để tiến hành thiết lập hoặc quản lý tiếp theo.\n\n> Bước 2 : Tại thanh Supanel Email Markerting, bấm chọn \"Tạo mới\".\n\n[IMAGE: data/images/1c18c176abafa2ae0bd918ba4fa72ddf.jpg] Bấm chọn nút \"Tạo mới\" (được chỉ định bởi mũi tên màu hồng) tại thanh subpanel Email Marketing.\n\n> Bước 3 : Chọn đầy đủ thông tin tại màn hình cài đặt lịch gửi và chọn mẫu email template. Sau đó nhấn Lưu.\n\n:warning:***Lưu ý :*** Ngày và thời gian bắt đầu gửi sẽ **trừ 7 tiếng** vì hệ thống đang được cài đặt theo giờ HCM.\n\n**Vi dụ muốn gửi email vào 08:00 AM thì phần giờ sẽ trừ 7 tiếng, sẽ nhập vào 01:00AM**\n\n[IMAGE: data/images/444ce4702edffd9abed61e87cf6e90db.jpg] Nhập thời gian bắt đầu gửi email vào ô nhập liệu **Ngày và thời gian bắt đầu**, với phần giờ được điều chỉnh (ví dụ: nhập `01:00 AM` để tương ứng với mốc mong muốn). Thông tin này được đánh dấu với số hiệu **2** kèm theo biểu tượng ngôi sao để lưu ý.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok:**Ghi chú** :\n\n1. Nhập tên email MKT\n2. Lên lịch hệ thống gửi tự động với thời gian và ngày tháng\n3. Tích chọn và ô để hệ thống gửi ra tệp DSKH đã chọn (Target Lists)\n4. Chọn email gửi đi từ hệ thống\n5. Đặt tên hiện thị email\n6. Chọn trạng thái kích hoạt email\n7. Chọn mẫu email template đã soạn, có thể xem thêm hướng dẫn tạo Email MKT&#x20;\n8. Email reply to trường hợp KH muốn phản hồi về email gửi ra\n\n> **Bước 4:** Nhấn vào Launch Wizard.\n\n[IMAGE: data/images/8ca1b9f3a442676c7e4b2f8c3bb32ae0.png] Nhấn vào nút **Launch Wizard** ở góc trên bên phải để bắt đầu thiết lập chiến dịch.\n\n> **Bước 5:** Chọn (1) Lập lịch gửi Email (Schedule Email). Hệ thống thông báo Lịch gửi email đã được bật.\n\n[IMAGE: data/images/917b22ee0fed6e14620ef8add68aaf71.png] Chọn **Lập lịch Email** để cài đặt thời gian gửi email. Hệ thống sẽ lưu trạng thái lịch trình của email marketing.\n\n**Lưu ý** : Trường hợp muốn test gửi email ngay có thể bấm chọn Gửi bài kiểm tra (Send Test), hệ thống sẽ gửi email vào tệp DSKH đã chọn trong Target list với type là \"Test\".&#x20;\n\n**Trường hợp muốn gửi email ngay lập tức, xem tiếp hướng dẫn phía dưới** :point\\_down:\n\n> **Bước 6:** Vào Admin -> **Hàng đợi Email** (**Email Queue)**.\n\n[IMAGE: data/images/684e2fe5a3f2264789de749261c10763.png] Truy cập vào trang quản trị (Admin) và nhấn chọn **Hàng đợi Email** (Email Queue) trong phần Email để xem trạng thái các email đang chờ gửi.\n\n> **Bước 7:** Hệ thống hiển thị danh sách người được lập lịch gửi Email (bạn cũng có thể gửi mà không cần lên lịch), bạn có thể chọn tất cả hoặc chọn một số người có trong danh sách, sau đó nhấn nút **Gửi email chiến dịch xếp hàng** (Send Queued Campaign Emails) để gửi.\n\n[IMAGE: data/images/3f35a5b4c9aa9f53ca47b1cd6faa0445.png] Nhấn nút **Gửi email chiến dịch xếp hàng** ở góc dưới cùng bên trái màn hình để hoàn tất quá trình thiết lập và gửi chiến dịch email theo lịch.\n\n> **Lưu ý:** :woman\\_gesturing\\_ok: **Ghi chú:**\n\n1. Chọn tất cả để gửi email chiến dịch, trường hợp muốn gửi tất cả chọn vào mũi tên như hình bên dưới.\n\n2. Nhấn vào Send Queued Campaign Emails để gửi chiến dịch\n\n**Trường hợp muốn xoá DSKH khỏi chiến dịch Email MKT cần gửi thì làm các bước sau:**\n\n> Bước 1: Vào Admin -> **Hàng đợi Email** (**Email Queue)**.\n\n[IMAGE: data/images/0d6522b334f4efdfd75e7274ebcb2ab2.jpg] Giao diện \"Hàng đợi email\" (Email Queue) hiển thị danh sách các email đang chờ gửi, đi kèm các bộ lọc tìm kiếm và menu tùy chọn chọn tất cả các bản ghi. Hộp thoại xổ xuống minh họa các tùy chọn thao tác hàng loạt như \"Chọn trang này\" và \"Chọn tất cả (20+)\".\n\n> Bước 2: Chọn tất cả để gửi email chiến dịch, trường hợp muốn gửi tất cả chọn vào mũi tên (1) như hình bên dưới. Cuối cùng chọn Xoá bỏ (2) là hoàn tất\n\n[IMAGE: data/images/a7541c83cc914defd36e09491f5caed6.png] Click on the **Email Queue** icon, highlighted in a red box with an arrow pointing to it, located under the Email section.",
-      "token_count": 1045,
-      "content_hash": "64ef201f34ac170b03a2bcfdcce3eb1a01c233f320ad63ed4f6d7d9a08d95993",
+      "heading_path": "Gửi tin nhắn qua Mobile App cho phụ huynh",
+      "content": "[Tinh Nang Danh Cho Parents App Tren Crm > Gui Thong Bao Nghi Hoc Hoc Bu Send App Message > Gui Tin Nhan Qua Mobile App Cho Phu Huynh] Gửi tin nhắn qua Mobile App cho phụ huynh\n\n# Gửi tin nhắn qua Mobile App cho phụ huynh\n\n> **Bước 1:** Ở màn hình danh sách của module Classes sau đó click chọn lớp cần gửi thông báo đến App như lịch học bù lịch khai giảng,... đến cho học viên.\n\n[IMAGE: data/images/6d64440ae973cfb32b060cac2d8d6ff2.png] Ở màn hình danh sách lớp học (Classes), bạn nhấp chọn tên của lớp học cụ thể (ví dụ: lớp \"KET 1C\" có mã GV-KET119-0003) để tiến hành gửi thông báo đến ứng dụng của học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/23b2d75fee23a64021b38c774ffd8c53.png] Nhấn vào nút **Attendance & Homework** trên thanh công cụ phía trên để quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình điểm danh, nhấn chọn **Send App Message** nhập tin nhắn muốn gửi thông báo đến học viên qua app. Sau đó nhấn **Send.**\n\n[IMAGE: data/images/36eeca73d22a2b3a2f152bf8c45ab105.png] Nhấn chọn nút **Send Apps Messages** được khoanh đỏ để gửi tin nhắn thông báo đến học viên qua ứng dụng, sau đó nhấn **Send** ở từng hàng tương ứng.\n\n> Sau khi gửi thành công, mobile app sẽ nhận được thông báo như hình mẫu bên dưới.\n\n[IMAGE: data/images/e89960e87a91036ef32fa0711a8e6edf.png] Sau khi gửi thành công, mobile app hiển thị màn hình chính với thông báo \"Bạn có thông báo mới!!\" cùng các mục quản lý học tập như thời khóa biểu, sổ liên lạc, kết quả học tập và học phí. Phía dưới hiển thị thông tin chi tiết về buổi học trong tuần và danh sách lớp học gần đây.\n\n[IMAGE: data/images/90c309d74ab759e2246f9999da358d41.png] Mobile app hiển thị thông báo với nội dung \"Bạn có thông báo mới!!\" kèm theo thời gian và chi tiết thông báo \"Học viên chăm học, làm bài tập đầy đủ\".",
+      "raw_text": "# Gửi tin nhắn qua Mobile App cho phụ huynh\n\n> **Bước 1:** Ở màn hình danh sách của module Classes sau đó click chọn lớp cần gửi thông báo đến App như lịch học bù lịch khai giảng,... đến cho học viên.\n\n[IMAGE: data/images/6d64440ae973cfb32b060cac2d8d6ff2.png] Ở màn hình danh sách lớp học (Classes), bạn nhấp chọn tên của lớp học cụ thể (ví dụ: lớp \"KET 1C\" có mã GV-KET119-0003) để tiến hành gửi thông báo đến ứng dụng của học viên.\n\n> **Bước 2:** Tại màn hình chi tiết của Lớp học, nhấn vào button **Attendance & Homework.**\n\n[IMAGE: data/images/23b2d75fee23a64021b38c774ffd8c53.png] Nhấn vào nút **Attendance & Homework** trên thanh công cụ phía trên để quản lý điểm danh và bài tập của lớp học.\n\n> **Bước 3:** Tại màn hình điểm danh, nhấn chọn **Send App Message** nhập tin nhắn muốn gửi thông báo đến học viên qua app. Sau đó nhấn **Send.**\n\n[IMAGE: data/images/36eeca73d22a2b3a2f152bf8c45ab105.png] Nhấn chọn nút **Send Apps Messages** được khoanh đỏ để gửi tin nhắn thông báo đến học viên qua ứng dụng, sau đó nhấn **Send** ở từng hàng tương ứng.\n\n> Sau khi gửi thành công, mobile app sẽ nhận được thông báo như hình mẫu bên dưới.\n\n[IMAGE: data/images/e89960e87a91036ef32fa0711a8e6edf.png] Sau khi gửi thành công, mobile app hiển thị màn hình chính với thông báo \"Bạn có thông báo mới!!\" cùng các mục quản lý học tập như thời khóa biểu, sổ liên lạc, kết quả học tập và học phí. Phía dưới hiển thị thông tin chi tiết về buổi học trong tuần và danh sách lớp học gần đây.\n\n[IMAGE: data/images/90c309d74ab759e2246f9999da358d41.png] Mobile app hiển thị thông báo với nội dung \"Bạn có thông báo mới!!\" kèm theo thời gian và chi tiết thông báo \"Học viên chăm học, làm bài tập đầy đủ\".",
+      "token_count": 465,
+      "content_hash": "9a09bc20aaf399e097e79bed3fd10cda5e46a4dde79e434f8fccd5e5af01927f",
       "image_paths": [
-        "data/images/55bb24b470e8d610cf322556dbf582c6.png",
-        "data/images/1c18c176abafa2ae0bd918ba4fa72ddf.jpg",
-        "data/images/444ce4702edffd9abed61e87cf6e90db.jpg",
-        "data/images/8ca1b9f3a442676c7e4b2f8c3bb32ae0.png",
-        "data/images/917b22ee0fed6e14620ef8add68aaf71.png",
-        "data/images/684e2fe5a3f2264789de749261c10763.png",
-        "data/images/3f35a5b4c9aa9f53ca47b1cd6faa0445.png",
-        "data/images/0d6522b334f4efdfd75e7274ebcb2ab2.jpg",
-        "data/images/a7541c83cc914defd36e09491f5caed6.png"
-      ]
-    },
-    {
-      "chunk_id": "ba12493501d4fcdfee46ec6ac450e87a336f94f8a64ac034411cab1ac1636de9",
-      "parent_id": null,
-      "chunk_type": "parent",
-      "doc_url": "https://help.dotb.vn/tuyen-sinh-ban-hang/chuyen-doi-hoc-vien-chinh-thuc-convert-student/quan-ly-ho-so-hoc-vien-lich-su-thanh-toan.md",
-      "doc_title": "Quản lý hồ sơ học viên, lịch sử thanh toán",
-      "breadcrumb": [
-        "tuyen-sinh-ban-hang",
-        "chuyen-doi-hoc-vien-chinh-thuc-convert-student",
-        "quan-ly-ho-so-hoc-vien-lich-su-thanh-toan"
-      ],
-      "section": "tuyen-sinh-ban-hang",
-      "product": "EMS",
-      "heading_path": "Quản lý hồ sơ học viên, lịch sử thanh toán",
-      "content": "[Tuyen Sinh Ban Hang > Chuyen Doi Hoc Vien Chinh Thuc Convert Student > Quan Ly Ho So Hoc Vien Lich Su Thanh Toan] Quản lý hồ sơ học viên, lịch sử thanh toán\n\n# Quản lý hồ sơ học viên, lịch sử thanh toán\n\n> **Bước 1:** Ở màn hình danh sách của module **Students**, hệ thống sẽ hiển thị thông tin sơ lược hồ sơ học viên cho User.\n\n[IMAGE: data/images/fc2484c8d6f7ea1a9c9e321e2f6c6f89.png] Ở màn hình danh sách của module Students, hệ thống hiển thị thông tin sơ lược và chi tiết của các hồ sơ học viên, bao gồm mã học viên, tên, số điện thoại, ngày sinh, email, trạng thái và nguồn tiếp cận.\n\n> **Bước 2:** Bạn có thể chọn vào từng học viên để theo dõi thông tin học viên, lịch sử thanh toán, học nợ, học demo, lịch sử cuộc gọi,..\n\n[IMAGE: data/images/14528050b2702aabfe8073231c2146bb.png] Giao diện hiển thị chi tiết thông tin của học viên Bùi Như Thảo, bao gồm mô tả, địa chỉ, nguồn liên hệ, lịch sử thanh toán học phí, số giờ học, cũng như các tab quản lý bên dưới như Cuộc gọi, Công việc, Email, Lịch sử chiến dịch, Đăng ký và Điểm danh.",
-      "raw_text": "# Quản lý hồ sơ học viên, lịch sử thanh toán\n\n> **Bước 1:** Ở màn hình danh sách của module **Students**, hệ thống sẽ hiển thị thông tin sơ lược hồ sơ học viên cho User.\n\n[IMAGE: data/images/fc2484c8d6f7ea1a9c9e321e2f6c6f89.png] Ở màn hình danh sách của module Students, hệ thống hiển thị thông tin sơ lược và chi tiết của các hồ sơ học viên, bao gồm mã học viên, tên, số điện thoại, ngày sinh, email, trạng thái và nguồn tiếp cận.\n\n> **Bước 2:** Bạn có thể chọn vào từng học viên để theo dõi thông tin học viên, lịch sử thanh toán, học nợ, học demo, lịch sử cuộc gọi,..\n\n[IMAGE: data/images/14528050b2702aabfe8073231c2146bb.png] Giao diện hiển thị chi tiết thông tin của học viên Bùi Như Thảo, bao gồm mô tả, địa chỉ, nguồn liên hệ, lịch sử thanh toán học phí, số giờ học, cũng như các tab quản lý bên dưới như Cuộc gọi, Công việc, Email, Lịch sử chiến dịch, Đăng ký và Điểm danh.",
-      "token_count": 260,
-      "content_hash": "ba12493501d4fcdfee46ec6ac450e87a336f94f8a64ac034411cab1ac1636de9",
-      "image_paths": [
-        "data/images/fc2484c8d6f7ea1a9c9e321e2f6c6f89.png",
-        "data/images/14528050b2702aabfe8073231c2146bb.png"
+        "data/images/6d64440ae973cfb32b060cac2d8d6ff2.png",
+        "data/images/23b2d75fee23a64021b38c774ffd8c53.png",
+        "data/images/36eeca73d22a2b3a2f152bf8c45ab105.png",
+        "data/images/e89960e87a91036ef32fa0711a8e6edf.png",
+        "data/images/90c309d74ab759e2246f9999da358d41.png"
       ]
     }
   ]
