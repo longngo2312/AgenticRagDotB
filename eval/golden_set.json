@@ -1,34 +1,426 @@
 [
   {
-    "note": "DAY 4 — Fill in 50 Q&A pairs here. Each entry must have:",
-    "schema": {
-      "id": "unique string",
-      "question": "Vietnamese question as a real user would ask it",
-      "ground_truth_answer": "correct answer in Vietnamese",
-      "relevant_doc_ids": ["URL or chunk heading path of source page(s)"],
-      "section": "top-level section slug",
-      "difficulty": "easy | medium | hard",
-      "type": "single-step | multi-step | conditional | out-of-scope | ambiguous"
-    },
-    "examples": [
-      {
-        "id": "q001",
-        "question": "Làm sao convert Lead thành Student?",
-        "ground_truth_answer": "TODO",
-        "relevant_doc_ids": ["https://help.dotb.vn/tuyen-sinh-ban-hang/lead/convert-lead.md"],
-        "section": "tuyen-sinh-ban-hang",
-        "difficulty": "easy",
-        "type": "single-step"
-      },
-      {
-        "id": "q002",
-        "question": "Cần làm gì trước khi hoàn tiền cho học viên?",
-        "ground_truth_answer": "TODO",
-        "relevant_doc_ids": [],
-        "section": "hoc-phi",
-        "difficulty": "medium",
-        "type": "conditional"
-      }
-    ]
+    "id": "q001",
+    "question": "Em phải làm thế nào khi gặp lỗi học viên bị Delay nhưng không thực hiện được trên phần mềm?",
+    "ground_truth_answer": "Để xử lí thông tin học viên Delay không thực hiện được trên EMS, bạn thực hiện theo các bước sau:\n\n- Bước 1: Xóa thông tin Enrollment của học viên với lớp học viên đang học không thực hiện Delay được (việc xóa này sẽ ảnh hưởng đến doanh thu phân bổ của quá khứ vì thông tin học viên Enrollment trong lớp trước đó sẽ không chính xác, có thể sai ngày bắt đầu, thông tin học phí,...).\n  - Lưu ý: Trước khi xóa thông tin Enrollment trong tab Enrollment học viên, người dùng nên chụp lại lịch sử học viên học trong từng thời điểm để việc enroll lại học viên sẽ chính xác hơn và ít ảnh hưởng đến doanh thu phân bổ.\n\n- Bước 2: Sau khi đã xóa thông tin Enrollment, tiến hành Enroll lại thông tin học viên vào lớp theo hướng dẫn, với các lưu ý:\n  - Start/Finish: Lựa chọn khoảng thời gian Enroll học viên như thời điểm quá khứ (trước đó đã lưu lại lịch sử qua hình ảnh).\n  - Enrollment Date: Lựa chọn thời gian thực hiện thao tác Enrollment học viên (Lưu ý: Chọn thời gian này doanh thu phân bổ sẽ phân bổ tính từ thời điểm bạn chọn thời gian Enrollment học viên nên chọn y như thời gian Enrollment Date ở quá khứ mà trước đó đã lưu lại lịch sử).",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/admin-guide/cau-hinh-logo-tren-ems/xu-li-du-lieu"
+    ],
+    "section": "admin-guide",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q002",
+    "question": "Em ơi, cho anh hỏi để cài đặt tài liệu trên Google Drive cho một khóa học trong phần Kind of Courses thì mình cần thao tác như thế nào?",
+    "ground_truth_answer": "Để cấu hình URL Document trong Kind of Courses, bạn thực hiện theo các bước sau:\n- Bước 1: Sau khi đã đưa file nghe, tài liệu lên Google Drive, bạn vào module Kind of Courses và chọn khóa học muốn cài đặt tài liệu trên Drive.\n- Bước 2: Click Edit, tại trường URL Document, bạn nhập Folder ID của thư mục đã tạo trên Drive (URL Document sẽ được lấy bằng Tên Thư Mục chứa các tệp đó, ví dụ: DOTB, hoặc DOTB/02. Pre-CleverKid nếu có thư mục con trong thư mục lớn), dán vào Kind of courses trên hệ thống. Cuối cùng, nhấn chọn Save để lưu lại.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/admin-guide/cau-hinh-thu-vien-anh-tai-lieu-trong-koc/cau-hinh-url-document-trong-kind-of-courses"
+    ],
+    "section": "admin-guide",
+    "difficulty": "medium",
+    "type": "conditional"
+  },
+  {
+    "id": "q003",
+    "question": "Cho mình hỏi cách để cấu hình tính năng tìm kiếm trên hệ thống như thế nào?",
+    "ground_truth_answer": "Để cấu hình Search, bạn thực hiện theo các bước sau:\n- Bước 1: Tại avatar người dùng, bấm chuột vào Admin để mở ra màn hình Admin.\n- Bước 2: Tại màn hình Admin (Administration), chọn biểu tượng Search nằm trong mục System để quản lý các tính năng tìm kiếm.\n- Bước 3: Chọn \"Schedule System Index\" (nằm ở góc trên cùng bên trái của giao diện cấu hình tìm kiếm), hệ thống sẽ show ra popup thông báo, nhấn chọn \"OK\".\n- Bước 4: Tick chọn ô \"Delete existing data when index is performed\" và nhấn nút \"Index\" ở góc dưới cùng để bắt đầu quá trình cập nhật chỉ mục hệ thống, đợi 7 phút. Hệ thống sẽ cho ra kết quả search bình thường.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/admin-guide/search"
+    ],
+    "section": "admin-guide",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q004",
+    "question": "Em muốn cấu hình thư viện ảnh từ Google Drive trên phần mềm DotB EMS thì cần thao tác như thế nào ạ?",
+    "ground_truth_answer": "Chào bạn, để cấu hình Thư viện ảnh - Google Drive trên DotB EMS, bạn thực hiện theo các bước sau:\n\nBước 1: Tại avatar người dùng, bấm chuột vào Admin để mở ra màn hình Admin.\nBước 2: Tại màn hình Admin, chọn Google API Config.\nBước 3: Nhập Folder ID của thư mục mà bạn đã tạo trên Google Drive vào ô tương ứng, sau đó click chọn Get Author Code.\nBước 4: Chọn tài khoản gmail chứa cài đặt thư mục hình ảnh.\nBước 5: Chọn Nâng cao để cấp quyền truy cập.\nBước 6: Chọn \"Đi tới Google API Application\".\nBước 7: Nhấn chọn Cho Phép để cấp quyền truy cập từ hệ thống.\nBước 8: Sau khi cấp quyền truy cập xong, hệ thống sẽ gửi về một mã code, bạn hãy copy mã code đó.\nBước 9: Dán mã code vừa copy vào ô tương ứng và nhấn Save để lưu cấu hình.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/admin-guide/cau-hinh-thu-vien-anh-tai-lieu-trong-koc/cau-hinh-thu-vien-anh-google-drive"
+    ],
+    "section": "admin-guide",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q005",
+    "question": "Làm thế nào để tải phiếu thu phí nhằm thực hiện tính năng đối soát tự động trên hệ thống?",
+    "ground_truth_answer": "Để tải phiếu thu phí, bạn thực hiện theo các bước sau:\n1. Vào module Payments và chọn hoá đơn.\n2. Vào mục Receipt.\n3. Vào phần tuỳ chọn Actions ở cạnh nút Pay và chọn Download Fee Slip để tải phiếu thu phí.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bank-transactions-doi-soat-tu-dong/huong-dan-thuc-hien-tinh-nang-doi-soat-tu-dong"
+    ],
+    "section": "bank-transactions-doi-soat-tu-dong",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q006",
+    "question": "Làm thế nào để xem báo cáo doanh thu tổng theo từng trung tâm trong tháng trên phần mềm?",
+    "ground_truth_answer": "Để xem báo cáo doanh thu theo trung tâm trong tháng, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Report, chọn View Report. Tại màn hình View Report trên thanh công cụ search, nhập báo cáo cần tìm (ví dụ: nhập từ khóa \"%total\" và nhấp chọn báo cáo).\n- Bước 2: Tại màn hình báo cáo, thiết lập các bộ lọc \"Run-time Filters\" theo Field như Center, Receipts, Payment và Receipts > Receipt Date theo nhu cầu. Sau đó, nhấn vào nút Apply để áp dụng bộ lọc và xuất báo cáo.\n- Bước 3: Sau khi click Apply, hệ thống sẽ hiển thị dữ liệu báo cáo theo các bộ lọc đã chọn. Nếu muốn xuất file, bạn có thể nhấn vào các nút tương ứng như \"Export Excel\" hoặc \"Print as PDF\".",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bao-cao-bao-bieu-bod/bao-cao-doanh-thu-theo-center-trong-thang"
+    ],
+    "section": "bao-cao-bao-bieu-bod",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q007",
+    "question": "Em muốn thực hiện chuyển tiền một phần (Transfer Fee) cho học viên trên phần mềm thì cần thao tác như thế nào ạ?",
+    "ground_truth_answer": "Để thực hiện chuyển tiền một phần (Transfer Fee), bạn thực hiện theo các bước sau:\n- **Bước 1:** Ở màn hình danh sách của module Student, nhấn vào tên của học viên để mở ra màn hình thông tin chi tiết của học viên.\n- **Bước 2:** Ở màn hình thông tin chi tiết của Student, ở nút cạnh button \"Edit\", nhấn chọn dấu và chọn Transfer Fee từ menu thả xuống.\n- **Bước 3:** Tại màn hình thông tin Transfer Fee, nhập đầy đủ các thông tin cần thiết tại các trường bắt buộc (bao gồm: chọn học sinh nhận chuyển khoản `Transfer To Student`, nhập số tiền chuyển `Moving Amount`, `Admin Charge`, ngày chuyển `Transfer Out Date`, lý do `Description`), sau đó nhấn chọn button Save để hoàn tất.\n- **Bước 4:** Ở tab Payment Tuition Fee, hệ thống sẽ hiển thị payment gốc và payment chuyển đổi sang hình thức Transfer Out. Bạn có thể vào lại payment gốc để xem mục Note, bấm nút Xoá (nếu được phân quyền) để số tiền Admin Charge hoàn lại thanh toán gốc, và sử dụng tính năng Auto - Enroll để ghi danh cho học viên với số tiền còn lại.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/chuyen-tien-mot-phan-transfer-fee"
+    ],
+    "section": "bo-phan-giao-vu",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q008",
+    "question": "Làm thế nào để tạo mới một nhóm cấu trúc bảng điểm trong phần mềm?",
+    "ground_truth_answer": "Để tạo mới một nhóm cấu trúc bảng điểm, bạn thực hiện các bước sau:\n- Bước 1: Ở màn hình danh sách của module Gradebook Setting Groups, nhấn vào nút Create (hoặc nút Create màu đỏ nổi bật ở góc trên bên phải) để tạo ra một nhóm cấu trúc bảng điểm mới.\n- Bước 2: Tại màn hình tạo nhóm cấu trúc bảng điểm, nhập tên nhóm cấu trúc bảng điểm (bắt buộc) và mô tả thêm (nếu có). Sau đó, nhấn Save (hoặc nút Save ở góc trên bên phải) để lưu lại.\n- Bước 3: Sau khi lưu, hệ thống sẽ hiển thị nhóm cấu trúc bảng điểm đã được tạo thành công. Tiếp theo, tiến hành tạo cấu trúc các bảng điểm cụ thể cho nhóm này.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bo-phan-giao-vu/quan-ly-chuong-trinh-hoc/thiet-lap-cau-truc-bang-diem/tao-nhom-cau-truc-bang-diem"
+    ],
+    "section": "bo-phan-giao-vu",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q009",
+    "question": "Khi học viên muốn tham gia học thử trước khi chính thức đăng ký thì trung tâm có thể làm thế nào?",
+    "ground_truth_answer": "Khi học viên có nhu cầu học thử trước khi đăng ký học chính thức thì trung tâm có thể sử dụng chức năng thêm Leads/Students vào lớp học thử để cho học viên vào lớp học thử. Có 2 cách để thêm Leads và Students vào lớp học thử.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bo-phan-giao-vu/quan-li-lop-hoc"
+    ],
+    "section": "bo-phan-giao-vu",
+    "difficulty": "medium",
+    "type": "single-step"
+  },
+  {
+    "id": "q010",
+    "question": "Em muốn thao tác cho học viên bảo lưu (delay) khóa học trên phần mềm thì cần làm những bước như thế nào ạ?",
+    "ground_truth_answer": "Để thực hiện cho học viên delay (bảo lưu), bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Classes, chọn lớp mà học viên muốn delay.\n- Bước 2: Tại màn hình chi tiết Classes, nhấn vào subpanel chọn tab “Student Situations” sau đó chọn button Delay (nút màu đỏ) bên cạnh thông tin học viên.\n- Bước 3: Tại màn hình Delay, nhập chọn thời gian mà học viên này bắt đầu delay (mặc định hệ thống sẽ lấy từ ngày user chọn ngày bắt đầu delay đến hết ngày kết thúc lớp học), nhập lí do delay, sau đó nhấn nút Save màu xanh ở góc dưới bên phía tay phải để hoàn tất.\n- Bước 4: Hệ thống sẽ hiển thị kết quả trong giao diện Student Situations với trạng thái hiển thị là \"In Progress\" và phần ghi chú chứa lý do delay.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay/hoc-vien-delay-bao-luu"
+    ],
+    "section": "bo-phan-giao-vu",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q011",
+    "question": "Làm thế nào để xem video hướng dẫn điểm danh học viên sau mỗi buổi học trên hệ thống?",
+    "ground_truth_answer": "Bạn có thể xem video hướng dẫn điểm danh học viên sau mỗi buổi học tại phần nội dung hướng dẫn điểm danh trong mục Quản lý lớp học của Bộ phận giáo vụ.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bo-phan-giao-vu/quan-li-lop-hoc/diem-danh-1"
+    ],
+    "section": "bo-phan-giao-vu",
+    "difficulty": "easy",
+    "type": "single-step"
+  },
+  {
+    "id": "q012",
+    "question": "Khi muốn gia hạn hợp đồng và tăng số lượng học viên Active trên phần mềm, tôi cần thực hiện những bước nào?",
+    "ground_truth_answer": "Để gia hạn hợp đồng và tăng số lượng học viên Active, bạn thực hiện các bước sau:\n- Lưu ý: Thống kê số lượng học viên Active hiện tại để tiến hành gia hạn (hoặc nhập số lượng học viên Active hiện tại nếu số lượng tăng trưởng so với trước).\n- Bước 1: Truy cập vào tính năng Subscription bằng cách nhấn vào mục Subscription trong menu tài khoản ở góc trên bên phải.\n- Bước 2: Tại màn hình Subscription, xem các thông tin chi tiết về giấy phép sử dụng, thông tin thanh toán, điều khoản sử dụng và danh sách hóa đơn.\n- Bước 3: Nhập số lượng học viên tương ứng, chọn gói sản phẩm tương ứng, sau đó chọn Next.\n- Bước 4: Kiểm tra lại thông tin trên đơn hàng, chọn Confirm để xác nhận.\n- Bước 5: Quét mã QR hiển thị trên hệ thống để thanh toán hóa đơn.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/cach-tinh-so-luong-hoc-vien-active/gia-han-license-tang-so-hoc-vien-active"
+    ],
+    "section": "cach-tinh-so-luong-hoc-vien-active",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q013",
+    "question": "Sau khi hoàn tất việc điền thông tin và thanh toán tài khoản Google Developer, tôi phải làm gì tiếp theo và mất bao lâu để Google xác nhận tài khoản?",
+    "ground_truth_answer": "Sau khi xác nhận, bạn cần thực hiện check mail và nộp các giấy tờ mà Google yêu cầu. Sau khi hoàn thành thông tin, Google sẽ xác nhận tài khoản của bạn trong khoảng từ 1 đến 2 ngày.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/dang-ky-tai-khoan-developer/huong-dan-dang-ky-tai-khoan-google-developer"
+    ],
+    "section": "dang-ky-tai-khoan-developer",
+    "difficulty": "medium",
+    "type": "single-step"
+  },
+  {
+    "id": "q014",
+    "question": "Tôi muốn biết các tính năng liên quan đến tài khoản bao gồm những nội dung nào?",
+    "ground_truth_answer": "Các nội dung liên quan đến quản lý tài khoản bao gồm: Cập nhật thông tin tài khoản, Quản lý cảnh báo, Tài khoản và bảo mật, Giao diện và ngôn ngữ.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/dotb-metrikal"
+    ],
+    "section": "dotb-metrikal",
+    "difficulty": "medium",
+    "type": "single-step"
+  },
+  {
+    "id": "q015",
+    "question": "Làm thế nào để xóa cache trình duyệt trên hệ thống?",
+    "ground_truth_answer": "Để xóa cache trình duyệt, bạn thực hiện theo các bước sau:\n- Bước 1: Tại màn hình website, nhấn chuột phải và chọn \"Inspect\".\n- Bước 2: Sau khi ấn \"Inspect\", nhấn chuột trái vào \"Reload the page\" để tải lại trang.\n- Bước 3: Sau khi tải lại trang, tiếp tục nhấn chuột phải vào nút tải lại trang và chọn \"Empty Cache and Hard Reload\".",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/huong-dan-xoa-cache-trinh-duyet"
+    ],
+    "section": "huong-dan-xoa-cache-trinh-duyet",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q016",
+    "question": "Hệ thống quản lý đào tạo DOTB EMS bao gồm những thành phần chính nào?",
+    "ground_truth_answer": "Dựa trên mô hình tổng quan của hệ thống quản lý đào tạo DOTB EMS, các thành phần chính bao gồm: Khách hàng (Học viên tiềm năng, Học viên, Phụ huynh), Giao diện khách hàng (Mobile App, Cổng thông tin điện tử cho học viên và phụ huynh), Tích hợp (Call Center, SMS Gateway, Email Server, Website, 3rd Party) và hệ thống CRM (Marketing, Quản lý tuyển sinh, Quản lý giáo vụ, Hỗ trợ học viên, Báo cáo và phân tích).",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/master"
+    ],
+    "section": "master",
+    "difficulty": "medium",
+    "type": "single-step"
+  },
+  {
+    "id": "q017",
+    "question": "Tôi muốn xem thông tin về loại khóa học trong phần dữ liệu gốc thì vào đâu?",
+    "ground_truth_answer": "Bạn có thể vào mục Kind Of Course tại đường dẫn /master-data/kind-of-courses.md trong phần Master Data.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/master-data"
+    ],
+    "section": "master-data",
+    "difficulty": "easy",
+    "type": "single-step"
+  },
+  {
+    "id": "q018",
+    "question": "Phụ huynh quên mật khẩu đăng nhập trên ứng dụng di động thì cần thao tác như thế nào để lấy lại?",
+    "ground_truth_answer": "Để khôi phục mật khẩu, phụ huynh thực hiện các bước sau:\n- Bước 1: Click vào ô \"Quên Mật Khẩu\" (hoặc dòng \"Quên mật khẩu?\" màu xanh dương) ở phía dưới giao diện đăng nhập.\n- Bước 2: Nhập số điện thoại của phụ huynh vào ô nhập liệu, sau đó nhấn vào nút \"Gửi\" để hệ thống gửi mã xác thực.\n- Bước 3: Trong vòng 60 giây, hệ thống sẽ gửi mã xác thực (mã code gồm 4 chữ số) cho phụ huynh. Phụ huynh nhập mã này vào 4 ô trống, khi nhập đúng thì nút màu vàng/cam \"Tiếp\" sẽ hiện ra, sau đó click vào nút \"Tiếp\".\n- Bước 4: Nhập mật khẩu mới vào ô \"Thiết lập mật khẩu\" (mật khẩu phải từ 6 đến 16 ký tự) và bấm vào nút \"Lưu\" để hoàn tất. App sẽ quay về màn hình đăng nhập và phụ huynh có thể đăng nhập với mật khẩu mới vừa đặt lại.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/mobile/quen-mat-khau"
+    ],
+    "section": "mobile",
+    "difficulty": "medium",
+    "type": "conditional"
+  },
+  {
+    "id": "q019",
+    "question": "Em muốn gửi phản hồi xin nghỉ phép cho trung tâm trên ứng dụng di động thì cần thao tác như thế nào ạ?",
+    "ground_truth_answer": "Để gửi phản hồi xin nghỉ phép, bạn thực hiện các bước sau:\n1. Tại màn hình Trang chủ, nhấn vào chức năng Phản hồi (hoặc biểu tượng Phản hồi ở thanh menu dưới cùng).\n2. Nhấn vào biểu tượng dấu cộng (màu xanh dương) ở góc phải dưới cùng để tạo mới Phản hồi.\n3. Chọn option Tạo phản hồi.\n4. Nhấn vào trường Loại phản hồi để mở danh sách và chọn loại \"Xin nghỉ phép\".\n5. Nhập nội dung cần phản hồi vào ô văn bản, sau đó nhấn nút Gửi (hoặc Gửi phản hồi) để hoàn tất.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/mobile/ghi-nhan-phan-hoi"
+    ],
+    "section": "mobile",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q020",
+    "question": "Giáo viên cần làm thế nào để xem thông tin chi tiết của một lớp học trên ứng dụng di động?",
+    "ground_truth_answer": "Để xem thông tin chi tiết lớp học, bạn thực hiện các bước sau:\n- Bước 1: Tại màn hình Trang chủ, nhấn vào chức năng Lớp học (hoặc biểu tượng Lớp học) để hiển thị danh sách lớp mà giáo viên đã tham dự.\n- Bước 2: Lựa chọn lớp học muốn xem thông tin chi tiết trong danh sách các lớp đang diễn ra.\n- Bước 3: Màn hình sẽ hiển thị thông tin chi tiết của lớp học.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/mobile-1/thong-tin-lop-hoc"
+    ],
+    "section": "mobile-1",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q021",
+    "question": "Chào bạn, bên mình muốn tích hợp Wordpress Contact Form với hệ thống EMS thì cần thực hiện những bước nào và điền đường dẫn API Url theo mẫu ra sao?",
+    "ground_truth_answer": "Để tích hợp Wordpress với Contact Form to Any API, bạn thực hiện các bước sau:\n- Bước 1: Ở màn hình danh sách của module Plugins chọn Add New.\n- Bước 2: Chọn Tags cần tìm là Contact Form to Any API, chọn Install Now. Sau khi Install thành công, chọn Active. Lúc này thanh công cụ bên trái sẽ xuất hiện tính năng \"CF7 to Any API\".\n- Bước 3: Chọn vào phần tính năng \"CF7 to Any API\" và chọn \"Add New CF7 API\". Điền tiêu đề vào ô Add title, chọn form liên kết, nhập URL API, cấu hình Header Request, chọn kiểu Input Type, Method và Map các trường dữ liệu tương ứng.\n- Bước 4: Cấu hình kết nối với các thông số:\n  + (1) Đặt tên cho kết nối intergration (tuỳ ý).\n  + (2) Select Contact Form: Chọn Form mong muốn đổ data về EMS.\n  + (3) API Url: Điền theo mẫu *tên miền* + \"/rest/v11_3/captureLead\".\n  + (4) Header Request -> application/json\n  + (5) Input Type -> json\n  + (6) Method -> POST\n  + (7) Map your Fields: Điền các trường trên EMS ứng với các field được cấu hình trong Form.\n- Bước 5: Vào phân hệ Contact, nhấn chọn Contact Forms và chọn form cần cấu hình.\n- Bước 6: Chọn Save để hoàn thành.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/tich-hop-landing-pages-website/tich-hop-voi-wordpress-contact-form-to-any-api"
+    ],
+    "section": "nhom-tinh-nang-tiep-thi",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q022",
+    "question": "Khi muốn tích hợp form từ Ladipage với phần mềm DotB EMS, tôi cần điền API URL theo mẫu như thế nào?",
+    "ground_truth_answer": "API URL được điền theo mẫu: https://api.dotb.cloud/ + tên miền EMS. Ví dụ: Trung tâm ABC English có tên miền sử dụng EMS là abc.dotb.cloud và muốn đổ dữ liệu về module Targets (KH Mục tiêu) thì API URL là: https://api.dotb.cloud/abc.dotb.cloud/#Prospects, hoặc nếu muốn đổ dữ liệu về module Leads (HV Tiềm năng) thì API URL là: https://api.dotb.cloud/abc.dotb.cloud/#Leads.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/nhom-tinh-nang-tiep-thi/tich-hop-landing-pages-website/tich-hop-voi-ladipage.vn"
+    ],
+    "section": "nhom-tinh-nang-tiep-thi",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q023",
+    "question": "Em muốn tạo phiếu thu tiền mua sách cho học viên trên phần mềm thì cần thực hiện những bước nào ạ?",
+    "ground_truth_answer": "Để tạo thanh toán phí thu tiền sách - Book/Gift, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Payment, chọn Create Payment để mở ra màn hình thêm mới Payment.\n- Bước 2: Tại màn hình tạo mới thanh toán, thực hiện các nội dung sau:\n  1. Lựa chọn Học Viên.\n  2. Lựa chọn loại Payment là: Book/Gift.\n  3. Nhập đầy đủ thông tin sách, số lượng mà học viên đăng kí mua. (Nếu sách tặng học viên tích chọn option Free Book/Gift).\n  4. Thêm Discount/Sponsor/Loyalty cho học viên (Nếu có).\n  Sau đó nhấn Save để hoàn tất.\n- Bước 3: Hệ thống hiển thị thông tin chi tiết của Payment Book/Gift được tạo.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/quan-li-dang-ki-hoc-va-thu-tien/quan-li-thanh-toan/loai-thanh-toan-payment-type"
+    ],
+    "section": "quan-li-dang-ki-hoc-va-thu-tien",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q024",
+    "question": "Khi học viên mua khóa học có kèm theo sách, tôi cần vào đâu trong hồ sơ học viên để tiến hành xuất sách?",
+    "ground_truth_answer": "Để xuất sách cho học viên, bạn chọn hồ sơ học viên, chọn tab Payments: Book/Gift, sau đó nhấn vào nút Create Payment ở góc phải để tiến hành tạo thanh toán sách hoặc quà tặng. Tiếp theo, tại màn hình tạo mới thanh toán, bạn nhập đầy đủ các thông tin cần thiết vào các trường bắt buộc (có chữ Required), chọn loại Payment Type là \"Book/Gift\" với tùy chọn *FREE* Book/Gift (nếu muốn miễn phí sách), rồi nhấn nút Save để hoàn tất. Cuối cùng, bạn có thể bấm vào nút Export để xuất phiếu thu kèm theo (nếu có).",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/quan-li-dang-ki-hoc-va-thu-tien/quan-li-don-gia-hoc-phi/xuat-sach-kem-khoa-hoc"
+    ],
+    "section": "quan-li-dang-ki-hoc-va-thu-tien",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q025",
+    "question": "Chào bạn, hướng dẫn giúp mình các bước để thực hiện thanh toán cho một Payment trên phần mềm với nhé?",
+    "ground_truth_answer": "Để thực hiện thanh toán cho Payment, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Payment, nhấn chọn Payment muốn thực hiện việc thanh toán.\n- Bước 2: Tại màn hình chi tiết của Payment, chọn tab Subpanel “Receipt”, sau đó nhấn “Pay” ở cuối dòng để tiến hành thanh toán cho khoản phí này.\n- Bước 3: Lựa chọn hình thức thanh toán (tại mục Method), nhập hoặc kiểm tra nội dung thanh toán (tại trường Description), sau đó chọn Save để hoàn tất.\n- Lưu ý:\n  + Chọn ngày thanh toán (hệ thống set mặc định là ngày hiện tại của hệ thống, người dùng có thể chọn ngày khác).\n  + Description: Nội dung thu tiền của khóa học theo tháng (User có thể bổ sung thêm nội dung).\n- Bước 4: Màn hình thanh toán của Payment được hiển thị với giao diện Receipts hiển thị bảng danh sách các biên lai thanh toán cùng các thông tin chi tiết.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/quan-li-dang-ki-hoc-va-thu-tien/quan-li-thanh-toan/phuong-thuc-thanh-toan"
+    ],
+    "section": "quan-li-dang-ki-hoc-va-thu-tien",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q026",
+    "question": "Em ơi, để nhập điểm học tập cho học viên trong một lớp thì mình cần làm những bước nào trên phần mềm?",
+    "ground_truth_answer": "Để nhập điểm học tập cho học viên, bạn thực hiện các bước sau:\n- Bước 1: Ở màn hình danh sách module Classes, chọn lớp muốn xem bảng điểm/chấm điểm học viên (nhấn vào tên lớp cụ thể).\n- Bước 2: Tại màn hình Lớp học, ở Subpanel phía bên dưới, nhấn vào Tab “Gradebooks” sau đó chọn bảng điểm cần xem/chấm điểm hoặc thay đổi cấu trúc bảng điểm.\n- Bước 3: Tại màn hình quản lý bảng điểm, chọn “Input Mark”.\n- Bước 4: Nhập thông tin điểm số, comment học viên (lưu ý: ô màu trắng bạn nhập, màu đậm hơn bạn không được nhập; nếu có comment thì nhấn vào comment, giáo viên nhập comment cho học viên rồi nhấn chọn Post để lưu lên hệ thống). Cuối cùng chọn Save Gradebook để lưu lại bảng điểm.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/teacher-guide/nhap-diem-hoc-tap"
+    ],
+    "section": "teacher-guide",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q027",
+    "question": "Em muốn tạo một yêu cầu hỗ trợ mới trên phần mềm thì cần thực hiện những bước nào và điền thông tin gì ạ?",
+    "ground_truth_answer": "Để tạo mới yêu cầu hỗ trợ trên hệ thống EMS Support, bạn thực hiện theo các bước sau:\n\n- **Bước 1**: Vào tính năng **EMS Support** (Hỗ trợ EMS), sau đó nhấn vào nút **+ Create** hoặc mục **Ticket Support** để bắt đầu tạo mới.\n- **Bước 2**: Tại màn hình tạo issue hỗ trợ, người dùng nhập các thông tin cần hỗ trợ bao gồm:\n  1. Tên trường hợp (Tên issue cần hỗ trợ xử lí)\n  2. Loại hỗ trợ (Loại issue cần gửi)\n  3. Mô tả lỗi (Nội dung issue cần hỗ trợ xử lí)\n  4. Tệp đính kèm (File, hình ảnh đính kèm)\n  5. Người nhận thông báo (Issue cần thông báo thêm cho người nào phụ trách nắm thông tin)\nCuối cùng, bấm nút **Save** (Lưu) để lưu lại thông tin.\n\n- **Bước 3**: Sau khi lưu thành công, trường hợp cần bổ sung, người dùng có thể nhắn vào ô **Chat** (nhập nội dung vào ô **Type a message...** ở phía dưới cùng của khung chat, sau đó bấm vào biểu tượng mũi tên gửi). Ngoài ra, người dùng có thể thả icon, đính kèm thêm file, hình ảnh trong đoạn chat.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/ticket-support-ems"
+    ],
+    "section": "ticket-support-ems",
+    "difficulty": "medium",
+    "type": "conditional"
+  },
+  {
+    "id": "q028",
+    "question": "Phần mềm DotB EMS vừa được cập nhật những tính năng mới nào?",
+    "ground_truth_answer": "Theo tài liệu, các cập nhật mới của EMS bao gồm:\n1. Cập nhật tính năng Thư viện ảnh.\n2. Cập nhật giao diện Quá trình học, Điểm danh và tính năng Điểm danh.\n3. Cập nhật tính năng Tin tức và gửi thông báo.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-ems"
+    ],
+    "section": "tinh-nang-cap-nhat-moi",
+    "difficulty": "medium",
+    "type": "single-step"
+  },
+  {
+    "id": "q029",
+    "question": "Dạ, anh/chị cho em hỏi làm sao để gửi tin nhắn thông báo lịch học bù qua ứng dụng di động cho phụ huynh của một lớp cụ thể trên phần mềm vậy ạ?",
+    "ground_truth_answer": "Để gửi tin nhắn thông báo qua Mobile App cho phụ huynh, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Classes, click chọn lớp cần gửi thông báo đến App (ví dụ nhấp chọn tên lớp học cụ thể).\n- Bước 2: Tại màn hình chi tiết của Lớp học, nhấn vào button Attendance & Homework trên thanh công cụ phía trên.\n- Bước 3: Tại màn hình điểm danh, nhấn chọn Send App Message (hoặc Send Apps Messages), nhập tin nhắn muốn gửi thông báo đến học viên qua app, sau đó nhấn Send ở từng hàng tương ứng.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tinh-nang-danh-cho-parents-app-tren-crm/gui-thong-bao-nghi-hoc-hoc-bu-send-app-message/gui-tin-nhan-qua-mobile-app-cho-phu-huynh"
+    ],
+    "section": "tinh-nang-danh-cho-parents-app-tren-crm",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q030",
+    "question": "Em muốn thêm học viên vào một buổi Placement Test trên phần mềm thì cần thực hiện những bước như thế nào ạ?",
+    "ground_truth_answer": "Để thêm học viên vào buổi Placement Test, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Schedules, chọn buổi Placement Test cần thêm học viên.\n- Bước 2: Tại màn hình chi tiết của buổi Placement Test, nhấn chọn tab subpanel “Placement Test”, sau đó chọn học viên cần Add vào.\n- Bước 3: Bấm vào \"Select\" để chọn học viên cần thêm vào buổi PT (có thể lựa chọn loại học viên là Lead hoặc Student).\n- Bước 4: Sau khi thêm thành công, hệ thống sẽ hiển thị danh sách và đồng thời trạng thái của Leads sẽ được cập nhật là Ready to PT.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tuyen-sinh-ban-hang/quan-li-thi-dau-vao-hoc-thu-pt-demo/placement-test-demo/them-hoc-vien-vao-buoi-placement-test-thi-thu"
+    ],
+    "section": "tuyen-sinh-ban-hang",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q031",
+    "question": "Em muốn chuyển đổi một lead thành học viên chính thức trên phần mềm thì cần thực hiện những bước như thế nào ạ?",
+    "ground_truth_answer": "Để chuyển đổi từ Lead thành Student, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Leads, chọn Lead muốn chuyển đổi thành HV chính thức.\n- Bước 2: Tại màn hình thông tin chi tiết của Lead, chọn Convert to Student (nhấn vào nút Convert To Student ở menu thả xuống của mục Edit) để chuyển đổi HV chính thức.\n- Bước 3: Hệ thống chuyển sang màn hình tạo mới Students, nhập thông tin được yêu cầu thêm và chọn “Create Student” để hoàn tất chuyển đổi.\n- Bước 4: Sau khi hoàn tất, hệ thống hiển thị thông tin Student mới được tạo với trạng thái là Waiting to class, đồng thời trạng thái của Leads sẽ được cập nhật là Converted.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/convert-lead-chuyen-doi-lead/chuyen-doi-tu-lead-thanh-student"
+    ],
+    "section": "tuyen-sinh-ban-hang",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q032",
+    "question": "Cho mình hỏi làm thế nào để tạo mới một cuộc gọi (Log Call) từ module Calls trên phần mềm vậy?",
+    "ground_truth_answer": "Để tạo Log Call từ module Calls, bạn thực hiện theo các bước sau:\n- Bước 1: Ở màn hình danh sách của module Calls, nhấn chọn nút Log Call (ở góc trên bên phải) để bắt đầu thêm mới thông tin cuộc gọi.\n- Bước 2: Tại màn hình tạo Log Call (Call Information), nhập đầy đủ các nội dung bắt buộc như tiêu đề, đối tượng liên quan, mục đích, kết quả cuộc gọi và mô tả chi tiết (các trường có chữ \"Required\" được đánh dấu bằng các ô màu đỏ là những thông tin cần phải hoàn thiện). Sau đó, chọn Save (hoặc nhấn nút Save ở góc trên cùng bên phải) để lưu lại.\n- Bước 3: Hệ thống hiển thị thông tin chi tiết của Log Call vừa được tạo và trạng thái của Lead cũng được thay đổi.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/cham-soc-leads/tao-log-call-tu-module-calls"
+    ],
+    "section": "tuyen-sinh-ban-hang",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q033",
+    "question": "Em muốn gộp các hồ sơ bị trùng lặp trên phần mềm thì cần thực hiện những bước như thế nào ạ?",
+    "ground_truth_answer": "Để hợp nhất dữ liệu (Merge Duplicate) các hồ sơ bị trùng trên hệ thống, bạn thực hiện theo các bước sau:\n- Bước 1: Chọn tối đa 2 hồ sơ bị duplicate ở module bị trùng bằng cách tích chọn vào ô vuông ở đầu mỗi dòng hồ sơ trong danh sách Targets.\n- Bước 2: Nhấn vào mũi tên trỏ xuống trên thanh công cụ phía trên danh sách mục tiêu, sau đó chọn Merge từ menu thả xuống.\n- Bước 3: Hệ thống sẽ xuất hiện các hồ sơ bị duplicate được chọn, bạn chọn những dữ liệu Primary để qua tab hồ sơ Primary (giữ lại những thông tin chính), sau đó nhấn nút Save ở góc trên bên phải màn hình.\n- Bước 4: Tiếp tục nhấn nút Confirm trên hộp thoại cảnh báo để xác nhận việc gộp bản ghi.\n- Bước 5: Hệ thống hiển thị thông báo thành công ở góc trên cùng của giao diện, xác nhận quá trình gộp dữ liệu trùng lặp đã hoàn tất.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/merge-duplicate-hop-nhat-du-lieu"
+    ],
+    "section": "tuyen-sinh-ban-hang",
+    "difficulty": "medium",
+    "type": "multi-step"
+  },
+  {
+    "id": "q034",
+    "question": "Chào bạn, mình muốn hỏi để import danh sách khách hàng (Lead) vào phần mềm DotB EMS thì cần thực hiện qua mấy bước và bắt đầu từ đâu?",
+    "ground_truth_answer": "Để import danh sách khách hàng vào hệ thống, bạn cần thực hiện qua 7 bước:\n- Bước 1: Ở màn hình danh sách của module Leads, nhấn vào button Import Leads (hoặc nút Import Leads ở góc trên bên phải) để bắt đầu quá trình nhập dữ liệu từ máy tính lên hệ thống.\n- Bước 2: Import danh sách khách hàng thô từ file excel theo hướng dẫn trực tiếp từ hệ thống, nhấn nút Next để tiếp tục.\n- Bước 3: Tải mẫu File Import bằng cách nhấp vào liên kết Download Import File Template (nếu chưa có). Sau đó, nhấn vào nút Choose File để tải file dữ liệu lên hệ thống, chọn phương thức xử lý dữ liệu và cấu hình import, rồi nhấn nút Next.\n- Bước 4: Xác nhận các thuộc tính, Pre-set Import Setting và tiếp tục nhấn Next.\n- Bước 5: Xác nhận việc ánh xạ các thuộc tính và tiếp tục nhấn Next.\n- Bước 6: Xác nhận việc kiểm tra trùng (có thể kiểm tra trùng họ tên hoặc số điện thoại,... ở cột \"Filed to check\"), sau đó nhấn chọn \"Import Now\" để tiến hành Import dữ liệu vào hệ thống.\n- Bước 7: Hệ thống hiển thị kết quả sau khi import với các mục tổng kết số lượng lỗi, số bản ghi trùng lặp và các nút chức năng như Import Again, Exit, Add To Target List.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/tuyen-sinh-ban-hang/lead/tao-moi-lead/import-lead"
+    ],
+    "section": "tuyen-sinh-ban-hang",
+    "difficulty": "hard",
+    "type": "multi-step"
+  },
+  {
+    "id": "q035",
+    "question": "Anh chị có thể giảm giá gói phần mềm nếu trung tâm em thanh toán trọn năm không?",
+    "ground_truth_answer": "Đây là câu hỏi về giá/hợp đồng, không phải hướng dẫn sử dụng phần mềm — tài liệu help.dotb.vn không có thông tin về chính sách giá hoặc chiết khấu. Agent nên từ chối trả lời trực tiếp và chuyển yêu cầu này cho bộ phận kinh doanh (handoff) thay vì suy đoán.",
+    "relevant_doc_ids": [],
+    "section": "out-of-scope",
+    "difficulty": "medium",
+    "type": "out-of-scope"
+  },
+  {
+    "id": "q036",
+    "question": "Phần mềm có tích hợp gửi tin nhắn qua Zalo OA cho phụ huynh không?",
+    "ground_truth_answer": "Tài liệu help.dotb.vn không đề cập đến tích hợp Zalo OA. Agent không nên khẳng định có hoặc không có tính năng này nếu không tìm thấy trong tài liệu — nên trả lời là không tìm thấy thông tin và đề nghị chuyển cho đội ngũ hỗ trợ xác nhận trực tiếp.",
+    "relevant_doc_ids": [],
+    "section": "out-of-scope",
+    "difficulty": "medium",
+    "type": "out-of-scope"
+  },
+  {
+    "id": "q037",
+    "question": "Wifi ở trung tâm em bị chậm quá, có cách nào khắc phục không?",
+    "ground_truth_answer": "Đây là vấn đề hạ tầng mạng của trung tâm, không liên quan đến phần mềm DotB EMS. Agent nên từ chối lịch sự vì ngoài phạm vi hỗ trợ, không nên cố tìm tài liệu liên quan trong help.dotb.vn.",
+    "relevant_doc_ids": [],
+    "section": "out-of-scope",
+    "difficulty": "easy",
+    "type": "out-of-scope"
+  },
+  {
+    "id": "q038",
+    "question": "Sao em không vào được hệ thống?",
+    "ground_truth_answer": "Câu hỏi quá chung chung để xác định đúng tài liệu — có thể do sai mật khẩu, tài khoản bị khóa, xung đột trình duyệt/cache, hoặc không có quyền truy cập. Agent nên hỏi lại để làm rõ (ví dụ: có thông báo lỗi cụ thể nào không, đăng nhập trên web hay mobile app) thay vì đoán và trả lời ngay.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/huong-dan-xoa-cache-trinh-duyet"
+    ],
+    "section": "ambiguous",
+    "difficulty": "hard",
+    "type": "ambiguous"
+  },
+  {
+    "id": "q039",
+    "question": "Học viên này bị sao vậy, sao em thấy trạng thái lạ vậy?",
+    "ground_truth_answer": "Câu hỏi thiếu thông tin cụ thể (trạng thái nào, học viên nào) — có thể liên quan đến Delay/bảo lưu, Outstanding (học nợ), hoặc trạng thái điểm danh. Agent nên hỏi lại để biết chính xác trạng thái hiển thị là gì trước khi trả lời, thay vì chọn đại một tài liệu.",
+    "relevant_doc_ids": [
+      "https://help.dotb.vn/bo-phan-giao-vu/quan-li-su-vu/quan-li-delay/hoc-vien-delay-bao-luu",
+      "https://help.dotb.vn/tinh-nang-cap-nhat-moi/cap-nhat-ems/cap-nhat-giao-dien-tinh-nang"
+    ],
+    "section": "ambiguous",
+    "difficulty": "hard",
+    "type": "ambiguous"
   }
 ]
