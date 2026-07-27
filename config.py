@@ -59,3 +59,16 @@ REWRITE_HISTORY_TURNS = 3   # prior user/assistant turns fed to the condenser
 # ── Embedding API ─────────────────────────────────────────────────────────────
 EMBED_BATCH_SIZE      = 100
 EMBED_RETRY_DELAY_SEC = 2.0
+
+# ── Agent (Day 5) ─────────────────────────────────────────────────────────────
+# LangChain wants the bare model id; LLM_MODEL carries the "models/" prefix the
+# google-genai SDK uses. Derived here so both clients stay on one source of truth.
+LC_LLM_MODEL = LLM_MODEL.removeprefix("models/")
+# grade → retrieve self-correction loop. Each extra attempt costs a grade call
+# plus a retrieval, so 3 total attempts is the ceiling before handing off.
+AGENT_MAX_ATTEMPTS       = 3
+# faithfulness_node hands off below this instead of shipping a shaky answer.
+AGENT_FAITHFULNESS_MIN   = 0.70
+# guardrails: rule-based (no LLM call) so it costs neither quota nor latency.
+AGENT_MAX_INPUT_CHARS    = 2000
+HANDOFF_LOG_PATH         = BASE_DIR / "logs" / "handoffs.jsonl"
