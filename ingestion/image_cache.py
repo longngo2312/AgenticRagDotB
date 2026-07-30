@@ -9,8 +9,10 @@ content-hashed filename. That local path is what gets embedded in chunk
 text, captioned (Day 3), and cited back to the user — a token rotation on
 GitBook's side can never break a previously-answered citation.
 
-Idempotent: skips download if a file with the same content hash already
-exists in the manifest.
+Idempotent: the manifest maps GitBook URL → local path, so a URL already in
+it is never re-downloaded. Filenames hash the URL, not the bytes — the same
+image served under two different proxy URLs is stored twice, which is the
+cheap trade for never having to fetch bytes just to learn we already had them.
 """
 import asyncio
 import hashlib
@@ -50,7 +52,11 @@ def _ext_from_content_type(content_type: str) -> str:
     }.get(ct, ".jpg")
 
 
-async def _fetch_one(client: httpx.AsyncClient, url: str, semaphore: asyncio.Semaphore) -> tuple[str, str | None]:
+async def _fetch_one(
+    client: httpx.AsyncClient, url: str, semaphore: asyncio.Semaphore
+) -> tuple[str, bytes | None, str | None]:
+    """Download one image. Returns (url, bytes, content_type); bytes is None on
+    failure so one dead image URL never aborts the whole gather()."""
     async with semaphore:
         try:
             r = await client.get(url, timeout=30.0)

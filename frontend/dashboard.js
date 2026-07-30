@@ -118,7 +118,8 @@ function renderAgentGraph(graph) {
   const legend = el("div", "stat-strip");
   legend.innerHTML = `
     <span class="stat-pill">dashed chip = graph edge</span>
-    <span class="stat-pill">amber "(loop)" = grade retries retrieve, max <b>${graph.max_attempts ?? "3"}</b> lần</span>
+    <span class="stat-pill">amber "(loop)" = grade retries retrieve, max <b>${graph.max_attempts ?? "—"}</b> lần</span>
+    <span class="stat-pill">faithfulness tối thiểu: <b>${graph.faithfulness_min ?? "—"}</b></span>
   `;
   host.appendChild(legend);
 }
@@ -242,7 +243,7 @@ function renderEvalDetail(evalData) {
       <thead><tr><th>Giai đoạn</th><th>Recall@5</th><th>Recall@10</th><th>Precision@5</th><th>Precision@10</th><th>MRR</th></tr></thead>
       <tbody>
         <tr><td>Fusion (dense+BM25, trước rerank)</td><td class="num">${fmt(f.recall_at_5)}</td><td class="num">${fmt(f.recall_at_10)}</td><td class="num">${fmt(f.precision_at_5)}</td><td class="num">${fmt(f.precision_at_10)}</td><td class="num">${fmt(f.mrr)}</td></tr>
-        <tr><td>Final (sau rerank, top-${z.k ?? 5})</td><td class="num">${fmt(z.recall_at_5)}</td><td class="num">—</td><td class="num">${fmt(z.precision_at_5)}</td><td class="num">—</td><td class="num">${fmt(z.mrr)}</td></tr>
+        <tr><td>Final (sau rerank)</td><td class="num">${fmt(z.recall_at_5)}</td><td class="num">—</td><td class="num">${fmt(z.precision_at_5)}</td><td class="num">—</td><td class="num">${fmt(z.mrr)}</td></tr>
       </tbody>
     </table>
   `;
@@ -261,13 +262,13 @@ function renderEvalDetail(evalData) {
   host.appendChild(genCard);
 
   // Per-question — merge retrieval + generation rows by id.
-  const retByld = Object.fromEntries((evalData.retrieval?.per_question || []).map(q => [q.id, q]));
+  const retById = Object.fromEntries((evalData.retrieval?.per_question || []).map(q => [q.id, q]));
   const genRows = evalData.generation?.per_question || [];
   if (genRows.length) {
     const listCard = el("div", "card");
     listCard.style.cssText = "padding:0.5rem 1rem;margin-top:0.7rem";
     for (const g of genRows) {
-      const r = retByld[g.id];
+      const r = retById[g.id];
       const details = el("details", "qa");
       details.innerHTML = `
         <summary>

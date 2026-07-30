@@ -110,7 +110,6 @@ def _generate_with_backoff(image_bytes: bytes, mime: str, prompt: str) -> str:
                 time.sleep(backoff)
                 continue
             raise
-    raise RuntimeError("unreachable")
 
 
 def caption_image(local_path: str, context_text: str, allow_generate: bool = True) -> str | None:

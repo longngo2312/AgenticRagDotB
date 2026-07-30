@@ -11,12 +11,6 @@ decomposes retrieve() into its real sub-functions and times each one:
   rewrite (condense) → rewrite (glossary) → dense → bm25 → RRF fusion →
   rerank → parent-fetch → LLM generation (with time-to-first-token)
 
-Every turn prints a per-stage latency trace and appends a JSON line to
-logs/chat_trace.jsonl for later analysis. It calls the exact same functions
-retrieve() calls — this is x-ray vision on the real pipeline, not a re-write
-of it. If retrieve()'s orchestration changes, keep the stage order below in
-sync (the individual stage logic lives in retrieval/*, not here).
-
 Commands:  /reset   /sources   /exit  (also /quit, Ctrl-C, Ctrl-D)
 """
 import json

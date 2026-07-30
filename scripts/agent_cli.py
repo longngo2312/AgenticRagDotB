@@ -5,15 +5,6 @@ Usage:
   python scripts/agent_cli.py           # show the agent's thinking trace (default)
   python scripts/agent_cli.py --quiet   # answers only, no trace
 
-Unlike scripts/chat_cli.py (Day 3's straight-line RAG loop), this drives the
-compiled StateGraph and prints each node's decision as it fires, so you can see
-*why* a turn went the way it did — which route the router picked, whether grade
-looped back for another retrieval, what the faithfulness self-check scored.
-
-The trace comes from LangGraph's own stream_mode="updates", i.e. the real state
-updates each node returns — not a narration written alongside the graph that
-could drift out of sync with it.
-
 Commands:  /reset   /sources   /trace   /exit  (also /quit, Ctrl-C, Ctrl-D)
 """
 import sys

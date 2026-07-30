@@ -9,9 +9,9 @@ Flow:
     → return list[CrawledPage]
     → optionally save raw .md files to data/raw_docs/
 """
-import asyncio 
-import hashlib 
-import re 
+import asyncio
+import hashlib
+import re
 import sys
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
@@ -58,14 +58,17 @@ class _ZoomImgParser(HTMLParser):
         if d.get("data-testid") == "zoom-image":
             src = d.get("src", "")
             if src:
-                self.srcs.append(src) #this gets the src link to the image in html 
+                self.srcs.append(src)
 
 
 def _extract_content_images(html: str) -> list[str]:
     p = _ZoomImgParser()
     try:
-        p.feed(html) #this function parse the html content and return the src arrays of the images correspond to the html page
+        p.feed(html)
     except Exception:
+        # Images are a nice-to-have enrichment, not the document itself.
+        # Malformed markup on one page must not fail its whole crawl — keep
+        # whatever srcs were parsed before the error.
         pass
     return p.srcs
 
@@ -73,13 +76,18 @@ def _extract_content_images(html: str) -> list[str]:
 # ── Crawl helpers ──────────────────────────────────────────────────────────────
 
 def parse_llms_txt(text: str, base_url: str) -> list[dict]:
+    """Parse llms.txt into [{title, url, description}].
+
+    Handles both the documented entry form and a bare-URL fallback:
+      - [Course Management](https://help.dotb.vn/course.md): How to manage courses
+      https://help.dotb.vn/course.md
+    """
     base = base_url.rstrip("/")
     entries = []
     for line in text.splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
             continue
-        #following this format: - [Course Management](https://example.com/course): How to manage courses in the llms.txt 
         m = re.match(r"^-?\s*\[([^\]]+)\]\(([^)]+)\)(?::\s*(.*))?$", line)
         if m:
             title, url, desc = m.group(1), m.group(2), m.group(3) or ""
@@ -93,14 +101,17 @@ def parse_llms_txt(text: str, base_url: str) -> list[dict]:
             entries.append({"title": title, "url": line, "description": ""})
     return entries
 
-#fetching md files as well as the images in the HTML 
 async def _fetch_one(
     client: httpx.AsyncClient,
     page: dict,
     semaphore: asyncio.Semaphore,
 ) -> CrawledPage | None:
+    """Fetch one page's markdown, plus its rendered HTML for image URLs.
+
+    Returns None if the markdown fetch fails — one unreachable page should not
+    abort the crawl.
+    """
     async with semaphore:
-        # Fetch .md
         try:
             r = await client.get(page["url"], timeout=20.0)
             r.raise_for_status()
@@ -109,11 +120,16 @@ async def _fetch_one(
             print(f"\n  [WARN] Failed {page['url']}: {e}")
             return None
         finally:
+            # Delay inside the semaphore so it paces each worker, and in
+            # `finally` so a failed request still waits its turn — otherwise a
+            # run of 404s would burst straight through the rate limit.
             await asyncio.sleep(CRAWLER_DELAY_SEC)
 
-    content_hash = hashlib.sha256(content.encode()).hexdigest() #hash to detect whether document content change or no in later scheduled ingesting step 
+    # Lets a later re-run detect unchanged documents and skip re-embedding them.
+    content_hash = hashlib.sha256(content.encode()).hexdigest()
 
-    # Co-fetch HTML to extract real image URLs (GitBook proxy URLs)
+    # The .md export references images by an unresolvable short id, so the real
+    # (signed proxy) URLs only exist in the rendered HTML — fetch both.
     image_urls: list[str] = []
     html_url = page["url"].removesuffix(".md")
     if html_url != page["url"]:
@@ -122,7 +138,9 @@ async def _fetch_one(
             if r_html.status_code == 200:
                 image_urls = _extract_content_images(r_html.text)
         except Exception:
-            pass  
+            # Same reasoning as _extract_content_images: a page is still usable
+            # with no images, so never fail the crawl over the HTML co-fetch.
+            pass
 
     return CrawledPage(
         url=page["url"],
@@ -133,8 +151,15 @@ async def _fetch_one(
         image_urls=image_urls,
     )
 
-#async function to crawl everything 
 async def crawl_all(save_raw: bool = True) -> list[CrawledPage]:
+    """Download every page listed in llms.txt concurrently.
+
+    Args:
+        save_raw: also write each page's markdown to data/raw_docs/.
+
+    Returns:
+        Successfully crawled pages; failures are logged and skipped.
+    """
     RAW_DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
     async with httpx.AsyncClient(follow_redirects=True) as client:
@@ -145,10 +170,9 @@ async def crawl_all(save_raw: bool = True) -> list[CrawledPage]:
         pages = parse_llms_txt(r.text, base_url)
         print(f"  Found {len(pages)} pages in llms.txt")
 
-        #limit the number of concurrent HTTP requests to avoid overwhelming the server and our own system 
+        # Bound in-flight requests so a ~250-page crawl stays a good citizen
+        # against help.dotb.vn rather than opening every connection at once.
         semaphore = asyncio.Semaphore(CRAWLER_CONCURRENCY)
-
-        #create a fetching task for each pages 
         tasks = [_fetch_one(client, p, semaphore) for p in pages]
 
         results: list[CrawledPage] = []
@@ -157,8 +181,10 @@ async def crawl_all(save_raw: bool = True) -> list[CrawledPage]:
                 page = await coro
                 if page:
                     results.append(page)
-                    #save the raw markdown content
                     if save_raw:
+                        # Hash the URL for the filename: page URLs contain
+                        # slashes and Vietnamese characters that don't survive
+                        # as-is on the filesystem.
                         safe_name = hashlib.md5(page.url.encode()).hexdigest() + ".md"
                         (RAW_DOCS_DIR / safe_name).write_text(page.content, encoding="utf-8")
                 pbar.update(1)
