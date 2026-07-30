@@ -3,6 +3,7 @@ data/chroma_db/
 data/raw_docs/
 data/bm25_index.pkl
 data/parent_docs.json
+eval/results/
 __pycache__/
 *.py[cod]
 .venv/

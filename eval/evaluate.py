@@ -15,6 +15,7 @@ import json
 import re
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -32,6 +33,7 @@ from retrieval.retriever import fetch_parents, retrieve
 import chat_cli
 
 GOLDEN_SET_PATH = Path(__file__).parent / "golden_set.json"
+RESULTS_PATH = Path(__file__).parent / "results" / "latest.json"
 
 _client = genai.Client(api_key=GOOGLE_API_KEY)
 
@@ -277,8 +279,27 @@ def run_full_eval() -> dict:
     print(f"  Recall@10 >= 0.80:     {'PASS' if r10 >= 0.80 else 'FAIL'}  ({r10:.2f})")
     print(f"  Faithfulness >= 0.85:  {'PASS' if faith >= 0.85 else 'FAIL'}  ({faith:.2f})")
 
-    return {"retrieval": retrieval_metrics, "generation": generation_metrics}
+    return {
+        "retrieval": retrieval_metrics,
+        "generation": generation_metrics,
+        "demo_targets": {
+            "recall_at_10": {"target": 0.80, "actual": r10, "pass": r10 >= 0.80},
+            "faithfulness": {"target": 0.85, "actual": faith, "pass": faith >= 0.85},
+        },
+    }
+
+
+def save_results(results: dict) -> None:
+    """Persist the full eval output for the dashboard (api/main.py's
+    /api/eval/latest) to read — running the harness live on every dashboard
+    load would burn free-tier quota (2 LLM calls/golden item, throttled to
+    ~4.2s apart). The dashboard always shows the numbers from the last time
+    this script was run, timestamped so staleness is visible."""
+    RESULTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = {"generated_at": datetime.now(timezone.utc).isoformat(), **results}
+    RESULTS_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\nSaved eval snapshot -> {RESULTS_PATH}")
 
 
 if __name__ == "__main__":
-    run_full_eval()
+    save_results(run_full_eval())
