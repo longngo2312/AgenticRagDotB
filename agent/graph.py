@@ -84,19 +84,32 @@ def build_graph():
 
     graph.set_entry_point("guardrails")
 
-    graph.add_conditional_edges("guardrails", after_guardrails,
-                                {"router": "router", "blocked": END})
-    graph.add_conditional_edges("router", after_router,
-                                {"retrieve": "retrieve", "clarify": "clarify",
-                                 "handoff": "handoff"})
+    graph.add_conditional_edges(
+        "guardrails", 
+        after_guardrails,
+        {"router": "router", "blocked": END}
+    )
+    graph.add_conditional_edges(
+        "router", 
+        after_router,
+        {"retrieve": "retrieve", "clarify": "clarify","handoff": "handoff"}
+    )
     graph.add_edge("retrieve", "grade")
-    graph.add_conditional_edges("grade", after_grade,
-                                {"generate": "generate", "retrieve": "retrieve",
-                                 "handoff": "handoff"})
-    graph.add_conditional_edges("generate", after_generate,
-                                {"faithfulness": "faithfulness", "handoff": "handoff"})
-    graph.add_conditional_edges("faithfulness", after_faithfulness,
-                                {"end": END, "handoff": "handoff"})
+    graph.add_conditional_edges(
+        "grade", 
+        after_grade,
+        {"generate": "generate", "retrieve": "retrieve","handoff": "handoff"}
+    )
+    graph.add_conditional_edges(
+        "generate", 
+        after_generate,
+        {"faithfulness": "faithfulness", "handoff": "handoff"}
+    )
+    graph.add_conditional_edges(
+        "faithfulness", 
+        after_faithfulness,
+        {"end": END, "handoff": "handoff"}
+    )
     graph.add_edge("clarify", END)
     graph.add_edge("handoff", END)
 

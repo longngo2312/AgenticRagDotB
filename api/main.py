@@ -3,19 +3,16 @@
 Endpoints:
   GET  /health                    liveness check
   POST /api/chat                  one turn through the LangGraph agent
-  POST /api/feedback              thumbs up/down on an answer, logged to logs/feedback.jsonl
+  POST /api/feedback              thumbs up/down on an answer → logs/feedback.jsonl
+  POST /api/handoff               user-initiated "talk to a person"
   GET  /api/eval/latest           last `python eval/evaluate.py` snapshot
   GET  /api/pipeline/agent-graph  the compiled LangGraph's real nodes/edges
   GET  /api/pipeline/ingestion    live stats from the actual index artifacts
   GET  /api/data-model            chunk schema + AgentState fields + config knobs
-  /                                static chat + dashboard frontend
+  /                               static chat + dashboard frontend
 
-Streaming was deliberately left out: generate_node's answer is gated behind a
-faithfulness check before it ships (see agent/graph.py's after_faithfulness
-edge), so there is nothing correct to stream token-by-token — an answer that
-fails the check never reaches the user at all. /api/chat returns the final,
-already-checked answer in one response; the frontend does a client-side
-typewriter reveal for the streaming feel instead.
+/api/chat is request/response, not streaming — see the README's "faithfulness
+check is a gate" note for why.
 """
 import json
 import pickle
@@ -49,11 +46,16 @@ FEEDBACK_LOG_PATH = BASE_DIR / "logs" / "feedback.jsonl"
 FRONTEND_DIR = BASE_DIR / "frontend"
 
 
+
 def _browsable_url(doc_url: str) -> str:
-    """doc_url in the index is always the crawled .md fetch URL (see
-    eval/evaluate.py's _with_md docstring) — help.dotb.vn serves the same
-    page without that suffix, which is the link worth showing a user."""
+    """Convert an indexed doc_url into one a human can open.
+
+    doc_url is always the crawled `.md` fetch URL (see eval/evaluate.py's
+    _with_md docstring); help.dotb.vn serves the same page without that
+    suffix, and that's the link worth putting in a citation.
+    """
     return doc_url.removesuffix(".md")
+
 
 app = FastAPI(title="DotB RAG API")
 
@@ -184,14 +186,23 @@ def eval_latest():
 @app.get("/api/pipeline/agent-graph")
 def agent_graph():
     """Introspects the real compiled StateGraph rather than hand-describing
-    it, so this can never drift out of sync with agent/graph.py."""
+    it, so this can never drift out of sync with agent/graph.py.
+
+    The loop/threshold values ride along from config so the dashboard renders
+    the limits actually in force instead of hardcoding its own copy.
+    """
     g = agent_app.get_graph()
     nodes = [{"id": n} for n in g.nodes]
     edges = [
         {"source": e.source, "target": e.target, "label": e.data, "conditional": e.conditional}
         for e in g.edges
     ]
-    return {"nodes": nodes, "edges": edges}
+    return {
+        "nodes": nodes,
+        "edges": edges,
+        "max_attempts": AGENT_MAX_ATTEMPTS,
+        "faithfulness_min": AGENT_FAITHFULNESS_MIN,
+    }
 
 
 # ── Pipeline: ingestion stats ────────────────────────────────────────────────

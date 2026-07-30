@@ -5,11 +5,6 @@ Usage:
   python scripts/chat_cli.py            # normal chat
   python scripts/chat_cli.py --debug    # also print retrieved sources + scores
 
-Flow per turn:  retrieve() -> ground the LLM on the retrieved parent docs ->
-stream a cited answer. This is the pre-agent baseline: a direct RAG loop, no
-LangGraph (that's Day 5). Retrieval already condenses follow-ups against the
-running history, so multi-turn works here too.
-
 Commands (typed at the prompt):
   /reset     clear the conversation history
   /sources   show sources for the last answer again

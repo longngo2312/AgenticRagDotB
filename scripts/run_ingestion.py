@@ -7,14 +7,6 @@ Usage:
   python scripts/run_ingestion.py --full       # also embed + index
 
 Pipeline: crawl -> cache images -> parse -> [caption] -> chunk -> [embed + index]
-
-Captioning (Day 3): every run applies already-cached captions (data/images/captions.json)
-so a plain preview never regresses to bare [IMAGE: path] placeholders once captioning has
-run once. Only --caption allows *new* vision-LLM calls for cache misses — the free-tier
-model is rate-limited to 15 req/min, so captioning ~950 images takes ~70-90 minutes.
-
-Idempotent: safe to re-run. Chunk IDs are content hashes, so --full only re-embeds
-children whose content actually changed.
 """
 import asyncio
 import json
@@ -111,16 +103,15 @@ async def main(full: bool = False, caption: bool = False) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     preview = {
         "summary": summary,
+        # A sample, not a dump: the preview exists to be read by a human before
+        # spending embedding quota, and 600+ chunks is not readable.
         "sample_children": [
-            asdict(c) for c in all_chunks
-            if c.chunk_type == "child"
-        ][:20],  # first 20 children for review
+            asdict(c) for c in all_chunks if c.chunk_type == "child"
+        ][:20],
         "sample_parents": [
-            asdict(c) for c in all_chunks
-            if c.chunk_type == "parent"
-        ][:5],   # first 5 parents for review
+            asdict(c) for c in all_chunks if c.chunk_type == "parent"
+        ][:5],
     }
-    # convert breadcrumb list to list (already is, but ensure JSON-safe)
     PREVIEW_PATH.write_text(
         json.dumps(preview, ensure_ascii=False, indent=2),
         encoding="utf-8",

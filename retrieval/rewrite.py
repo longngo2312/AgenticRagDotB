@@ -1,27 +1,5 @@
 """
 DAY 4 — STEP 1: Query rewrite (condense history + glossary expansion).
-
-Two independent problems, two independent fixes:
-
-1. Follow-up questions are ambiguous out of context — "còn phí thì sao?" after
-   a question about Placement Test means nothing to a retriever on its own.
-   `condense_query` uses the LLM to fold the last few turns into one
-   standalone question, in the user's own language (no translation).
-
-2. DotB's docs and its users don't always use the same term for the same
-   concept ("delay" in the UI vs. "bảo lưu" in how support staff actually
-   talk about it). BM25 is a lexical matcher — it can't bridge that gap on
-   its own. `expand_glossary` appends known aliases from data/glossary.json
-   so both vocabularies are present in the query BM25 searches against.
-   (Dense search is less affected since embeddings already capture some of
-   this synonymy, but the appended terms don't hurt it either.)
-
-chat_history format: list[{"role": "user" | "assistant", "content": str}],
-oldest first — the same shape agent/state.py will use once it exists (Day 5).
-
-Interactive path, not ingestion: a demo target of <4s means this can't afford
-ingestion-style 60s rate-limit backoff. On any failure it falls back to the
-original (un-condensed) question rather than blocking the user.
 """
 import json
 import re

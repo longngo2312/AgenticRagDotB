@@ -1,16 +1,14 @@
 """
 DAY 2 — STEP 3: Structure-aware Markdown chunker (parent-child)
 
-Strategy (from design doc §5):
-  - Split by heading hierarchy (#, ##, ###, …)
-  - Each child chunk carries FULL heading path as prefix:
-      "[Tuyển sinh > Lead > Convert Lead] ## Chuyển đổi hàng loạt\n\n<body>"
-  - Group heading sections into PARENT chunks (~1500 tok)
-  - Split each parent into CHILD chunks (~500 tok) at paragraph boundaries
-  - Index & search on children (precise match)
-  - Retrieve PARENT for LLM (full context)
+- Split by heading hierarchy (#, ##, ###, …)
+- Each child chunk carries FULL heading path as prefix:
+    "[Tuyển sinh > Lead > Convert Lead] ## Chuyển đổi hàng loạt\n\n<body>"
+- Group heading sections into PARENT chunks (~1500 tok)
+- Split each parent into CHILD chunks (~500 tok) at paragraph boundaries
+- Index & search on children (precise match)
+- Retrieve PARENT for LLM (full context)
 
-Token estimate: 1 token ≈ 4 chars (mixed Viet/English, no tiktoken needed)
 """
 import hashlib
 import re
@@ -58,14 +56,17 @@ def _split_by_headings(markdown: str) -> list[tuple[int, str, str]]:
         pos = m.end()
         level = len(m.group(1))
         heading = m.group(2).strip()
-        sections.append((level, heading, ""))  # body filled on next iteration
-    # fill bodies
+        sections.append((level, heading, ""))
+
+    # Second pass to fill bodies: a heading's body runs until the *next*
+    # heading, which the first pass hasn't seen yet when it appends the entry.
     matches = list(heading_re.finditer(markdown))
     for i, m in enumerate(matches):
         start = m.end()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(markdown)
         body = markdown[start:end].strip()
-        # sections index: preamble may have been inserted at 0
+        # `sections` gains a leading preamble entry when the doc opens with
+        # text before its first heading — shift past it to stay aligned.
         offset = 1 if sections and sections[0][0] == 0 else 0
         sections[i + offset] = (sections[i + offset][0], sections[i + offset][1], body)
     return sections
@@ -136,11 +137,19 @@ def _split_into_children(text: str, max_tokens: int) -> list[str]:
 
 
 def chunk_document(doc: ParsedDocument) -> list[Chunk]:
+    """Split one parsed document into parent and child chunks.
+
+    Returns both kinds in one flat list (each child carries its `parent_id`):
+    children are what gets embedded and searched, parents are what the LLM
+    reads at answer time. Callers separate them by `chunk_type`.
+    """
     sections = _split_by_headings(doc.content)
     heading_stack: list[tuple[int, str]] = []  # (level, text)
     chunks: list[Chunk] = []
 
-    # group sections into parent groups
+    # Pack consecutive sections up to the parent budget. Greedy rather than
+    # balanced: keeping adjacent headings together matters more for context
+    # than making the parents equal in size.
     parent_groups: list[list[tuple[int, str, str]]] = []
     current_group: list[tuple[int, str, str]] = []
     current_tokens = 0
@@ -160,14 +169,15 @@ def chunk_document(doc: ParsedDocument) -> list[Chunk]:
         parent_groups.append(current_group)
 
     for group in parent_groups:
-        # reconstruct parent text and heading path
         heading_stack = []
         group_parts: list[str] = []
         group_heading_path = ""
 
         for level, heading, body in group:
             if heading:
-                # maintain stack — pop anything at same or deeper level
+                # Pop to the current level before pushing, so the stack always
+                # holds this heading's true ancestors — an h2 following an h3
+                # is a sibling of that h3's parent, not a child of the h3.
                 heading_stack = [(l, h) for l, h in heading_stack if l < level]
                 heading_stack.append((level, heading))
                 prefix = "#" * level + " " + heading
@@ -204,7 +214,9 @@ def chunk_document(doc: ParsedDocument) -> list[Chunk]:
         )
         chunks.append(parent_chunk)
 
-        # split parent into children
+        # Children are split from parent_raw (body only) but re-prefixed with
+        # the breadcrumb + heading path below, so an embedded child still
+        # carries the context its parent gave it.
         child_texts = _split_into_children(parent_raw, CHILD_CHUNK_MAX_TOKENS)
         for child_raw in child_texts:
             prefix = f"[{doc.breadcrumb_str}] {group_heading_path}\n\n" if group_heading_path else f"[{doc.breadcrumb_str}]\n\n"

@@ -1,10 +1,8 @@
 """
-DAY 2 — STEP 4: Batch embedding via Google text-embedding-004
+DAY 2 — STEP 4: Batch embedding via the Google embedding API.
 
-Free tier limits (as of 2026):
-  - 100 requests/minute
-  - 1,500 requests/day
-  - Batch up to 100 texts per call
+The model is config.EMBEDDING_MODEL (gemini-embedding-001 — text-embedding-004
+was retired from the Gemini Developer API; see the note in config.py).
 
 task_type must differ for indexing vs querying:
   - RETRIEVAL_DOCUMENT  → when embedding chunks for the index
